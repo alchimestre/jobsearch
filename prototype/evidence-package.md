@@ -79,7 +79,7 @@ github.com/alchimestre | vincentloupmon+pro@protonmail.com | +33 6 84 82 86 03
 
 ### Skills section (rewritten)
 
-**Removed:** "GPU Workloads" (evidence gap — keyword only). "Ethereum" (crypto-specific, not relevant to AI positioning).
+**Removed:** "Ethereum" (crypto-specific, not relevant to AI positioning). "GPU Workloads" downgraded to "GPU exposure" — experience is GPU-adjacent, not direct ownership.
 
 **Current defensible skills:**
 ```
@@ -87,8 +87,7 @@ Kubernetes · Terraform · GCP · Linux · Docker · CI/CD · GitOps
 Prometheus · Grafana · OpenTelemetry · ELK · PostgreSQL
 Distributed Systems · High Availability · Scalability
 Performance Tuning · Capacity Planning · Cost Optimization
-SecOps · ISO 27001 · HDS
-```
+SecOps · ISO 27001 · HDS · GPU exposure
 
 **Added (after training plan produces evidence, week 6+):**
 ```
