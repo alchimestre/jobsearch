@@ -4,6 +4,8 @@ Label: wayfinder:map
 
 Status: complete
 
+> Execution tracking (opportunities, outreach, follow-ups, weekly reviews) now lives in GitHub Issues + Projects on this repo — see `README.md`. The map below is the completed decision log.
+
 ## Destination
 
 A decision-complete 12-week system that generates qualified interviews for AI Infrastructure Engineer roles and closes the highest-value capability gaps with employer-relevant evidence. Switzerland and Berlin are the primary relocation markets; selective France and EU-remote roles may serve as bridge opportunities.
