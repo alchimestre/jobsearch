@@ -11,7 +11,7 @@ Scope: employer segments, named companies, role-title aliases, hiring locations,
 
 ## 1. Candidate profile driving the "realistic" filter (from `resume_v3.pdf`)
 
-- SRE / platform engineer, Aix-en-Provence, France; EU (French) national → **no work permit needed in either Switzerland or Germany** (see §5, §8).
+- SRE / platform engineer, Aix-en-Provence, France; EU (French) national → EU/EFTA free movement applies in both markets, with an asymmetry: **Germany requires no visa and no residence permit for EU citizens; Switzerland requires a cantonal residence permit (L/B EU/EFTA) as a formality for employment beyond three months** (see §3.6, §6.6, §8).
 - ~3.5 y total: SRE @ Kiln (crypto staking, multi-network distributed infra, Terraform/K8s multi-env, hardening) 2024–2026; SRE @ Cometh (GCP multi-zone K8s, observability, cost reduction) 2023; DevOps @ Docaposte (regulated healthcare/HDS) and @ Bitgen (Ethereum on K8s) 2021–2023.
 - Stack: Kubernetes, Terraform, GCP, Linux, Docker, CI/CD, GitOps, Prometheus/Grafana/OpenTelemetry/ELK, PostgreSQL; resume claims "GPU workloads" and compute-intensive-platform focus.
 - Resume shows no German language line and no formal ML/LLM training-stack credentials. Implication used below: French + professional English assumed; German level unknown; PyTorch/training-orchestration/inference-serving depth unproven on paper.
@@ -23,7 +23,7 @@ Scope: employer segments, named companies, role-title aliases, hiring locations,
 1. **Zurich is the Swiss AI-infrastructure center of gravity.** The named AI-infra employers verified live in Switzerland cluster in Zurich (Google SRE/ML roles, Anthropic Zurich, Skydio Zurich, IBM Research Zurich-Rüschlikon) plus the national compute estate (CSCS/Swiss AI Initiative "Alps", Lugano + Zurich). Geneva/Lausanne are secondary; Lausanne matters via EPFL/ETH-domain AI (Swiss AI Initiative, SDSC lineage). **[VERIFIED sources §3]**
 2. **The Swiss market is thinner in pure "AI-infra vendor" headquarters than the thesis implies.** Global R&D outposts of hyperscalers/labs + national AI supercomputing + a handful of young GPU/cloud-infra startups carry most of the load. **[INFERENCE** synthesized from §3 sources**]**
 3. **Berlin's AI-infrastructure demand is mostly *in-house ML platform / MLOps* inside product companies and AI scale-ups** (Inceptive, Zeta Global observed live; Zalando/Delivery Hero/HelloFresh class by market convention), with a defense-AI cluster (Helsing) that skews research-heavy. Berlin has no Alps-scale national compute anchor and fewer AI-infra vendor HQs than Zurich. **[OBSERVED §7]** **[INFERENCE** for the market-shape conclusion**]**
-4. **EU freedom of movement makes relocation logistics trivial for this candidate in both markets**: no visa or work permit; register locally after arrival. **[VERIFIED §5, §8]**
+4. **EU freedom of movement removes visa and work-admission approval in both markets — but Switzerland and Germany are not identical.** Germany: no visa, no residence permit for EU citizens (register at the municipality). Switzerland: employment up to 3 months/calendar year needs no residence permit (employer files an electronic short-term notification); employment beyond 3 months requires a cantonal residence permit (L EU/EFTA for 3-month–1-year contracts, B EU/EFTA — 5-year validity — for 1+ years), issued as a formality upon proof of employment, valid Switzerland-wide, and portable across jobs. **[VERIFIED §3.6, §6.6]**
 5. **English is the working language at every employer verified** (CSCS: "our working language is English"; Google/Anthropic/IBM postings are English-language). German appears where domestic/SME employers are involved, which is a *smaller* share of the realistic AI-infra target list in Zurich and Berlin. **[VERIFIED]** + **[INFERENCE** for the general claim**]**
 6. Role-title aliases are numerous; title matching alone is a weak filter — responsibility matching per CONTEXT.md is the operative rule. **[INFERENCE]**
 
@@ -70,7 +70,12 @@ Live postings observed on AI Dev Jobs (aggregator, Zurich filter, accessed 2026-
 
 ### 3.6 Swiss immigration for this candidate
 
-- France is an EU/EFTA country covered by the Agreement on the Free Movement of Persons; residence/employment permits are issued by the cantons. **[VERIFIED]** https://www.sem.admin.ch/sem/en/home/themen/fza_schweiz-eu-efta/eu-efta_buerger_schweiz.html (SEM, page "last modified 13.01.2026"; cantonal procedures on SEM factsheets/FAQ — registration mechanics not re-read this session **[INFERENCE** that it is registration-level paperwork for EU nationals**]**)
+- France is an EU/EFTA country covered by the Agreement on the Free Movement of Persons (AFMP); EU/EFTA nationals have the right to enter, remain and take up gainful employment in Switzerland under the AFMP, with permits issued by the cantons. **[VERIFIED]** https://www.sem.admin.ch/sem/en/home/themen/fza_schweiz-eu-efta/eu-efta_buerger_schweiz.html (SEM overview, "last modified 13.01.2026"; France listed among covered countries)
+- **Precise mechanics** (SEM factsheet "Residing in Switzerland and taking up gainful activity", SP_01/25, 01.01.2025, read directly): **[VERIFIED]** https://www.sem.admin.ch/dam/sem/en/data/eu/fza/personenfreizuegigkeit/factsheets/fs-bew-aufenthalt.pdf.download.pdf/fs-bew-aufenthalt.pdf
+  - Employment **≤ 3 months per calendar year**: no residence permit required; the **employer must file an electronic short-term notification** before work starts.
+  - Employment **> 3 months**: a **residence permit is required, issued upon proof of employment** (e.g. contract): **L EU/EFTA** short-stay permit for contracts of 3 months–1 year; **B EU/EFTA** residence permit (5-year validity) for contracts of 1+ years or unlimited. Permits are valid Switzerland-wide and **entitle the holder to change jobs and occupations** (no employer lock-in). **[VERIFIED]**
+- Reading for the search: no quota or labour-market admission procedure applies to EU/EFTA nationals — permit issuance on proof of employment is a formality of the right, not a discretionary work-permit grant (contrast third-country nationals, who are outside this note's scope). **[INFERENCE** drawn from the factsheet wording above**]**
+- Practical consequence: an offer >3 months triggers a cantonal L/B EU/EFTA application (employer + candidate paperwork); nothing to solve before interviewing. **[INFERENCE]**
 
 ---
 
@@ -151,7 +156,7 @@ Synthesized from §3 sources (observed postings + employer pages); attribute per
 
 ## 8. Cross-market facts (both)
 
-- **Work authorization:** none needed as an EU/EFTA national in either market (SEM page verified for CH incl. France; Make it in Germany verified for DE). Biggest practical lever in the search: remove all visa-fear framing; target companies hiring internationally. **[VERIFIED]**
+- **Work authorization — asymmetry between the markets (do not conflate):** in **Germany**, EU citizens need no visa and no residence permit at all — enter with passport/ID, unrestricted labour-market access, register at the municipality after moving (Make it in Germany, official Federal portal, verified). In **Switzerland**, EU/EFTA nationals have an AFMP *right* to work, but employment beyond 3 months requires a cantonal **residence permit (L or B EU/EFTA)** issued as a formality on proof of employment, and ≤3-month work requires only an employer-side short-term notification (SEM factsheet SP_01/25, verified). Bottom line for the search: neither market has an admission hurdle to clear before interviewing; Switzerland adds post-offer permit paperwork, Germany adds only municipal registration. **[VERIFIED]**
 - **Effort split:** Switzerland 60% / Berlin 40% (standing decision) maps naturally to Zurich-anchored §3 targets vs Berlin-anchored §6 targets.
 
 ---
