@@ -25,6 +25,13 @@ Apply path: the CV lives in Figma (`CV 3_white`, 2-column export). Content now e
 - [x] **Helm** — confirmed used at **Kiln and Cometh** (2026-09-11). Added to skills and to one bullet per role (deployment templating).
 - [x] **Name** — confirmed 2026-09-11: `Vincent Loupmon` (v2's "Loupmont-Peyrat" was the older variant). No header change needed.
 
+## Independent work (2026)
+
+- [x] `Independent Work` block added to `resume/resume.md`, `resume/ats/resume.html`, and the Figma sheet, from Vincent's own LinkedIn blurb — no stack, deployment, or link claims.
+- [ ] Confirm the date range (`2026 – present` is an assumption on the Jan-2026 gap).
+- [ ] Optional upgrade: if a PoC ran a self-hosted model or was deployed, say so — that converts application-layer prototyping into inference-infrastructure evidence.
+- [ ] Music production stays off the CV (LinkedIn Interests only).
+
 ## To add once evidence exists (claims lag evidence)
 
 - [ ] `Python (in progress)` from week 1; drop the qualifier after the Python operator package is complete (~week 6).

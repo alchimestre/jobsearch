@@ -110,6 +110,24 @@ Net effect: the crypto keyword `Ethereum` is dropped, and the `GPU Workloads` ow
 |---|---|
 | `Application Developper Degree` | `Application Developer Degree` |
 
+## 9. Independent Work — new block (manual insert; the script cannot create nodes)
+
+Add a section between **Experience** and **Skills & Technologies**, reusing the existing section-heading style:
+
+**Heading:** `Independent Work`
+**Date line:** `2026 – present`
+
+```
+Product-idea proofs of concept in domain-specific AI assistance and orchestration
+Independent research in history and linguistics, largely AI-assisted prosopography
+```
+
+Source: Vincent's own LinkedIn blurb (2026-09-11). Wording cleaned only — `IA` → `AI`, `PoCs` → `proofs of concept`, nothing added. Do **not** add a stack, a deployment claim, or a link: none were confirmed.
+
+Deliberately excluded: **music production** (it belongs on LinkedIn, not on an SRE CV).
+
+`2026 – present` is an assumption — the out-of-work gap runs Jan 2026 → now. Correct the dates if they differ.
+
 ## Held back deliberately
 
 | Item | Why | Unblock |

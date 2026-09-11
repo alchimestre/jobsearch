@@ -45,6 +45,11 @@ Dec 2021 – Apr 2022
 - Improved security and availability of blockchain infrastructure
 - Contributed to technical documentation and developer content
 
+## Independent Work (2026 – present)
+
+- Product-idea proofs of concept in domain-specific AI assistance and orchestration
+- Independent research in history and linguistics, largely AI-assisted prosopography
+
 ## Skills & Technologies
 
 Kubernetes · Terraform · Helm · GCP · Linux · Docker · CI/CD · GitOps · Prometheus · Grafana · OpenTelemetry · ELK · PostgreSQL
