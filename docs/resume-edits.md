@@ -29,3 +29,10 @@ Status legend: [ ] open · [x] done
 ## Channel
 
 - [ ] Re-check every claim against what the repository actually proves before publishing; keep the CV/LinkedIn/outreach story consistent.
+
+## Customer-facing evidence — OPEN INPUT
+
+- [ ] **No customer-facing claim may be added until real examples are supplied.** Nothing on the CV, GitHub, or the research material evidences external customers. Asked twice (2026-09-11), not yet answered.
+- [ ] Needed: institutional client work at Kiln, escalations/onboarding at Cometh, incident bridges with external partners, or external audits (ISO 27001 / HDS). Any of these, with a concrete situation, converts the weakest part of an FDE application into a strength.
+- [ ] Until this is resolved: forward-deployed / FDE applications (`docs/12-week-strategy.md` §2, secondary lane ≤ ~¼ of the EU-remote/FR lane) stay capped, because their central screening question — direct customer work — cannot yet be answered truthfully at strength.
+
