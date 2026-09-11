@@ -6,8 +6,9 @@ Private repo for Vincent Loupmon's 12-week AI Infrastructure job search and trai
 
 | Path | Contents |
 |---|---|
-| `docs/12-week-strategy.md` | **Approved operating plan.** Weekly allocations, milestones, funnel signals, adaptation thresholds. Read this first. |
+| `docs/12-week-strategy.md` | **Approved operating plan** (amended 2026-09-11: income cliff, lane allocation, conditional Go, late-cliff/last-resort modes — see §10). Weekly allocations, milestones, funnel signals, adaptation thresholds. Read this first. |
 | `docs/evidence-package.md` | CV restructure outline, LinkedIn narrative, GPU-operator README outline, outreach templates. |
+| `docs/resume-edits.md` | Running CV/profile fix list, incl. confirmed Helm usage and the open customer-facing evidence input. |
 | `research/` | Market and hiring-evidence research (Zurich/Berlin employers; 28-JD benchmark). |
 | `.scratch/ai-infrastructure-job-search/` | Wayfinder decision log — `map.md` (status: complete) and decision tickets 01–10. History, not live tracking. |
 | `CONTEXT.md` | Canonical terms: positioning thesis, differentiators, evidence boundaries, compensation floors. |
@@ -37,7 +38,7 @@ One issue per live opportunity; move it through the board as it progresses.
 
 - Due follow-ups: filter `label:channel:` + your tracker date in the issue body; the board keeps the stage.
 - Rejection mix: `is:closed label:reason:*` grouped by label.
-- Market split: `label:market:ch` vs `label:market:de` (response/screen rates kept in weekly reviews).
+- Market split: `label:market:ch` vs `label:market:de` vs `label:market:eu-remote` vs `label:market:fr-bridge` (lane allocation is EU-remote/FR 50% · Berlin 35% · CH 15%; response/screen rates kept per lane in weekly reviews).
 
 ## Agent workflow conventions
 
@@ -48,4 +49,4 @@ One issue per live opportunity; move it through the board as it progresses.
 
 ## Execution starts
 
-Week 1 tasks and allocations are in `docs/12-week-strategy.md` §5. Begin with: apply CV restructure + LinkedIn narrative (from `docs/evidence-package.md`), create the pipeline tracker issues, scaffold `gpu-fleet-operator`.
+Week 1 tasks and allocations are in `docs/12-week-strategy.md` §5; the income-cliff deadlines and mode timeline are in §10. Begin with: apply CV restructure + LinkedIn narrative (from `docs/evidence-package.md`, fix list in `docs/resume-edits.md`), create the pipeline tracker issues, scaffold `gpu-fleet-operator`.
