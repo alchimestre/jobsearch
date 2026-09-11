@@ -7,17 +7,23 @@ corrections from Vincent.
 
 Status legend: [ ] open · [x] done
 
+Apply path: the CV lives in Figma (`CV 3_white`, 2-column export). Content now exists in
+`resume/resume.md` (canonical, ATS-shaped); exact Figma edits are specified in
+`resume/figma-update.md` and can be applied in one run by `resume/figma-apply.js`
+(Scripter plugin).
+
 ## Positioning
 
-- [ ] Title line → "Site Reliability Engineer — moving into AI Infrastructure" (drop the "GPU workloads" claim).
-- [ ] Profile paragraph → transition framing, lead with the cross-domain reliability transfer; no "compute-intensive and GPU workloads" claim.
-- [ ] Delete "GPU Workloads" from skills; use "GPU exposure". Remove "Ethereum".
+- [x] Title line → "Site Reliability Engineer — moving into AI Infrastructure" (drop the "GPU workloads" claim).
+- [x] Profile paragraph → transition framing, lead with the cross-domain reliability transfer; no "compute-intensive and GPU workloads" claim.
+- [x] Delete "GPU Workloads" from skills; use "GPU exposure". Remove "Ethereum".
 
 ## Factual corrections (verify against source of truth)
 
-- [ ] **Cometh cost reduction figure** — PDF extraction is truncated ("reducing cloud costs by 2…%"); confirm whether it is 25%.
-- [ ] **Cometh end date** — extraction shows "OCT 202…"; confirm month/year.
-- [ ] **Helm** — confirmed 2026-09-11 that Helm has been used. Add it explicitly to skills and to at least one experience bullet (deployment templating), since Cohere-class FDE JDs screen on it. Resume currently lists GitOps but never Helm.
+- [x] **Cometh cost reduction figure** — confirmed 2026-09-11: **25%**.
+- [x] **Cometh end date** — confirmed 2026-09-11: **October 2023**.
+- [x] **Helm** — confirmed used at **Kiln and Cometh** (2026-09-11). Added to skills and to one bullet per role (deployment templating).
+- [x] **Name** — confirmed 2026-09-11: `Vincent Loupmon` (v2's "Loupmont-Peyrat" was the older variant). No header change needed.
 
 ## To add once evidence exists (claims lag evidence)
 
