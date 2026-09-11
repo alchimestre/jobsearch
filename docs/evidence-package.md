@@ -1,5 +1,7 @@
 # Candidate Evidence Package
 
+> **Superseded in part — 2026-09-11 (second amendment).** The target lane is now **ML platform / MLOps**, not GPU-fleet operations (`docs/12-week-strategy.md` §1). Still current: the CV bullet structure (§1 experience sections), LinkedIn structure (§2), and the outreach templates (§4). Superseded: every "GPU fleet operator" reference and the §3 GitHub README outline, which now belong to `docs/ml-platform-project.md`; and the "moving into AI infrastructure" phrasing, now "moving into ML platform / MLOps" with `AI infrastructure` as the umbrella keyword. The ticket-03 benchmark quoted below was sampled entirely from GPU-vendor and lab JDs — treat its GPU weighting as tier-specific, not market-wide.
+
 **Working asset.** Validated 2026-09-09 by Vincent (wayfinder ticket 07). Source: branch `prototype/evidence-package` at commit `7f1cde4`. Contains the CV restructure outline, LinkedIn narrative, GitHub README outline, and outreach templates used during execution. Not a final formatted CV or completed profile.
 
 ---
@@ -100,6 +102,8 @@ Keep as-is. Epitech (2011–2012) and AFPA (2021–2022). Not a differentiator b
 ---
 
 ## 2. LinkedIn — Narrative outline
+
+> **Superseded wording — use `docs/linkedin-update.md`.** The headline and About paragraphs here predate the second amendment (they say "moving into AI infrastructure" and "currently building a GPU fleet operator"). The structure is still the template; the copy is not.
 
 ### Headline
 
@@ -210,9 +214,10 @@ I'm a production SRE with 4 years operating high-availability
 distributed infrastructure (Kubernetes, Terraform, observability)
 in crypto ($8B+ assets secured) and regulated healthcare.
 
-I'm transitioning into AI infrastructure and building a GPU fleet
-Kubernetes operator to close the practical gap — scheduling, DCGM-based
-fleet health monitoring, and SLO/error-budget practices.
+I'm an SRE moving into ML platform / MLOps engineering — the platform
+side: Kubernetes for ML workloads, pipelines and registry, serving, and
+SLO/error-budget practice. [Use this line only if a project is actually
+public; otherwise cut it.]
 
 I saw [role title] at [company] and it looks like a strong fit for my
 reliability background. Would you be open to a short conversation?
@@ -255,8 +260,7 @@ Vincent
 ```
 Hi [name],
 
-I'm an SRE transitioning into AI infrastructure — currently building a
-GPU fleet Kubernetes operator. I saw your work at [company] and would
+I'm an SRE moving into ML platform / MLOps engineering. I saw your work at [company] and would
 love to connect and learn from your experience.
 
 Vincent

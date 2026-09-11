@@ -1,13 +1,13 @@
 # Vincent Loupmon
 
-**Site Reliability Engineer — moving into AI Infrastructure**
+**Site Reliability Engineer — moving into ML Platform / MLOps**
 
 Aix-en-Provence, France · Open to EU-remote, Berlin, Switzerland
 github.com/alchimestre · vincentloupmon+pro@protonmail.com · +33 6 84 82 86 03
 
 ## Profile
 
-Production SRE with 4 years operating high-availability distributed infrastructure across regulated healthcare, crypto, and multi-protocol systems. Moving into AI infrastructure — bringing Kubernetes reliability, observability, and cost-aware platform operations to the compute and serving layers AI workloads depend on.
+Production SRE with 4 years operating high-availability distributed infrastructure across regulated healthcare, crypto, and multi-protocol systems. Moving into ML platform / MLOps — bringing Kubernetes reliability, observability, and cost-aware platform operations to the platform that builds, ships, and serves models.
 
 ## Experience
 

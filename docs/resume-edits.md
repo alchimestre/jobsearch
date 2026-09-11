@@ -14,9 +14,15 @@ Apply path: the CV lives in Figma (`CV 3_white`, 2-column export). Content now e
 
 ## Positioning
 
-- [x] Title line → "Site Reliability Engineer — moving into AI Infrastructure" (drop the "GPU workloads" claim).
+- [x] Title line → "Site Reliability Engineer — moving into **ML Platform / MLOps**" (drop the "GPU workloads" claim; second amendment 2026-09-11 re-centred the lane from GPU-fleet to ML platform / MLOps).
 - [x] Profile paragraph → transition framing, lead with the cross-domain reliability transfer; no "compute-intensive and GPU workloads" claim.
 - [x] Delete "GPU Workloads" from skills; use "GPU exposure". Remove "Ethereum".
+
+## Second amendment — positioning (2026-09-11)
+
+- [x] Strategy, CONTEXT, CV, Figma sheet, and LinkedIn re-centred on **ML platform / MLOps**; `AI infrastructure` kept as the umbrella keyword; GPU/vendor tier demoted to a secondary lane. Rationale: ticket 02's market map, not the GPU-vendor-sampled benchmark.
+- [x] Evidence project replaced: `ml-platform-on-k8s` (spec: `docs/ml-platform-project.md`), superseding `gpu-fleet-operator`.
+- [ ] Add `Python (in progress)` / ML-lifecycle claims only when the week-6 artifact proves them.
 
 ## Factual corrections (verify against source of truth)
 
@@ -34,10 +40,10 @@ Apply path: the CV lives in Figma (`CV 3_white`, 2-column export). Content now e
 
 ## To add once evidence exists (claims lag evidence)
 
-- [ ] `Python (in progress)` from week 1; drop the qualifier after the Python operator package is complete (~week 6).
-- [ ] `Go (in progress, from week 7)`; drop the qualifier after the Go port is complete (~week 12).
-- [ ] `SLO / Error Budgets` and `GPU Fleet Operations` after week-6 proof.
-- [ ] Link `github.com/alchimestre/gpu-fleet-operator` from the CV header/contact once the first meaningful public commit exists (week 2).
+- [ ] `Python (in progress)` from week 1; drop the qualifier after the ML-platform artifact is complete (~week 6).
+- [ ] `Go (in progress, from week 7)`; drop the qualifier after the Go component is complete (~week 12).
+- [ ] `SLO / Error Budgets` and ML-lifecycle items (pipelines, registry, serving, drift) after week-6 proof from `ml-platform-on-k8s`.
+- [ ] Link `github.com/alchimestre/ml-platform-on-k8s` from the CV header/contact once the first meaningful public commit exists (week 1–2).
 
 ## Channel
 

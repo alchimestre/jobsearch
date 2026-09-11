@@ -9,43 +9,46 @@ set aside), and nothing customer-facing until examples are supplied.
 ## 1. Headline (220 char limit)
 
 ```
-Site Reliability Engineer → AI Infrastructure | Kubernetes · Observability · Cost-Aware Platform Operations
+Site Reliability Engineer → ML Platform / MLOps | Kubernetes · Observability · Cost-Aware Platform Operations
 ```
 
 Alternative if you want the market visible:
 
 ```
-Site Reliability Engineer → AI Infrastructure | Kubernetes · Terraform · Helm | Open to EU-remote & Berlin
+Site Reliability Engineer → ML Platform / MLOps | Kubernetes · Terraform · Helm | Open to EU-remote & Berlin
 ```
 
-The arrow signals the transition without claiming current AI expertise. Keep "Site Reliability
-Engineer" first — it is the title recruiters search.
+The arrow signals the transition without claiming current ML-platform expertise. Keep "Site Reliability
+Engineer" first — it is the title recruiters search — and keep `AI Infrastructure` in the About text as the
+umbrella keyword so you stay findable for that phrase too.
 
 ## 2. About
 
-> I'm a production SRE specialising toward AI infrastructure. Over the past four years I've operated
+> I'm a production SRE specialising toward ML platform / MLOps engineering — the AI infrastructure lane
+> that owns the platform models are built, shipped, and served on. Over the past four years I've operated
 > high-availability distributed systems in regulated healthcare (HDS), crypto infrastructure
 > ($8B+ in digital assets secured), and multi-protocol environments — always making platforms more
 > observable, resilient, and cost-aware. My next step is bringing that reliability discipline to the
-> compute and serving layers AI workloads run on.
+> platform that builds, ships, and serves models.
 >
 > I move fast across domains. From stabilising Kubernetes in a certified healthcare environment to
 > securing $8B+ in digital assets at Kiln, I've repeatedly entered unfamiliar infrastructure domains
 > and reached production-grade reliability within months. That transfer pattern is the thing I bring
-> to AI infrastructure: Kubernetes at scale, Terraform and Helm, observability with Prometheus and
+> to ML platform work: Kubernetes at scale, Terraform and Helm, observability with Prometheus and
 > OpenTelemetry, and cost-aware capacity decisions.
 >
 > Since January 2026 I've been working independently: product-idea proofs of concept in
 > domain-specific AI assistance and orchestration, and research in history and linguistics that is
-> largely AI-assisted prosopography. I'm now looking for SRE and platform roles at AI-native
-> companies — EU-remote from France, or Berlin with relocation support — where the work has real
-> architectural scope: owning failure modes, capacity, and the reliability of the platform that
-> hosts models, rather than runbook-only operations.
+> largely AI-assisted prosopography. I'm now looking for ML platform / MLOps and SRE roles — in an
+> AI-native company or an in-house ML platform team — EU-remote from France, or Berlin with relocation
+> support, where the work has real architectural scope: owning failure modes, capacity, and the
+> reliability of the platform that hosts models, rather than runbook-only operations.
 
 **Changes from the prototype:** paragraph 3 no longer says "currently building a GPU fleet Kubernetes
 operator" (the project is set aside, and the claim would be false). It now states what Vincent
-actually did in 2026, in his own terms. Switzerland moved out of the live ask — it is a medium-term
-destination, not a current application lane.
+actually did in 2026, in his own terms. The target lane is ML platform / MLOps rather than GPU-fleet
+operations (second amendment, 2026-09-11), and `AI infrastructure` survives as the umbrella keyword.
+Switzerland moved out of the live ask — it is a medium-term destination, not a current application lane.
 
 **Wording fixes to your blurb before it goes on the profile:**
 

@@ -37,7 +37,7 @@ select just that text block and re-run with `SCOPE = "selection"`.
 
 | Find | Replace |
 |---|---|
-| `Site Reliability & Platform Engineer` | `Site Reliability Engineer — moving into AI Infrastructure` |
+| `Site Reliability & Platform Engineer` | `Site Reliability Engineer — moving into ML Platform / MLOps` |
 
 ## 2. Location line (under the name)
 
@@ -53,9 +53,9 @@ select just that text block and re-run with `SCOPE = "selection"`.
 
 with:
 
-> Production SRE with 4 years operating high-availability distributed infrastructure across regulated healthcare, crypto, and multi-protocol systems. Moving into AI infrastructure — bringing Kubernetes reliability, observability, and cost-aware platform operations to the compute and serving layers AI workloads depend on.
+> Production SRE with 4 years operating high-availability distributed infrastructure across regulated healthcare, crypto, and multi-protocol systems. Moving into ML platform / MLOps — bringing Kubernetes reliability, observability, and cost-aware platform operations to the platform that builds, ships, and serves models.
 
-Why: removes the "compute-intensive and GPU workloads" claim (unproven) and replaces it with the transition framing. Lead with the cross-domain transfer, which is the actual differentiator.
+Why: removes the "compute-intensive and GPU workloads" claim (unproven) and replaces it with the transition framing. Lead with the cross-domain transfer, which is the actual differentiator. Second amendment (2026-09-11): the target lane is ML platform / MLOps, not GPU fleet operations — see `docs/12-week-strategy.md` §1.
 
 ---
 
@@ -133,9 +133,9 @@ Deliberately excluded: **music production** (it belongs on LinkedIn, not on an S
 | Item | Why | Unblock |
 |---|---|---|
 | `Go (in progress)` | No evidence | Only after a Go project actually exists |
-| `SLO / Error Budgets`, `GPU Fleet Operations` | Claims lag evidence | A real artifact or production exposure |
+| `SLO / Error Budgets`, ML-lifecycle items (pipelines, registry, serving, drift) | Claims lag evidence | The week-6 artifact (`docs/ml-platform-project.md`) |
 | Any customer-facing line (FDE/solutions framing) | No evidence exists; asked 2026-09-11, unanswered | Supply a concrete example: institutional clients at Kiln, client onboarding/escalations at Cometh, or external audits (ISO 27001 / HDS) |
-| Any project section / repo link | The operator project is set aside by Vincent (2026-09-11) | Only if a project is actually worked on and pushed |
+| Any project section / repo link | Nothing public exists yet; the old operator project is set aside | `ml-platform-on-k8s` spec: `docs/ml-platform-project.md`. Link at week 1–2 once the repo is public; add the CV project section at week 6, when the claims are provable |
 
 ## Note on the export itself
 

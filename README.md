@@ -49,4 +49,4 @@ One issue per live opportunity; move it through the board as it progresses.
 
 ## Execution starts
 
-Week 1 tasks and allocations are in `docs/12-week-strategy.md` §5; the income-cliff deadlines and mode timeline are in §10. Begin with: apply CV restructure + LinkedIn narrative (from `docs/evidence-package.md`, fix list in `docs/resume-edits.md`), create the pipeline tracker issues, scaffold `gpu-fleet-operator`.
+Week 1 tasks and allocations are in `docs/12-week-strategy.md` §5; the income-cliff deadlines and mode timeline are in §10. Begin with: apply CV restructure + LinkedIn narrative (from `docs/evidence-package.md`, fix list in `docs/resume-edits.md`), create the pipeline tracker issues, scaffold `ml-platform-on-k8s` (spec: `docs/ml-platform-project.md`).

@@ -2,11 +2,17 @@
 
 ## Terms
 
-### AI Infrastructure Engineer
+### AI Infrastructure (umbrella term)
 
-The canonical target role. An infrastructure and platform engineer responsible for the compute, orchestration, serving foundations, reliability, observability, and economics of AI workloads.
+The umbrella term for the target family, kept because it is the keyword employers use. It covers both the **ML platform / MLOps lane (primary)** and the **GPU/vendor tier (secondary)**.
 
-Job titles such as **AI Platform Engineer**, **GPU Platform Engineer**, **ML Platform Engineer**, and **Site Reliability Engineer — AI Infrastructure** are search aliases when their responsibilities match this role.
+### ML Platform / MLOps Engineer (primary target role)
+
+The canonical target role as of 2026-09-11. A platform engineer responsible for the ML lifecycle surface — pipelines, model registry, serving/inference platform, training platform, ML observability — and for the Kubernetes platform those run on, including its reliability and economics.
+
+Title aliases: **ML Platform Engineer**, **MLOps Engineer**, **Machine Learning Platform Engineer**, **ML Infrastructure Engineer**, **AI Platform Engineer**, **SRE — ML/AI Platform**, **AI Infrastructure Engineer**. Secondary (vendor tier): **GPU Platform Engineer**, **HPC/AI Platform Engineer**. Responsibilities override title.
+
+Ranking rule: within MLOps-titled roles, prefer the **platform/infrastructure side** over **data-pipeline authoring** (Airflow/Spark/dbt ownership without platform scope).
 
 ### Search Strategy
 
@@ -14,7 +20,11 @@ A decision-complete 12-week system for generating qualified interviews. It inclu
 
 ### Self-Training Plan
 
-A prioritized capability-development plan tied to the evidence expected for the target role. It is not a general AI curriculum.
+A prioritized capability-development plan tied to the evidence expected for the target role. It is not a general AI curriculum. Amended 2026-09-11: Python first, then ML lifecycle tooling (pipeline orchestration, model registry, serving, drift monitoring), plus the SLO/error-budget layer — all evidenced by `docs/ml-platform-project.md`. Go is conditional and deprioritised: the primary lane is Python-first.
+
+### ML Platform Evidence Artifact
+
+The single portfolio project that closes the programming and SLO gaps and adds the ML-lifecycle evidence the primary lane screens on: a lab-scale ML platform on Kubernetes (pipeline → registry → serving → monitoring → SLOs). Spec: `docs/ml-platform-project.md`. It replaced `gpu-fleet-operator` on 2026-09-11. Non-goals: distributed training, GPU fleet management, HPC.
 
 ### Search Lanes
 
@@ -26,7 +36,7 @@ The order in which destinations are pursued, given that job #1 need not relocate
 
 1. **EU-remote / France-compatible** — fastest to income, no relocation, no move.
 2. **Berlin** — preferred first *physical* move: dense AI-infra/ML-platform demand, no visa or permit friction for EU citizens, lower cost than Switzerland.
-3. **Switzerland** — the long-term destination: money, mountains and lakes, proximity to France. Target as an employed engineer with AI-infra evidence (12–36 months), in rail-accessible cities (not Zurich-specific). A French-border (frontalier) arrangement is opportunistic only, not a lane.
+3. **Switzerland** — the long-term destination: money, mountains and lakes, proximity to France. Target as an employed engineer with AI/ML-platform evidence (12–36 months), in rail-accessible cities (not Zurich-specific). A French-border (frontalier) arrangement is opportunistic only, not a lane.
 
 Physical relocation happens only on a signed offer, funded by relocation assistance or an 8–12 week remote-start ramp.
 
@@ -52,9 +62,11 @@ A France-based or EU-remote role considered only when it materially strengthens 
 
 ### Candidate Positioning Thesis
 
-Professional identity: Production SRE moving into AI infrastructure. The candidate leads with proven reliability, Kubernetes, distributed systems, observability, and cost work from high-stakes production environments, and states AI workload specialization as the deliberate next step.
+Professional identity (amended 2026-09-11): Production SRE moving into **ML platform / MLOps engineering** (umbrella: `AI infrastructure`). The candidate leads with proven reliability, Kubernetes, distributed systems, observability, and cost work from high-stakes production environments, and states ML-platform specialisation as the deliberate next step.
 
-Entry wedge: reliable AI platform operations. The immediate value proposition is making AI compute and serving platforms observable, resilient, reproducible, and cost-aware.
+Entry wedge: reliable ML platform operations. The immediate value proposition is making the platform that hosts models — pipelines, registry, serving — observable, resilient, reproducible, and cost-aware.
+
+Why not GPU fleet operations (amended 2026-09-11): the GPU-fleet framing came from ticket 06's artifact choice plus a benchmark sampled entirely from GPU-vendor and lab JDs. Ticket 02's market map found Berlin demand is "mostly *in-house ML platform / MLOps* inside product companies and AI scale-ups" and "is not a GPU-cloud-vendor market". The vendor tier also demands hardware depth (CUDA/NCCL/RDMA/HPC) with no candidate evidence, at staff/senior bars. GPU/vendor roles remain a secondary lane.
 
 ### Differentiators
 
@@ -78,12 +90,14 @@ Claims the candidate can defend today:
 - Terraform/Ansible IaC and CI/CD delivery
 - Cost-reduction track record
 - Hybrid-cloud operations
+- Independent 2026 work: AI assistance/orchestration proofs of concept, and AI-assisted history/linguistics research (application layer — never presented as platform or infrastructure ownership)
 
 Claims excluded from current positioning (evidence gaps to close):
 - GPU fleet operations (experience is GPU-adjacent, not direct ownership)
 - Production programming in Python or Go (operational scripting only)
+- ML lifecycle tooling — pipelines, model registry, serving platforms, drift monitoring (targeted by the week-6 evidence artifact)
+- Explicit SLO/error-budget/canary-rollout methodology (targeted by the week-6 evidence artifact)
 - Distributed training or model-serving frameworks
-- Explicit SLO/error-budget/canary-rollout methodology
 - Datacenter fabric, AI storage, or HPC performance engineering
 
 ### Compensation Floors

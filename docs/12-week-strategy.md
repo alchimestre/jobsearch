@@ -6,7 +6,7 @@
 
 ## 1. Objective and constraints
 
-**Objective:** Generate qualified interviews for mid-to-senior AI Infrastructure Engineer, AI/ML Platform, and SRE-on-AI-platform roles while producing credible evidence for the largest hiring gaps.
+**Objective:** Generate qualified interviews for mid-to-senior **ML Platform / MLOps engineering**, **AI platform engineering**, and **SRE-on-ML-platform** roles while producing credible evidence for the largest hiring gaps.
 
 **Lanes (amended 2026-09-11):** EU-remote / France-compatible **50%** · Berlin **35%** · Switzerland **15%** (relationships and selective applications only). Switzerland is a 12–36 month objective, not a job-#1 market. Job #1 is optimised for income continuity and AI transition; physical relocation happens only on a signed offer, and may be deferred to a second move. See §10.
 
@@ -14,26 +14,32 @@
 
 **Available time:** 35 hours per week baseline, plus two push modes at ~45 h/week — weeks 1–4 (ramp) and the late-cliff window from ~Feb 2027. Sustained 45–50 h for the whole campaign is rejected: burnout over 10 months costs more than the extra hours buy.
 
-**Positioning:** Production SRE moving into AI infrastructure. Lead with Kubernetes, production reliability, distributed systems, observability, cost optimization, security-hardened environments, and infrastructure-to-architecture translation. Do not claim direct production ownership of GPU fleets, training systems, serving systems, Python/Go software, SLO/error-budget programs, or datacenter fabrics before evidence exists.
+**Positioning (amended 2026-09-11, second amendment):** Production SRE moving into **ML platform / MLOps engineering**. Lead with Kubernetes, production reliability, distributed systems, observability, cost optimization, security-hardened environments, and infrastructure-to-architecture translation. Use `AI infrastructure` as the umbrella keyword and `ML platform` / `MLOps` as the specific lane. Do not claim direct production ownership of ML platforms, GPU fleets, training systems, serving systems, Python/Go software, SLO/error-budget programs, or datacenter fabrics before evidence exists.
+
+**Why ML platform rather than GPU fleet operations (amended 2026-09-11):** the earlier GPU-fleet emphasis came from ticket 06's single-artifact choice (a GPU Kubernetes operator) leaking into the identity, and from a 28-JD benchmark sampled entirely from GPU-vendor and lab postings. Ticket 02's market map concluded the opposite: Berlin's demand "is mostly *in-house ML platform / MLOps* inside product companies and AI scale-ups", it "is not a GPU-cloud-vendor market", and platform/reliability work is where "an SRE profile converts best". The vendor/lab tier also demands hardware depth (CUDA, NCCL, RDMA, HPC fabric) the candidate has no evidence for, and hires at staff/senior bars. ML platform / MLOps reuses the proven strengths, has a far larger and more remote-friendly funnel, and matches the candidate's own preference and 2026 independent work. GPU/AI-infra vendor roles remain a secondary lane.
 
 **Relocation constraint:** No relocation savings. Any on-site Switzerland or Berlin role must support an 8–12 week remote start from France or provide relocation assistance. Relocation is never undertaken before a signed offer.
 
 **Income cliff (harness of the whole plan):** ARE (French unemployment) pays €92.38 net/day; **318 days remaining as of 2026-08-31 → exhaustion 2027-07-15**; remaining runway value ≈ €29,377 (~€2,812/month). Zero tolerance for a month without income; no other savings. Consequences: the employment **start** date, not the exhaustion date, is the deadline (salary lands ~30 days after start); target start ≤ 2027-06-01, absolute ≤ 2027-06-15; sign by ~2027-04-20 (EU-remote) or ~2027-03-20 (Berlin/CH on-site, permit + relocation lead). Reserve ~€2,900 (one ARE month) untouched as a transition buffer. Keep France Travail obligations (actualité, convocations, offer-acceptance rules) satisfied, so the cliff date cannot move against the plan.
 
-**Hardware constraint:** MacBook Air M4; no local NVIDIA GPU. Develop locally on OrbStack Kubernetes (single node) and spend approximately $5–20 of cloud GPU time for real DCGM and workload validation.
+**Hardware constraint:** MacBook Air M4; no local NVIDIA GPU. Develop locally on OrbStack Kubernetes (single node), CPU-only — the ML-platform artifact requires no GPU. One optional bounded cloud-GPU run (≤ $20) may keep `GPU exposure` honest; it is not required and must not become an ongoing cost.
 
 ## 2. Role admission and ranking
 
 ### Admit
 
-1. **Tier A:** Direct ownership of AI workload infrastructure: compute, scheduling, serving, training platform, or AI observability.
-2. **Tier B:** SRE/platform role at an AI-native company, even without direct AI-infrastructure ownership.
+1. **Tier A:** Direct ownership of the ML platform / MLOps surface — ML pipelines, model registry, serving/inference platform, training platform, ML observability, or the Kubernetes platform those run on.
+2. **Tier B:** SRE/platform role supporting ML teams — at an AI-native company, or in an in-house ML platform organisation at a product company with real AI workloads (the Berlin lane).
 3. **Tier B-secondary — forward-deployed infrastructure (added 2026-09-11):** customer-facing deployment/operations roles at AI-native companies (FDE, deployment/solutions infrastructure), admitted at **≤ ~¼ of the EU-remote/France-compatible lane**, and only where the role stays **infrastructure-heavy** — planning, Kubernetes/Helm, private/on-prem deployment, troubleshooting — not pre-sales or support-ticket work. Blocked from scaling up until real customer-facing evidence exists on the CV (`docs/resume-edits.md`).
 4. **Tier C:** Non-AI SRE/platform bridge role only when it offers architectural scope, strong compensation, and a credible path to AI exposure or relocation — **and only in the last-resort window from ~Apr 2027** (see §10).
 
-### AI requirement (definition, added 2026-09-11)
+### ML requirement (definition, amended 2026-09-11)
 
-A role qualifies when it must **own or materially operate the infrastructure AI/ML workloads run on** — ML platform, MLOps, serving, training infrastructure, GPU fleets, AI observability — at an AI-native or AI-heavy product company. GPU ownership is *not* required; running the platform that hosts models is sufficient. Widening to AI-adjacent infrastructure (data platform, high-scale platform engineering with a credible AI runway) happens only in late-cliff mode. From ~Apr 2027 (last-resort window), the requirement drops entirely in favour of income continuity.
+A role qualifies when it must **own or materially operate the platform ML/AI workloads run on** — ML platform / MLOps, ML pipelines, model registry, serving/inference platform, training infrastructure, ML observability — at an AI-native company or in a product company's in-house ML platform organisation. GPU ownership is *not* required; running the platform that hosts models is sufficient. The umbrella term `AI infrastructure` still covers vendor-tier roles, which are admitted as a **secondary** lane.
+
+Sub-filter within MLOps: prefer the **platform/infrastructure side** (Kubernetes for ML workloads, serving, reliability, capacity/economics, observability) over **data-pipeline authoring** (Airflow/Spark/dbt ownership with no platform scope). The latter does not use the candidate's differentiators.
+
+Widening to AI-adjacent infrastructure (data platform, high-scale platform engineering with a credible AI runway) happens only in late-cliff mode. From ~Apr 2027 (last-resort window), the requirement drops entirely in favour of income continuity.
 
 ### Reject before investing in a process
 
@@ -47,11 +53,11 @@ A role qualifies when it must **own or materially operate the infrastructure AI/
 
 ### Rank admitted roles
 
-AI-infrastructure depth; architectural scope; 3–6 year seniority match; relocation feasibility; compensation; English-first environment; strategic bridge value. Company stage is not a filter.
+AI/ML-platform depth; architectural scope; 3–6 year seniority match; relocation feasibility; compensation; English-first environment; strategic bridge value. Company stage is not a filter. Within MLOps-titled roles, rank the **platform/infrastructure side** above the data-pipeline-authoring side.
 
 ### Search titles
 
-`AI Infrastructure Engineer`, `AI/ML Platform Engineer`, `GPU Platform Engineer`, `SRE — ML/Inference`, `Reliability Engineer — AI/ML`, `Training Platform Engineer`, `Inference Platform Engineer`, `HPC/AI Platform Engineer`, and (secondary lane) `Forward Deployed Engineer`, `Deployment/Solutions Infrastructure Engineer`. Responsibilities override title.
+`ML Platform Engineer`, `MLOps Engineer`, `Machine Learning Platform Engineer`, `ML Infrastructure Engineer`, `AI Platform Engineer`, `AI Infrastructure Engineer`, `SRE — ML/AI Platform`, `Reliability Engineer — ML`, `Training Platform Engineer`, `Inference Platform Engineer`, and (secondary, vendor tier) `GPU Platform Engineer`, `HPC/AI Platform Engineer`; (secondary lane) `Forward Deployed Engineer`, `Deployment/Solutions Infrastructure Engineer`. Responsibilities override title.
 
 ## 3. Search channels and baseline throughput
 
@@ -89,81 +95,83 @@ No mass job-board applications. Agency recruiters, networking events, and unrela
 
 ## 4. Evidence project
 
-One repository: `gpu-fleet-operator`.
+**Amended 2026-09-11 (second amendment):** one repository, `ml-platform-on-k8s`, replaces `gpu-fleet-operator`. The GPU operator was chosen to close three gaps in a single artifact, but it also dragged the identity toward GPU-fleet operations — a narrow tier with staff/senior bars and hardware depth (CUDA, NCCL, RDMA, HPC fabric) the candidate cannot evidence. The replacement closes the same gaps (Python, SLO methodology) while producing the ML-lifecycle evidence MLOps JDs screen on, and it reuses the proven Kubernetes / Helm / observability / cost strengths.
 
-### Phase 1 evidence — Python
+Build spec: `docs/ml-platform-project.md`.
 
-- Kubernetes operator built with Python/Kopf or equivalent.
-- GPU workload scheduling based on resource and health state.
-- DCGM metric ingestion against a real cloud NVIDIA GPU.
-- Node cordoning and workload draining for unhealthy GPU state.
-- Prometheus metrics and alerts.
-- SLIs for scheduling latency, fleet-health check success, and GPU utilization.
-- Error-budget policy and operational runbook.
-- Architecture and design-decision documentation.
+### Phase 1 evidence — Python (weeks 1–6)
 
-### Phase 2 evidence — Go
+- Training/retraining pipeline running on Kubernetes: Python, containerised steps, scheduled and on-demand runs.
+- Model registry with versions, stage transitions, and reproducible training artifacts (MLflow or equivalent).
+- Model serving on Kubernetes with a defined scaling and rollout path.
+- Prometheus metrics for both service and pipeline; Grafana dashboard; alert rules.
+- Drift/quality monitoring on inputs and predictions.
+- SLIs and error budgets for serving availability, serving latency, and pipeline success rate; operational runbook.
+- CI/CD (tests, image build) plus GitOps deployment; architecture and design-decision documentation.
 
-Port the operator to Go/controller-runtime. Preserve the observable contract, improve scheduling or reconciliation logic, and document why the production-oriented implementation differs from the Python prototype.
+### Phase 2 — Go (conditional, deprioritised)
+
+Go stays conditional and is now **lower priority**: MLOps/ML-platform roles are Python-first, while the benchmark's Go demand concentrates in vendor control-plane roles that are not the primary lane. If the Python artifact is complete and the search is on track, port the serving control path or a controller to Go/controller-runtime to evidence the stretch band; otherwise those hours belong to search and Go waits until after an offer.
 
 ### Positioned-away gaps
 
 Spend approximately four hours each across the 12 weeks on conceptual study only:
 
-- Distributed training/serving: data and model parallelism, FSDP, Ray/Slurm basics.
-- Datacenter fabric/HPC: InfiniBand, RDMA, NCCL basics.
+- Distributed training: data/model parallelism, FSDP, Ray/Slurm basics.
+- GPU/HPC hardware: CUDA, NCCL, InfiniBand/RDMA at a conceptual level.
 
-Do not add these as CV claims or create separate portfolio artifacts.
+Do not add these as CV claims or create separate portfolio artifacts. One optional bounded cloud-GPU run (≤ $20) may keep `GPU exposure` honest; it is not required and must not become an ongoing cost.
 
 ## 5. Weekly operating plan
 
 **Capacity modes (amended 2026-09-11):** 35 h/week baseline; push to ~45 h/week in weeks 1–4 and again from the late-cliff trigger (~Feb 2027) if no offer is signed.
 
-**Go is conditional (amended 2026-09-11):** the Python package (week 6) is a fixed milestone and the admissibility gate. The Go port is started after week 6 **only if** the search is on track and no offer is imminent; otherwise those hours move to search, outreach, and applications. Go unlocks the stretch band (control-plane/platform software) that job #1 does not target. If paused, it resumes after an offer. Weeks 7–12 below still describe the full path for when the condition holds.
+**Go is conditional (amended 2026-09-11):** the Python artifact (week 6) is a fixed milestone and the admissibility gate. The Go port is started after week 6 **only if** the search is on track and no offer is imminent; otherwise those hours move to search, outreach, and applications. Go is now **lower priority than before** — the ML platform / MLOps lane is Python-first, and Go's market weight sits in vendor control-plane roles, which are the secondary lane. If paused, it resumes after an offer. Weeks 7–12 below still describe the full path for when the condition holds.
 
 ### Week 1 — Make the search legible; establish the project
 
 **Allocation:** 7h search/assets, 24.5h training, 3.5h pipeline management.
 
-- Apply the approved CV restructure: transition title, defensible profile, 25% Cometh cost reduction, and `GPU exposure` rather than `GPU Workloads`.
-- Apply the approved LinkedIn headline and About narrative. State that the operator is currently being built.
-- Create the pipeline tracker and initial Switzerland/Berlin target list using the 60/40 split.
-- Create the `gpu-fleet-operator` repository, README, architecture skeleton, local kind/k3d environment, and Python/Kopf operator scaffold.
-- Define the operator's custom resource and reconciliation contract.
+- Apply the approved CV restructure: ML-platform transition title, defensible profile, 25% Cometh cost reduction, Helm bullets, and `GPU exposure` rather than `GPU Workloads`.
+- Apply the approved LinkedIn headline and About narrative (ML platform / MLOps; the 2026 independent work is the gap answer). Make **no project claim** until the artifact exists.
+- Create the pipeline tracker and the initial target list on the lane split (EU-remote/FR 50 / Berlin 35 / CH 15).
+- Create the `ml-platform-on-k8s` repository, README, architecture skeleton, and local OrbStack Kubernetes environment; scaffold the Python training pipeline.
+- Define the pipeline → registry → serving contract and the SLIs it will expose.
 
-**Exit check:** Search assets tell one consistent story; tracker exists; the operator reconciles a minimal custom resource locally.
+**Exit check:** Search assets tell one consistent story; tracker exists; a containerised training step runs on the local cluster and writes a model artifact.
 
-### Week 2 — Start outreach; implement scheduling state
+### Week 2 — Start outreach; stand up registry and serving
 
 **Allocation:** 7h search, 24.5h training, 3.5h management.
 
-- Begin email-first Swiss and LinkedIn-first Berlin outreach.
+- Begin outreach on the primary lanes first (EU-remote/FR and Berlin, LinkedIn-first); Swiss contacts email-first at low volume.
 - Submit only high-confidence ATS applications; contact relevant in-house recruiters.
 - Publish the first meaningful project commit and link it from the search assets.
-- Implement GPU-node discovery using labels/resources, workload admission, desired scheduling state, and simulated health metrics locally.
+- Stand up the model registry (MLflow or equivalent) and register a first trained version from the pipeline.
+- Deploy the model-serving path end to end on the local cluster.
 - Define the three SLIs and how each is measured.
 
-**Exit check:** First outreach cohort sent; project link is public; scheduling decisions are observable locally.
+**Exit check:** First outreach cohort sent; project link is public; a trained model is registered, served, and answering requests locally.
 
-### Week 3 — Reach steady-state search; prove local control loop
+### Week 3 — Reach steady-state search; prove the local platform path
 
 **Allocation:** 15.75h search, 15.75h training, 3.5h management.
 
-- Reach the steady-state throughput targets while preserving 60/40 market allocation.
+- Reach the steady-state throughput targets while preserving the lane split.
 - Send first due follow-ups.
-- Complete a local end-to-end path: health input → reconciliation decision → cordon/drain action or safe simulated equivalent.
-- Export Prometheus operator metrics.
+- Complete the local end-to-end path: scheduled retrain → registry version → rollout to serving.
+- Export Prometheus metrics for both the pipeline and the serving service.
 
-**Exit check:** Basic Python operator runs on kind/k3d; every pipeline entry has source, tier, market, status, next action, and due date.
+**Exit check:** The retrain → register → serve path runs end to end on the local cluster; every pipeline entry has source, tier, market, status, next action, and due date.
 
-### Week 4 — Validate against a real GPU; establish error-budget mechanics
+### Week 4 — Harden serving; establish error-budget mechanics
 
 **Allocation:** 15.75h search, 15.75h training, 3.5h management.
 
 - Continue steady-state outreach, applications, recruiter work, and follow-ups.
-- Rent a cloud NVIDIA GPU only for a bounded validation session.
-- Ingest real DCGM metrics and run a real GPU workload.
-- Implement Prometheus alert rules and error-budget burn calculations.
+- Add the Grafana dashboard and Prometheus alert rules covering pipeline and serving.
+- Implement SLI measurement and error-budget burn for serving availability and latency.
+- Add drift/quality monitoring on inputs and predictions.
 - Begin distributed-training conceptual study.
 
 **Checkpoint:** Calculate outreach response rate over weeks 2–4. If below 10%, change either targeting or messaging—not both—and label the changed cohort.
@@ -173,71 +181,71 @@ Do not add these as CV claims or create separate portfolio artifacts.
 **Allocation:** 15.75h search, 15.75h training, 3.5h management.
 
 - Continue search at steady state with the selected week-4 adjustment, if any.
-- Exercise unhealthy-GPU handling, idempotent reconciliation, cordoning, draining, and recovery.
-- Draft the operational runbook and record cloud validation evidence without implying production-scale ownership.
-- Begin datacenter-fabric conceptual study.
+- Exercise failure recovery: a failing pipeline step, rollback of a bad model version, an unhealthy serving replica, and an idempotent retrain.
+- Draft the operational runbook and record the evidence honestly as a learning artifact — never implying production-scale platform ownership.
+- Begin GPU/HPC conceptual study.
 
 **Checkpoint:** If screen-to-rejection remains above 75% after four active weeks, classify every rejection as relevance, readiness, compensation, location, or unknown. Narrow the responsible role band or strengthen the relevant pre-qualification question.
 
-### Week 6 — Ship the complete Python evidence package
+### Week 6 — Ship the complete ML-platform evidence package
 
 **Allocation:** 15.75h search, 15.75h training, 3.5h management.
 
-- Complete the Python operator, DCGM validation, metrics, alerts, SLI definitions, error-budget policy, runbook, architecture diagram, and reproducible setup instructions.
-- Replace `in progress` with completed Python/GPU/SLO evidence in search assets only where the repository proves the claim.
+- Complete the artifact: pipeline, registry, serving, metrics, dashboard, alert rules, SLI definitions, error-budget policy, drift monitoring, runbook, architecture diagram, and reproducible setup instructions.
+- Replace `in progress` with completed Python/SLO/ML-platform evidence in search assets only where the repository proves the claim.
 - Use the completed artifact in new outreach and appropriate follow-ups.
 
 **Checkpoint:** If no technical interview has been reached, pause new ATS applications for week 7. Audit the full funnel and compare pre-artifact versus post-artifact cohorts. Do not pause direct conversations already in progress.
 
-**Exit check:** A reviewer can clone the repository, understand the architecture, run the local path, and see evidence from bounded real-GPU validation.
+**Exit check:** A reviewer can clone the repository, understand the architecture, run the local platform path, and see pipeline, registry, serving, monitoring, and error-budget evidence.
 
 ### Week 7 — Go port (conditional); perform the midpoint funnel audit
 
 **Allocation:** 17.5h search, 14h training, 3.5h management.
 
 - If the zero-interview trigger fired, use ATS time for the funnel audit; keep qualified outreach and active conversations moving.
-- Scaffold Go/controller-runtime implementation and reproduce the custom-resource contract.
-- Review market conversion separately for Switzerland and Berlin; do not pool the results.
+- Scaffold a Go/controller-runtime component and reproduce the pipeline → registry → serving contract.
+- Review market conversion separately by lane (EU-remote/FR, Berlin, Switzerland); do not pool the results.
 - Finish any remaining distributed-training conceptual study.
 
-**Exit check:** Root qualification cause is named if the trigger fired; Go controller builds and handles a minimal reconciliation path.
+**Exit check:** Root qualification cause is named if the trigger fired; the Go component builds and handles a minimal control path.
 
-### Week 8 — Port the core control loop
+### Week 8 — Port the core control path
 
 **Allocation:** 17.5h search, 14h training, 3.5h management.
 
 - Resume or continue filtered ATS applications based on the week-7 audit.
-- Port scheduling, health-state evaluation, and idempotent reconciliation to Go.
+- Port the serving/rollout control path, health-state evaluation, and idempotent reconciliation to Go.
 - Continue full follow-up sequence and recruiter cultivation.
-- Finish any remaining fabric/HPC conceptual study.
+- Finish any remaining GPU/HPC conceptual study.
 
-**Exit check:** Go implementation makes the same core scheduling and health decisions as the Python implementation.
+**Exit check:** The Go implementation reproduces the serving and rollout control decisions of the Python implementation.
 
-### Week 9 — Run the Go operator end to end
+### Week 9 — Run the Go component end to end
 
 **Allocation:** 17.5h search, 14h training, 3.5h management.
 
-- Run the Go operator locally end to end with metrics and simulated failure states.
-- Document differences between the Python prototype and Go implementation.
+- Run the Go component locally end to end with metrics and simulated failure states.
+- Document differences between the Python prototype and the Go implementation.
 - Refresh outreach links to point at the clearest evidence entry point.
 
-**Exit check:** Basic Go operator compiles and runs; architecture documentation explains both phases.
+**Exit check:** The Go component compiles and runs; architecture documentation explains both phases.
 
 ### Week 10 — Deepen Go behavior; increase search emphasis
 
 **Allocation:** 19.25h search, 12.25h training, 3.5h management.
 
 - Increase search emphasis without weakening filters.
-- Port or improve cordon/drain recovery and Prometheus instrumentation.
+- Port or improve the rollback/recovery path and Prometheus instrumentation.
 - Review compensation mismatches by market. If they exceed 50% of rejections in one market, research that market's band before changing its floor.
 
-**Exit check:** Go recovery behavior is observable; compensation decisions remain market-specific.
+**Exit check:** Go recovery behaviour is observable; compensation decisions remain market-specific.
 
 ### Week 11 — Revalidate; use mature evidence
 
 **Allocation:** 19.25h search, 12.25h training, 3.5h management.
 
-- Conduct a final bounded cloud-GPU validation if needed to prove the Go integration; do not incur an ongoing GPU bill.
+- If a GPU-inference line is wanted on the CV, conduct a single bounded cloud-GPU validation; otherwise skip it. No ongoing GPU bill either way.
 - Finish the runbook, architecture decisions, and reproducibility instructions.
 - Use mature evidence in new outreach and in active interview conversations.
 - Compare Swiss and Berlin response and screen rates using equal definitions and minimum cohort notes.
@@ -248,7 +256,7 @@ Do not add these as CV claims or create separate portfolio artifacts.
 
 **Allocation:** 19.25h search, 12.25h training, 3.5h management.
 
-- Complete the Go port and present one clear repository landing page covering Python, Go, real-GPU validation, SLOs, alerts, and runbook.
+- Complete the Go component if the conditional held, and present one clear repository landing page covering the pipeline, registry, serving, monitoring, SLOs, alerts, and runbook.
 - Complete all due follow-ups; do not begin low-fit processes merely to increase activity.
 - Review the complete 12-week funnel by market, tier, channel, and rejection reason.
 - Decide the next cycle: continue the winning market/channel combination, revise positioning, pursue an admissible bridge role, or deepen a remaining evidence gap.
@@ -305,10 +313,11 @@ Rules:
 ## 8. Internal consistency and protected trade-offs
 
 - **The search starts before the project is complete.** Existing SRE evidence already qualifies for Band 1; waiting six weeks would waste viable market time.
-- **Claims lag evidence.** `Currently building` is allowed from week 1; completed Python/GPU/SLO claims appear only after week 6 proof. Go becomes a completed claim only after week 12 proof.
-- **One project closes three gaps.** No second portfolio project competes for time.
-- **Go is a deliberate stretch and now conditional.** If the Python milestone slips by more than one week, recover Python first. From week 7, Go proceeds only while the search is on track; under cliff pressure the hours belong to the funnel. Never trade incomplete core evidence for the port.
-- **Market and channel results stay separable.** Switzerland/Berlin, applications/outreach, and evidence versions are tracked independently.
+- **Claims lag evidence.** `Currently building` is allowed from week 1; completed Python/SLO/ML-platform claims appear only after week 6 proof. `GPU exposure` stays `exposure` unless the optional bounded GPU run happens. Go becomes a completed claim only after week 12 proof.
+- **One project closes three gaps** (Python, ML-platform lifecycle, SLO methodology). No second portfolio project competes for time.
+- **Go is a deliberate stretch and now conditional and deprioritised.** If the Python milestone slips by more than one week, recover Python first. From week 7, Go proceeds only while the search is on track; under cliff pressure the hours belong to the funnel. Never trade incomplete core evidence for the port.
+- **The market decides the identity, not the artifact.** The GPU-fleet framing came from one project choice and outran the market evidence. Any future project that would change the positioning must first clear the market check (ticket 02 class), or the assets stay put.
+- **Market and channel results stay separable.** EU-remote/FR, Berlin, and Switzerland, applications/outreach, and evidence versions are tracked independently.
 - **Compensation and relocation filters are hard constraints.** Funnel pressure does not override them.
 - **The plan optimizes qualified interviews, not activity.** Throughput targets never justify low-fit applications.
 
@@ -317,12 +326,12 @@ Rules:
 Approve only if all are acceptable:
 
 - Approximately 35 hours per week is sustainable for 12 weeks, with ~45 h push modes in weeks 1–4 and the late-cliff window.
-- The week-6 Python milestone is fixed; the week-12 Go milestone is conditional on search progress.
+- The week-6 ML-platform (Python) milestone is fixed; the week-12 Go milestone is conditional and deprioritised.
 - Search begins in week 2 rather than waiting for the completed project.
 - Lane allocation is EU-remote/France-compatible 50% / Berlin 35% / Switzerland 15% (amended 2026-09-11, replacing CH 60 / Berlin 40).
 - The income cliff drives the deadlines: start ≤ 2027-06-01 (target), sign ≤ ~2027-04-20 (EU-remote) / ~2027-03-20 (Berlin/CH).
 - Compensation and relocation constraints remain hard filters, with the defined late-cliff and last-resort widenings.
-- The public narrative honestly says `moving into AI infrastructure` and `GPU exposure` until stronger evidence exists.
+- The public narrative says `moving into ML platform / MLOps engineering` (umbrella: `AI infrastructure`) and `GPU exposure`, until stronger evidence exists.
 
 ## 10. Income cliff, continuum beyond week 12, fallback ladder
 
@@ -360,7 +369,7 @@ The start date, not the exhaustion date, is the deadline: salary arrives ~30 day
 
 ### Post-week-12 continuum
 
-After week 12 (≈Dec 2026), run the same machinery in four-week cycles until an offer: steady-state search at the lane split, evidence maintenance (Python package polished, Go only if the condition held), pipeline review each Friday, and the relocation fund started as soon as income resumes. The next-cycle decision at week 12 is only about *which channel/market combination to double down on*, not about whether to keep searching.
+After week 12 (≈Dec 2026), run the same machinery in four-week cycles until an offer: steady-state search at the lane split, evidence maintenance (the ML-platform artifact polished, Go only if the condition held), pipeline review each Friday, and the relocation fund started as soon as income resumes. The next-cycle decision at week 12 is only about *which channel/market combination to double down on*, not about whether to keep searching.
 
 ### Open inputs (not decisions)
 

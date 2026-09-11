@@ -14,7 +14,7 @@ const REPLACEMENTS = [
   // 1. Title
   [
     "Site Reliability & Platform Engineer",
-    "Site Reliability Engineer — moving into AI Infrastructure",
+    "Site Reliability Engineer — moving into ML Platform / MLOps",
   ],
 
   // 2. Location line
@@ -26,7 +26,7 @@ const REPLACEMENTS = [
   // 3. Profile paragraph (replace the entire body text)
   [
     "Infrastructure-focused SRE building scalable platforms for compute-intensive and GPU workloads. Combines deep expertise in distributed systems, multi-environment Kubernetes, and high-availability architecture. Driven by optimizing performance, reducing cloud costs, and hardening production systems.",
-    "Production SRE with 4 years operating high-availability distributed infrastructure across regulated healthcare, crypto, and multi-protocol systems. Moving into AI infrastructure — bringing Kubernetes reliability, observability, and cost-aware platform operations to the compute and serving layers AI workloads depend on.",
+    "Production SRE with 4 years operating high-availability distributed infrastructure across regulated healthcare, crypto, and multi-protocol systems. Moving into ML platform / MLOps — bringing Kubernetes reliability, observability, and cost-aware platform operations to the platform that builds, ships, and serves models.",
   ],
 
   // 4. Kiln — add Helm, tighten the architecture-translation bullet
