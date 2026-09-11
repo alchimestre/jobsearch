@@ -45,16 +45,9 @@ Dec 2021 – Apr 2022
 - Improved security and availability of blockchain infrastructure
 - Contributed to technical documentation and developer content
 
-## Project
-
-**GPU Fleet Operator** — Kubernetes operator for GPU fleet health and workload placement (Python/Kopf · CRD · Prometheus)
-- Implements a scheduling/health decision core, simulated and DCGM-style GPU health sources, and cordon/drain remediation against a custom `GpuNode` resource
-- Defines SLIs and error-budget burn for fleet health checks and scheduling latency
-- `github.com/alchimestre/gpu-fleet-operator` — *link once pushed (owner action, not yet public)*
-
 ## Skills & Technologies
 
-Kubernetes · Terraform · Helm · GCP · Linux · Docker · CI/CD · GitOps · Prometheus · Grafana · OpenTelemetry · ELK · PostgreSQL · Python (in progress)
+Kubernetes · Terraform · Helm · GCP · Linux · Docker · CI/CD · GitOps · Prometheus · Grafana · OpenTelemetry · ELK · PostgreSQL
 
 Distributed Systems · High Availability · Scalability · Performance Tuning · Capacity Planning · Cost Optimization · SecOps · ISO 27001 · HDS · GPU exposure
 

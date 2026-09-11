@@ -1,17 +1,35 @@
 # Figma CV — exact edit sheet
 
-Apply these in the Figma file (`CV 3_white`). Left = current text, right = replacement.
-Run `figma-apply.js` in the Scripter plugin to do all of it automatically, or edit by hand.
+Apply these in the Figma file **"Resume"** (`figma.com/design/rETT9pR5zH0ehzPa8I184J`), frame
+`CV 3_white` on `Page 1`. Left = current text, right = replacement.
+Run `resume/figma-apply.js` in the Scripter plugin to do all of it automatically, or edit by hand.
 
-The `find` strings below were verified against the export's own text layer (`resume_v3.pdf`
-`/ActualText` runs plus the extractor-readable bullets), and the script was executed against
-those real node texts: 8 nodes change, and the Bitgen bullet, the 25% bullet, the date ranges,
-and the name are deliberately untouched.
+The `find` strings were verified against the **live document** via the Figma API (read-only
+`file_content:read` token at `~/.figma-token`), and the script was executed against those same
+node texts. Helm is already present in the skills node, so the script no longer adds it.
 
-Script is two-step: run once as-is (`DRY_RUN = true`, reports only), then set
-`DRY_RUN = false` and run again to apply. Undo is Cmd+Z.
+The script now applies by default (`DRY_RUN = false`, `SCOPE = "document"`), prints a per-rule
+report in the Scripter console plus a toast, and is idempotent — re-running reports 0 changes.
+Undo is Cmd+Z.
 
-Layer/page hints: the file is a 2-page layout (page 1 = CV, page 2 = the skills/core-competencies block). Text may be split across several nodes — if a `find` below does not match, select just that text block and re-run (the script scopes to the selection when something is selected).
+### Node map (from the live file)
+
+| Node | Layer | Content |
+|---|---|---|
+| `0:73` | Site Reliability & Platform Engineer | title line |
+| `2:3` | Aix-en-Provence, France | location |
+| `0:69` | Infrastructure-focused SRE… | profile paragraph |
+| `0:41` | job description (Kiln) | 6 bullets, one text node |
+| `0:47` | job description (Cometh) | bullets, one text node |
+| `0:53` | job description (Docaposte) | bullets — untouched |
+| `0:59` | job description (Bitgen) | bullets — untouched |
+| `0:30` | skills | technical skills, one text node |
+| `0:33` | skills | core competencies — untouched |
+| `0:17` | degree description | AFPA degree (spelling) |
+| `0:72` | name | `Vincent Loupmon` — correct, untouched |
+
+Text may still be split across nodes if the file is edited again — if a `find` does not match,
+select just that text block and re-run with `SCOPE = "selection"`.
 
 ---
 
@@ -72,24 +90,19 @@ No changes. Docaposte supports the regulated-environment differentiator; Bitgen 
 
 ## 7. Skills & Technologies
 
-The technical list is a **single text node** (`Kubernetes · Terraform · GCP · Linux · Distributed Systems · … · GPU Workloads · Ethereum`). Three changes in it:
+The technical list is a **single text node** (`0:30`), and it **already contains Helm** (added since the last export). Its tail is:
+
+```
+… · ISO 27001 · GPU Workloads · Ethereum
+```
 
 | Find | Replace |
 |---|---|
-| `Kubernetes · Terraform · GCP` | `Kubernetes · Terraform · Helm · GCP` |
-| `GPU Workloads · Ethereum` | `Python (in progress)` |
+| `GPU Workloads · Ethereum` | `GPU exposure` |
 
-Result:
+Result tail: `… · ISO 27001 · GPU exposure`.
 
-```
-Kubernetes · Terraform · Helm · GCP · Linux · Distributed Systems · High Availability · Scalability · Docker · CI/CD · GitOps · Prometheus · Grafana · OpenTelemetry · ELK · PostgreSQL · Performance Tuning · Capacity Planning · SecOps · ISO 27001 · Python (in progress)
-```
-
-Net effect: **Helm** added (Cohere-class JDs screen on it), **Ethereum** and the **GPU Workloads ownership claim** removed, `GPU exposure` retained on the second line below the technical list, `Python (in progress)` added.
-
-`Python (in progress)` is honest today: the operator package exists at `github.com/alchimestre/gpu-fleet-operator`. Drop the qualifier after the week-6 gate. Do **not** add Go until the week-7 conditional starts.
-
-Keep the second line as-is — `… · SecOps · ISO 27001 · HDS · GPU exposure` — this is where the "GPU exposure" wording lives now.
+Net effect: the crypto keyword `Ethereum` is dropped, and the `GPU Workloads` ownership claim is downgraded to the honest `GPU exposure`. Nothing else changes — in particular **no `Python` or `Go` entry**, since those were tied to the operator project, which is set aside.
 
 ## 8. Spelling
 
@@ -97,21 +110,14 @@ Keep the second line as-is — `… · SecOps · ISO 27001 · HDS · GPU exposur
 |---|---|
 | `Application Developper Degree` | `Application Developer Degree` |
 
-## 9. Project block (optional — add only if the layout has room)
-
-> **GPU Fleet Operator** — Kubernetes operator for GPU fleet health and workload placement (Python/Kopf · CRD · Prometheus). Implements a scheduling/health decision core, simulated and DCGM-style GPU health sources, and cordon/drain remediation against a custom `GpuNode` resource. Defines SLIs and error-budget burn for fleet health checks and scheduling latency.
-
-The GitHub link goes in the contact line once the repo is pushed (it has no remote yet — pending owner action). Until then, either omit the link or omit this block.
-
----
-
 ## Held back deliberately
 
 | Item | Why | Unblock |
 |---|---|---|
-| `Go (in progress)` | Port has not started | Week 7, only if the search is on track |
-| `SLO / Error Budgets`, `GPU Fleet Operations` | Claims lag evidence | Week-6 Python milestone |
+| `Go (in progress)` | No evidence | Only after a Go project actually exists |
+| `SLO / Error Budgets`, `GPU Fleet Operations` | Claims lag evidence | A real artifact or production exposure |
 | Any customer-facing line (FDE/solutions framing) | No evidence exists; asked 2026-09-11, unanswered | Supply a concrete example: institutional clients at Kiln, client onboarding/escalations at Cometh, or external audits (ISO 27001 / HDS) |
+| Any project section / repo link | The operator project is set aside by Vincent (2026-09-11) | Only if a project is actually worked on and pushed |
 
 ## Note on the export itself
 

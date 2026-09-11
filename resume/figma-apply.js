@@ -1,15 +1,11 @@
 // CV 3_white — apply the 2026-09-11 resume edits.
 // Run in Figma desktop: Plugins → Scripter → paste → Run (Cmd+Enter).
-// Scoped to the current selection when something is selected, else the current page.
+// Reports per rule in the Scripter console AND as a toast, then applies.
 // Idempotent: re-running after a successful pass reports 0 changes.
 // Undo with Cmd+Z if anything looks wrong.
-
-// Step 1: paste and run as-is (DRY_RUN = true) — reports what would change, edits nothing.
-// Step 2: check the report, set DRY_RUN = false, run again to apply.
-// The location line and the skills line both get longer, so eyeball those two
-// nodes for overflow before applying.
-const DRY_RUN = true; // true = report only, false = apply
-const SCOPE = "auto"; // "auto" | "page" | "document"
+// If the CV frame is not on the active page, the document scope still finds it.
+const DRY_RUN = false; // true = report only, false = apply
+const SCOPE = "document"; // "document" | "page" | "selection"
 
 // ---------------------------------------------------------------- edit table
 // [find, replace]. In `find`, a space matches any whitespace (including a line
@@ -49,10 +45,10 @@ const REPLACEMENTS = [
     "Managed multi-zone Kubernetes clusters on GCP in production, deploying services with Helm charts",
   ],
 
-  // 6. Skills — drop Ethereum and the GPU ownership claim, add Helm + Python
-  ["Kubernetes · Terraform · GCP", "Kubernetes · Terraform · Helm · GCP"],
-  ["GPU Workloads · Ethereum", "Python (in progress)"], // tail of the single skills run
-  ["GPU Workloads", "GPU exposure"], // fallbacks if the list is split across nodes
+  // 6. Skills — drop the GPU ownership claim and the crypto keyword, keep the
+  //    honest "GPU exposure" wording. Helm is already present in the live file.
+  ["GPU Workloads · Ethereum", "GPU exposure"],
+  ["GPU Workloads", "GPU exposure"], // fallback if the list is split across nodes
   [" · Ethereum", ""], // leading separator kept in the match: never hits Bitgen's "Ethereum services"
 
   // 7. Spelling (confirmed against the export's text runs)
