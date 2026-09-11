@@ -8,8 +8,17 @@ The `find` strings were verified against the **live document** via the Figma API
 `file_content:read` token at `~/.figma-token`), and the script was executed against those same
 node texts. Helm is already present in the skills node, so the script no longer adds it.
 
-The script now applies by default (`DRY_RUN = false`, `SCOPE = "document"`), prints a per-rule
-report in the Scripter console plus a toast, and is idempotent — re-running reports 0 changes.
+The script applies by default (`DRY_RUN = false`, `SCOPE = "document"`), prints a per-rule report plus the
+list of changed node names in the Scripter console, and fires a toast. Every rule carries a **guard**: if
+the guard text is already present, the rule is skipped, so re-running is a no-op and cannot duplicate text.
+Rules also exist in **two variants** where the file was edited by hand before the script ran (pre-export
+v3 wording, and v5 wording) — the variant that doesn't match reports `MISS`, which is expected.
+
+**Repair rule:** the first version of the location rule was unguarded, so running it on a file that already
+had the suffix appended it a second time (`… Switzerland · … Switzerland`). The script now collapses any
+number of repeats back to one, so a single run heals it. Nothing else was affected by that bug — the
+location line was the only rule whose replacement contained its own `find` string.
+
 Undo is Cmd+Z.
 
 ### Node map (from the live file)
@@ -35,9 +44,12 @@ select just that text block and re-run with `SCOPE = "selection"`.
 
 ## 1. Title
 
+Two `find` variants — whichever exists in the file fires, the other reports MISS:
+
 | Find | Replace |
 |---|---|
-| `Site Reliability & Platform Engineer` | `Site Reliability Engineer — moving into ML Platform / MLOps` |
+| `Site Reliability & Platform Engineer` (v3 wording) | `Site Reliability Engineer — moving into ML Platform / MLOps` |
+| `Site Reliability Engineer — moving into AI Infrastructure` (v5 wording) | `Site Reliability Engineer — moving into ML Platform / MLOps` |
 
 ## 2. Location line (under the name)
 
@@ -45,15 +57,25 @@ select just that text block and re-run with `SCOPE = "selection"`.
 |---|---|
 | `Aix-en-Provence, France` | `Aix-en-Provence, France · Open to EU-remote, Berlin, Switzerland` |
 
+Guarded on `Open to EU-remote`: if the suffix is already there, the rule does nothing. A repair rule
+collapses the doubled suffix produced by the earlier unguarded version. If your file currently shows
+`… Switzerland · … Switzerland`, one run fixes it.
+
 ## 3. Profile paragraph
 
-**Replace the whole paragraph:**
+**Variant A — the file still has the original wording.** Replace the whole paragraph:
 
 > Infrastructure-focused SRE building scalable platforms for compute-intensive and GPU workloads. Combines deep expertise in distributed systems, multi-environment Kubernetes, and high-availability architecture. Driven by optimizing performance, reducing cloud costs, and hardening production systems.
 
 with:
 
 > Production SRE with 4 years operating high-availability distributed infrastructure across regulated healthcare, crypto, and multi-protocol systems. Moving into ML platform / MLOps — bringing Kubernetes reliability, observability, and cost-aware platform operations to the platform that builds, ships, and serves models.
+
+**Variant B — the file already carries the v5 wording.** Rewrite only the tail sentence:
+
+| Find | Replace |
+|---|---|
+| `Moving into AI infrastructure — bringing Kubernetes reliability, observability, and cost-aware platform operations to the compute and serving layers AI workloads depend on.` | `Moving into ML platform / MLOps — bringing Kubernetes reliability, observability, and cost-aware platform operations to the platform that builds, ships, and serves models.` |
 
 Why: removes the "compute-intensive and GPU workloads" claim (unproven) and replaces it with the transition framing. Lead with the cross-domain transfer, which is the actual differentiator. Second amendment (2026-09-11): the target lane is ML platform / MLOps, not GPU fleet operations — see `docs/12-week-strategy.md` §1.
 
