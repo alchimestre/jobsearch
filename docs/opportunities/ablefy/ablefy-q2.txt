@@ -1,0 +1,7 @@
+The through-line in my work is owning the path from code to production, and being accountable for what happens after it ships.
+
+At Kiln I ran the infrastructure behind a platform handling live traffic across dozens of production networks, where a bad release had immediate financial consequences. I built and maintained the delivery pipelines, owned the Kubernetes environments, and was the person responding when something broke. That kind of environment forces you to make releasing safe and repeatable rather than something you do carefully by hand.
+
+At Cometh I took that further on the platform side: I cut CI build times by 60% and cloud costs by 25% through architecture changes, and led our ISO 27001 implementation. Working in regulated environments since, first in certified healthcare and then in financial infrastructure, taught me to treat compliance and security as design constraints rather than paperwork.
+
+The honest gap is that my cloud depth is GCP rather than AWS. The platform work is the same shape, and I'd expect to be productive on AWS specifics quickly — but I'd rather say that plainly than have you discover it later.

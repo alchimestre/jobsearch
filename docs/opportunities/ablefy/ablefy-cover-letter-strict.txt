@@ -1,0 +1,16 @@
+Dear ablefy team,
+
+I'm applying for the Senior DevOps / Platform Engineer role because it is the job I have been working toward.
+
+Your description says "you build it, you run it, you own it" is how you operate. Building the platform and guardrails that let product teams own their services, including the cost, is the work I do best. That work is about how a team ships and about who owns the consequences.
+
+Agentic engineering is the second reason. Release confidence when agents write more of the code has no settled answer. I would rather help build that answer than wait for a playbook.
+
+My last four years were this ownership. At Kiln I ran the infrastructure behind a platform handling live traffic across dozens of production networks, where a bad release had immediate financial consequences. At Cometh I cut CI build times by 60% and cloud costs by 25%, and led our ISO 27001 implementation. Certified healthcare and financial infrastructure taught me to treat compliance as a design constraint.
+
+My cloud depth is GCP. Your stack is AWS. The platform work transfers, and I would be productive on AWS specifics quickly.
+
+I am based in France, which is outside your usual hiring ground. If you hire remotely across the EU, I would welcome a conversation. If you do not, I would rather know now.
+
+Best regards,
+Vincent Loupmon

@@ -1,0 +1,12 @@
+Dear ablefy team,
+
+I'm applying because this is the role I've been working toward, and reading your description, two things made me want it specifically.
+
+The first is that "you build it, you run it, you own it" is a practice for you, not a slogan. Making it safe for product teams to own their services — including the cost — is a problem about how a team works, not just about keeping infrastructure running, and that's the work I do best.
+
+The second is agentic engineering. I don't have an answer for what release confidence looks like when agents write more of the code, and I'd rather help build that answer somewhere that treats it as an open problem than wait for a playbook.
+
+I'm based in France, which I know is outside your usual hiring ground. If you're open to remote across the EU, I'd welcome a conversation. If you aren't, I'd still rather know now than later.
+
+Best regards,
+Vincent Loupmon

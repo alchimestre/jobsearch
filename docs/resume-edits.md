@@ -30,6 +30,10 @@ Apply path: the CV lives in Figma (`CV 3_white`, 2-column export). Content now e
 - [x] **Cometh end date** — confirmed 2026-09-11: **October 2023**.
 - [x] **Helm** — confirmed used at **Kiln and Cometh** (2026-09-11). Added to skills and to one bullet per role (deployment templating).
 - [x] **Name** — confirmed 2026-09-11: `Vincent Loupmon` (v2's "Loupmont-Peyrat" was the older variant). No header change needed.
+- [ ] **Kiln deployment tooling** — supplied by Vincent 2026-09-11, **not yet on the CV**. Split confirmed 2026-09-11:
+  - **Deployed / operated:** `nginx`, `Traefik` (ingress/reverse proxy), `Velero` (backup/restore), `Teleport` (access management, identity-aware proxy), `cert-manager` (TLS automation), `Flux` (GitOps delivery).
+  - **Used, not deployed:** `Loki` (log aggregation), `Argo CD`, `Vault` (secrets). Do not write "deployed" for these.
+  - `Flux` is the GitOps tool actually operated at Kiln; `Argo CD` was used, not deployed. Both close the gap where the CV claims "GitOps practices" without naming a tool.
 
 ## Independent work (2026)
 

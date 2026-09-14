@@ -37,6 +37,7 @@ The order in which destinations are pursued, given that job #1 need not relocate
 1. **EU-remote / France-compatible** — fastest to income, no relocation, no move.
 2. **Berlin** — preferred first *physical* move: dense AI-infra/ML-platform demand, no visa or permit friction for EU citizens, lower cost than Switzerland.
 3. **Switzerland** — the long-term destination: money, mountains and lakes, proximity to France. Target as an employed engineer with AI/ML-platform evidence (12–36 months), in rail-accessible cities (not Zurich-specific). A French-border (frontalier) arrangement is opportunistic only, not a lane.
+4. **Australia** — added 2026-09-11 on Vincent's request. Desired destination, but **employer-sponsored only**: Vincent's assessment is that his profile does not clear the Australian points-based system, so a job offer is the required path (recorded as Vincent's own read; no Australian immigration policy was researched this session). Does not change job #1, which stays EU-remote/France-compatible for income reasons. Feasible route: remote-first employers whose hiring footprint already includes Australia.
 
 Physical relocation happens only on a signed offer, funded by relocation assistance or an 8–12 week remote-start ramp.
 
@@ -52,9 +53,9 @@ The single widening triggered ~Feb 2027 if no offer is signed: compensation floo
 
 From ~Apr 2027, if still no offer: **non-AI** platform/SRE roles become admissible when they pass the compensation floor and the architectural-scope filter. Income continuity outranks every non-hard filter. This exists so the cliff is never reached at zero income.
 
-### Forward-Deployed Infrastructure Role
+### Solutions Engineer / Forward-Deployed Infrastructure Role
 
-A customer-facing deployment/operations role at an AI-native company (FDE, deployment or solutions infrastructure). Admitted as a **secondary lane** at ≤ ~¼ of the EU-remote/France-compatible effort, and only when the work stays infrastructure-heavy (Kubernetes/Helm, private/on-prem deployment, troubleshooting) rather than pre-sales or support. Scaling this lane is blocked until real customer-facing evidence is on the CV.
+A **credible secondary option**: a customer-facing technical role at an AI-native company (Solutions Engineer, FDE, deployment or solutions infrastructure). Admit it only when engineering and product dogfooding remain the foundation of customer work — Kubernetes/Helm, private/on-prem deployment, solution design, and troubleshooting — rather than quota-first account sales or support. Keep it at ≤ ~¼ of the EU-remote/France-compatible effort until real customer-facing evidence is on the CV.
 
 ### Bridge Opportunity
 
@@ -86,7 +87,12 @@ Unconventional problem-solving and cross-field curiosity are real differentiator
 Claims the candidate can defend today:
 - Production Kubernetes operations at multi-environment/multi-zone scale
 - SRE reliability, incident response, and security-hardened environments (ISO 27001, HDS)
-- Observability stack (Prometheus, Grafana, OpenTelemetry, ELK) with MTTR reduction
+- Observability stack (Prometheus, Grafana, Loki, OpenTelemetry, ELK) with MTTR reduction
+- Kubernetes platform tooling deployed/operated at Kiln: Velero (backup/restore), Teleport (access management), cert-manager (TLS automation), Flux (GitOps delivery), nginx (ingress)
+- Tools used (not deployed) at Kiln: Loki (log aggregation), Argo CD (GitOps delivery), Vault (secrets)
+- On-premise Kubernetes tooling deployed at Docaposte: MetalLB (bare-metal load balancing), Cilium (networking / network policy), HAProxy
+- Ingress / API gateway tooling deployed at Cometh: Traefik, Kong, HAProxy
+- Broader deployed tooling — middleware, data stores, Kubernetes add-ons: `docs/tooling-inventory.md` (employer attribution pending for part of the list)
 - Terraform/Ansible IaC and CI/CD delivery
 - Cost-reduction track record
 - Hybrid-cloud operations

@@ -78,7 +78,7 @@ Add **Helm** to the Kiln and Cometh entries (same two bullets that changed on th
 Add these to the profile's Skills section, in this order:
 
 ```
-Kubernetes · Terraform · Helm · Site Reliability Engineering · Distributed Systems · Prometheus · Grafana · OpenTelemetry · Linux · Docker · CI/CD · GitOps · Google Cloud Platform (GCP) · High Availability · Incident Response · ISO 27001
+Kubernetes · Terraform · Helm · nginx · Traefik · Flux · Argo CD · Site Reliability Engineering · Distributed Systems · Prometheus · Grafana · Loki · OpenTelemetry · Velero · Teleport · Vault · cert-manager · Linux · Docker · CI/CD · GitOps · Google Cloud Platform (GCP) · High Availability · Incident Response · ISO 27001
 ```
 
 Do **not** add: Python, Go, GPU, CUDA, MLOps, PyTorch. None are evidenced.

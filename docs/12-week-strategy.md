@@ -4,13 +4,19 @@
 
 **Amendment 2026-09-11 (grilling session):** the search is re-aimed by a newly quantified income cliff and by Vincent's confirmed weights on location vs purpose. Changes: lane allocation replaces the CH 60 / Berlin 40 market split; physical relocation is deferred to a signed offer; the Go port becomes conditional; compensation floors, AI definition, and role admission gain a late-cliff widening mode; deadlines are back-computed from ARE exhaustion. Full detail in §10.
 
+**Amendment 2026-09-13:** Australia becomes **remote-only** (no visa-sponsorship or on-site relocation route); `Solutions Engineer` / forward-deployed infrastructure added to the target titles as a credible secondary option, admitted only where engineering and product dogfooding remain the foundation of the work.
+
+**Amendment 2026-09-14 (pause):** Vincent is unavailable 2026-09-14 → 2026-09-23 inclusive. The search is **paused**, not abandoned: no outreach, no applications, no follow-ups, no project work in that window. The whole 12-week plan shifts **+10 days**, so Week 2 begins **2026-09-24** and the week numbering stays aligned to calendar dates (every `Week N` reference in §5 moves 10 days later). The mode timeline in §10 does **not** shift — late-cliff (~Feb 2027) and last-resort (~Apr 2027) are anchored to ARE exhaustion, not to week numbers, so the 12 weeks simply compress slightly against the cliff. Rules 1–3 in §7 count **active** weeks only; the pause does not count toward their denominators. Live follow-ups originally due 2026-09-18 / 2026-09-25 (issues #1, #3, #4) move to the week of 2026-09-24.
+
 ## 1. Objective and constraints
 
 **Objective:** Generate qualified interviews for mid-to-senior **ML Platform / MLOps engineering**, **AI platform engineering**, and **SRE-on-ML-platform** roles while producing credible evidence for the largest hiring gaps.
 
 **Lanes (amended 2026-09-11):** EU-remote / France-compatible **50%** · Berlin **35%** · Switzerland **15%** (relationships and selective applications only). Switzerland is a 12–36 month objective, not a job-#1 market. Job #1 is optimised for income continuity and AI transition; physical relocation happens only on a signed offer, and may be deferred to a second move. See §10.
 
-**Destination hierarchy:** EU-remote/France-compatible (income + AI, no move) → Berlin (preferred first physical move; densest AI-funnel, no visa friction) → Switzerland (money + mountains/lakes + proximity to France; medium-term, rail-accessible cities; not Zurich-specific). A French-border (frontalier) arrangement is opportunistic only, not a lane. No hard anchors: fully mobile within the EU, income-constrained only.
+**Destination hierarchy:** EU-remote/France-compatible (income + AI, no move) → Berlin (preferred first physical move; densest AI-funnel, no visa friction) → Switzerland (money + mountains/lakes + proximity to France; medium-term, rail-accessible cities; not Zurich-specific) → **Australia (added 2026-09-11; desired destination, employer-sponsored only — see below)**. A French-border (frontalier) arrangement is opportunistic only, not a lane. No hard anchors: fully mobile within the EU, income-constrained only.
+
+**Australia:** Vincent's stated preference is to move there, but his own assessment is that his profile does not clear the Australian points-based system, so an employer-sponsored role is the only realistic route — no immigration policy was researched this session; treat the visa detail as [INFERENCE] until verified. Australia therefore adds no search-lane allocation now: job #1 remains EU-remote/France-compatible because of the income cliff. The actionable move is to **target remote-first employers whose hiring footprint already includes Australia** (or who will sponsor), rather than to open an Australian lane. First concrete example: vCluster Labs, issue #5.
 
 **Available time:** 35 hours per week baseline, plus two push modes at ~45 h/week — weeks 1–4 (ramp) and the late-cliff window from ~Feb 2027. Sustained 45–50 h for the whole campaign is rejected: burnout over 10 months costs more than the extra hours buy.
 
@@ -57,7 +63,7 @@ AI/ML-platform depth; architectural scope; 3–6 year seniority match; relocatio
 
 ### Search titles
 
-`ML Platform Engineer`, `MLOps Engineer`, `Machine Learning Platform Engineer`, `ML Infrastructure Engineer`, `AI Platform Engineer`, `AI Infrastructure Engineer`, `SRE — ML/AI Platform`, `Reliability Engineer — ML`, `Training Platform Engineer`, `Inference Platform Engineer`, and (secondary, vendor tier) `GPU Platform Engineer`, `HPC/AI Platform Engineer`; (secondary lane) `Forward Deployed Engineer`, `Deployment/Solutions Infrastructure Engineer`. Responsibilities override title.
+`ML Platform Engineer`, `MLOps Engineer`, `Machine Learning Platform Engineer`, `ML Infrastructure Engineer`, `AI Platform Engineer`, `AI Infrastructure Engineer`, `SRE — ML/AI Platform`, `Reliability Engineer — ML`, `Training Platform Engineer`, `Inference Platform Engineer`, and (secondary, vendor tier) `GPU Platform Engineer`, `HPC/AI Platform Engineer`; (credible secondary lane) `Solutions Engineer`, `Forward Deployed Engineer`, `Deployment/Solutions Infrastructure Engineer`. Responsibilities override title: admit these customer-facing roles only when engineering and product dogfooding remain the foundation of the work, not quota-first account sales or support.
 
 ## 3. Search channels and baseline throughput
 
