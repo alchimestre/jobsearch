@@ -13,7 +13,7 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | 7 open issues: #1 Cohere, #4 ablefy, #5 vCluster, #6 Doctolib, #7 Sinch, #8 Lity, #9 SAP Fioneer. #3 vivenu closed 2026-09-25 (refusal, no reason → `reason:unknown`); #2 is the duplicate vivenu row |
+| Pipeline | 9 open issues: #1 Cohere, #4 ablefy, #5 vCluster, #6 Doctolib, #7 Sinch, #8 Lity, #9 SAP Fioneer, #10 Otera, #11 Workist. #3 vivenu closed 2026-09-25 (refusal, no reason → `reason:unknown`); #2 is the duplicate vivenu row |
 
 ## Updated 2026-09-26
 
@@ -24,15 +24,25 @@ Three applications logged from the 09-26 session (details in `docs/opportunities
 | #6 | Doctolib — Staff SRE (DE) | **Deliberate long-shot.** Staff title + 8+ yrs = hard-reject; no ML surface. Doctolib SRE postings are low-yield for the primary lane |
 | #7 | Sinch / Mailjet — SRE (FR, full remote) | **Strongest bridge candidate.** Mid-Senior band, residency already satisfied, craft match is direct. Tier C pending the AI-stack screen question |
 | #8 | Lity — DataOps/Infra (FR, full remote) | **Disclosed floor breach** (60–80 K€ + BSPCE). No screen warranted |
-| #9 | SAP Fioneer — AI Platform Engineer (DE) | **Primary-lane eligible (Tier A/B).** Real generative-AI platform surface. Salary stated **€90k** |
+| #9 | SAP Fioneer — AI Platform Engineer (DE) | **Primary-lane (Tier A/B).** Real generative-AI platform surface. Salary stated **€90k** |
+| #10 | Otera — Platform Engineer (EU-remote) | **Tier C.** AI is the product, not the platform surface. Best remote fit so far; France eligibility unconfirmed |
+| #11 | Workist — Senior Platform Engineer (DE) | **Tier A — strongest application in the pipeline.** Disclosed **€80–100k** band, clears the floor |
 
-Follow-ups owed: **#7 Sinch** and **#9 SAP Fioneer** — 2026-10-05 (1st), 2026-10-14 (final). None for #6 or #8.
+Follow-ups owed: **#7 Sinch**, **#9 SAP Fioneer**, **#10 Otera**, **#11 Workist** — all 2026-10-05 (1st)
+and 2026-10-14 (final). None for #6 or #8.
 
-**Primary-lane cohort:** #9 SAP Fioneer and the Workist Senior Platform Engineer (not yet applied) are the
-first roles the ML requirement clears on the *strong* side. Everything else logged today is Tier C bridge.
+**Primary-lane cohort (counts toward ML-platform conversion):** #9 SAP Fioneer and #11 Workist — the first
+two roles that clear the §2 ML requirement on the strong side. #11 is the priority: Tier A, disclosed band,
+closest seniority match, and the only one naming LLM-gateway/GPU capacity work directly.
 
-**Watch:** two France-remote roles in this session cleared geography and craft but landed under the €80k
-floor. If a third appears, research the France-remote band before touching the floor (§7 rule 4 in spirit).
+**Everything else logged today is Tier C bridge** — excluded from primary-lane conversion rates.
+
+**Salary consistency:** €90,000 stated for #9, #10, and vivenu (#3). Hold this number at the same tier so
+the cohort stays interpretable.
+
+**Watch:** two France-remote roles this session cleared geography and craft but landed under the €80k floor
+(Lity; ablefy's German-only residency question still open). If a third appears, research the France-remote
+band before touching the floor (§7 rule 4 in spirit).
 
 ## Updated 2026-09-25
 
