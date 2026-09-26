@@ -13,7 +13,7 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | 9 open issues: #1 Cohere, #4 ablefy, #5 vCluster, #6 Doctolib, #7 Sinch, #8 Lity, #9 SAP Fioneer, #10 Otera, #11 Workist. #3 vivenu closed 2026-09-25 (refusal, no reason → `reason:unknown`); #2 is the duplicate vivenu row |
+| Pipeline | 10 open issues: #1 Cohere, #4 ablefy, #5 vCluster, #6 Doctolib, #7 Sinch, #8 Lity, #9 SAP Fioneer, #10 Otera, #11 Workist, #12 Langdock. #3 vivenu closed 2026-09-25 (refusal, no reason → `reason:unknown`); #2 is the duplicate vivenu row |
 
 ## Updated 2026-09-26
 
@@ -26,14 +26,20 @@ Three applications logged from the 09-26 session (details in `docs/opportunities
 | #8 | Lity — DataOps/Infra (FR, full remote) | **Disclosed floor breach** (60–80 K€ + BSPCE). No screen warranted |
 | #9 | SAP Fioneer — AI Platform Engineer (DE) | **Primary-lane (Tier A/B).** Real generative-AI platform surface. Salary stated **€90k** |
 | #10 | Otera — Platform Engineer (EU-remote) | **Tier C.** AI is the product, not the platform surface. Best remote fit so far; France eligibility unconfirmed |
-| #11 | Workist — Senior Platform Engineer (DE) | **Tier A — strongest application in the pipeline.** Disclosed **€80–100k** band, clears the floor |
+| #11 | Workist — Senior Platform Engineer (DE) | **Tier A.** Disclosed **€80–100k** band, clears the floor |
+| #12 | Langdock — (Senior) Platform Engineer (DE) | **Tier A — HIGHEST PRIORITY.** Disclosed **€90–140k + equity**, 3–6 yr band, JD describes the target role. **Risk: in-office in Berlin, no remote start** |
 
-Follow-ups owed: **#7 Sinch**, **#9 SAP Fioneer**, **#10 Otera**, **#11 Workist** — all 2026-10-05 (1st)
-and 2026-10-14 (final). None for #6 or #8.
+Follow-ups owed: **#7 Sinch**, **#9 SAP Fioneer**, **#10 Otera**, **#11 Workist**, **#12 Langdock** — all
+2026-10-05 (1st) and 2026-10-14 (final). None for #6 or #8.
 
-**Primary-lane cohort (counts toward ML-platform conversion):** #9 SAP Fioneer and #11 Workist — the first
-two roles that clear the §2 ML requirement on the strong side. #11 is the priority: Tier A, disclosed band,
-closest seniority match, and the only one naming LLM-gateway/GPU capacity work directly.
+**Primary-lane cohort (counts toward ML-platform conversion):** #9 SAP Fioneer, #11 Workist, #12 Langdock.
+**Priority order on any response: #12 Langdock > #11 Workist > #9 SAP Fioneer** — Langdock has the best band,
+the closest seniority match (4 vs 3–6 yrs), and a JD that names inference-boundary and agent-runtime
+ownership outright.
+
+**Langdock open item:** the two free-text answers were submitted before the grilling session completed
+(Q2 "proudest work" was never resolved; Q1 depended on it). **Recover the submitted text** from the LinkedIn
+confirmation email and store it in the opportunity note so interview claims stay consistent.
 
 **Everything else logged today is Tier C bridge** — excluded from primary-lane conversion rates.
 
