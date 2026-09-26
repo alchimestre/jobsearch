@@ -13,7 +13,7 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | 6 open issues: #1 Cohere, #4 ablefy, #5 vCluster, #6 Doctolib, #7 Sinch, #8 Lity. #3 vivenu closed 2026-09-25 (refusal, no reason → `reason:unknown`); #2 is the duplicate vivenu row |
+| Pipeline | 7 open issues: #1 Cohere, #4 ablefy, #5 vCluster, #6 Doctolib, #7 Sinch, #8 Lity, #9 SAP Fioneer. #3 vivenu closed 2026-09-25 (refusal, no reason → `reason:unknown`); #2 is the duplicate vivenu row |
 
 ## Updated 2026-09-26
 
@@ -24,8 +24,12 @@ Three applications logged from the 09-26 session (details in `docs/opportunities
 | #6 | Doctolib — Staff SRE (DE) | **Deliberate long-shot.** Staff title + 8+ yrs = hard-reject; no ML surface. Doctolib SRE postings are low-yield for the primary lane |
 | #7 | Sinch / Mailjet — SRE (FR, full remote) | **Strongest bridge candidate.** Mid-Senior band, residency already satisfied, craft match is direct. Tier C pending the AI-stack screen question |
 | #8 | Lity — DataOps/Infra (FR, full remote) | **Disclosed floor breach** (60–80 K€ + BSPCE). No screen warranted |
+| #9 | SAP Fioneer — AI Platform Engineer (DE) | **Primary-lane eligible (Tier A/B).** Real generative-AI platform surface. Salary stated **€90k** |
 
-Follow-ups owed: **#7 Sinch** — 2026-10-05 (1st), 2026-10-14 (final). None for #6 or #8.
+Follow-ups owed: **#7 Sinch** and **#9 SAP Fioneer** — 2026-10-05 (1st), 2026-10-14 (final). None for #6 or #8.
+
+**Primary-lane cohort:** #9 SAP Fioneer and the Workist Senior Platform Engineer (not yet applied) are the
+first roles the ML requirement clears on the *strong* side. Everything else logged today is Tier C bridge.
 
 **Watch:** two France-remote roles in this session cleared geography and craft but landed under the €80k
 floor. If a third appears, research the France-remote band before touching the floor (§7 rule 4 in spirit).
