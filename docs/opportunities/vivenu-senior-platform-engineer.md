@@ -3,7 +3,7 @@
 **Posting:** https://www.linkedin.com/jobs/view/4460371549/ · Germany (vivenu, Frankfurt)
 **Recruiter:** Anna Boiarynova (Senior Talent Acquisition) — https://www.linkedin.com/in/anna-boiarynova-0014bb11
 **Market:** EU-remote (stated preference) · **Tier:** B (non-AI platform role at a product company; AI-workload exposure unconfirmed → treat as C until confirmed) · **Channel:** ATS
-**Applied:** ✅ 2026-09-11 (submitted) · **Follow-up 1 due:** 2026-09-18 · **Follow-up 2 due:** 2026-09-25 (final)
+**Applied:** ✅ 2026-09-11 (submitted) · **Closed:** ❌ 2026-09-25 (refusal, **no reason given**) · **Follow-ups:** not sent (refusal superseded them)
 
 ## Why this is outside the current lanes
 
@@ -81,8 +81,16 @@ artifact makes it true (`CONTEXT.md` Evidence Boundaries).
 
 ## Outcome
 
-- Stage reached: **applied** (ATS, 2026-09-11)
-- Board Stage: Contacted — move to Screening on recruiter reply
-- Rejection reason: —
-- What would have changed the outcome: —
-- Next action: Follow-up 1 on 2026-09-18 if no reply. Ask the five recruiter-screen questions above before any screen.
+- Stage reached: **closed at Contacted, never screened** (ATS application, 2026-09-11 → refusal 2026-09-25)
+- Board Stage: **Closed** (was Contacted; set 2026-09-25)
+- Rejection reason: **unknown** — no reason given. The strategy's label set defines `unknown` exactly as "no reason given", so nothing is inferred here.
+- Duration: 14 calendar days, 10 business days — a decision inside the normal ATS window, not a silence-close.
+- Follow-ups: **none sent.** Follow-up 1 (due 2026-09-18) was missed during the 2026-09-14 → 09-23 pause; the refusal arrived before the second window, so neither is now owed.
+- What would have changed the outcome: **not derivable.** The role already fired two hard filters unchecked (AI workload exposure unconfirmed; remote-start/relocation unasked), so either could have been the cause — as could the 5+ years bar against four years of evidenced infra roles, or simply volume. No feedback was offered and none was requested, so **none** of these is recorded as the cause.
+- Feedback request: **not sent.** §3 prescribes the one feedback request only *after a recruiter-screen rejection*; this opportunity never reached screening, so it is out of scope.
+- Expected value: this was flagged as a deliberate long-shot at application time. Closing it as `unknown` is the recorded cost of the deliberate long-shot, not new information about the filters.
+- Next action: **closed.** No further contact. Removal from the follow-up queue; issue #3 closed with `reason:unknown`.
+
+## Funnel delta
+
+Rows this changes in §6's dashboard: applications sent (unchanged, 2026-09-11), application-to-screen (this application closes as a screen miss), screen-to-rejection (unchanged — never screened), rejection-reason tally (`unknown` +1).

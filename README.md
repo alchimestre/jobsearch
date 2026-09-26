@@ -42,6 +42,8 @@ One issue per live opportunity; move it through the board as it progresses.
 
 ## Agent workflow conventions
 
+- **Every application Vincent reports is logged by default** — repo note + issue (`Contacted` on the board),
+  no need to ask. Procedure, template, and board IDs are in `AGENTS.md` → "Default: log every application".
 - The harness reads GitHub issues natively as `issue://<owner>/<repo>/<N>`.
 - Agents update issues via the `gh` CLI (`gh issue edit N --label ...`, `gh issue close N`).
 - Board stage moves: `gh project item-edit` / `gh api graphql` `updateProjectV2ItemFieldValue`.

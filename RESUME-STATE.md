@@ -13,15 +13,39 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | 4 open issues: #1 Cohere, #3 vivenu, #4 ablefy, #5 vCluster |
+| Pipeline | 6 open issues: #1 Cohere, #4 ablefy, #5 vCluster, #6 Doctolib, #7 Sinch, #8 Lity. #3 vivenu closed 2026-09-25 (refusal, no reason → `reason:unknown`); #2 is the duplicate vivenu row |
 
-## First three actions on 2026-09-24
+## Updated 2026-09-26
 
-1. **Publish the evidence repo** — `gh repo create alchimestre/ml-platform-on-k8s --public --source . --push`
+Three applications logged from the 09-26 session (details in `docs/opportunities/`, board Stage `Contacted`):
+
+| Issue | Role | Verdict |
+|---|---|---|
+| #6 | Doctolib — Staff SRE (DE) | **Deliberate long-shot.** Staff title + 8+ yrs = hard-reject; no ML surface. Doctolib SRE postings are low-yield for the primary lane |
+| #7 | Sinch / Mailjet — SRE (FR, full remote) | **Strongest bridge candidate.** Mid-Senior band, residency already satisfied, craft match is direct. Tier C pending the AI-stack screen question |
+| #8 | Lity — DataOps/Infra (FR, full remote) | **Disclosed floor breach** (60–80 K€ + BSPCE). No screen warranted |
+
+Follow-ups owed: **#7 Sinch** — 2026-10-05 (1st), 2026-10-14 (final). None for #6 or #8.
+
+**Watch:** two France-remote roles in this session cleared geography and craft but landed under the €80k
+floor. If a third appears, research the France-remote band before touching the floor (§7 rule 4 in spirit).
+
+## Updated 2026-09-25
+
+- **vivenu (#3) closed** — refusal, no reason given. Closed as `reason:unknown`; board Stage → Closed.
+  Recorded in `docs/opportunities/vivenu-senior-platform-engineer.md`.
+- **Follow-up 1 (#1, #3, #4) was missed** during the pause and was not retroactively sent. Owed now:
+  **#1 Cohere** and **#4 ablefy**, both past the final window (10–14 business days from 2026-09-11) —
+  send `Follow-up 2` as the last contact. #3 vivenu owes nothing.
+- Does **not** trigger §7 rules 1–3: the rejection is `unknown`, so it is not chargeable to targeting,
+  messaging, or readiness.
+
+## Next actions
+
+1. **Send the two remaining final follow-ups** — issues #1 and #4 (see above).
+2. **Publish the evidence repo** — `gh repo create alchimestre/ml-platform-on-k8s --public --source . --push`
    from `~/projects/ml-platform-on-k8s`, then link it from CV header and LinkedIn Featured.
    Week 2 expects "first meaningful commit public and linked from the assets".
-2. **Send the three overdue follow-ups** — issues #1, #3, #4. Applied 2026-09-11; the first follow-up
-   window (5–7 business days) has elapsed by 09-24 either way, so these are due, not early.
 3. **Start Week 2 build** — `brew install helm` (still missing), then MLflow registry + FastAPI serving
    per `~/projects/ml-platform-on-k8s/ROADMAP.md`.
 
@@ -33,7 +57,8 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
   2027-07-15 cliff cannot move. `[INFERENCE]` on the general rules.
 - **Independent Work date range** on the CV — `2026 – present` assumes a Jan-2026 start.
 - **vCluster #5 not yet applied** — it is the Australia-remote example and clears the €80k floor;
-  check the GPU-depth hard filter (currently marked FAILS) before applying.
+  check the GPU-depth hard filter (currently marked FAILS) before applying. It is now the only
+  open pipeline row with no contact made.
 
 ## What did not change
 
