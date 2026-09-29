@@ -40,18 +40,22 @@ exactly why applying was a long-shot rather than a targeting error.
 
 ## Outcome record
 
-- Stage reached: **Contacted** (ATS application 2026-09-26)
-- Rejection reason (if any): **not yet known.** If a refusal arrives with no reason it is `unknown`; the recorded cause of the deliberate long-shot is band + AI-exposure, per this note
-- Follow-ups: **none planned.** No named contact exists; ATS applications in this pipeline have not been followed up unless a recruiter surfaced (cf. vivenu #3, closed with no follow-ups sent)
-- What would have changed the outcome: an ML-platform SRE surface at senior (not staff) band, or four additional years of tenure
-
-## Company note
-
-Doctolib's SRE and Platform Engineering postings are a recurring source of **non-matching** roles for the
-primary lane: reliability at scale, no ML platform. Treat Doctolib as low-yield for the ML-platform target
-and spend the Berlin allocation on in-house ML platform / MLOps orgs and AI scale-ups instead.
+- Stage reached: **closed at Contacted, never screened** (ATS application 2026-09-26 → refusal 2026-09-29)
+- Board Stage: **Closed** (set 2026-09-29)
+- Rejection reason: **unknown** — no reason given. The label set defines `unknown` exactly as "no reason given"; nothing is inferred here
+- Duration: **3 calendar days, 2 business days** — the fastest decision in the pipeline so far (vivenu took 14 calendar / 10 business days). This is a screening-out, not a silence-close
+- Follow-ups: **none sent, none now owed.** The refusal arrived 9 days before the first follow-up window (2026-10-05)
+- What would have changed the outcome: **not derivable**, and — more importantly — **not worth deriving.** Both hard-reject filters were explicit in the JD before applying: Staff title + 8+ years against 4 evidenced, and no ML-platform surface. This was logged as a deliberate long-shot at application time, so the refusal is the expected cost of the long-shot, not new information about targeting
+- Feedback request: **not sent.** §3 prescribes the one feedback request only *after a recruiter-screen rejection*; this never reached screening, so it is out of scope
+- **§7 rules 1–3 are not triggered.** Rule 1 covers outreach (not ATS) and needs 3 active weeks; rule 2 requires a screen; rule 3 needs week 6. A 2-day ATS rejection on a known long-shot is noise, not a signal
+- Next action: **closed.** No further contact. Removal from the follow-up queue
 
 ## Funnel delta
 
-Applications sent +1 (2026-09-26, Berlin lane). Recorded as a deliberate long-shot so it is not counted
-against targeting, messaging, or readiness in §7 rules 1–3 unless a screen is reached.
+- Applications sent: unchanged (2026-09-26), already counted
+- Application-to-screen: this application closes as a **screen miss**
+- Screen-to-rejection: unchanged (never screened)
+- Rejection-reason tally: **`unknown` +1** — now 2 of 2 closed opportunities are `unknown` (Doctolib + vivenu #3)
+- Company note: the low-yield read on Doctolib SRE/Platform postings is **reinforced** by a 2-day screen-out. Do not re-apply to Doctolib SRE postings for the primary lane
+- Superseded targeting read (2026-09-26, retained for history): Doctolib SRE/Platform postings are a recurring source of non-matching roles for the primary lane — reliability at scale, no ML platform.
+

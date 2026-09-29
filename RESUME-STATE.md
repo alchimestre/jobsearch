@@ -13,7 +13,25 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | 10 open issues: #1 Cohere, #4 ablefy, #5 vCluster, #6 Doctolib, #7 Sinch, #8 Lity, #9 SAP Fioneer, #10 Otera, #11 Workist, #12 Langdock. #3 vivenu closed 2026-09-25 (refusal, no reason → `reason:unknown`); #2 is the duplicate vivenu row |
+| Pipeline | 9 open issues: #1 Cohere, #4 ablefy, #5 vCluster, #7 Sinch, #8 Lity, #9 SAP Fioneer, #10 Otera, #11 Workist, #12 Langdock. Closed: #3 vivenu (2026-09-25, `reason:unknown`), **#6 Doctolib (2026-09-29, `reason:unknown` — 2-day screen-out)**. #2 is the duplicate vivenu row |
+
+## Updated 2026-09-29
+
+**Doctolib (#6) closed** — rejection, no reason given → `reason:unknown`. Board Stage → Closed.
+
+- **3 calendar days / 2 business days** from application to refusal. Fastest decision in the pipeline
+  (vivenu took 14/10). This is a screen-out, not a silence-close.
+- **Expected outcome, not a signal.** Both hard-reject filters were explicit in the JD *before* applying:
+  Staff title + 8 years demanded against four evidenced, and no ML-platform surface. Logged as a deliberate
+  long-shot on 2026-09-26. The refusal is the cost of the long-shot.
+- **§7 rules 1–3 NOT triggered.** Rule 1 covers outreach, not ATS, and needs three active weeks; rule 2
+  requires a screen (never reached); rule 3 needs week 6. No strategy change warranted.
+- Follow-ups: none owed (refusal arrived 9 days before the first window).
+- Doctolib SRE/Platform postings: **do not re-apply** for the primary lane — low-yield read now reinforced.
+- **Rejection tally: 2 of 2 closed opportunities are `unknown`** (Doctolib + vivenu). Watch this: if every
+  rejection is `unknown`, §7's diagnosis rules have nothing to work with and the funnel stays uninterpretable.
+
+Remaining open: **9 issues**. Primary-lane cohort unchanged: #12 Langdock > #11 Workist > #9 SAP Fioneer.
 
 ## Updated 2026-09-26
 
