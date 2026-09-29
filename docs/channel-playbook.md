@@ -76,6 +76,21 @@ follow from the homepage). These are relationship targets first, applications se
 5. **Institutional career pages** — low volume, high fit for CH.
 6. **LinkedIn alerts** — one input among six, restructured per §4.
 
+### Marking an application is the trigger
+
+Pressing `a` (applied) in the TUI writes the status locally **and** runs the configured hook,
+`scripts/log_applied.py`. It finds an existing issue for the same posting (jobradar uid marker →
+posting URL → company + role) and either comments on it and sets Stage **Contacted**, or writes
+`docs/opportunities/<company>-<role>.md` and creates the labelled issue from the opportunity
+template, already on the board at Contacted. One line reporting exactly what happened appears in the
+TUI status bar; a failed hook (unauthenticated `gh`, rate limit) is surfaced there without losing the
+status write. `python3 scripts/log_applied.py --dry-run` shows the plan and touches nothing;
+`python3 scripts/test_log_applied.py` runs its self-checks.
+
+Market and tier are **mechanical defaults** — lane → market label, ML-platform signals → tier b
+otherwise c — and both are flagged for review in the issue body. The hard-filter verdict, JD
+analysis, and application answers are deliberately left unwritten.
+
 ## 3. Operating the ATS watchlist
 
 ```bash

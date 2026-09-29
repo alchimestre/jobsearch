@@ -32,6 +32,10 @@ polling tool: ~110 employer ATS boards + 7 machine-readable feeds, one ranked SQ
   `jobradar list --decision high`. It auto-adopts any ATS board it sees in a feed's job URL.
 - `jobradar export --since 7d` emits ready-to-paste rows carrying the stable `uid`; quote that uid in the
   opportunity doc so the store and the issue stay reconcilable.
+- Marking a posting `applied` in the TUI (`a`) runs `scripts/log_applied.py`, which logs the application
+  end-to-end — doc, issue, labels, Stage `Contacted` — with no agent involved, and is idempotent (it
+  matches an existing issue by jobradar uid, then posting URL, then company + role). Its market and tier
+  are mechanical defaults flagged for review in the issue body; check them when you next touch the issue.
 - Lane allocation is 60% outreach / 25% ATS / 10% recruiter / 5% evidence. **`channel:outreach` is the lane
   to watch.** Log every hiring-manager contact as an issue — Stage `Prospecting` if the role is unposted,
   `Contacted` once sent.
