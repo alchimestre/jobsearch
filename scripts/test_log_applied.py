@@ -69,6 +69,30 @@ check("explicit fr-bridge override", log_applied.decide_market("de", "fr-bridge"
 check("the doc shows a human market name, not the label", log_applied.market_name("market:eu-remote"), "EU-remote")
 check("an unknown market reads UNREVIEWED", log_applied.market_name(None), "UNREVIEWED")
 
+# ---- track -------------------------------------------------------------
+# Web3 is in scope, so the funnel must be able to tell the two tracks apart.
+check(
+    "an ML/MLOps posting is track:ai",
+    log_applied.decide_track(job("Acme", "MLOps Engineer", reasons=["+mlops", "+k8s"]))[0],
+    "track:ai",
+)
+check(
+    "a blockchain infrastructure posting is track:web3",
+    log_applied.decide_track(job("Chainlink Labs", "Blockchain Infrastructure Engineer", reasons=["+infra", "+blockchain"]))[0],
+    "track:web3",
+)
+check(
+    "AI wins when a posting carries both signals",
+    log_applied.decide_track(job("Acme", "ML Platform Engineer, Blockchain", reasons=["+ml-platform", "+blockchain"]))[0],
+    "track:ai",
+)
+check(
+    "no signal at all is track:bridge",
+    log_applied.decide_track(job("Acme", "Platform Engineer", reasons=["+platform"]))[0],
+    "track:bridge",
+)
+check("track override is honoured", log_applied.decide_track(job("Acme", "X", reasons=[]), "track:web3")[0], "track:web3")
+
 # ---- doc matching ------------------------------------------------------
 # Regression: matching on the employer alone made a second Nebius role reuse the
 # first Nebius doc instead of getting its own.
@@ -136,8 +160,9 @@ check(
     ),
     True,
 )
-doc = log_applied.doc_text(job("Acme", "ML Platform Engineer"), "market:de", "b", "test", "pre-project", date(2026, 9, 29))
+doc = log_applied.doc_text(job("Acme", "ML Platform Engineer"), "market:de", "b", "test", "pre-project", date(2026, 9, 29), "track:ai")
 check("doc renders the market name, not the label", "**Market:** DE ·" in doc, True)
+check("doc carries the track", "**Track:** ai" in doc, True)
 check("doc carries the jobradar uid", "abc123" in doc, True)
 
 print()

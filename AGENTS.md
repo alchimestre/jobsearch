@@ -30,6 +30,10 @@ polling tool: ~110 employer ATS boards + 7 machine-readable feeds, one ranked SQ
 
 - Discovery runs through it: `cd tools/jobradar && uv run jobradar scan`, then `jobradar tui`, or
   `jobradar list --decision high`. It auto-adopts any ATS board it sees in a feed's job URL.
+- **Scope (2026-09-29): Web3 infrastructure is in scope in every lane; ML/LLM is preferred but
+  non-blocking; the return to work targets the earliest achievable start.** Tag each application with a
+  `track:` label — `track:ai`, `track:web3`, `track:bridge` — so conversion stays comparable across the
+  widened scope. `scripts/log_applied.py` assigns it from the jobradar signals.
 - `jobradar export --since 7d` emits ready-to-paste rows carrying the stable `uid`; quote that uid in the
   opportunity doc so the store and the issue stay reconcilable.
 - Marking a posting `applied` in the TUI (`a`) runs `scripts/log_applied.py`, which logs the application

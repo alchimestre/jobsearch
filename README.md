@@ -32,6 +32,7 @@ One issue per live opportunity; move it through the board as it progresses.
 | `market:` | `ch` · `de` · `eu-remote` · `fr-bridge` |
 | `tier:` | `a` (owns AI infra) · `b` (SRE at AI-native) · `c` (bridge) |
 | `channel:` | `outreach` · `ats` · `recruiter` |
+| `track:` | `ai` (ML/LLM platform, preferred) · `web3` (blockchain infrastructure, admitted, fastest to income) · `bridge` (non-AI platform role) |
 | `reason:` | `relevance` · `readiness` · `compensation` · `location` · `unknown` (apply on rejection) |
 
 `reason:*` labels feed the adaptation thresholds: filter `label:reason:compensation` etc. to tally mismatches per market.

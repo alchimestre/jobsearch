@@ -8,9 +8,11 @@
 
 **Amendment 2026-09-14 (pause):** Vincent is unavailable 2026-09-14 → 2026-09-23 inclusive. The search is **paused**, not abandoned: no outreach, no applications, no follow-ups, no project work in that window. The whole 12-week plan shifts **+10 days**, so Week 2 begins **2026-09-24** and the week numbering stays aligned to calendar dates (every `Week N` reference in §5 moves 10 days later). The mode timeline in §10 does **not** shift — late-cliff (~Feb 2027) and last-resort (~Apr 2027) are anchored to ARE exhaustion, not to week numbers, so the 12 weeks simply compress slightly against the cliff. Rules 1–3 in §7 count **active** weeks only; the pause does not count toward their denominators. Live follow-ups originally due 2026-09-18 / 2026-09-25 (issues #1, #3, #4) move to the week of 2026-09-24.
 
+**Amendment 2026-09-29 (scope widening):** Vincent's instruction — Web3 companies are in scope, ML/LLM work stays preferred but **non-blocking**, and the return to work should be **as early as possible** rather than as late as the cliff allows. Changes: §2 admits a **Web3 infrastructure track** and deletes the crypto-continuity rejection; the ML requirement becomes a *preference* rather than a gate; §1 gains an earliest-start objective that ranks the fastest-to-income lanes first. No compensation floor, seniority filter, or cliff deadline changes.
+
 ## 1. Objective and constraints
 
-**Objective:** Generate qualified interviews for mid-to-senior **ML Platform / MLOps engineering**, **AI platform engineering**, and **SRE-on-ML-platform** roles while producing credible evidence for the largest hiring gaps.
+**Objective:** Generate qualified interviews for mid-to-senior **ML Platform / MLOps engineering**, **AI platform engineering**, **SRE-on-ML-platform**, and **Web3 infrastructure** roles while producing credible evidence for the largest hiring gaps. **Return to work as early as achievable** — the 2027-06-01 target and the 2027-06-15 absolute are deadlines, not goals; any accepted offer that passes the filters is taken earlier, and where two opportunities are otherwise comparable the faster-to-income one wins.
 
 **Lanes (amended 2026-09-11):** EU-remote / France-compatible **50%** · Berlin **35%** · Switzerland **15%** (relationships and selective applications only). Switzerland is a 12–36 month objective, not a job-#1 market. Job #1 is optimised for income continuity and AI transition; physical relocation happens only on a signed offer, and may be deferred to a second move. See §10.
 
@@ -37,20 +39,20 @@
 1. **Tier A:** Direct ownership of the ML platform / MLOps surface — ML pipelines, model registry, serving/inference platform, training platform, ML observability, or the Kubernetes platform those run on.
 2. **Tier B:** SRE/platform role supporting ML teams — at an AI-native company, or in an in-house ML platform organisation at a product company with real AI workloads (the Berlin lane).
 3. **Tier B-secondary — forward-deployed infrastructure (added 2026-09-11):** customer-facing deployment/operations roles at AI-native companies (FDE, deployment/solutions infrastructure), admitted at **≤ ~¼ of the EU-remote/France-compatible lane**, and only where the role stays **infrastructure-heavy** — planning, Kubernetes/Helm, private/on-prem deployment, troubleshooting — not pre-sales or support-ticket work. Blocked from scaling up until real customer-facing evidence exists on the CV (`docs/resume-edits.md`).
-4. **Tier C:** Non-AI SRE/platform bridge role only when it offers architectural scope, strong compensation, and a credible path to AI exposure or relocation — **and only in the last-resort window from ~Apr 2027** (see §10).
+4. **Web3 infrastructure track (added 2026-09-29):** production infrastructure roles at blockchain / crypto / digital-asset employers — protocol and node operations, validator and staking infrastructure, RPC/indexing/data infrastructure, exchange and custody platform engineering, on-chain tooling. Admitted in **every** lane, and treated as the **fastest-to-income** track because it sits directly on Vincent's strongest evidence (Kiln: distributed infrastructure securing $8B+ across 40+ protocol networks; Cometh: multi-zone Kubernetes for Web3 delivery tooling). No AI/ML exposure is required for these roles.
+5. **Tier C:** Non-AI, non-Web3 SRE/platform bridge role only when it offers architectural scope, strong compensation, and a credible path to AI exposure or relocation — **and only in the last-resort window from ~Apr 2027** (see §10).
 
-### ML requirement (definition, amended 2026-09-11)
+### ML preference (amended 2026-09-29: preference, not a gate)
 
-A role qualifies when it must **own or materially operate the platform ML/AI workloads run on** — ML platform / MLOps, ML pipelines, model registry, serving/inference platform, training infrastructure, ML observability — at an AI-native company or in a product company's in-house ML platform organisation. GPU ownership is *not* required; running the platform that hosts models is sufficient. The umbrella term `AI infrastructure` still covers vendor-tier roles, which are admitted as a **secondary** lane.
+ML/AI-platform exposure is **preferred, not required**. A role is admissible without it when it passes the other filters — Web3 infrastructure roles (§2 Admit 4) are admitted by default, and any other platform/SRE role with architectural scope is admissible if it clears compensation, seniority, and start-date filters. Where two roles are otherwise comparable, the one with ML/AI-platform surface wins.
+
+When ML/AI work is present it **qualifies** as before: the role must **own or materially operate the platform ML/AI workloads run on** — ML platform / MLOps, ML pipelines, model registry, serving/inference platform, training infrastructure, ML observability — at an AI-native company or in a product company's in-house ML platform organisation. GPU ownership is *not* required; running the platform that hosts models is sufficient. The umbrella term `AI infrastructure` still covers vendor-tier roles, which are admitted as a **secondary** lane.
 
 Sub-filter within MLOps: prefer the **platform/infrastructure side** (Kubernetes for ML workloads, serving, reliability, capacity/economics, observability) over **data-pipeline authoring** (Airflow/Spark/dbt ownership with no platform scope). The latter does not use the candidate's differentiators.
 
-Widening to AI-adjacent infrastructure (data platform, high-scale platform engineering with a credible AI runway) happens only in late-cliff mode. From ~Apr 2027 (last-resort window), the requirement drops entirely in favour of income continuity.
-
 ### Reject before investing in a process
 
-- Generic SRE/DevOps runbook roles without AI exposure or architectural scope (until the last-resort window).
-- Crypto-continuity roles that do not strengthen AI-infrastructure positioning.
+- Generic SRE/DevOps runbook roles **with no architectural scope and no Web3 infrastructure surface** (until the last-resort window). A runbook role at a Web3 infrastructure employer is admitted on the Web3 track.
 - Staff/Principal roles or roles asking 8+ years.
 - Total compensation below **CHF 110k (CH) / €80k (Berlin) / €80k (EU-remote and France-compatible)**. In late-cliff mode (from ~Feb 2027) the floor may flex to €70k, but only for an offer passing every other filter.
 - On-site roles without relocation assistance or an 8–12 week remote start.
@@ -59,11 +61,15 @@ Widening to AI-adjacent infrastructure (data platform, high-scale platform engin
 
 ### Rank admitted roles
 
-AI/ML-platform depth; architectural scope; 3–6 year seniority match; relocation feasibility; compensation; English-first environment; strategic bridge value. Company stage is not a filter. Within MLOps-titled roles, rank the **platform/infrastructure side** above the data-pipeline-authoring side.
+AI/ML-platform depth; architectural scope; 3–6 year seniority match; relocation feasibility; compensation; **time-to-income**; English-first environment; strategic bridge value. Company stage is not a filter. Within MLOps-titled roles, rank the **platform/infrastructure side** above the data-pipeline-authoring side. Between tracks, rank ML/AI-platform roles above Web3 infrastructure roles **only when time-to-income is equal** — the fastest credible route to a signed offer wins.
 
 ### Search titles
 
-`ML Platform Engineer`, `MLOps Engineer`, `Machine Learning Platform Engineer`, `ML Infrastructure Engineer`, `AI Platform Engineer`, `AI Infrastructure Engineer`, `SRE — ML/AI Platform`, `Reliability Engineer — ML`, `Training Platform Engineer`, `Inference Platform Engineer`, and (secondary, vendor tier) `GPU Platform Engineer`, `HPC/AI Platform Engineer`; (credible secondary lane) `Solutions Engineer`, `Forward Deployed Engineer`, `Deployment/Solutions Infrastructure Engineer`. Responsibilities override title: admit these customer-facing roles only when engineering and product dogfooding remain the foundation of the work, not quota-first account sales or support.
+`ML Platform Engineer`, `MLOps Engineer`, `Machine Learning Platform Engineer`, `ML Infrastructure Engineer`, `AI Platform Engineer`, `AI Infrastructure Engineer`, `SRE — ML/AI Platform`, `Reliability Engineer — ML`, `Training Platform Engineer`, `Inference Platform Engineer`, and (secondary, vendor tier) `GPU Platform Engineer`, `HPC/AI Platform Engineer`; (credible secondary lane) `Solutions Engineer`, `Forward Deployed Engineer`, `Deployment/Solutions Infrastructure Engineer`.
+
+Web3 infrastructure (added 2026-09-29): `Blockchain Infrastructure Engineer`, `Protocol Engineer`, `Node / Validator Operations Engineer`, `Staking Infrastructure Engineer`, `Platform Engineer — Web3`, `DevOps Engineer — Blockchain`, `Infrastructure Engineer (Remote) — Crypto`, `Exchange Platform Engineer`, `Custody Platform Engineer`, `Indexer / RPC Infrastructure Engineer`, `Site Reliability Engineer — Web3`.
+
+Responsibilities override title: admit customer-facing roles only when engineering and product dogfooding remain the foundation of the work, not quota-first account sales or support.
 
 ## 3. Search channels and baseline throughput
 

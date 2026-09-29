@@ -74,6 +74,18 @@ Why not GPU fleet operations (amended 2026-09-11): the GPU-fleet framing came fr
 1. Rapid cross-domain reliability transfer: moved from regulated healthcare (HDS) to crypto infrastructure ($8B+ assets) to multi-protocol distributed systems, each time applying production reliability to a new domain within months.
 2. Infrastructure-to-architecture translation: demonstrated ability to translate infrastructure constraints into architectural decisions and align cross-functional stakeholders.
 
+### Web3 Infrastructure Track
+
+Added 2026-09-29. Production infrastructure roles at blockchain / crypto / digital-asset employers: protocol and node operations, validator and staking infrastructure, RPC, indexing and on-chain data infrastructure, exchange and custody platform engineering. Admitted in **every** lane, with **no AI/ML requirement**, and treated as the fastest route to income because it sits directly on the candidate's strongest evidence (Kiln: distributed infrastructure securing $8B+ across 40+ protocol networks; Cometh: multi-zone Kubernetes for Web3 delivery tooling). It is a *track*, not a fallback: it does not weaken the positioning thesis, it is the same platform/SRE work applied to a domain where the candidate already has production receipts.
+
+### ML Preference (not a gate)
+
+Amended 2026-09-29. ML/AI-platform exposure is preferred and wins ties, but it does not gate admission. A role with no ML surface is admissible when it clears the compensation floor, the seniority band, the start-date constraint, and offers architectural scope — Web3 infrastructure roles by default, other platform/SRE roles case by case. The earlier formulation (a role only qualified if it owned or operated the platform ML workloads run on) is retired; the ML-platform definition itself still describes what the primary lane looks like.
+
+### Earliest-Start Rule
+
+Added 2026-09-29. The 2027-06-01 target start and the 2027-06-15 absolute are **deadlines, not goals**. When two opportunities are otherwise comparable, the faster-to-income one is pursued first, even where the slower one has more ML/AI surface. The income cliff still binds: no accepted offer may start later than 2027-06-15, and the ~€2,900 reserve stays untouched.
+
 ### Role-Selection Criterion
 
 Prefer roles with architectural scope and cross-stakeholder communication over pure operational runbooks. The long-term career direction is toward creative and architectural infrastructure work; the positioning thesis serves the immediate transition but role selection should preserve room for that trajectory.

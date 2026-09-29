@@ -41,6 +41,8 @@ MARKET_LABELS = {
 }
 TITLE_PREFIX = {"de": "DE", "ch": "CH", "fr": "FR", "eu-remote": "EU-REMOTE", "au": "EU-REMOTE", "other": "??"}
 TIER_SIGNALS = ("ml-platform", "mlops", "ml-infra", "ai-platform", "ai-infra", "serving")
+AI_SIGNALS = TIER_SIGNALS + ("ai-ml",)
+WEB3_SIGNALS = ("web3", "blockchain", "crypto", "protocol", "staking", "web3-tech", "web3-infra")
 MARKET_OVERRIDES = {"ch": "market:ch", "de": "market:de", "eu-remote": "market:eu-remote", "fr-bridge": "market:fr-bridge"}
 MARKET_NAMES = {
     "market:ch": "CH",
@@ -101,6 +103,24 @@ def decide_tier(job: dict, override: str | None) -> tuple[str, str]:
     if any(signal in reasons for signal in TIER_SIGNALS):
         return "b", f"heuristic from jobradar signals ({', '.join(reasons)})"
     return "c", f"no ML-platform signal in jobradar reasons ({', '.join(reasons) or 'none'})"
+
+
+def decide_track(job: dict, override: str | None = None) -> tuple[str, str]:
+    """Funnel dimension: AI/ML-platform, Web3 infrastructure, or non-AI bridge.
+
+    Both tracks are in scope; AI/ML is the preferred direction, so it wins when a
+    posting carries signals for both.
+    """
+    if override:
+        return override, "set explicitly"
+    reasons = [r.lstrip("+-") for r in (job.get("reasons") or [])]
+    ai = [r for r in reasons if r in AI_SIGNALS]
+    web3 = [r for r in reasons if r in WEB3_SIGNALS]
+    if ai:
+        return "track:ai", f"AI/ML signals ({', '.join(ai)})"
+    if web3:
+        return "track:web3", f"Web3 signals ({', '.join(web3)})"
+    return "track:bridge", "no AI/ML or Web3 signal in jobradar reasons"
 
 
 def decide_market(lane: str, override: str | None) -> tuple[str | None, str]:
@@ -189,13 +209,13 @@ def add_to_board(issue_url: str) -> tuple[str, str]:
 # ---------------------------------------------------------------- rendering
 
 
-def doc_text(job: dict, market: str | None, tier: str, tier_note: str, evidence: str, today: date) -> str:
+def doc_text(job: dict, market: str | None, tier: str, tier_note: str, evidence: str, today: date, track: str = "track:bridge") -> str:
     f1a, f1b = add_business_days(today, 5), add_business_days(today, 7)
     f2a, f2b = add_business_days(today, 10), add_business_days(today, 14)
     return f"""# {job['company']} — {job['title']}
 
 **Posting:** {job.get('url', '')} · {job.get('location') or 'location n/a'}
-**Market:** {market_name(market)} · **Tier:** {tier.upper()} ({tier_note}) · **Channel:** ATS
+**Market:** {market_name(market)} · **Tier:** {tier.upper()} ({tier_note}) · **Channel:** ATS · **Track:** {track.removeprefix('track:')}
 **Applied:** ✅ {today.isoformat()} · **Stage:** Contacted
 **Follow-ups:** 1st due {f1a} → {f1b} · final {f2a} → {f2b}
 **Evidence version used:** {evidence}
@@ -220,7 +240,7 @@ Auto-logged when the posting was marked applied in the pipeline tool. Outstandin
 """
 
 
-def issue_body(job: dict, market: str | None, tier: str, tier_note: str, evidence: str, today: date) -> str:
+def issue_body(job: dict, market: str | None, tier: str, tier_note: str, evidence: str, today: date, track: str = "track:bridge") -> str:
     template = REPO / ".github" / "ISSUE_TEMPLATE" / "opportunity.md"
     f1a, f1b = add_business_days(today, 5), add_business_days(today, 7)
     f2a, f2b = add_business_days(today, 10), add_business_days(today, 14)
@@ -252,7 +272,7 @@ def issue_body(job: dict, market: str | None, tier: str, tier_note: str, evidenc
     body = "\n".join(lines).strip()
     body += (
         f"\n\n---\n\n_Logged automatically by `jobradar` ({RULES}) when the posting was marked applied. "
-        f"Market and tier are mechanical defaults: {tier_note}. Hard-filter verdict outstanding._\n"
+        f"Track `{track}`, market and tier are mechanical defaults: {tier_note}. Hard-filter verdict outstanding._\n"
         f"\n<!-- jobradar-uid: {job['uid']} -->\n"
     )
     return body
@@ -267,6 +287,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--evidence", default="pre-project")
     parser.add_argument("--tier", choices=["a", "b", "c"])
     parser.add_argument("--market", choices=["ch", "de", "eu-remote", "fr-bridge"])
+    parser.add_argument("--track", choices=["track:ai", "track:web3", "track:bridge"])
     parser.add_argument("--doc-only", action="store_true", help="write the opportunity doc if missing, touch nothing else")
     args = parser.parse_args(argv)
 
@@ -287,6 +308,7 @@ def main(argv: list[str] | None = None) -> int:
     today = date.today()
     tier, tier_note = decide_tier(job, args.tier)
     market, market_note = decide_market(job.get("lane", ""), args.market)
+    track, track_note = decide_track(job, args.track)
     rules = RULES.format(job["uid"], job.get("score"), job.get("lane"))
 
     existing, how = find_issue(job)
@@ -298,7 +320,7 @@ def main(argv: list[str] | None = None) -> int:
         if args.dry_run:
             say(f"[dry-run] would write {doc.relative_to(REPO)}")
             return 0
-        doc.write_text(doc_text(job, market, tier, tier_note, args.evidence, today))
+        doc.write_text(doc_text(job, market, tier, tier_note, args.evidence, today, track))
         say(f"doc written: {doc.relative_to(REPO)}")
         return 0
     if existing:
@@ -318,21 +340,21 @@ def main(argv: list[str] | None = None) -> int:
 
     doc = find_doc(job)
     doc_path = doc or (REPO / "docs" / "opportunities" / f"{slugify(job['company'])}-{slugify(job['title'])}.md")
-    labels = ["channel:ats"] + ([market] if market else []) + [f"tier:{tier}"]
+    labels = ["channel:ats"] + ([market] if market else []) + [f"tier:{tier}", track]
     title = f"[{TITLE_PREFIX.get((job.get('lane') or '').lower(), '??')}] {job['company']} — {job['title']}"
-    body = issue_body(job, market, tier, tier_note, args.evidence, today)
+    body = issue_body(job, market, tier, tier_note, args.evidence, today, track)
 
     if args.dry_run:
         say(f"[dry-run] title:      {title}")
         say(f"[dry-run] labels:     {' '.join(labels)}")
         say(f"[dry-run] doc:        {doc_path.relative_to(REPO)}")
         say(f"[dry-run] issue body: {len(body)} chars")
-        say(f"[dry-run] note:       {market_note} / {tier_note}")
+        say(f"[dry-run] note:       {market_note} / {tier_note} / {track_note}")
         say(body)
         return 0
 
     if not doc_path.exists():
-        doc_path.write_text(doc_text(job, market, tier, tier_note, args.evidence, today))
+        doc_path.write_text(doc_text(job, market, tier, tier_note, args.evidence, today, track))
         doc_note = f"doc {doc_path.name}"
     else:
         doc_note = f"doc {doc_path.name} (existing, untouched)"

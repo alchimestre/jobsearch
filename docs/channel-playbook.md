@@ -54,6 +54,7 @@ Token case is **not** significant (checked Ashby + Greenhouse), so `discover` ca
 | EU Remote Jobs RSS | EU-timezone remote | 15 items |
 | SwissDevJobs RSS | Switzerland | 195 items |
 | GermanTechJobs RSS | Germany | 291 items |
+| CryptoJobsList RSS | Crypto/Web3, all functions — polled, filtered by the scorer | 100 items; employer recovered from the `-at-<company>` URL slug |
 
 ### 2.3 Browser-only (Cloudflare blocks scripts — keep as bookmarks)
 
@@ -67,14 +68,31 @@ berlinstartupjobs.com (`/skill-areas/ai/`, `/skill-areas/remote/` — 32 IT role
 EPFL `epfl.ch/about/working/job-openings/` ✅ live; CSCS and ETH run their own careers pages (paths move —
 follow from the homepage). These are relationship targets first, applications second.
 
-### 2.5 Ranked by signal-to-noise
+### 2.5 Web3 infrastructure sources (added 2026-09-29)
+
+Scope widened by Vincent's instruction: Web3 infrastructure is an admitted track in every lane, ML/LLM stays preferred but non-blocking, and the return to work should be as early as achievable. Because Web3 sits on the deepest evidence on the CV (Kiln $8B+/40+ protocols), it is the **fastest-to-income** track.
+
+**Employer boards, already polled** — 46 Web3 employers were resolved to public ATS endpoints and merged into the watchlist (157 boards total): Alchemy, Anchorage Digital, BitGo, Bitpanda, Bitvavo, Blockdaemon, Blockstream, Bybit, Circle, Coinbase, Compound Labs, Consensys, Dune, Elliptic, Espresso Systems, Fireblocks, Kraken (`ashby:kraken.com` — note dots are valid slugs, so resolve these from the careers **URL**), Ledger, Matter Labs, Mysten Labs, Nethermind, Nomic Foundation, OKX, OP Labs, OpenZeppelin, Parity Technologies, Polygon Labs, QuickNode, Ripple, SwissBorg, Tenderly, TRM Labs, Turnkey, Uniswap Labs, and others. Re-run the sweep with `jobradar discover --json <name>` / `jobradar import seed.yaml --write`.
+
+**Aggregators** (live, verified 2026-09-29; no RSS except CryptoJobsList, so they are browser sweeps): `web3.career` (incl. `/remote-jobs`), `cryptocurrencyjobs.co`, `remote3.co`, `crypto.jobs`, `web3jobs.io`, `cryptojobs.com`. `cryptojobslist.com` is bot-blocked but its `/rss` endpoint is not — that feed is polled by the tool.
+
+**Coverage gap, stated plainly:** the largest Web3 infra employers — Chainlink Labs, Lido, Kiln, Chorus One, DFINITY, StarkWare, Figment, P2P.org, Everstake — are **not** on the seven public ATS endpoints the tool can poll (checked by name sweep and explicit token probing). For those, the aggregators above plus the employer's own careers page are the only route. Kiln and Cometh matter twice here: prior employment means a warm route, which is the single highest-conversion channel available.
+
+**Forums and communities** (relationship and visibility, not an application channel): EthResearch (`ethresear.ch`), Ethereum Magicians (`ethereum-magicians.org`), EthStaker and Ethereum R&D Discords, Flashbots forum, Lido Research forum, Optimism and Arbitrum governance forums, Developer DAO, BuidlGuidl. Practical use: answer one technical question a week in the infrastructure channels; that is the same 60%-outreach lane with a public evidence surface.
+
+**Signal newsletters** (weekly, ~10 min total): Week in Ethereum, Bankless, The Defiant, Blockworks, EthStaker. They surface organisations before they post a requisition.
+
+**Grants and bounties** — visibility and short-term income, not employment: Ethereum Foundation ESP, Optimism RetroPGF, Gitcoin rounds; Immunefi / Code4rena / Sherlock / Cantina for paid security and tooling work **[INFERENCE — not verified this session]**. Nothing here displaces an application; it is the "public evidence" lane applied to Web3.
+
+### 2.6 Ranked by signal-to-noise
 
 1. **ATS watchlist** — first-mover, feeds outreach, dedupes cleanly.
 2. **HN Who-is-hiring** — highest density of directly contactable AI-infra roles.
-3. **Niche RSS** (SwissDevJobs, GermanTechJobs, EU Remote, WWR).
-4. **Broad boards** (Arbeitnow, RemoteOK) — volume, requires the scorer to be useful.
-5. **Institutional career pages** — low volume, high fit for CH.
-6. **LinkedIn alerts** — one input among six, restructured per §4.
+3. **Niche RSS** (SwissDevJobs, GermanTechJobs, EU Remote, WWR, CryptoJobsList).
+4. **Web3 aggregators** (§2.5) — the only route to the Web3 employers that hide their ATS.
+5. **Broad boards** (Arbeitnow, RemoteOK) — volume, requires the scorer to be useful.
+6. **Institutional career pages** — low volume, high fit for CH.
+7. **LinkedIn alerts** — one input among several, restructured per §4.
 
 ### Marking an application is the trigger
 
@@ -96,14 +114,15 @@ analysis, and application answers are deliberately left unwritten.
 ```bash
 cd tools/jobradar
 uv sync
-uv run jobradar scan                 # ~36s for 117 sources
+uv run jobradar scan                 # ~75s for 164 sources
 uv run jobradar tui                  # ranked, deduped queue
 uv run jobradar discover "NewCo" --write      # name or any careers URL
 uv run jobradar export --since 7d --decision high
 ```
 
-- The watchlist currently holds **112 boards** (from the pipeline's own target research plus a broad AI-
-  infra sweep). Re-validate a new list with `jobradar import seed.yaml --write`.
+- The watchlist currently holds **157 boards** (target research + AI-infra sweep + 46 Web3 employers).
+  Re-validate a new list with `jobradar import seed.yaml --write`; batch-discover with
+  `jobradar discover --json <name>` piped from `xargs -P 12`.
 - **Auto-learning is on by default**: any job URL from a feed that points at a known ATS pattern adds that
   board permanently (`auto: true`) and polls it from the next scan. Feeding the tool a single HN link is
   enough to adopt a company.
@@ -113,11 +132,13 @@ uv run jobradar export --since 7d --decision high
   `xneelo.recruitee.com`, and Personio's public Recruitee board is a demo board ("API Job - Berlin -
   Musterstr"). Learned boards are labelled by their slug when the posting's employer name does not match
   it; mute or drop anything outside the lanes.
-- Scan of 2026-09-29: 118 sources, **0 errors**, 196 postings stored — 6 `high`, 190 `review`. The `high`
-  bucket is deliberately small (in-lane + strong title only). Work `high` first, then
-  `jobradar list --lane eu-remote --decision review`.
+- Scan of 2026-09-29 (post-widening): 164 sources, **0 errors**, 231 postings stored — 6 `high`,
+  225 `review`. The `high` bucket is deliberately small: in-lane, in-scope, strong title. Work `high`
+  first, then `jobradar list --lane eu-remote --decision review`.
 - **Budget: ≤1.5 h/week on discovery.** Run the scan, triage, and spend the rest of the 60% lane writing
   to hiring managers. More sources do not help if the outbound lane stays empty.
+- **Triage by track**: `jobradar list --reason blockchain` (or `mlops`, `k8s`, `web3`) isolates a lane;
+  `jobradar rescore --prune` re-applies rule changes to already-stored rows.
 
 ### From posting to outreach (the actual point)
 
@@ -151,9 +172,11 @@ NOT (intern OR Werkstudent OR "working student" OR Recruiter OR Sales OR "Head o
 | Berlin | query above + `Kubernetes OR Kubernetes Platform` | Geography = Germany (Berlin metro) |
 | Switzerland | query above | Geography = Switzerland (Zurich, Basel, Lausanne, Bern, Zug) |
 | Secondary (≤¼ of EU-remote) | `"Forward Deployed Engineer" OR "Solutions Engineer" OR "Deployment Engineer"` + `Kubernetes OR "on-prem"` | Remote + EU; reject pre-sales/quota wording |
+| Web3 infrastructure | `("Blockchain Infrastructure Engineer" OR "Protocol Engineer" OR "Node Operations" OR "Staking Infrastructure" OR "Platform Engineer Web3" OR "SRE Blockchain" OR "DevOps Blockchain")` | Remote + EU; add `NOT (sales OR marketing OR community OR partnerships)` |
 
 Rules that matter more than the query:
 
+- **Web3 roles surface on the aggregators (§2.5) and employer boards before LinkedIn**, so for that track the alert is a backstop, not the source. The 46 verified Web3 boards are already polled directly.
 - **Alert frequency: daily**, not weekly. A posting found on day 9 is a posting found late.
 - Location must be set per alert — a keyword-only alert is what produced the tier-C pile.
 - Turn off the generic "job recommendations" digest; keep "jobs where you'd be a top applicant" only if it
