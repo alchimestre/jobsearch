@@ -23,6 +23,21 @@ Vincent can say. Never enumerate tools — `docs/writing-style.md` has the befor
 - One GitHub issue per live opportunity, moved across the `AI Infra Job Search Pipeline` project board.
 - Market/tier/channel labels are defined in `README.md`.
 
+## Sourcing roles
+
+`docs/channel-playbook.md` is the source stack. `tools/jobradar` (submodule → `alchimestre/jobradar`) is the
+polling tool: ~110 employer ATS boards + 7 machine-readable feeds, one ranked SQLite/TUI queue.
+
+- Discovery runs through it: `cd tools/jobradar && uv run jobradar scan`, then `jobradar tui`, or
+  `jobradar list --decision high`. It auto-adopts any ATS board it sees in a feed's job URL.
+- `jobradar export --since 7d` emits ready-to-paste rows carrying the stable `uid`; quote that uid in the
+  opportunity doc so the store and the issue stay reconcilable.
+- Lane allocation is 60% outreach / 25% ATS / 10% recruiter / 5% evidence. **`channel:outreach` is the lane
+  to watch.** Log every hiring-manager contact as an issue — Stage `Prospecting` if the role is unposted,
+  `Contacted` once sent.
+- Agency recruiters, mass job-board applications, and job-alert scraping stay out (ruled out in wayfinder
+  ticket 08).
+
 ## Default: log every application
 
 When Vincent reports applying to a role — a posting URL, a link, or "I applied to X" — **do it without

@@ -11,6 +11,8 @@ Private repo for Vincent Loupmon's 12-week AI Infrastructure job search and trai
 | `docs/resume-edits.md` | Running CV/profile fix list, incl. confirmed Helm usage and the open customer-facing evidence input. |
 | `research/` | Market and hiring-evidence research (Zurich/Berlin employers; 28-JD benchmark). |
 | `.scratch/ai-infrastructure-job-search/` | Wayfinder decision log — `map.md` (status: complete) and decision tickets 01–10. History, not live tracking. |
+| `docs/channel-playbook.md` | How the pipeline gets fed: source stack (ATS + machine-readable feeds), LinkedIn saved-search config, weekly discovery cadence. **Read before sourcing roles.** |
+| `tools/jobradar` | Submodule → `alchimestre/jobradar` (private). Aggregates ~110 employer ATS boards + 7 feeds into one ranked SQLite/TUI queue. `jobradar export` feeds this repo's tracker. |
 | `CONTEXT.md` | Canonical terms: positioning thesis, differentiators, evidence boundaries, compensation floors. |
 | `.github/ISSUE_TEMPLATE/` | Templates: `opportunity` (per-role), `weekly-review`. |
 
