@@ -13,7 +13,7 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | 11 open issues: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #8 Lity, #9 SAP Fioneer, #10 Otera, #11 Workist, #12 Langdock, #13 Bubblemaps (Screening), **#14 Cohere (EU-remote)**. Closed: #3 vivenu (2026-09-25, `reason:unknown`), #6 Doctolib (2026-09-29, `reason:unknown`). #2 is the duplicate vivenu row |
+| Pipeline | 11 open issues: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #8 Lity, #9 SAP Fioneer, #10 Otera, #11 Workist, #12 Langdock, #13 Bubblemaps (Screening), #14 Cohere (EU-remote). Closed: #3 vivenu (2026-09-25, `reason:unknown`), #6 Doctolib (2026-09-29, `reason:unknown`) |
 
 ## Updated 2026-09-29
 
