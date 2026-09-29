@@ -13,7 +13,7 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | 10 open issues: #1 Cohere, #4 ablefy, #5 vCluster, #7 Sinch, #8 Lity, #9 SAP Fioneer, #10 Otera, #11 Workist, #12 Langdock, **#13 Bubblemaps (Screening)**. Closed: #3 vivenu (2026-09-25, `reason:unknown`), #6 Doctolib (2026-09-29, `reason:unknown`). #2 is the duplicate vivenu row |
+| Pipeline | 11 open issues: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #8 Lity, #9 SAP Fioneer, #10 Otera, #11 Workist, #12 Langdock, #13 Bubblemaps (Screening), **#14 Cohere (EU-remote)**. Closed: #3 vivenu (2026-09-25, `reason:unknown`), #6 Doctolib (2026-09-29, `reason:unknown`). #2 is the duplicate vivenu row |
 
 ## Updated 2026-09-29
 
@@ -47,6 +47,21 @@ Remaining open: **10 issues**. Primary-lane cohort unchanged: #12 Langdock > #11
 
 **First real recruiter channel activity** — this is the `channel:recruiter` lane becoming live for the first
 time (previously 0 conversations against a 1–2/week target).
+
+### Cohere Europe (#14) — second Cohere requisition, applied 2026-09-29
+
+- **FDE, Infrastructure Specialist (Europe)** — `69a9ab2e…`, vs the open **#1** which is France-scoped
+  (`24cdb030…`). **Distinct requisitions, same team.**
+- **Tier B-secondary** (forward-deployed infrastructure, the capped option). Remote-friendly, Paris/Berlin
+  offices, travel 20–40%. GPU orchestration is an explicit *bonus*, not day-one.
+- ⚠️ **Same team twice in 18 days while #1 is unresolved and its follow-ups were never sent.** Cohere may
+  read this as duplicate contact.
+  - **DO NOT run parallel follow-up sequences.** Consolidate into one, or let the overdue #1 final follow-up
+    cover both requisitions
+  - If a recruiter replies on either, **disclose the other application immediately**
+- **Customer-facing evidence gap stays open** — `docs/resume-edits.md` carries it unanswered since
+  2026-09-11, and it gates this B-secondary tier (≤ ~¼ of EU-remote/FR effort). Now the single most valuable
+  unblock, because two live Cohere applications depend on it.
 
 ## Updated 2026-09-26
 
