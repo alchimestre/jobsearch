@@ -87,13 +87,20 @@ uv run jobradar discover "NewCo" --write      # name or any careers URL
 uv run jobradar export --since 7d --decision high
 ```
 
-- The watchlist currently holds **110 boards** (from the pipeline's own target research plus a broad AI-
+- The watchlist currently holds **112 boards** (from the pipeline's own target research plus a broad AI-
   infra sweep). Re-validate a new list with `jobradar import seed.yaml --write`.
 - **Auto-learning is on by default**: any job URL from a feed that points at a known ATS pattern adds that
   board permanently (`auto: true`) and polls it from the next scan. Feeding the tool a single HN link is
   enough to adopt a company.
-- First full scan: 191 postings stored, 6 `high`, 185 `review` — the `high` bucket is deliberately small
-  (in-lane + strong title only). Work `high` first, then `list --lane eu-remote --decision review`.
+- **Mute instead of deleting.** `enabled: false` on a row stops polling *and* stops auto-learning from
+  re-adding it; the entry remains as a record of the find.
+- Auto-learning can adopt a **group or subsidiary** board — a Hetzner feed item pointed at
+  `xneelo.recruitee.com`, and Personio's public Recruitee board is a demo board ("API Job - Berlin -
+  Musterstr"). Learned boards are labelled by their slug when the posting's employer name does not match
+  it; mute or drop anything outside the lanes.
+- Scan of 2026-09-29: 118 sources, **0 errors**, 196 postings stored — 6 `high`, 190 `review`. The `high`
+  bucket is deliberately small (in-lane + strong title only). Work `high` first, then
+  `jobradar list --lane eu-remote --decision review`.
 - **Budget: ≤1.5 h/week on discovery.** Run the scan, triage, and spend the rest of the 60% lane writing
   to hiring managers. More sources do not help if the outbound lane stays empty.
 
