@@ -137,6 +137,14 @@ uv run jobradar export --since 7d --decision high
   first, then `jobradar list --lane eu-remote --decision review`.
 - **Budget: ≤1.5 h/week on discovery.** Run the scan, triage, and spend the rest of the 60% lane writing
   to hiring managers. More sources do not help if the outbound lane stays empty.
+- **Scope gate (added 2026-09-29).** The scanner admits only postings that are **in the EU/EMEA/AU** and
+  written in **English or French**. Everything else is stored with decision `out` and hidden from the
+  default queue: on 2026-09-29 that was `249` stored postings — **`163` in scope, `86` out** — with
+  `5,988` postings excluded at scan time (43 Americas, 15 APAC, 28 German-language JDs among the stored
+  ones). Audit or re-tune with
+  `jobradar list --decision out [--region americas] [--reason lang-de]`; the TUI's `f` key cycles
+  high → review → out → all. Only the JD *language* is judged, never the country — English-language JDs at
+  German employers stay in the Berlin lane.
 - **Triage by track**: `jobradar list --reason blockchain` (or `mlops`, `k8s`, `web3`) isolates a lane;
   `jobradar rescore --prune` re-applies rule changes to already-stored rows.
 

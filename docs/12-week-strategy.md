@@ -53,6 +53,8 @@ Sub-filter within MLOps: prefer the **platform/infrastructure side** (Kubernetes
 ### Reject before investing in a process
 
 - Generic SRE/DevOps runbook roles **with no architectural scope and no Web3 infrastructure surface** (until the last-resort window). A runbook role at a Web3 infrastructure employer is admitted on the Web3 track.
+- Roles based **outside the EU/EMEA** — US, Canada, LatAm, and APAC-only locations are rejected outright (added 2026-09-29), including "Remote - USA" postings. Australia/New Zealand travels on its own lane (§1) rather than as part of EMEA. A posting that offers both a US and a European location stays admissible.
+- Roles whose **job description is not written in English or French** (added 2026-09-29). German-language JDs are excluded; an English-language JD at a German employer is **not**. Public-sector or SME postings written in German are the bulk of this group.
 - Staff/Principal roles or roles asking 8+ years.
 - Total compensation below **CHF 110k (CH) / €80k (Berlin) / €80k (EU-remote and France-compatible)**. In late-cliff mode (from ~Feb 2027) the floor may flex to €70k, but only for an offer passing every other filter.
 - On-site roles without relocation assistance or an 8–12 week remote start.
