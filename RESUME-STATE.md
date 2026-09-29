@@ -13,7 +13,7 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | 9 open issues: #1 Cohere, #4 ablefy, #5 vCluster, #7 Sinch, #8 Lity, #9 SAP Fioneer, #10 Otera, #11 Workist, #12 Langdock. Closed: #3 vivenu (2026-09-25, `reason:unknown`), **#6 Doctolib (2026-09-29, `reason:unknown` — 2-day screen-out)**. #2 is the duplicate vivenu row |
+| Pipeline | 10 open issues: #1 Cohere, #4 ablefy, #5 vCluster, #7 Sinch, #8 Lity, #9 SAP Fioneer, #10 Otera, #11 Workist, #12 Langdock, **#13 Bubblemaps (Screening)**. Closed: #3 vivenu (2026-09-25, `reason:unknown`), #6 Doctolib (2026-09-29, `reason:unknown`). #2 is the duplicate vivenu row |
 
 ## Updated 2026-09-29
 
@@ -31,7 +31,22 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 - **Rejection tally: 2 of 2 closed opportunities are `unknown`** (Doctolib + vivenu). Watch this: if every
   rejection is `unknown`, §7's diagnosis rules have nothing to work with and the funnel stays uninterpretable.
 
-Remaining open: **9 issues**. Primary-lane cohort unchanged: #12 Langdock > #11 Workist > #9 SAP Fioneer.
+Remaining open: **10 issues**. Primary-lane cohort unchanged: #12 Langdock > #11 Workist > #9 SAP Fioneer.
+
+### Bubblemaps (#13) — new, Screening, via recruiter Yofy
+
+- SRE / Data Engineer at **Bubblemaps** (bubblemaps.io), **French** Web3 company — onchain forensics/analytics
+- Recruiter call completed 2026-09-29. Quoted **€60–80k**; asked **€70,000 minimum**. **Awaiting CTO decision**
+- **Tier C** — no ML-platform surface, and §2's crypto-continuity rejection fires (Kiln is already crypto)
+- ⚠️ **FLOOR EXCEPTION.** €70k is below the €80k floor. Late-cliff (~Feb 2027) and last-resort (~Apr 2027)
+  modes are **not active**, so this runs outside the plan on compensation. Recorded as a **conscious labelled
+  exception**: income continuity, live recruiter, low investment. **Do not pool with the primary lane, and do
+  not let the floor read as having moved.**
+- Does not count toward ML-platform conversion
+- Follow-up: ping Yofy **2026-10-06** if no CTO answer
+
+**First real recruiter channel activity** — this is the `channel:recruiter` lane becoming live for the first
+time (previously 0 conversations against a 1–2/week target).
 
 ## Updated 2026-09-26
 
