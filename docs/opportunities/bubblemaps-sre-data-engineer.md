@@ -51,6 +51,31 @@ should be a **conscious labelled exception**, not a quiet drift:
 - The recruiter quoted €60–80k and the ask was €70k — landing mid-band. [INFERENCE] the CTO conversation is
   the real gate; comp may not be the binding constraint.
 
+## If the CTO is open to freelancing — TJM (added 2026-09-29)
+
+Reference: full-time engagement, 200 billable days/year (4–5 weeks unpaid leave + sick/bench).
+Employer cost multiplier 1.42 [INFERENCE — standard cadre range 1.40–1.45; no reduction générale at 70k].
+
+| | €60k | €70k | €80k |
+|---|---|---|---|
+| Client all-in cost | ~€85k | **~€100k** | ~€114k |
+| Cost-parity TJM @200 d | €426 | **€500** | €568 |
+| @210 d | €405 | €476 | €541 |
+| @218 d | €390 | €459 | €521 |
+
+- **€500/day = the €70k ask expressed as client cost** — the defensible floor.
+- **€550/day = ~€77k CDI-equivalent**, i.e. the top of their own band. **This is the opening ask.**
+- **€600/day (~€84k-equivalent)** only if part-time, or if the CDI would have carried tokens/equity.
+- Never let the client convert TJM = gross ÷ 218 (would give €321). Anchor on *cost*: 70k gross costs
+  them ~€100k all-in.
+
+Pitch: *"A CDI at 70k costs you about €100k all-in. At 200 billed days that's €500/day cost-neutral; I'm
+asking €550 because I'm funding my own leave, sick cover and unemployment insurance."*
+
+Caveats to resolve on the CTO call: days/month and duration; whether Bubblemaps contracts directly or via
+Yofy (agency margin compresses the rate); and that invoicing >9 days/month zeroes ARE, so part-time only
+makes sense at €550+.
+
 ## Why it may still be worth pursuing
 
 1. **Income continuity outranks everything at the cliff**, and a live recruiter conversation at €70k is a real

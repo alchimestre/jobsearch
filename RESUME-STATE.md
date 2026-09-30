@@ -13,7 +13,7 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | 11 open issues: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #8 Lity, #9 SAP Fioneer, #10 Otera, #11 Workist, #12 Langdock, #13 Bubblemaps (Screening), #14 Cohere (EU-remote). Closed: #3 vivenu (2026-09-25, `reason:unknown`), #6 Doctolib (2026-09-29, `reason:unknown`) |
+| Pipeline | **19 issues: 15 open, 4 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #8 Lity, #9 SAP Fioneer, #10 Otera, #11 Workist, #12 Langdock, #13 Bubblemaps (`Screening`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #19 Nebius Token Factory. Closed: #3 vivenu, #6 Doctolib, #16 Synthesia (all `reason:unknown`) |
 
 ## Updated 2026-09-29
 
@@ -47,6 +47,45 @@ Remaining open: **10 issues**. Primary-lane cohort unchanged: #12 Langdock > #11
 
 **First real recruiter channel activity** — this is the `channel:recruiter` lane becoming live for the first
 time (previously 0 conversations against a 1–2/week target).
+
+### Synthesia (#16) closed — `reason:unknown`, same-day screen-out
+
+Applied and refused **the same day** (2026-09-29). No reason given → `unknown`.
+
+**Predicted before applying, so not new information:** the note flagged this as a deliberate long-shot with
+**two hard filters firing explicitly in the JD** — `(Senior or Staff)` asking **7+ years as a software
+engineer** against ~4 evidenced, and a **Python implementation stage** against an evidence boundary that
+excludes production Python claims. Comp (€130k base + RSUs) and remote-from-France both passed.
+
+**§7 rules 1–3 not triggered** (no screen; week 2; ATS not outreach). No strategy change.
+
+### ⚠️ Three closed, three `unknown` — the funnel is now uninformative
+
+**#3 vivenu, #6 Doctolib, #16 Synthesia: all closed `reason:unknown`, all pre-screen.** This is a
+measurement problem, not just bad luck:
+
+- §7 rules 2 and 4 (screen-to-rejection, compensation mismatch) depend on **classified** rejection reasons
+- §3's one feedback request is available **only after a recruiter screen**
+- Therefore **no pre-screen refusal can ever be classified.** Every closed row teaches nothing
+
+Two implications for the Friday review:
+
+1. **Pre-screen volume generates no learning.** Volume only pays if some applications reach screens. Signal
+   can only come from the primary-lane roles: **#12 Langdock, #11 Workist, #9 SAP Fioneer**.
+2. **Deliberate long-shots are now a measurable tax.** Doctolib and Synthesia both failed on seniority bars
+   visible in the JD *before* applying; neither produced information. **Consider tightening the seniority
+   filter rather than spending applications on roles that state `Staff` / `8+ years` outright.**
+
+**Also flagged:** two of the three closed rows (#6, #16) failed the seniority filter explicitly. If a fourth
+appears, that is a targeting pattern, not a per-role result — and per §7 rule 2 the response is to narrow
+the role band.
+
+### Issues #15–19 logged in other sessions (first seen 2026-09-29)
+
+Not created this session; discovered when the board read refreshed. #15 Dialectic (CH, Prospecting),
+#17 ClickHouse (EU-remote, Contacted), #18 Nebius ML Infrastructure (EU-remote, Contacted),
+#19 Nebius Token Factory SRE (DE, Contacted). **#18 and #19 are both Nebius** — check for the same
+double-application risk flagged on Cohere (#1/#14).
 
 ### Cohere Europe (#14) — second Cohere requisition, applied 2026-09-29
 
