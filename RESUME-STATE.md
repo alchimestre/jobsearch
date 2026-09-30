@@ -13,7 +13,27 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | **21 issues: 17 open, 4 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #8 Lity, #9 SAP Fioneer, #10 Otera, #11 Workist, #12 Langdock, #13 Bubblemaps (`Screening`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #19 Nebius Token Factory, #20 Peak3, #21 MarvelX (NL). Closed: #3 vivenu, #6 Doctolib, #16 Synthesia (all `reason:unknown`) |
+| Pipeline | **21 issues: 17 open, 4 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #8 Lity, #9 SAP Fioneer, #10 Otera, #11 Workist, #12 Langdock, #13 Bubblemaps (`Screening`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #19 Nebius Token Factory, #20 Peak3, #21 MarvelX (NL, `Screening`). Closed: #3 vivenu, #6 Doctolib, #16 Synthesia (all `reason:unknown`) |
+
+## Updated 2026-09-30
+
+**MarvelX (#21) → `Screening`.** MarvelX replied to the 2026-09-29 Typeform application with a
+**questionnaire**, completed and returned **2026-09-30**. Board Stage moved Contacted → Screening.
+
+- **1 business day** from application to a human response, on a route with no ATS to batch-screen from.
+  Fastest response in the pipeline (Doctolib took 2 business days to refuse); the day-1–2 application timing
+  produced its first payoff.
+- **Screening, not interview.** A written questionnaire costs MarvelX no human hour yet.
+- ⚠️ **Questionnaire content not captured.** Questions and answers must go into the opportunity doc. A
+  questionnaire normally asks exactly the three open items: relocation support, 8–12 week in-office
+  flexibility, and salary expectation (€85,000 would then be on record twice).
+- **The relocation gate is unmoved** — no sponsorship, no relocation budget, no remote start in the posting.
+  #21 still fails the §2 relocation filter on the letter of the JD, and relocation funding is still the whole
+  outcome.
+- Follow-ups: **2026-10-07** (1st), **2026-10-16** (final). No other issue is at `Screening` except #13
+  Bubblemaps, which is waiting on a CTO decision.
+
+Primary-lane order: **#21 MarvelX (Screening) > #12 Langdock > #11 Workist > #9 SAP Fioneer.**
 
 ## Updated 2026-09-29
 

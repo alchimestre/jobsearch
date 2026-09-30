@@ -4,7 +4,8 @@
 **Org:** MarvelX — AI agents for regulated industries (insurance, financial services); "audit-ready AI workforce for modern insurance carriers and TPAs". Amsterdam-built. Compliance credentials displayed: **ISO 27001, SOC 2, GDPR**.
 **Apply route:** Typeform (`form.typeform.com/to/dobvzR4N`) — **not an ATS**, so no board record for jobradar to auto-adopt
 **Market:** **NL (Amsterdam, hybrid — 3 days/week in office)** · **Tier:** A/B (owns the platform AI workloads run on) · **Channel:** ATS (company site → Typeform)
-**Applied:** ✅ 2026-09-29 · **Salary stated: €85,000 + relocation support requested** · **Follow-up 1 due:** 2026-10-07 · **Follow-up 2 due:** 2026-10-16 (final)
+**Applied:** ✅ 2026-09-29 · **Salary stated: €85,000 + relocation support requested**
+**Stage:** **Screening** — employer sent a questionnaire 2026-09-30, **completed and returned the same day** · **Next action:** await review outcome; follow up **2026-10-07** (1st) · **2026-10-16** (final)
 
 ## Why this fits — the cleanest evidence match in the pipeline
 
@@ -72,6 +73,30 @@ Draft used, with the deliberate deviation of naming relocation in the same breat
 4. What does "supporting AI/ML workloads" mean in practice — managed serving endpoints, or self-hosted inference on GPU nodes?
 5. On-call model and team size ("small, senior" — how small?)
 
+## Questionnaire — received 2026-09-30, returned the same day (Stage → Screening)
+
+MarvelX's first response to the Typeform application was a **questionnaire**, not a rejection and not a call.
+Completed and submitted **2026-09-30** — one business day after applying on day 1–2 of the posting, the
+fastest human response in the pipeline to date.
+
+**What this establishes**
+
+- The application cleared the first read. Applying the day the role went live did its job on a Typeform
+  route, which leaves the employer no ATS to batch-screen from.
+- **Screening, not interview.** A written questionnaire is the cheapest screen available; no MarvelX hour has
+  been spent yet.
+- The relocation conversation has now started on MarvelX's side of the table, not just in the salary field.
+
+**⚠️ Questionnaire content not captured yet** — questions and answers need recording here, because a
+questionnaire normally asks exactly the three open items:
+
+1. **Relocation support** — asked or not? This is the hard-filter failure on the posting.
+2. **In-office flexibility for the first 8–12 weeks** while relocating from France.
+3. **Salary expectation** — if asked and answered, €85,000 is now on record twice.
+
+Until the content is recorded, treat the relocation gate as **unmoved**: no sponsorship, no relocation
+budget, no stated remote start.
+
 ## Stack overlap and gaps
 
 **Overlap:** Kubernetes (production ownership), Terraform, observability (Prometheus, Grafana, OpenTelemetry, ELK), Docker, Linux/Bash, Helm, multi-cloud, security/compliance (ISO 27001 led).
@@ -81,18 +106,19 @@ Draft used, with the deliberate deviation of naming relocation in the same breat
 ## Timeline
 
 - Contacted / applied: **2026-09-29** (Typeform, day 1–2 of posting)
-- Follow-up 1 due (5–7 business days): **2026-10-07**
+- **Questionnaire received and returned: 2026-09-30** → Stage **Screening**
+- Follow-up 1 due (5–7 business days from the questionnaire): **2026-10-07**
 - Follow-up 2 due (10–14 business days): **2026-10-16** (final)
 - Screen date: —
 - Interview dates: —
-- Outcome: pending
+- Outcome: pending — awaiting review of the questionnaire
 
 ## Outcome record
 
-- Stage reached: Contacted
+- Stage reached: **Screening** (questionnaire completed 2026-09-30)
 - Rejection reason (relevance / readiness / compensation / location / unknown): pending
 - **Watch:** the relocation question is the whole outcome. If they cannot fund the move or flex the in-office
   requirement, nothing else matters — and that is better learned at screen than at offer.
 - **Timing advantage:** applied on day 1–2 of a freshly posted role ("published Sep 29, 2026"). Best possible
-  application timing in the pipeline.
+  application timing in the pipeline; the same-day questionnaire is the first payoff from it.
 - What would have changed the outcome: relocation support (raised proactively in the application)
