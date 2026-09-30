@@ -87,7 +87,7 @@ Not created this session; discovered when the board read refreshed. #15 Dialecti
 #19 Nebius Token Factory SRE (DE, Contacted). **#18 and #19 are both Nebius** — check for the same
 double-application risk flagged on Cohere (#1/#14).
 
-### Cohere Europe (#14) — second Cohere requisition, applied 2026-09-29
+### Cohere (#14) — second Cohere requisition, applied 2026-09-29
 
 - **FDE, Infrastructure Specialist (Europe)** — `69a9ab2e…`, vs the open **#1** which is France-scoped
   (`24cdb030…`). **Distinct requisitions, same team.**
@@ -101,6 +101,14 @@ double-application risk flagged on Cohere (#1/#14).
 - **Customer-facing evidence gap stays open** — `docs/resume-edits.md` carries it unanswered since
   2026-09-11, and it gates this B-secondary tier (≤ ~¼ of EU-remote/FR effort). Now the single most valuable
   unblock, because two live Cohere applications depend on it.
+- ⛔ **Follow-up BLOCKED 2026-09-29 — no reachable Cohere human.** No recruiter InMail, no ATS confirmation
+  reply address, no named contact. The consolidated draft (covering both requisitions) is held at
+  `docs/outreach/cohere-follow-up-two-requisitions.md` and is not actionable.
+  - **Unblock:** a named contact appears via an ATS reply, recruiter InMail, or an inbound reply on either requisition
+  - **Do NOT apply a third time to Cohere to create a contact** — worse than silence
+  - Both rows stay silent ATS applications at Stage `Contacted`, no outreach owed
+  - **Generalisable lesson: find the human you would follow up with *before* applying.** An application with no
+    contact route is a one-shot with no recovery path — that is the 25% ATS lane, not the 60% outreach lane.
 
 ## Updated 2026-09-26
 
@@ -127,6 +135,10 @@ ownership outright.
 **Langdock open item:** the two free-text answers were submitted before the grilling session completed
 (Q2 "proudest work" was never resolved; Q1 depended on it). **Recover the submitted text** from the LinkedIn
 confirmation email and store it in the opportunity note so interview claims stay consistent.
+
+**Outreach lane (`channel:outreach`) — still 0 issues.** Four drafts exist in `docs/outreach/`; none sent.
+Cohere is **blocked** (no reachable human). The three live candidates all have a resolvable target, though
+Langdock and SAP Fioneer still need a **named recipient** found on LinkedIn before sending.
 
 **Everything else logged today is Tier C bridge** — excluded from primary-lane conversion rates.
 

@@ -6,10 +6,19 @@
 
 | File | Target | Status |
 |---|---|---|
-| `cohere-follow-up-two-requisitions.md` | Cohere (#1 + #14) | **Highest value.** Follow-up on two live applications; #1's windows were missed |
-| `workist-senior-platform-engineer.md` | Fabian Brosig, CTO (#11) | Sendable; strongest of the three cold notes |
-| `sap-fioneer-ai-platform-engineer.md` | SAP Fioneer (#9) | Sendable as written |
+| `workist-senior-platform-engineer.md` | Fabian Brosig, CTO (#11) | **Sendable.** Named recipient, strongest of the cold notes |
+| `sap-fioneer-ai-platform-engineer.md` | SAP Fioneer (#9) | **Sendable as written** |
 | `langdock-platform-engineer.md` | Langdock (#12) | Sendable after a light edit — currently undersells |
+| `cohere-follow-up-two-requisitions.md` | Cohere (#1 + #14) | **BLOCKED** — no reachable human. Held, not sent |
+
+## Notes
+
+- **Cohere is blocked, not abandoned.** The draft covers two live applications and is worth sending the
+  moment a contact exists. Do not apply a third time to create one.
+- **The three sendable drafts each need a named recipient resolved first.** Workist's is already resolved
+  (Fabian Brosig, CTO). Langdock and SAP Fioneer were addressed without a name — resolve the hiring manager
+  or a senior platform engineer on LinkedIn before sending, so the message lands on a person rather than a
+  company.
 
 ## Rules
 
