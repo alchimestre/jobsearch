@@ -163,7 +163,16 @@ LinkedIn's keyword box accepts quoted phrases and `AND` / `OR` / `NOT` / parenth
 verify once by running a query and checking the result count differs from an ungrouped one. If the
 operators are rejected, fall back to one saved search per title in the §2 title list.
 
-**Primary search (EU-remote lane):**
+> ⚠️ **RESOLVED 2026-09-29 — the operators do not work as assumed.** Vincent ran the check: the unified
+> grouped query returns **fewer** results locally than the single plain phrase `ML Platform Engineer`. A
+> superset query cannot return fewer results than one of its own terms, so either the exclusions are
+> silently dropped or matching degrades to single-word/relevance rather than phrase matching.
+>
+> **Use one saved search per title instead** (the §2 title list), with **Location set in the UI filter**.
+> Filter seniority at triage by title (`Staff` / `Principal` / `Lead` / `Head of` / `Director`), not with
+> keyword operators. Full checklist and the corrected procedure: `docs/linkedin-saved-searches.md` §4.
+
+**Primary search (EU-remote lane) — ⚠️ SUPERSEDED, do not paste into LinkedIn:**
 
 ```
 ("ML Platform Engineer" OR "MLOps Engineer" OR "Machine Learning Platform Engineer"
@@ -172,6 +181,13 @@ operators are rejected, fall back to one saved search per title in the §2 title
 NOT (intern OR Werkstudent OR "working student" OR Recruiter OR Sales OR "Head of" OR Director
  OR Staff OR Principal OR Lead OR "8+ years" OR "10+ years")
 ```
+
+> ⚠️ **Superseded 2026-09-29 by the finding above.** The operator syntax this query depends on does not work
+> as assumed, so pasting it produces *worse* results than the plain phrase `ML Platform Engineer`. The
+> **title list inside it is still correct and authoritative** — use it as nine separate saved searches
+> instead. Retained here as the source of the title list, not as a query to run.
+>
+> Full corrected procedure: `docs/linkedin-saved-searches.md` §4.
 
 > **Amended 2026-09-29 — seniority exclusions added.** The original clause omitted them, and the rejection
 > data showed that was a defect: both #6 Doctolib (`Staff`, 8+ years) and #16 Synthesia (`Senior or Staff`,

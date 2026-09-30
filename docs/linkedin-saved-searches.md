@@ -121,16 +121,63 @@ the aggregators *before* LinkedIn. Tag these `track:web3` when logging.
 
 ---
 
-## 4. Verify the operator syntax once
+## 4. Verify the operator syntax once — **RESOLVED 2026-09-29: operators do not work as assumed**
 
-`docs/channel-playbook.md` §4.1 marks LinkedIn's `AND`/`OR`/`NOT`/parentheses support as **[INFERENCE]**.
-Confirm it once: run the grouped primary query and an ungrouped equivalent, and compare result counts.
+`docs/channel-playbook.md` §4.1 marked LinkedIn's `AND`/`OR`/`NOT`/parentheses support as **[INFERENCE]** and
+flagged it for a one-time check. **The check was run and it failed.**
 
-- **Counts differ** → operators are parsed; keep the grouped queries above.
-- **Counts identical** → operators are ignored; fall back to **one saved search per title** from the §2
-  title list, each with the same location filters.
+**Evidence (Vincent, 2026-09-29):**
+- The unified grouped primary query returns **fewer** results locally than the single phrase `ML Platform Engineer`
+- A superset query (9 titles OR'd) **cannot** return fewer results than one of its own terms
 
-Do this before creating five alerts around syntax that may not work.
+**Conclusion:** either the exclusions are silently dropped, or the query degrades to single-word/relevance
+matching rather than phrase matching. In both cases the grouped query is *worse* than the plain phrase.
+**Do not use it.**
+
+### Therefore: one saved search per title
+
+Paste each title **alone** into the LinkedIn search box, set **Location** in the UI filter, then toggle
+**Set alert** → Daily.
+
+```
+ML Platform Engineer
+MLOps Engineer
+Machine Learning Platform Engineer
+ML Infrastructure Engineer
+AI Platform Engineer
+AI Infrastructure Engineer
+Inference Platform Engineer
+Training Platform Engineer
+SRE ML Platform
+```
+
+Nine clean phrase-match queues beat one muddy queue. LinkedIn's relevance ranking works *for* you on an exact
+title and against you on a word soup.
+
+### Where the exclusions went
+
+The seniority and role exclusions below **cannot** be trusted as keyword operators. **Filter them at triage
+instead** — skip any alert result whose title contains `Staff`, `Principal`, `Lead`, `Head of`, `Director`,
+`Recruiter`, or `Sales`. That is a 5-second read per alert, versus a filter that silently fails.
+
+Location likewise must be set in the **UI filter**, not the keyword string.
+
+---
+
+## 4b. The queries (reference only — see §4 for why not to use the grouped form)
+
+Retained because the title list and the lane logic are still correct; only the operator syntax is
+unreliable.
+
+**Primary search (EU-remote lane):**
+
+```
+("ML Platform Engineer" OR "MLOps Engineer" OR "Machine Learning Platform Engineer"
+ OR "ML Infrastructure Engineer" OR "AI Platform Engineer" OR "AI Infrastructure Engineer"
+ OR "Inference Platform Engineer" OR "Training Platform Engineer" OR "SRE ML Platform")
+NOT (intern OR Werkstudent OR "working student" OR Recruiter OR Sales OR "Head of" OR Director
+ OR Staff OR Principal OR Lead OR "8+ years" OR "10+ years")
+```
 
 ---
 
