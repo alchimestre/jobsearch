@@ -32,7 +32,7 @@ One issue per live opportunity; move it through the board as it progresses.
 
 | Prefix | Values |
 |---|---|
-| `market:` | `ch` · `de` · `eu-remote` · `fr-bridge` |
+| `market:` | `ch` · `de` · `nl` · `eu-remote` · `fr-bridge` |
 | `tier:` | `a` (owns AI infra) · `b` (SRE at AI-native) · `c` (bridge) |
 | `channel:` | `outreach` · `ats` · `recruiter` |
 | `track:` | `ai` (ML/LLM platform, preferred) · `web3` (blockchain infrastructure, admitted, fastest to income) · `bridge` (non-AI platform role) |
@@ -44,7 +44,7 @@ One issue per live opportunity; move it through the board as it progresses.
 
 - Due follow-ups: filter `label:channel:` + your tracker date in the issue body; the board keeps the stage.
 - Rejection mix: `is:closed label:reason:*` grouped by label.
-- Market split: `label:market:ch` vs `label:market:de` vs `label:market:eu-remote` vs `label:market:fr-bridge` (lane allocation is EU-remote/FR 50% · Berlin 35% · CH 15%; response/screen rates kept per lane in weekly reviews).
+- Market split: `label:market:ch` vs `label:market:de` vs `label:market:nl` vs `label:market:eu-remote` vs `label:market:fr-bridge` (lane allocation is EU-remote/FR 50% · Berlin 35% · CH 15% — NL has no allocation yet; response/screen rates kept per lane in weekly reviews).
 
 ## Agent workflow conventions
 

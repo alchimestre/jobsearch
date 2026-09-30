@@ -28,7 +28,7 @@ The single portfolio project that closes the programming and SLO gaps and adds t
 
 ### Search Lanes
 
-Effort split across active search (amended 2026-09-11): **EU-remote / France-compatible 50%**, **Berlin 35%**, **Switzerland 15%**. Switzerland is a relationship-building and selective-application lane only; it is not a job-#1 market. This replaces the original Switzerland-60 / Berlin-40 market split.
+Effort split across active search (amended 2026-09-11): **EU-remote / France-compatible 50%**, **Berlin 35%**, **Switzerland 15%**. Switzerland is a relationship-building and selective-application lane only; it is not a job-#1 market. This replaces the original Switzerland-60 / Berlin-40 market split. The Netherlands became an admissible physical market on 2026-09-30 (see Target Countries); no effort share has been assigned to it yet.
 
 ### Destination Hierarchy
 
@@ -40,6 +40,12 @@ The order in which destinations are pursued, given that job #1 need not relocate
 4. **Australia** — added 2026-09-11 on Vincent's request. Desired destination, but **employer-sponsored only**: Vincent's assessment is that his profile does not clear the Australian points-based system, so a job offer is the required path (recorded as Vincent's own read; no Australian immigration policy was researched this session). Does not change job #1, which stays EU-remote/France-compatible for income reasons. Feasible route: remote-first employers whose hiring footprint already includes Australia.
 
 Physical relocation happens only on a signed offer, funded by relocation assistance or an 8–12 week remote-start ramp.
+
+### Target Countries
+
+Added 2026-09-30. The places a role may require physical presence: **France, Germany, Switzerland, the Netherlands**. A hybrid or on-site posting outside those four is out of scope however good the title is — London, Warsaw, Madrid, Tel Aviv and US sites included. A remote posting is in scope when it names one of the four or is open to a broad region that contains them (EU, EMEA, Europe, worldwide, anywhere), and out when it names only some other country (`Remote - US`, `Remote, United Kingdom`). A remote posting that says nothing about geography is kept, flagged `-geo-unverified`, and reviewed by hand rather than dropped.
+
+Enforced by jobradar's geography gate: `target_countries` in `tools/jobradar/config.yaml`. Work mode (`remote`/`hybrid`/`onsite`) and country are stored per row and visible in the TUI and `jobradar list --mode/--country`.
 
 ### Income Cliff
 

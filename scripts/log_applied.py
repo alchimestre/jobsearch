@@ -12,7 +12,7 @@ Called as a jobradar hook when a posting is marked `applied` in the TUI (or via
 Everything the tool cannot know (hard-filter verdict, tier, JD analysis,
 application answers) is left explicitly unreviewed rather than guessed silently.
 
-Usage:  log_applied.py [--dry-run] [--evidence pre-project] [--tier a|b|c] [--market ch|de|eu-remote|fr-bridge]
+Usage:  log_applied.py [--dry-run] [--evidence pre-project] [--tier a|b|c] [--market ch|de|nl|eu-remote|fr-bridge]
         echo '{"company": "...", ...}' | log_applied.py
 """
 
@@ -36,17 +36,19 @@ MARKET_LABELS = {
     "de": "market:de",
     "ch": "market:ch",
     "fr": "market:fr-bridge",
+    "nl": "market:nl",
     "eu-remote": "market:eu-remote",
     "au": "market:eu-remote",  # remote-first employer; the AU dimension goes in the body
 }
-TITLE_PREFIX = {"de": "DE", "ch": "CH", "fr": "FR", "eu-remote": "EU-REMOTE", "au": "EU-REMOTE", "other": "??"}
+TITLE_PREFIX = {"de": "DE", "ch": "CH", "fr": "FR", "nl": "NL", "eu-remote": "EU-REMOTE", "au": "EU-REMOTE", "other": "??"}
 TIER_SIGNALS = ("ml-platform", "mlops", "ml-infra", "ai-platform", "ai-infra", "serving")
 AI_SIGNALS = TIER_SIGNALS + ("ai-ml",)
 WEB3_SIGNALS = ("web3", "blockchain", "crypto", "protocol", "staking", "web3-tech", "web3-infra")
-MARKET_OVERRIDES = {"ch": "market:ch", "de": "market:de", "eu-remote": "market:eu-remote", "fr-bridge": "market:fr-bridge"}
+MARKET_OVERRIDES = {"ch": "market:ch", "de": "market:de", "nl": "market:nl", "eu-remote": "market:eu-remote", "fr-bridge": "market:fr-bridge"}
 MARKET_NAMES = {
     "market:ch": "CH",
     "market:de": "DE",
+    "market:nl": "NL",
     "market:eu-remote": "EU-remote",
     "market:fr-bridge": "FR-bridge",
 }
@@ -248,7 +250,7 @@ def issue_body(job: dict, market: str | None, tier: str, tier_note: str, evidenc
         "Company:": f"Company: {job['company']}",
         "Role:": f"Role: {job['title']}",
         "Posting URL:": f"Posting URL: {job.get('url', '')}",
-        "Market (CH / DE / EU-remote / FR):": f"Market (CH / DE / EU-remote / FR): {market_name(market)}",
+        "Market (CH / DE / NL / EU-remote / FR):": f"Market (CH / DE / NL / EU-remote / FR): {market_name(market)}",
         "Employer tier (A / B / C):": f"Employer tier (A / B / C): {tier.upper()} — {tier_note}",
         "Channel (outreach / ATS / recruiter):": "Channel (outreach / ATS / recruiter): ATS",
         "Evidence version used (pre-project / early Python / completed Python / Go):": f"Evidence version used (pre-project / early Python / completed Python / Go): {evidence}",
@@ -286,7 +288,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--dry-run", action="store_true", help="print the plan; make no changes")
     parser.add_argument("--evidence", default="pre-project")
     parser.add_argument("--tier", choices=["a", "b", "c"])
-    parser.add_argument("--market", choices=["ch", "de", "eu-remote", "fr-bridge"])
+    parser.add_argument("--market", choices=["ch", "de", "nl", "eu-remote", "fr-bridge"])
     parser.add_argument("--track", choices=["track:ai", "track:web3", "track:bridge"])
     parser.add_argument("--doc-only", action="store_true", help="write the opportunity doc if missing, touch nothing else")
     args = parser.parse_args(argv)
