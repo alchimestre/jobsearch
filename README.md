@@ -7,6 +7,9 @@ Private repo for Vincent Loupmon's 12-week AI Infrastructure job search and trai
 | Path | Contents |
 |---|---|
 | `docs/12-week-strategy.md` | **Approved operating plan** (amended 2026-09-11: income cliff, lane allocation, conditional Go, late-cliff/last-resort modes — see §10). Weekly allocations, milestones, funnel signals, adaptation thresholds. Read this first. |
+| `docs/channel-playbook.md` | How the pipeline gets fed: source stack, ATS watchlist, LinkedIn filtering (§4), weekly cadence. |
+| `docs/linkedin-saved-searches.md` | Operational checklist for the LinkedIn alerts: paste-ready queries, location filters, seniority exclusions, verification list. |
+| `docs/outreach/` | Draft outreach messages for hiring managers, stashed for review before sending. |
 | `docs/evidence-package.md` | CV restructure outline, LinkedIn narrative, GPU-operator README outline, outreach templates. |
 | `docs/resume-edits.md` | Running CV/profile fix list, incl. confirmed Helm usage and the open customer-facing evidence input. |
 | `research/` | Market and hiring-evidence research (Zurich/Berlin employers; 28-JD benchmark). |

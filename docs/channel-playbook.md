@@ -169,8 +169,18 @@ operators are rejected, fall back to one saved search per title in the §2 title
 ("ML Platform Engineer" OR "MLOps Engineer" OR "Machine Learning Platform Engineer"
  OR "ML Infrastructure Engineer" OR "AI Platform Engineer" OR "AI Infrastructure Engineer"
  OR "Inference Platform Engineer" OR "Training Platform Engineer" OR "SRE ML Platform")
-NOT (intern OR Werkstudent OR "working student" OR Recruiter OR Sales OR "Head of" OR Director)
+NOT (intern OR Werkstudent OR "working student" OR Recruiter OR Sales OR "Head of" OR Director
+ OR Staff OR Principal OR Lead OR "8+ years" OR "10+ years")
 ```
+
+> **Amended 2026-09-29 — seniority exclusions added.** The original clause omitted them, and the rejection
+> data showed that was a defect: both #6 Doctolib (`Staff`, 8+ years) and #16 Synthesia (`Senior or Staff`,
+> 7+ years) were refused pre-screen on bars stated in the JD before applying. Neither produced a classified
+> reason, so both were pure cost. Do **not** exclude `Senior` — that is the target band.
+> Operational checklist: `docs/linkedin-saved-searches.md`.
+>
+> **Location is the higher-impact fix.** A keyword-only alert is what produced the tier-C pile; every alert
+> needs its geography set.
 
 **Variants to save separately:**
 
