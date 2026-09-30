@@ -13,7 +13,7 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | **19 issues: 15 open, 4 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #8 Lity, #9 SAP Fioneer, #10 Otera, #11 Workist, #12 Langdock, #13 Bubblemaps (`Screening`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #19 Nebius Token Factory. Closed: #3 vivenu, #6 Doctolib, #16 Synthesia (all `reason:unknown`) |
+| Pipeline | **21 issues: 17 open, 4 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #8 Lity, #9 SAP Fioneer, #10 Otera, #11 Workist, #12 Langdock, #13 Bubblemaps (`Screening`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #19 Nebius Token Factory, #20 Peak3, #21 MarvelX (NL). Closed: #3 vivenu, #6 Doctolib, #16 Synthesia (all `reason:unknown`) |
 
 ## Updated 2026-09-29
 
@@ -47,6 +47,38 @@ Remaining open: **10 issues**. Primary-lane cohort unchanged: #12 Langdock > #11
 
 **First real recruiter channel activity** — this is the `channel:recruiter` lane becoming live for the first
 time (previously 0 conversations against a 1–2/week target).
+
+### Peak3 (#20) and MarvelX (#21) — one strong apply, one structural risk
+
+Both applied 2026-09-29. Both are **Tier A/B** with real AI-platform surfaces, which makes them the
+strongest additions to the primary lane alongside #12 Langdock, #11 Workist, #9 SAP Fioneer.
+
+| Issue | Role | Market | Notes |
+|---|---|---|---|
+| #20 | Peak3 — AI Platform Engineer | Madrid `[INFERENCE]` | **Recruiter contactable: Zoey Zhang (HR)** via direct-message link on the posting. Second actionable outreach target after Workist |
+| #21 | MarvelX — DevOps Engineer | **NL (Amsterdam)** | Best evidence match in the pipeline. **Relocation is the whole risk** |
+
+**#20 Peak3 — the surface matches the entry wedge exactly:** *"build and operate the infrastructure that keeps
+our agentic AI systems fast, reliable, and cost-effective in production... vector databases, model gateways,
+and inference pipelines."* Strong overlap on production ownership, on-call, incident response, observability,
+cost. **Two open risks:** (a) **Madrid comp `[INFERENCE]` €45–65k, which would breach the €80k floor** — no
+exception recorded because the breach is unconfirmed; do not state a number until the band is known; Spain
+pays 14 months, so clarify the basis. (b) 200+ applicants on a month-old posting — oversubscribed and stale.
+
+**#21 MarvelX — cleanest evidence match logged.** Every "looking for" bullet met or met-adjacent: Kubernetes
+production ownership, Terraform, observability named individually (Prometheus, Grafana, ELK, OpenTelemetry),
+multi-cloud, Linux/**scripting** (not production software), and **ISO 27001 exposure — Vincent led an ISO 27001
+implementation at Cometh.** GPU is explicitly nice-to-have. Applied day 1–2 of a freshly posted role.
+
+**⚠️ #21 fails the relocation hard filter on the letter of the posting:** Amsterdam, **3 days/week in office**,
+*"work eligibility in the Netherlands required; we are not able to sponsor visas."* EU citizenship covers the
+right to work, but the physical move must precede the start date, and the JD offers **no relocation support and
+no remote-start ramp** — against `CONTEXT.md`'s rule that relocation happens only when funded. **Relocation
+support was named directly in the salary answer** rather than deferred. This is the one thing to resolve at
+screen.
+
+**New market: `market:nl` created.** No Netherlands floor exists in `CONTEXT.md`; €80k applied **by analogy**
+(Amsterdam is comparable-tier, unlike Madrid). Salary stated **€85,000** for #21, consistent with #20.
 
 ### Synthesia (#16) closed — `reason:unknown`, same-day screen-out
 
