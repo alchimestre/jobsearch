@@ -140,7 +140,7 @@ check("body does not leak YAML front matter", body.lstrip().startswith("---"), F
 check(
     "issue body fills the Target fields, bullets intact",
     "- Company: Acme" in body
-    and "- Market (CH / DE / EU-remote / FR): DE" in body
+    and "- Market (CH / DE / NL / EU-remote / FR): DE" in body
     and "- Employer tier (A / B / C): B — test" in body
     and "\n- Company: \n" not in body,
     True,

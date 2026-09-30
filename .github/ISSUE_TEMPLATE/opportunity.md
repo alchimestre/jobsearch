@@ -7,7 +7,7 @@ assignees: []
 ---
 
 <!-- One issue per live pipeline opportunity.
-Apply labels: market:ch|de|eu-remote|fr-bridge · tier:a|b|c · channel:outreach|ats|recruiter
+Apply labels: market:ch|de|nl|eu-remote|fr-bridge · tier:a|b|c · channel:outreach|ats|recruiter
 Move board Stage: Prospecting → Contacted → Screening → Interview → Offer → Closed.
 On rejection, apply reason:* label and record it below. -->
 
@@ -16,7 +16,7 @@ On rejection, apply reason:* label and record it below. -->
 - Company: 
 - Role: 
 - Posting URL: 
-- Market (CH / DE / EU-remote / FR): 
+- Market (CH / DE / NL / EU-remote / FR): 
 - Employer tier (A / B / C): 
 - Channel (outreach / ATS / recruiter): 
 - Evidence version used (pre-project / early Python / completed Python / Go): 

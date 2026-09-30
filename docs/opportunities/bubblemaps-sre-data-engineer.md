@@ -100,15 +100,15 @@ makes sense at €550+.
 
 The CTO gate opened: **advanced to a technical interview** (reported by Vincent 2026-09-30).
 
-**⚠️ Call outcome not yet captured.** What the CTO said is not recorded here — in particular:
+**Captured from the CTO call (2026-09-30):**
 
-- **Which role the technical round is for** (SRE vs Data Engineer — the split decides what to prep)
-- **Whether the €70k ask landed**, and whether a band was named
-- **Remote/hybrid policy** and **which entity pays** (direct French CDI vs Yofy EOR/contractor)
-- **Format of the technical round** — live coding, system design, take-home, or incident walkthrough — and on
-  which stack
-
-These four items drive both the prep and the investment decision. Record them here before the next step.
+- **The role is genuinely SRE + Data**, not a choice between two postings — Vincent's read of the call.
+- **The technical round is with a data engineer.** The interviewer owns the data half, so the round will
+  weight ingestion/indexing and data-platform depth, with SRE answers as the reliability frame around it.
+- **No salary discussed.** The €70,000 ask is still neither accepted nor refused; the recruiter's €60–80k
+  quote remains the only number on the table.
+- **Still unknown:** remote/hybrid policy, which entity pays (direct French CDI vs Yofy EOR/contractor), and
+  the round's format and duration.
 
 **What changed, and what did not**
 
@@ -123,16 +123,18 @@ These four items drive both the prep and the investment decision. Record them he
 
 ## Technical interview — prep
 
-**Format is still unknown: ask before spending hours.** The outline below assumes the SRE half dominates. If
-the CTO said "Data Engineer", most of it is the wrong half.
+**The interviewer is a data engineer and the role is SRE + Data — prep both halves, data-weighted.** The
+format is still unknown; ask in the first two minutes.
 
-### 1. The split decides everything
+### 1. What the interviewer tells you
 
-- **SRE half** → SLOs/error budgets, incident response, HA/DR, capacity, Kubernetes production depth.
-- **Data-engineer half** → chain indexing at scale, reorg handling, ingestion pipelines, storage tiering,
-  idempotent replay, backpressure.
-
-Both are worth rehearsing at the *story* level; only one is worth a deep technical refresh.
+- **Data depth is the screening axis.** Expect volume, schema, reorgs, duplicates, backfill and
+  query-performance questions. SRE is the frame around those answers, not the subject.
+- **The wedge is the platform side of that pipeline.** §2's own sub-filter prefers the
+  platform/infrastructure side over pipeline authoring, and the same logic holds here: reliability, capacity,
+  observability and cost **of** the pipeline are defensible; pipeline authorship is not evidenced anyway.
+- **Still worth asking early:** the round's format (live coding vs design vs incident walkthrough), its
+  duration, and who else is in the loop.
 
 ### 2. Receipts to lead with (no new claims needed)
 
@@ -162,14 +164,29 @@ zones, assets secured).
 - **Chaos engineering as a named practice:** fault injection is not a listed claim yet; the artifact's failure
   drills are the plan for it.
 
-### 4. Time-box — do not let this crowd out the primary lane
+### 4. What a data engineer will probe — and the answer shape
 
-- Cap deep prep until the split, compensation and remote policy are known.
+| Likely question | Where the evidence is | Honest limit |
+|---|---|---|
+| Ingesting 15+ chains: RPC/WS backlog, rate limits, node failures | Kiln: 40+ protocol networks, **10+ protocols integrated**, sustained protocol-level traffic | Vincent operated that infrastructure; he did **not** author the indexer |
+| Reorgs, duplicate and late blocks | no direct evidence | Say so, then reason from idempotency and replay (block height + hash keys, idempotent upserts, deterministic replay). Reasoning is fine; claiming experience is not |
+| Backpressure and indexer lag when a chain outpaces the pipeline | production backpressure and incident response at Kiln | Frame as platform reliability: lag SLIs, alerting, queue depth, autoscaling |
+| Storage and query at scale (Postgres / ClickHouse / Timescale) | tooling inventory: PostgreSQL, MongoDB, Elasticsearch, Redis (employer attribution pending for part of that list) | Data-store **operations**, not schema or data-model authorship |
+| Cost per chain / per TB / per query | Cometh: **25% cloud-cost reduction**; capacity planning at Kiln | The strongest quantitative story available |
+| Pipeline reliability: freshness SLOs, error budgets, runbooks | the `ml-platform-on-k8s` artifact (SLIs, burn-rate alerts, runbook) | "Building it now" — not "ran it at scale" |
+| Kubernetes for the pipeline (scheduling, nodes, retention, upgrades) | core claim: multi-zone/multi-environment production Kubernetes | Direct |
+
+### 5. Time-box — do not let this crowd out the primary lane
+
+- The split is known, so **deep prep on both halves is warranted** — but **compensation is still undiscussed**
+  and the floor exception is unchanged: €70k is below the floor, admissible only in late-cliff (~Feb 2027) or
+  last-resort (~Apr 2027), and **neither is active**.
+- Ask compensation, remote policy and paying entity **before or at the round**, not after.
 - A €70k Tier C role does not outrank the `market:de` / EU-remote AI lane (#9 SAP Fioneer, #11 Workist,
   #12 Langdock) or the week-6 artifact hours.
-- The artifact does double duty: SLO/DS material rehearsed here is the same material the primary lane screens
-  on. If comp stays at €70k and the role lands data-engineering-side, treat the round as **rehearsal plus
-  income insurance**, not a lane shift.
+- The artifact does double duty: SLO and failure-drill material rehearsed here is the same material the
+  primary lane screens on. If comp stays at €70k, treat the round as **rehearsal plus income insurance**, not a
+  lane shift.
 
 ## Recruiter-screen answers
 
@@ -181,24 +198,24 @@ zones, assets secured).
 2. **Which entity pays** — Bubblemaps directly as a French CDI, or via Yofy as EOR/contractor? (French company makes direct employment likely, but confirm)
 3. **SRE vs Data Engineer split** — the title covers two distinct roles. Which is the actual job?
 4. **Team size, on-call model, current infrastructure** — and what is actually in production today?
-5. **Whether the €70k ask is accepted**, and what the full band is for this level
+5. **Whether the €70k ask is accepted**, and the full band for this level — **not raised on the CTO call**; still open
 6. **Where the data pipelines ingest from** and at what volume (chain indexing scale)
 
 ## Timeline
 
 - Recruiter call: **2026-09-29**
 - **CTO call: 2026-09-30 → advanced to the technical interview** (Stage → Interview)
-- Awaiting: **technical interview scheduled.** Capture the format and the SRE/Data Engineer split first
+- Awaiting: **technical interview scheduled — with a data engineer** (role is SRE + Data)
 - Follow-up: none owed while the process is active; ping Yofy **2026-10-06** only if scheduling goes quiet
 - Screen dates: **2026-09-29** (recruiter) · **2026-09-30** (CTO)
-- Interview dates: technical round — to be scheduled
+- Interview dates: technical round with a data engineer — to be scheduled
 - Outcome: pending
 
 ## Outcome record
 
 - Stage reached: **Interview** (technical)
 - Rejection reason: n/a — process active
-- Watch: **the SRE vs Data Engineer split, the round format, and whether €70k is accepted.** Deep prep is
-  time-boxed until the split is known.
+- Watch: **compensation, remote policy and paying entity are still undiscussed**, and the round is data-heavy
+  because the interviewer is a data engineer. The floor exception is unchanged.
 - **Floor exception recorded and unchanged.** The €80k floor has not moved; this stays a labelled exception
   and does not pool with the primary lane.

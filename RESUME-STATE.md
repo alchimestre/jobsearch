@@ -13,7 +13,7 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | **22 issues: 18 open, 4 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #8 Lity, #9 SAP Fioneer, #10 Otera, #11 Workist, #12 Langdock, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #19 Nebius Token Factory, #20 Peak3, #21 MarvelX (NL, `Screening`), #22 1GLOBAL (DE). Closed: #3 vivenu, #6 Doctolib, #16 Synthesia (all `reason:unknown`) |
+| Pipeline | **23 issues: 19 open, 4 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #8 Lity, #9 SAP Fioneer, #10 Otera, #11 Workist, #12 Langdock, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #19 Nebius Token Factory, #20 Peak3, #21 MarvelX (NL, `Screening`), #22 1GLOBAL (DE), #23 n8n (DE). Closed: #3 vivenu, #6 Doctolib, #16 Synthesia (all `reason:unknown`) |
 
 ## Updated 2026-09-30
 
@@ -67,6 +67,42 @@ technical interview** — the pipeline's first active technical process, and the
   staff/8-year bar.
 - Follow-ups: **2026-10-07 → 10-09** (1st), **2026-10-14 → 10-20** (final). Ask comp and work mode in the
   first exchange — both are cheap and both are binding.
+
+---
+
+**n8n (#23) logged — Agentic Engineering Platform Engineer, Berlin (applied 2026-09-30).** `market:de` ·
+`tier:b` · `channel:ats` · `track:ai` · jobradar uid `13bee0033717209a`.
+
+- **The only application with a published band:** Ashby posts **€91.4K–€171.7K**; Western/Northern Europe tier
+  **€114.3K–€149.3K + equity**. Clears the €80k floor with room, so **no floor-exception accounting** — unlike
+  #13. It also validates the €85k ask used at MarvelX as mid-band, not aggressive.
+- **Tier B caveat, recorded in the doc and the issue:** the role owns the paved road for **autonomous coding
+  agents inside n8n's own engineering organisation** — sandboxed execution environments, secrets/permissions
+  boundaries, CI/Linear integration, agent-quality benchmarks. That is AI *systems* work but **not** the ML
+  serving/pipeline platform: ranked below a true ML-platform role, above any Tier C bridge.
+- **Work mode unverified and ranking-relevant:** Ashby marks the posting **remote** with "Berlin Office" as the
+  location. Remote-in-EU from France → primary lane, no relocation filter applies. Berlin hybrid → the funding
+  rule applies. Confirm first.
+- **Honest gap:** the first must-have is production autonomous-agent / agent-orchestration platform ownership;
+  Evidence Boundaries allow only application-layer PoC work. Also no TypeScript/Node, no monorepo experience.
+  Everything else maps, including a strong safety match (Vault, SOPS, External Secrets, Teleport, Kyverno,
+  Cilium isolation).
+- The posting asks for a **screenshot of a first n8n workflow** — send it with the first follow-up if it was
+  not in the application.
+- Follow-ups: **2026-10-07 → 10-09** (1st), **2026-10-14 → 10-20** (final).
+
+**Tooling — two live bugs fixed in the applied-logging path** (`scripts/log_applied.py` and
+`.github/ISSUE_TEMPLATE/opportunity.md`):
+
+1. **Template front matter leaked into every auto-created issue body** — the skip only caught the first `---`
+   line, so `name: / about: / title: / labels:` YAML sat at the top of the issue (visible on #19 and others).
+2. **The market line never substituted** — the script's lookup key expects `Market (CH / DE / NL / EU-remote /
+   FR)` while the template still read `Market (CH / DE / EU-remote / FR)`, so every auto-logged issue had a
+   blank market field. The template now carries NL.
+
+Issues created before the fix were left as written; **#23 is the first logged with both fixed.** Verification
+note: `gh project item-list` did not show the new item (#23) minutes after creation while the item itself
+resolved correctly via GraphQL — trust the `node(id)` readback, which `log_applied.py` already uses.
 
 ## Updated 2026-09-29
 

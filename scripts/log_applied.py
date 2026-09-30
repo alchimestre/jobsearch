@@ -261,8 +261,14 @@ def issue_body(job: dict, market: str | None, tier: str, tier_note: str, evidenc
     if not template.is_file():
         return "\n".join(values.values()) + f"\n\n<!-- jobradar-uid: {job['uid']} -->\n"
     lines = []
-    for line in template.read_text().splitlines():
-        if line.startswith("---") and not lines:  # front matter
+    in_front_matter = False
+    for index, line in enumerate(template.read_text().splitlines()):
+        if index == 0 and line.startswith("---"):
+            in_front_matter = True
+            continue
+        if in_front_matter:
+            if line.strip() == "---":
+                in_front_matter = False
             continue
         # Template fields are bullets in "## Target", bare labels in "## Timeline".
         stripped = line.strip().lstrip("-").strip()
