@@ -7,7 +7,7 @@ Intel Desk (community investigations / "InfoFi"), iframe widget, API.
 **Backers:** Consensys, Polygon, Avalanche, Aptos, Ledger, The Sandbox, Linea, Fuel, Ince, Momentum6, V3ntures
 **Recruiter:** Yofy (agency/external recruiter) — name incomplete, needs capture on next contact
 **Role:** SRE / Data Engineer · **Market:** FR (French company, Web3 — confirmed by Vincent 2026-09-29) · **Tier:** C (crypto-continuity, no ML-platform surface) · **Channel:** recruiter
-**Stage:** Recruiter call completed 2026-09-29 · **Comp quoted by recruiter: €60,000–80,000** · **Candidate asked: €70,000 minimum** · **Awaiting CTO decision on next stage**
+**Stage:** **Interview** (technical) — recruiter call 2026-09-29, **CTO call 2026-09-30**, advanced to the technical interview · **Comp quoted by recruiter: €60,000–80,000** · **Candidate asked: €70,000 minimum — still unconfirmed**
 
 ## Market note — FR-bridge, and that strengthens the case for holding it
 
@@ -96,12 +96,87 @@ makes sense at €550+.
 - The `ml-platform-on-k8s` artifact remains the thing that closes the real gaps; this role competes for the
   same hours without contributing evidence to it.
 
+## CTO call — 2026-09-30 → technical interview (Stage → Interview)
+
+The CTO gate opened: **advanced to a technical interview** (reported by Vincent 2026-09-30).
+
+**⚠️ Call outcome not yet captured.** What the CTO said is not recorded here — in particular:
+
+- **Which role the technical round is for** (SRE vs Data Engineer — the split decides what to prep)
+- **Whether the €70k ask landed**, and whether a band was named
+- **Remote/hybrid policy** and **which entity pays** (direct French CDI vs Yofy EOR/contractor)
+- **Format of the technical round** — live coding, system design, take-home, or incident walkthrough — and on
+  which stack
+
+These four items drive both the prep and the investment decision. Record them here before the next step.
+
+**What changed, and what did not**
+
+- **Changed:** the role is real. A CTO conversation that advances is the strongest signal any Tier C role has
+  produced, and `channel:recruiter` now has an active technical process — the first in the pipeline.
+- **Unchanged:** the floor exception. €70k is still below the €80k floor, still admissible only in late-cliff
+  (~Feb 2027) or last-resort (~Apr 2027), and **neither is active**. Advancing does not move the floor; the
+  exception stays labelled and unpooled with the primary lane.
+- **Ranking:** Web3 infrastructure is admitted in every lane and Kiln transfers directly, so there is no
+  ML-surface penalty. But this is French, Tier C and €70k — it ranks below #21 MarvelX and the AI lane on
+  compensation alone.
+
+## Technical interview — prep
+
+**Format is still unknown: ask before spending hours.** The outline below assumes the SRE half dominates. If
+the CTO said "Data Engineer", most of it is the wrong half.
+
+### 1. The split decides everything
+
+- **SRE half** → SLOs/error budgets, incident response, HA/DR, capacity, Kubernetes production depth.
+- **Data-engineer half** → chain indexing at scale, reorg handling, ingestion pipelines, storage tiering,
+  idempotent replay, backpressure.
+
+Both are worth rehearsing at the *story* level; only one is worth a deep technical refresh.
+
+### 2. Receipts to lead with (no new claims needed)
+
+| Story | Anchor |
+|---|---|
+| Distributed infrastructure at scale | Kiln: infrastructure securing **$8B+ across 40+ protocol networks**, sustained protocol-level traffic |
+| Multi-protocol integration in hybrid cloud | Kiln: **10+ protocols** integrated into hybrid-cloud environments — the nearest thing to chain-indexing work in the CV |
+| Multi-zone Kubernetes on GCP | Cometh: standardised observability (Prometheus, Grafana, OpenTelemetry, ELK), **MTTR reduction**, **25% cloud-cost reduction** |
+| On-prem bare-metal Kubernetes | Docaposte: MetalLB, Cilium (CNI/network policy), HAProxy, HDS-certified healthcare |
+| Platform tooling operated | Velero (backup/restore), Teleport, cert-manager, Flux, nginx |
+| Compliance | **Led the ISO 27001 implementation** at Cometh |
+
+**No throughput numbers** — Vincent cannot disclose load figures. Keep scale structural (networks, protocols,
+zones, assets secured).
+
+### 3. Gaps that will come up — the honest answers
+
+- **Production Python/Go:** operational scripting only, no production claim (`CONTEXT.md` Evidence
+  Boundaries). Answer plainly and pivot to the `ml-platform-on-k8s` artifact, which is Python end-to-end
+  (pipeline, serving, drift job, tests). Do not upgrade the claim before the artifact exists.
+- **Formal SLO/error-budget methodology:** the artifact is where that becomes evidenced (SLIs, error-budget
+  policy, burn-rate alerts, runbook). "Building it now" — not "ran it at scale" (see §7: zero technical
+  interviews by week 6 pauses new ATS applications for a funnel audit, and this interview is where those
+  hours go).
+- **Chain-indexing / ETL ownership:** not evidenced. Nearest real experience is protocol integration at Kiln,
+  not indexer authorship. Say so.
+- **Chaos engineering as a named practice:** fault injection is not a listed claim yet; the artifact's failure
+  drills are the plan for it.
+
+### 4. Time-box — do not let this crowd out the primary lane
+
+- Cap deep prep until the split, compensation and remote policy are known.
+- A €70k Tier C role does not outrank the `market:de` / EU-remote AI lane (#9 SAP Fioneer, #11 Workist,
+  #12 Langdock) or the week-6 artifact hours.
+- The artifact does double duty: SLO/DS material rehearsed here is the same material the primary lane screens
+  on. If comp stays at €70k and the role lands data-engineering-side, treat the round as **rehearsal plus
+  income insurance**, not a lane shift.
+
 ## Recruiter-screen answers
 
 **Answered on the 2026-09-29 call:**
 - Compensation: recruiter quoted €60–80k; candidate asked **€70,000 minimum**
 
-**Still unanswered — ask before any further stage:**
+**Still unanswered — open as of the recruiter call; confirm which of these the CTO call closed:**
 1. **Remote policy** — French company confirmed; is the role remote, hybrid, or on-site?
 2. **Which entity pays** — Bubblemaps directly as a French CDI, or via Yofy as EOR/contractor? (French company makes direct employment likely, but confirm)
 3. **SRE vs Data Engineer split** — the title covers two distinct roles. Which is the actual job?
@@ -112,16 +187,18 @@ makes sense at €550+.
 ## Timeline
 
 - Recruiter call: **2026-09-29**
-- Awaiting: **CTO decision** on advancing to the next stage
-- Follow-up: **ping Yofy 2026-10-06** if no CTO answer by then (5–7 business days)
-- Screen date: —
-- Interview dates: —
+- **CTO call: 2026-09-30 → advanced to the technical interview** (Stage → Interview)
+- Awaiting: **technical interview scheduled.** Capture the format and the SRE/Data Engineer split first
+- Follow-up: none owed while the process is active; ping Yofy **2026-10-06** only if scheduling goes quiet
+- Screen dates: **2026-09-29** (recruiter) · **2026-09-30** (CTO)
+- Interview dates: technical round — to be scheduled
 - Outcome: pending
 
 ## Outcome record
 
-- Stage reached: **Screening** (recruiter call complete; CTO gate pending)
-- Rejection reason: pending — if refused before a screen, `unknown`; if refused after, request feedback per §3
-- Watch: the CTO gate is where the role either becomes real or dies. Nothing further to do until then.
-- **Floor exception recorded.** If this proceeds, note it explicitly in the weekly review so the €80k floor is
-  not read as having silently moved.
+- Stage reached: **Interview** (technical)
+- Rejection reason: n/a — process active
+- Watch: **the SRE vs Data Engineer split, the round format, and whether €70k is accepted.** Deep prep is
+  time-boxed until the split is known.
+- **Floor exception recorded and unchanged.** The €80k floor has not moved; this stays a labelled exception
+  and does not pool with the primary lane.

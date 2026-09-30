@@ -13,7 +13,7 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | **21 issues: 17 open, 4 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #8 Lity, #9 SAP Fioneer, #10 Otera, #11 Workist, #12 Langdock, #13 Bubblemaps (`Screening`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #19 Nebius Token Factory, #20 Peak3, #21 MarvelX (NL, `Screening`). Closed: #3 vivenu, #6 Doctolib, #16 Synthesia (all `reason:unknown`) |
+| Pipeline | **22 issues: 18 open, 4 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #8 Lity, #9 SAP Fioneer, #10 Otera, #11 Workist, #12 Langdock, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #19 Nebius Token Factory, #20 Peak3, #21 MarvelX (NL, `Screening`), #22 1GLOBAL (DE). Closed: #3 vivenu, #6 Doctolib, #16 Synthesia (all `reason:unknown`) |
 
 ## Updated 2026-09-30
 
@@ -30,10 +30,43 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 - **The relocation gate is unmoved** — no sponsorship, no relocation budget, no remote start in the posting.
   #21 still fails the §2 relocation filter on the letter of the JD, and relocation funding is still the whole
   outcome.
-- Follow-ups: **2026-10-07** (1st), **2026-10-16** (final). No other issue is at `Screening` except #13
-  Bubblemaps, which is waiting on a CTO decision.
+- Follow-ups: **2026-10-07** (1st), **2026-10-16** (final).
 
 Primary-lane order: **#21 MarvelX (Screening) > #12 Langdock > #11 Workist > #9 SAP Fioneer.**
+
+---
+
+**Bubblemaps (#13) → `Interview`.** The CTO call happened **2026-09-30** and the process **advanced to the
+technical interview** — the pipeline's first active technical process, and the first payoff from the
+`channel:recruiter` lane.
+
+- ⚠️ **CTO call outcome not captured:** the SRE-vs-Data-Engineer split, the round format, whether €70k landed,
+  remote policy, and which entity pays. All four change the prep.
+- **The floor exception is unchanged.** €70k is still below the €80k floor, still admissible only in late-cliff
+  (~Feb 2027) or last-resort (~Apr 2027), and **neither is active**. Advancing does not move the floor; the
+  exception stays labelled and unpooled with the primary lane.
+- **Prep is time-boxed** until the split and comp are known. Receipts and the honest gap answers are written
+  up in `docs/opportunities/bubblemaps-sre-data-engineer.md` → *Technical interview — prep*.
+- Rankings unchanged: French, Tier C, €70k → below #21 MarvelX and the AI lane.
+
+---
+
+**1GLOBAL (#22) logged — Senior SRE, Berlin (applied 2026-09-30).** `market:de` · `tier:c` · `channel:ats` ·
+`track:bridge`.
+
+- **Deliberate long-shot**, on three counts: the **Tier C gate** (non-AI, non-Web3 bridges are formally
+  admissible only from the last-resort window ~Apr 2027, while the 2026-09-29 ML-preference amendment admits
+  them case by case — **the clauses conflict; flag at the next Friday review**); the **5+ years (incl. 2+
+  dedicated SRE)** ask against ~4 years continuous; and *"proficiency in Python, Go, and Bash"* against
+  Evidence Boundaries that exclude production Python/Go claims.
+- **Two hard filters unverified:** compensation (undisclosed, Berlin floor €80k) and work mode — the JD says
+  only *"we are open to hiring this role in Berlin, Germany"*, with no remote or hybrid statement, so the
+  relocation/remote-start filter is unverified.
+- It clears everything else that matters: Berlin (destination #2, the preferred first physical move),
+  architectural scope (SLIs/SLOs/error budgets, HA/DR validation, chaos, capacity, cost), English JD, no
+  staff/8-year bar.
+- Follow-ups: **2026-10-07 → 10-09** (1st), **2026-10-14 → 10-20** (final). Ask comp and work mode in the
+  first exchange — both are cheap and both are binding.
 
 ## Updated 2026-09-29
 
