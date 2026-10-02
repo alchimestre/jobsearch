@@ -8,7 +8,7 @@ centre of gravity in **Berlin**; 650,000+ active developers, 190K+ GitHub stars,
 **Team:** **DevXP** (Developer Experience) — Developer Productivity · AI Coding Agents · Developer Platform
 **Market:** **DE (Berlin)** · **Tier:** **B** (AI-native company, Berlin lane — see the caveat) · **Channel:** ATS
 (Ashby) · **Track:** `ai`
-**Applied:** ✅ **2026-09-30** · **Stage:** Contacted
+**Applied:** ✅ **2026-09-30** · **Stage:** **Closed** 2026-10-02 (refused)
 **Follow-ups:** 1st due **2026-10-07 → 2026-10-09** · final **2026-10-14 → 2026-10-20**
 **Compensation:** **published** — €91.4K–€171.7K across ranges; **Western/Northern Europe tier €114.3K–€149.3K
 + equity**. **Clears the €80k floor with room** ✅
@@ -91,10 +91,23 @@ platform-engineering foundations are strong, and they are the actual transferabl
 
 ## Outcome record
 
-- Stage reached: Contacted
-- Rejection reason (relevance / readiness / compensation / location / unknown): pending
-- **Watch:** the work mode decides the ranking. Remote-in-EU → primary lane. Berlin hybrid → relocate-or-skip
-  under the funding rule, but with a published band that makes the relocation conversation worth having.
-- **Honest interview risk:** the agent-platform production gap. The PoC-level AI work must be framed as
-  application-layer experiments, never as platform ownership (`CONTEXT.md` Evidence Boundaries).
-- What would have changed the outcome: nothing yet.
+- Stage reached: **closed at Contacted, never screened** (Ashby application **2026-09-30 → refusal
+  reported 2026-10-02**; **exact refusal date not captured**)
+- Board Stage: **Closed** (set 2026-10-02)
+- Rejection reason: **`unknown`** — no reason given
+- Duration: **≤ 2 calendar days** application → refusal, pre-screen. This is the **fastest refusal in the
+  pipeline** (Synthesia was same-day, Doctolib 2 business days, MarvelX replied in 1 business day with a
+  questionnaire — n8n matched that response speed with a no)
+- Follow-ups: **none sent, none owed** (refusal arrived before the first window, 2026-10-07)
+- Feedback request: **not sent** — never reached a recruiter screen (§3 gates the request on a screen)
+- **What the speed does and does not mean.** A no within one working day of an Ashby submission is an
+  ATS/recruiter triage, not a considered rejection on the agent-platform gap. The two pre-screen questions
+  in the doc above — work mode and WE/NE band — were never asked and never answered. Nothing about the
+  `track:ai` thesis is falsified by it
+- **Cost of the miss, recorded:** this was the **only pipeline role with a published band**
+  (€91.4K–€171.7K; WE/NE €114.3K–€149.3K + equity) and a genuinely AI-native employer. Losing it at
+  triage removes the pipeline's one compensation anchor for the €85k ask until another published-band role
+  appears
+- **Honest-interview-risk note, now moot:** the agent-platform production gap was the pre-identified
+  weakness; it was never tested
+- Next action: **closed.** No further contact

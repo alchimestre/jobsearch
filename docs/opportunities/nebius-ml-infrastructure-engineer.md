@@ -7,6 +7,19 @@
 **Evidence version used:** pre-project
 **Source:** jobradar `8488b7965d684a86` · score 9 · lane `eu-remote` · reasons `+ml-infra, +infra`
 
+## ⚠️ Sibling application closed — same-day Nebius double-application
+
+Nebius **#19 (Senior SRE, Token Factory)** was applied the same day, 2026-09-29, and was **refused
+2026-10-02 (pre-screen, `reason:unknown`)**. This row is still open and has produced no response.
+
+- Both submissions crossed Nebius's Greenhouse board within 24 hours, so one recruiter likely saw both.
+- The #19 refusal is **not** a verdict on this role — different req, likely different hiring manager.
+- But treat this row as at **elevated risk of the same fast silent triage**. Let it reach its first
+  follow-up window (2026-10-06 → 2026-10-08) before concluding anything; chasing sooner would burn the one
+  follow-up the plan allows.
+- If this row also closes `unknown`, the pattern is "Nebius triages fast and silently" — a targeting
+  finding to raise at the Friday review, not a per-role one.
+
 ## To review
 
 Auto-logged when the posting was marked applied in the pipeline tool. Outstanding:

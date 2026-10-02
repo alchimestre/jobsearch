@@ -13,7 +13,56 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | **23 issues: 19 open, 4 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #8 Lity, #9 SAP Fioneer, #10 Otera, #11 Workist, #12 Langdock, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #19 Nebius Token Factory, #20 Peak3, #21 MarvelX (NL, `Screening`), #22 1GLOBAL (DE), #23 n8n (DE). Closed: #3 vivenu, #6 Doctolib, #16 Synthesia (all `reason:unknown`) |
+| Pipeline | **22 issues: 16 open, 6 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #10 Otera, #11 Workist, #12 Langdock, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #21 MarvelX (NL, `Screening`), #22 1GLOBAL (DE). Closed: #3 vivenu, #6 Doctolib, #8 Lity, #16 Synthesia, #19 Nebius Token Factory, #23 n8n — **all six `reason:unknown`** |
+
+## Updated 2026-10-02
+
+**Three refusals in one turn: Lity #8, Nebius #19, n8n #23 — all pre-screen, all `reason:unknown`.**
+Board Stage → Closed on all three; `reason:unknown` labelled; jobradar store marked `rejected` for the two
+rows it holds (#23 `13bee0033717209a`, #19 `83286da899f9b790` — Lity was never in the store, applied via
+Marvin ATS before adoption). No follow-ups owed, no feedback requests (none reached a screen).
+
+| Issue | Applied | Refused by | Speed | Note |
+|---|---|---|---|---|
+| #8 Lity | 2026-09-26 | 2026-10-02 | ≤6 cal / ~5 bus days | Already ruled out pre-application on the disclosed 60–80 K€ band |
+| #19 Nebius Token Factory | 2026-09-29 | 2026-10-02 | ~3 bus days | **Closed `unassessed`** — stub was never promoted to a doc |
+| #23 n8n | 2026-09-30 | 2026-10-02 | ≤2 cal / ~2 bus days | **Fastest refusal in the pipeline**; recruiter/ATS triage, not a judged rejection |
+
+- **#23 n8n was the pipeline's only published-band role** (€91.4K–€171.7K; WE/NE €114.3K–€149.3K + equity)
+  and a genuinely AI-native employer. Losing it at triage removes the **compensation anchor for the €85k
+  ask** until another published-band role appears. The agent-platform gap it was going to test was never
+  tested.
+- **#19 closed before anyone read the JD** — first row to do so. Its market/tier labels (`de`/`b`) are
+  mechanical jobradar heuristics, not findings; the §2 checklist is deliberately left unfilled.
+- **Nebius double-application is now live.** #18 (ML Infra) was applied the same day through the same
+  Greenhouse board and is still open. Do **not** read the #19 refusal as a verdict on #18, but treat #18 as
+  at elevated risk of the same fast silent triage. Let it reach its own window (2026-10-06 → 10-08) — one
+  follow-up only, no chasing.
+
+### ⚠️ Six closed, six `unknown` — §7's diagnostic rules are now fully inert
+
+Every closed row (#3, #6, #8, #16, #19, #23) is `reason:unknown` and pre-screen. This is no longer a
+watch-item; it is a standing property of the funnel:
+
+- §7 rules 2 and 4 depend on classified rejection reasons; §3's one feedback request is available **only
+  after a recruiter screen**. **No pre-screen refusal can ever be classified.**
+- Six applications have produced **zero** diagnostic information. The only rows that can generate signal are
+  the ones that reach a human: **#13 Bubblemaps (`Interview`)** and **#21 MarvelX (`Screening`)**.
+- **n8n is the counter-example worth reading:** a fast no from a company with a published band is not
+  evidence about fit. Response *speed* is triage, not assessment — stop reading fast refusals as verdicts
+  on the thesis.
+
+### Targeting signals to carry into the Friday review
+
+1. **Seniority/screen-out tax:** #6 and #16 fired explicit seniority bars visible in the JD before applying.
+   #8 and #23 fired filters that were visible (disclosed band) or structural (ATS triage).
+2. **France-remote band pressure confirmed as a pattern, not a one-off:** #8 was the second France-remote
+   role clearing geography and craft yet under €80k (cf. ablefy #4). The role is now closed on it. Research
+   the France-remote band before touching the floor at the next FR-remote target (§7 rule 4 in spirit).
+3. **ATS lane yield is 0-for-6 on information.** The lever is `channel:outreach` — still **0 issues sent**,
+   against a 60% lane allocation.
+
+---
 
 ## Updated 2026-09-30
 
