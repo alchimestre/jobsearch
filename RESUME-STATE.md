@@ -13,7 +13,7 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | **24 issues: 15 open, 9 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #10 Otera, #11 Workist, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH). Closed: #3 vivenu, #6 Doctolib, #8 Lity, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all nine `reason:unknown`** |
+| Pipeline | **25 issues: 16 open, 9 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #10 Otera, #11 Workist, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram. Closed: #3 vivenu, #6 Doctolib, #8 Lity, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all nine `reason:unknown`** |
 
 ## Updated 2026-10-05
 
@@ -90,6 +90,25 @@ flagged before sending, because the first application was never logged. **Do not
 - **Three real risks:** the posting is **8 months old** (2026-02-10) and still listed; the JD prefers **AWS**
   against a GCP-first CV; and the role is **client-facing delivery**, which the unresolved customer-facing
   evidence gap gates (open since 2026-09-11, now blocking two lanes).
+
+### Anagram #26 applied — EU-remote Web3 bridge (2026-10-05)
+
+**Site Reliability Engineer (Web3 Infrastructure)**, Ashby, location **"Anywhere"** (remote/hybrid/office
+flexible). `market:eu-remote` · `tier:c` · `channel:ats` · **`track:web3`**. Board Stage `Contacted`;
+follow-ups 2026-10-12 → 10-14 and 2026-10-19 → 10-23.
+
+- **Cheap long-shot.** One hard filter unchecked (compensation — no band published, €80k EU-remote floor) and
+  one explicit failure (no AI surface), but **no relocation gate, no seniority stretch, and a direct craft
+  match**: Terraform/Kubernetes, observability, CI/CD, key management and network security, plus real
+  **blockchain node infrastructure** evidence from Kiln/Cometh.
+- **⚠️ Anonymous employer.** Anagram is a **digital-assets holding company** and the posting sits under
+  **"Portfolio Company Hiring"**. The actual venture, team, product and contract entity are unknown. That is
+  the first thing a screen must resolve, before any prep is worth doing.
+- **⚠️ 20 months old** (published 2025-02-04) — almost certainly a standing pipeline rather than an open req.
+  Silence would be uninformative.
+- **⚠️ Third instance of the same §2 clause conflict** (#22 1GLOBAL, #25 Blockstream, #26 Anagram). Three
+  Tier C Web3 rows in one week, each admitted by the 2026-09-29 amendment while the §2 reject list still bans
+  crypto-continuity roles. **One ruling at the Friday review, not three separate judgements.**
 
 ---
 
