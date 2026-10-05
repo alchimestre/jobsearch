@@ -13,7 +13,7 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | **23 issues: 14 open, 9 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #10 Otera, #11 Workist, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE). Closed: #3 vivenu, #6 Doctolib, #8 Lity, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all nine `reason:unknown`** |
+| Pipeline | **24 issues: 15 open, 9 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #10 Otera, #11 Workist, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH). Closed: #3 vivenu, #6 Doctolib, #8 Lity, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all nine `reason:unknown`** |
 
 ## Updated 2026-10-05
 
@@ -68,6 +68,28 @@ flagged before sending, because the first application was never logged. **Do not
 - **#5 vCluster is still the only logged role never applied to.**
 - Everything closed today was lost *before* a human conversation except MarvelX, which was lost *at the first
   written step*.
+
+### Blockstream #25 applied — CH lane, Web3 bridge (2026-10-05)
+
+**DevOps Engineer, Zurich** (Enterprise Products → Service & Enterprise Solutions), applied via cryptojobslist
+→ Blockstream's Ashby board (id `4bd6e458-a98f-4f3d-8c0e-a50e4735e32f`). `market:ch` · `tier:c` ·
+`channel:ats` · **`track:web3`**. Board Stage `Contacted`; follow-ups 2026-10-12 → 10-14 (1st) and
+2026-10-19 → 10-23 (final).
+
+- **Deliberate long-shot, and recorded as one.** Two hard filters **unverified** — compensation (no band
+  published; CH floor CHF 110k) and relocation (on-site Zurich/Lugano, no relocation assistance or
+  remote-start language) — and one **explicit failure**: no AI-workload surface at all. It is blockchain,
+  custody and payments infrastructure for banks.
+- **Admitted under the 2026-09-29 amendment** ("Web3 infrastructure is in scope in every lane") as a Tier C
+  Web3 bridge. This is the **same §2 clause conflict** already flagged for 1GLOBAL #22: the reject list still
+  bans crypto-continuity roles that do not strengthen AI-infra positioning. **Both need one ruling at the
+  Friday review** so Tier C Web3 rows are counted consistently.
+- **Craft match is unusually direct** for a Swiss-lane role: Kubernetes (incl. on-prem bare metal), Terraform,
+  CI/CD, Prometheus/Grafana/ELK, Vault/SOPS secrets, incident response, and **regulated environments**
+  (HDS healthcare, ISO 27001, $8B+ crypto assets). **French is a plus** in Lugano/Zurich delivery work.
+- **Three real risks:** the posting is **8 months old** (2026-02-10) and still listed; the JD prefers **AWS**
+  against a GCP-first CV; and the role is **client-facing delivery**, which the unresolved customer-facing
+  evidence gap gates (open since 2026-09-11, now blocking two lanes).
 
 ---
 
