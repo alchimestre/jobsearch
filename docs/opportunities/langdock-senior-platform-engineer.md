@@ -4,7 +4,8 @@
 **Org:** Langdock — AI platform for enterprise AI adoption; 10,000+ companies; **$40M ARR** with a small team; customers include Merck (33,000 MAU), Merck's "myGPT Suite", BASF, Axel Springer, SumUp, Deutsche Bahn, Eppendorf
 **Market:** DE (Berlin) · **Tier:** **A** — strongest fit in the pipeline · **Channel:** ATS (LinkedIn)
 **Applied:** ✅ 2026-09-26 (LinkedIn) · **Comp (employer-disclosed): €90,000–140,000 gross + equity**
-**Follow-up 1 due:** 2026-10-05 · **Follow-up 2 due:** 2026-10-14 (final)
+**Stage:** **Closed** 2026-10-05 (refused, no reason given, pre-screen)
+**Follow-ups:** **none owed** — the refusal arrived on the first follow-up date (2026-10-05), superseding them
 
 ## Why this is the best-targeted role so far
 
@@ -103,17 +104,29 @@ Kiln), networking, queues.
 
 ## Outcome record
 
-- Stage reached: Contacted
-- Rejection reason (relevance / readiness / compensation / location / unknown): pending
-- **Highest-priority application in the pipeline.** Tier A, disclosed band topping the pipeline at €90–140k,
-  best seniority match (3–6 yrs vs. 4), and the JD describes the target role. If Langdock responds, it
-  outranks everything else including Workist and SAP Fioneer.
-- Watch: **200+ applicants within 2 days** — the highest-competition posting reviewed to date. Application
-  strength matters more here than volume.
-- What would have changed the outcome: a remote-start option (the on-site requirement is the main structural
-  risk)
+- Stage reached: **closed at Contacted, never screened** (LinkedIn ATS application 2026-09-26 → refusal
+  reported 2026-10-05; **exact refusal date not captured**)
+- Board Stage: **Closed** (set 2026-10-05)
+- Rejection reason: **`unknown`** — no reason given
+- Duration: 9 calendar days (~7 business days) application → refusal, pre-screen. The slowest of the recent
+  refusals (n8n ≤2 days, Nebius ~3, Lity ~5), consistent with a role that drew 200+ applicants and was
+  actually reviewed before being closed
+- Follow-ups: **none sent, none owed** — the refusal arrived on the first follow-up date (2026-10-05)
+- **No outreach was sent.** `docs/outreach/langdock-platform-engineer.md` was drafted 2026-09-29 and stayed
+  marked NOT SENT; `docs/outreach/sent/` is empty. The refusal therefore rests on **the ATS application
+  alone**, and nothing can be attributed to messaging. The named-recipient search was never completed
+- Feedback request: **not sent** — §3 gates it on a recruiter screen, which this never reached
+- **What was lost, recorded in full:** this was the highest-priority application in the pipeline — Tier A, the
+  pipeline's best-fit JD (the Model Gateway / inference-boundary framing *is* the positioning thesis), the
+  second published band (€90,000–140,000 + equity), and the closest seniority match (3–6 yrs vs ~4 evidenced).
+  It is the single largest loss so far. The known structural risk was **in-office Berlin with no remote start**;
+  the refusal does **not** confirm that was the cause
+- **What would have changed the outcome:** a funded remote-start or Berlin-anchored relocation path, and an
+  outreach message that reached the hiring manager *before* the ATS queue. Neither existed
+- Next action: **closed.** No further contact, no re-application
 
 ## Funnel delta
 
-Applications sent +1 (2026-09-26, DE lane). Primary-lane eligible (Tier A) — counts toward ML-platform
-conversion alongside #9 SAP Fioneer and #11 Workist.
+Applications sent +1 (2026-09-26, DE lane). Primary-lane eligible (Tier A) — exits as a **pre-screen refusal
+with `reason:unknown`**. The only **Tier A** role lost in the 2026-10-05 batch; n8n #23 (refused 2026-10-02)
+was Tier B.

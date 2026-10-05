@@ -111,3 +111,16 @@ platform-engineering foundations are strong, and they are the actual transferabl
 - **Honest-interview-risk note, now moot:** the agent-platform production gap was the pre-identified
   weakness; it was never tested
 - Next action: **closed.** No further contact
+
+## ⚠️ Addendum 2026-10-05 — second n8n req, also refused
+
+n8n refused a **second application** to the same team on 2026-10-05: **Senior Software Engineer - DevX**
+(issue #24, `docs/opportunities/n8n-senior-software-engineer-devx.md`), a near-duplicate JD on the same
+Developer Experience / DevXP team, applying within days of this one. It was never logged when sent, so the
+double-application was not flagged before it happened.
+
+- **Two refusals from one team in three days is one data point, not two.** n8n triages engineering
+  applications fast and silently; neither req reached a human.
+- This is the third double-application in the pipeline (Nebius #18/#19, Cohere #1/#14, now n8n). The other
+  two were flagged before the second application; this one was not.
+- **Do not apply to a third n8n req.**

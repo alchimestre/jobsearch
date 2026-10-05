@@ -13,7 +13,63 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | **22 issues: 16 open, 6 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #10 Otera, #11 Workist, #12 Langdock, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #21 MarvelX (NL, `Screening`), #22 1GLOBAL (DE). Closed: #3 vivenu, #6 Doctolib, #8 Lity, #16 Synthesia, #19 Nebius Token Factory, #23 n8n — **all six `reason:unknown`** |
+| Pipeline | **23 issues: 14 open, 9 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #10 Otera, #11 Workist, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE). Closed: #3 vivenu, #6 Doctolib, #8 Lity, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all nine `reason:unknown`** |
+
+## Updated 2026-10-05
+
+**Three more refusals: MarvelX #21, Langdock #12, n8n DevX (#24). All `reason:unknown`, Stage → Closed.**
+
+| Issue | Role | Applied | Refused | Stage reached | Note |
+|---|---|---|---|---|---|
+| #21 | MarvelX — DevOps (Amsterdam) | 2026-09-29 | 2026-10-05 | **Screening** (questionnaire) | Best evidence match in the pipeline |
+| #12 | Langdock — Platform Engineer | 2026-09-26 | 2026-10-05 | Contacted (pre-screen) | **Only Tier A loss**; best-fit JD |
+| #24 | n8n — Senior SWE, DevX | ~2026-09-28/30 | 2026-10-05 | Contacted (pre-screen) | **Logged retroactively** — never in the tracker |
+
+**#24 is a process failure, not just a lost application.** The DevX application was never in jobradar and
+never became an issue, so it could not be reviewed, counted, or used to catch the double application to the
+same n8n team (see below). The row now exists for accounting only.
+
+### ⚠️ Nine closed, nine `unknown`, eight pre-screen
+
+Every closed opportunity is `unknown`. **§7 rules 2 and 4 remain inert**, and §3's one feedback request was
+unavailable in eight of nine cases because they never reached a screen.
+
+**Exception, and the only live fix: #21 MarvelX.** It reached **Screening** (questionnaire sent and returned
+2026-09-30, refused 2026-10-05), and §3 explicitly permits one feedback request after a screened rejection.
+Draft at `docs/outreach/marvelx-feedback-request.md` — **send it.** If MarvelX classifies the cause, it is the
+first classified rejection the funnel has ever produced; if they do not, record the silence and stop.
+
+### ⚠️ The outreach lane is still at zero, and it is now visibly the constraint
+
+- **`docs/outreach/sent/` is empty.** Not one outreach message has been sent against a 60% lane allocation.
+- **Langdock's draft was never sent** — the role was the pipeline's best fit and its largest single loss. Its
+  refusal rests on the LinkedIn ATS application alone. The named-recipient search was never completed.
+- Two of the three roles closed today (#12, #21) were applied to cold, with no human of record. Per the
+  Cohere lesson already in this file (*"find the human you would follow up with before applying"*), neither
+  had a recovery path once the ATS queue moved.
+- The ATS lane is now **9 applications, 9 silences**. The only row that produced a human response in the last
+  week is **#13 Bubblemaps (`Interview`, `channel:recruiter`)**.
+
+### ⚠️ Third double-application: n8n #23 + #24
+
+Two n8n reqs on the **same Developer Experience team**, near-identical JDs, applied within days, both refused
+within three days (2026-10-02 and 2026-10-05). Both were pre-screen and silent, so they are **one** data
+point, not two: n8n triages engineering applications fast.
+
+This is the third double-application after Nebius #18/#19 and Cohere #1/#14 — and the first that was **not**
+flagged before sending, because the first application was never logged. **Do not apply to a third n8n req.**
+
+### Where the pipeline now stands
+
+- **Primary lane survivors: #11 Workist (Tier A), #9 SAP Fioneer (Tier B).** Both cold ATS, both previously
+  flagged as the only rows that can generate signal. #11 has a named recipient (Fabian Brosig, CTO) and a
+  sendable draft.
+- **Active process: #13 Bubblemaps (`Interview`, recruiter lane) — the only live technical process.**
+- **#5 vCluster is still the only logged role never applied to.**
+- Everything closed today was lost *before* a human conversation except MarvelX, which was lost *at the first
+  written step*.
+
+---
 
 ## Updated 2026-10-02
 

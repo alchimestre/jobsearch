@@ -5,7 +5,7 @@
 **Apply route:** Typeform (`form.typeform.com/to/dobvzR4N`) — **not an ATS**, so no board record for jobradar to auto-adopt
 **Market:** **NL (Amsterdam, hybrid — 3 days/week in office)** · **Tier:** A/B (owns the platform AI workloads run on) · **Channel:** ATS (company site → Typeform)
 **Applied:** ✅ 2026-09-29 · **Salary stated: €85,000 + relocation support requested**
-**Stage:** **Screening** — employer sent a questionnaire 2026-09-30, **completed and returned the same day** · **Next action:** await review outcome; follow up **2026-10-07** (1st) · **2026-10-16** (final)
+**Stage:** **Closed** 2026-10-05 (refused after the questionnaire, no reason given) — screening complete, not advanced
 
 ## Why this fits — the cleanest evidence match in the pipeline
 
@@ -115,10 +115,27 @@ budget, no stated remote start.
 
 ## Outcome record
 
-- Stage reached: **Screening** (questionnaire completed 2026-09-30)
-- Rejection reason (relevance / readiness / compensation / location / unknown): pending
-- **Watch:** the relocation question is the whole outcome. If they cannot fund the move or flex the in-office
-  requirement, nothing else matters — and that is better learned at screen than at offer.
-- **Timing advantage:** applied on day 1–2 of a freshly posted role ("published Sep 29, 2026"). Best possible
-  application timing in the pipeline; the same-day questionnaire is the first payoff from it.
-- What would have changed the outcome: relocation support (raised proactively in the application)
+- Stage reached: **Screening** — questionnaire sent 2026-09-30, completed and returned the same day;
+  **refused 2026-10-05, no reason given**
+- Board Stage: **Closed** (set 2026-10-05)
+- Rejection reason: **`unknown`** — no reason given. The relocation gate was the *known* structural risk and
+  the *predicted* cause, but **the employer did not say so**; recording a prediction as the cause would
+  corrupt the funnel. It stays `unknown`
+- Duration: 2026-09-29 application → 2026-10-05 refusal, with a human response (questionnaire) at 1 business
+  day and the decision 3 business days after that
+- Follow-ups: **none sent** — the refusal arrived 2 days before the first follow-up window (2026-10-07);
+  the questionnaire reply already contained the strongest possible application of the relocation ask
+- **Feedback request: available and drafted — first in the pipeline.** §3 permits exactly one request for
+  specific feedback *after a recruiter-screen rejection*, and this is the only refusal so far that followed a
+  screening step. Draft: `docs/outreach/marvelx-feedback-request.md`. **Needs Vincent to send it.**
+  - This is the only live chance to convert an `unknown` rejection into a **classified** one, and §7 rules 2
+    and 4 are inert without classified reasons
+  - If they answer, ask specifically whether the in-office/relocation requirement was the blocker; if they do
+    not, close it and record the silence
+- Timing advantage, still true: applied day 1–2 of a freshly posted role, questionnaire back in 1 business
+  day. Application timing was not the problem
+- What would have changed the outcome: relocation support or a funded 8–12 week remote start (raised
+  proactively in the application and answered at €85,000); a candidate already resident in the Netherlands
+- **Unresolved and now lost:** whether the questionnaire answers were ever read, and whether €85,000 was
+  above, in, or below their band. Neither was tested by the refusal
+- Next action: **send the feedback request (one only), then close.** No further contact, no re-application

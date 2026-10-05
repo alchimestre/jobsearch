@@ -8,8 +8,9 @@
 |---|---|---|
 | `workist-senior-platform-engineer.md` | Fabian Brosig, CTO (#11) | **Sendable.** Named recipient, strongest of the cold notes |
 | `sap-fioneer-ai-platform-engineer.md` | SAP Fioneer (#9) | **Sendable as written** |
-| `langdock-platform-engineer.md` | Langdock (#12) | Sendable after a light edit — currently undersells |
+| `langdock-platform-engineer.md` | Langdock (#12) | **DEAD — #12 refused 2026-10-05, never sent.** Retained for reference only |
 | `cohere-follow-up-two-requisitions.md` | Cohere (#1 + #14) | **BLOCKED** — no reachable human. Held, not sent |
+| `marvelx-feedback-request.md` | MarvelX (#21) | **New 2026-10-05.** Feedback request after a screen-era refusal — §3 permits exactly one. Send it |
 
 ## Notes
 
