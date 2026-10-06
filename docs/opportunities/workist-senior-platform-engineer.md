@@ -4,7 +4,8 @@
 **Org:** Workist — Berlin-based AI scale-up, founded 2019; AI Agents for inside-sales teams in manufacturing/wholesale; 200+ business customers
 **Market:** DE (Berlin) · **Tier:** **A** — first Tier A role in the pipeline · **Channel:** ATS (LinkedIn)
 **Applied:** ✅ 2026-09-26 (LinkedIn) · **Comp band (employer-disclosed): €80,000–100,000 base**
-**Follow-up 1 due:** 2026-10-05 · **Follow-up 2 due:** 2026-10-14 (final)
+**Stage:** **Closed** 2026-10-06 (refused, no reason given, pre-screen)
+**Follow-ups:** **none sent, none owed** — the refusal arrived the day after the first window opened (2026-10-05)
 
 ## Why this is Tier A
 
@@ -83,10 +84,33 @@ scope, cross-stakeholder communication) better than any other role logged today.
 
 ## Outcome record
 
-- Stage reached: Contacted
-- Rejection reason (relevance / readiness / compensation / location / unknown): pending
-- Watch: ~67 applicants within the first day of posting. Apply timing was good.
-- What would have changed the outcome: —
-- Note: this is the **strongest application in the pipeline** — Tier A, disclosed band clearing the floor,
-  AI-exposure filter cleared on the strong side, and the closest seniority match. Prioritise any response
-  from Workist above the Tier C cohort.
+- Stage reached: **closed at Contacted, never screened** (LinkedIn ATS application 2026-09-26 → refusal
+  reported 2026-10-06; **exact refusal date not captured**)
+- Board Stage: **Closed** (set 2026-10-06)
+- Rejection reason: **`unknown`** — no reason given
+- Duration: ~7 business days application → refusal, pre-screen. Slower than the n8n triage refusals (≤2 days)
+  and in the same range as Langdock (~7 days): a role that was actually looked at
+- Follow-ups: **none sent, none owed** — the first follow-up was due 2026-10-05 and the refusal arrived the
+  next day
+- **Outreach was never sent, and this was the one draft that could have been sent as written.**
+  `docs/outreach/workist-senior-platform-engineer.md` — the only draft addressed to a **named recipient**
+  (Fabian Brosig, CTO, the person this role reports to) — stayed marked NOT SENT, and `docs/outreach/sent/`
+  remains empty. The refusal therefore rests on the cold LinkedIn ATS application alone
+- Feedback request: **not sent** — §3 gates it on a recruiter screen, which this never reached
+- **What was lost, recorded in full:** the strongest application in the pipeline on every axis — **Tier A**
+  (the JD named the platform AI workloads run on: Kubernetes for ML workloads, LLM gateway with region
+  failover, GPU capacity planning), **employer-disclosed band €80,000–100,000 clearing the floor**, the
+  closest seniority match, and the closest role shape (quarterly-theme ownership, reports to the CTO).
+  It is the pipeline's **last remaining Tier A** role
+- **What the refusal does and does not say.** A pre-screen silence with no reason tells us nothing about the
+  fit; it cannot be attributed to the two honest gaps (GCP-first cloud depth, Python read-and-debug rather
+  than author). Recording either as the cause would be a prediction, not a fact
+- **What would have changed the outcome:** an outreach message reaching the CTO before the ATS queue. The
+  material to do it existed since 2026-09-29 and was never used
+- Next action: **closed.** No further contact, no re-application
+
+## Funnel delta
+
+Applications sent +1 (2026-09-26, DE lane). **Primary-lane (Tier A) — exits as a pre-screen refusal with
+`reason:unknown`.** With this closure the pipeline holds **no open Tier A role**; #9 SAP Fioneer (Tier B) is
+the last open primary-lane application, and #13 Bubblemaps (Tier C, recruiter lane) the only live process.

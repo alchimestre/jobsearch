@@ -13,7 +13,48 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | **25 issues: 16 open, 9 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #10 Otera, #11 Workist, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram. Closed: #3 vivenu, #6 Doctolib, #8 Lity, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all nine `reason:unknown`** |
+| Pipeline | **25 issues: 15 open, 10 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #10 Otera, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram. Closed: #3 vivenu, #6 Doctolib, #8 Lity, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all ten `reason:unknown`** |
+
+## Updated 2026-10-06
+
+**Workist (#11) closed — refused, `reason:unknown`, pre-screen.** Applied 2026-09-26, refused ~7 business
+days later; no reason given. Board Stage → Closed.
+
+- **The strongest application in the pipeline is gone, and it was the last Tier A role we had.** The JD named
+  the platform Workist's AI agents run on (Kubernetes for ML workloads, LLM gateway with region failover, GPU
+  capacity planning), and the **employer-disclosed band €80,000–100,000** cleared the floor. Closest seniority
+  match and closest role shape (quarterly-theme ownership, reports to the CTO).
+- **The refusal carries no information.** Pre-screen, no reason: the two honest gaps (GCP-first cloud depth;
+  Python read-and-debug rather than author) cannot be attributed as causes. §3's feedback request is gated on
+  a recruiter screen, so it does not apply.
+- ⚠️ **The outreach was never sent — and this one hurt most.** `docs/outreach/workist-senior-platform-engineer.md`
+  was the **only draft addressed to a named recipient** (Fabian Brosig, CTO — the person this role reports
+  to), judged sendable as written on 2026-09-29, and it sat unused. `docs/outreach/sent/` is **still empty**.
+
+### The pipeline after Workist
+
+- **No open Tier A role.** Primary lane is now **#9 SAP Fioneer (Tier B)** alone; #11 is closed.
+- **Live process: #13 Bubblemaps** — technical interview **2026-10-06**, recruiter lane, Tier C, €70k floor
+  exception (labelled). Prep notes added to `docs/opportunities/bubblemaps-sre-data-engineer.md`.
+- **§7 rule 3 (zero technical interviews by week 6) is not at risk** — Bubblemaps reaches a technical round in
+  week 3. Rule 2 needs four active weeks and classified reasons, so it stays inert.
+- **Ten closed rows, ten `unknown`, nine pre-screen** (MarvelX the only one that reached a screening step).
+
+### Friday review (2026-10-09) — items accumulated, one ruling each
+
+1. **Web3 clause conflict, three instances** — #22 1GLOBAL, #25 Blockstream, #26 Anagram admitted by the
+   2026-09-29 amendment while §2's reject list still bans crypto-continuity roles. Decide once how Tier C
+   Web3 rows are counted.
+2. **Outreach lane still 0 sent against a 60% allocation**, and three of this week's losses (#11, #12, #21)
+   had no message reach a human. The Workist draft was the most sendable asset in the repo.
+3. **The funnel is 10-for-10 `unknown`.** MarvelX's §3 feedback request (`docs/outreach/marvelx-feedback-request.md`)
+   is the only live route to a classified rejection — send it.
+4. **Customer-facing evidence gap** (open since 2026-09-11) now blocks three lanes: FDE/Solutions, MarvelX and
+   Blockstream client delivery.
+5. **France-remote band pressure** (#8 Lity, #4 ablefy) and the **seniority/screen-out tax** (#6, #16) remain
+   unaddressed targeting questions.
+
+---
 
 ## Updated 2026-10-05
 

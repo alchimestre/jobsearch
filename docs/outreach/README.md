@@ -6,7 +6,7 @@
 
 | File | Target | Status |
 |---|---|---|
-| `workist-senior-platform-engineer.md` | Fabian Brosig, CTO (#11) | **Sendable.** Named recipient, strongest of the cold notes |
+| `workist-senior-platform-engineer.md` | Fabian Brosig, CTO (#11) | **DEAD — #11 refused 2026-10-06, never sent.** The only named-recipient draft and the strongest of the set; retained for reference |
 | `sap-fioneer-ai-platform-engineer.md` | SAP Fioneer (#9) | **Sendable as written** |
 | `langdock-platform-engineer.md` | Langdock (#12) | **DEAD — #12 refused 2026-10-05, never sent.** Retained for reference only |
 | `cohere-follow-up-two-requisitions.md` | Cohere (#1 + #14) | **BLOCKED** — no reachable human. Held, not sent |
