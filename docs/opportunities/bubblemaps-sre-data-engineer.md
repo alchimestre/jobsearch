@@ -188,6 +188,109 @@ zones, assets secured).
   primary lane screens on. If comp stays at €70k, treat the round as **rehearsal plus income insurance**, not a
   lane shift.
 
+
+## Technical interview — working reference (2026-10-05)
+
+Interview: **2026-10-06 morning, with a data engineer.**
+**Status: ✅ took place 2026-10-06. Outcome and interviewer feedback not yet reported** — Vincent will
+debrief later. Do not record a result, a stage change, or a follow-up date until that debrief; the next step
+(second round, take-home, or silence) is unknown.
+Preparation is ongoing, not evidence of production
+Kafka/ClickHouse expertise. Vincent identified source-to-storage lag and replay from committed offsets;
+reorg recovery and database correctness still need practice.
+
+### Evidence boundary
+
+Bubblemaps' [public map API](https://docs.bubblemaps.io/data/api/tokens/map) documents holders, grouped
+transfers, clusters, cached results, update timestamps, forced refresh and historical queries. Its private
+architecture is unverified. Everything below is a **proposed design**, not a description of their stack.
+
+### Proposed pipeline and choices
+
+```text
+chain source → chain adapter → Kafka → processors / ClickHouse ingestion
+                                          ↓
+                              queryable data and derived state
+                                          ↓
+                                    API / cache → map UI
+```
+
+- An adapter decodes chain-specific data. Standardization can happen before Kafka, or a processor can
+  consume raw topics and publish standardized topics. Kafka itself does not normalize data. Keep source
+  identity and chain-specific semantics; new chains can require downstream changes.
+- Kafka provides retained logs and independent consumer progress. Direct database writes with a durable
+  chain checkpoint are a simpler alternative when history retrieval and one destination suffice.
+- A topic has partitions: separate ordered logs. Kafka preserves append order within a partition, not
+  blockchain chronology. Backfills, multiple producers and reorgs need application-level handling.
+- A candidate key is `(chain, token)` for token-local work. A popular token can become a hot partition.
+  Changing partition count or routing can move keys; ordering assumptions need a migration plan.
+- In a normal consumer group, each partition has one assigned consumer at a time. Rebalancing changes
+  ownership. Extra consumers beyond available partitions do not increase active consumption parallelism.
+- A committed offset identifies the **next record to read**, per group/topic/partition. Write durably,
+  then commit; crashes can replay writes. Kafka supports auto-commit too, but it must not outrun processing.
+  Offsets can instead be stored with results where the destination supports an atomic implementation.
+- ClickHouse suits column scans and aggregations; PostgreSQL also supports history and append-only data.
+  Neither database determines whether the application's data model preserves history.
+- A unique-looking event key does not enforce uniqueness in ClickHouse. ReplacingMergeTree merges rows
+  with equal sorting keys eventually. Correct query-time deduplication, such as FINAL with a suitable
+  schema, must precede aggregation. GROUP BY with SUM alone still counts duplicates.
+- Incremental materialized views process inserted batches. Source deletes and later source deduplication
+  do **not** automatically repair their target tables. Derived state needs explicit correction or rebuild.
+- Balances can come from authoritative chain state at a known block. A balance snapshot plus complete,
+  valid changes can avoid full-history replay where token semantics permit it. Transfer logs alone are
+  not universally sufficient. Observed events are not automatically canonical truth.
+
+### Incident drill: ClickHouse stops accepting writes
+
+1. **Detect:** compare a chain's chosen safe/finalized target with the last **contiguous, fully processed**
+   checkpoint. A maximum observed height can hide gaps. Track checkpoint age and hash as well as height.
+   An API-level freshness probe measures user impact; internal metrics locate the failure: insert errors,
+   consumer lag per partition, disk capacity, replication and merge backlog.
+2. **Protect:** do not commit failed writes. Bound consumer buffering and retries. Monitor Kafka disk and
+   retention headroom. Historical recovery from a chain provider requires accessible retained history;
+   do not assume any RPC endpoint can supply it.
+3. **Restore:** identify and repair the database fault, check durable writes, then verify each committed
+   offset is still available. Do not silently reset to latest if retention removed needed records.
+4. **Reconcile:** a Kafka offset is not a chain checkpoint. Check the stored checkpoint hash against the
+   current canonical chain. If it differs, walk back to a common ancestor and repair the affected range.
+   Replayed events also need canonical checks or a reliable reorg-correction stream: even unread Kafka
+   records may describe blocks orphaned during the outage.
+5. **Repair safely:** stop conflicting writes for the affected scope; preserve last known-good serving
+   data or label it stale. Invalidate orphaned block hashes, fetch the replacement branch and explicitly
+   rebuild affected balances/aggregates from valid state. Wait for repair visibility, validate a consistent
+   checkpoint, then publish repaired data and invalidate affected caches. Resume through an idempotent
+   path; a key alone is not idempotency. Avoid blind height-range deletes racing with replacement writes.
+6. **Verify:** recovery processing exceeds arrivals; backlog drains; contiguous canonical checkpoints
+   advance within the chosen freshness target; no missing ranges remain. Compare sampled balances at
+   the **same block hash**, verify maps/cache freshness and sustained database health. Exact equality to
+   latest chain head is neither necessary nor sufficient.
+
+### Reorg example
+
+Stored branch: `100:A → 101:B → 102:C`. Current branch: `100:A → 101:X → 102:Y → 103:Z`.
+Block 100 is the common ancestor. Invalidate B/C, ingest X/Y/Z, and repair derived state from a valid
+checkpoint. Height 102 existing in both branches does not make the data equivalent. On EVM chains, an
+observed log can be identified by chain, block hash, transaction hash and log index; canonical membership
+is a separate fact. Other chains need their own event identities.
+
+### Next practice and morning recall
+
+- Explain why equal maximum heights can hide missing blocks and orphaned data.
+- Explain row versus column storage, sorting keys versus partitions, replicas versus shards, and why
+  many tiny inserts burden ClickHouse merges. These topics still need a focused lesson.
+- Explain Kafka replication, acknowledgments and retention; no buffering system gives unlimited safety.
+- Redraw the pipeline; give one reason and one cost for each component. Ask the interviewer which parts
+  match their actual design, their freshness target, reorg policy and most recent production incident.
+- Keep experience claims separate from design reasoning: production SRE and protocol infrastructure are
+  evidenced; indexer authorship and production Kafka/ClickHouse depth are not established here.
+
+### Primary references
+
+- [Kafka consumer semantics](https://kafka.apache.org/41/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html)
+- [ReplacingMergeTree](https://clickhouse.com/docs/reference/engines/table-engines/mergetree-family/replacingmergetree)
+- [ClickHouse views and source-change limitations](https://clickhouse.com/docs/reference/statements/create/view)
+- [Canonical block references and balance reads](https://eips.ethereum.org/EIPS/eip-1898)
+
 ## Recruiter-screen answers
 
 **Answered on the 2026-09-29 call:**
@@ -205,10 +308,9 @@ zones, assets secured).
 
 - Recruiter call: **2026-09-29**
 - **CTO call: 2026-09-30 → advanced to the technical interview** (Stage → Interview)
-- Awaiting: **technical interview scheduled — with a data engineer** (role is SRE + Data)
-- Follow-up: none owed while the process is active; ping Yofy **2026-10-06** only if scheduling goes quiet
+- Scheduled: **technical interview 2026-10-06 (morning), with a data engineer** — role is SRE + Data
 - Screen dates: **2026-09-29** (recruiter) · **2026-09-30** (CTO)
-- Interview dates: technical round with a data engineer — to be scheduled
+- Interview dates: technical round with a data engineer — **2026-10-06 (morning)**
 - Outcome: pending
 
 ## Outcome record
