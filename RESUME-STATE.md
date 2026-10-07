@@ -13,7 +13,55 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | **25 issues: 15 open, 10 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #10 Otera, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram. Closed: #3 vivenu, #6 Doctolib, #8 Lity, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all ten `reason:unknown`** |
+| Pipeline | **27 issues: 17 open, 10 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #10 Otera, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR). Closed: #3 vivenu, #6 Doctolib, #8 Lity, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all ten `reason:unknown`** |
+
+## Updated 2026-10-07
+
+### Two France-lane applications, both posted the day before
+
+| Issue | Role | Market / tier / track | Applied | Follow-ups |
+|---|---|---|---|---|
+| **#28** | **Filigran — Senior Platform Engineer** | `fr-bridge` / **B** / `ai` | 2026-10-07 (Ashby) | 10-14 → 10-16 · final 10-21 → 10-27 |
+| **#27** | **360Learning — Senior DevSecOps Engineer** | `fr-bridge` / **C** / `bridge` | 2026-10-07 (Lever) | 10-14 → 10-16 · final 10-21 → 10-27 |
+
+Both remote-in-France with no relocation question, both posted 2026-10-06 (applied day 1), both with
+**unpublished compensation** against the €80k France-compatible floor. Neither has a jobradar store row;
+reconcile by ATS id.
+
+- **Filigran (#28) is now the best craft match in the pipeline** on the evidence base as written — bare-metal
+  Kubernetes (Docaposte MetalLB/Cilium), Helm, Ansible/Terraform, GitHub Actions, Prometheus/Grafana/Loki,
+  secrets/access (Vault, Teleport, Kyverno, Cilium), **ISO 27001 lead at Cometh** mapping onto their
+  FedRAMP/SecNumCloud hardening nice-to-have, French native, remote-first. Costs: **5+ years asked (~4
+  evidenced)**, unpublished band, and heavier-than-usual on-call (~1 day + 1 night shift per 2 weeks, one
+  weekend per ~6 weeks, compensated). Filigran is **open source** (OpenCTI, OpenBAS) — a small upstream
+  contribution is visible to the team that reads the application.
+- **360Learning (#27) is a deliberate bridge row**: a security-engineering role (detection content, SIEM
+  coverage, honeypots, vulnerability management, audit-evidence automation) with **no ML surface**, admitted
+  for income in lane #1 plus the regulated/compliance evidence that keeps recurring in this pipeline. The
+  anchor is the ISO 27001 lead; the risk is that the process tests **security operations depth**, including a
+  live exercise in either incident investigation (weak) or insecure-configuration review (winnable). Azure/AKS
+  is the same conversion gap as #11.
+
+### Bubblemaps #13 — technical interview done, awaiting return
+
+Round took place **2026-10-06** (data engineer); no outcome yet. Stage stays `Interview`; no result, stage
+change or follow-up date recorded until the debrief. Prep notes committed in `8b2a8b4`.
+
+### Flags for the Friday review (2026-10-09)
+
+1. **The France lane is drifting toward security/compliance infrastructure** — two of this week's three
+   France-lane rows (#27, #28) are security-flavoured. Filigran is the one that also does platform work;
+   360Learning is a pivot that builds no ML-platform evidence. Is that drift deliberate or accidental?
+2. **Filigran's `track:ai` label is a judgement call.** The team owns the K8s substrate behind an agentic
+   product and has an explicit agent-guardrail/agent-enablement responsibility, but the workload has no ML/GPU
+   surface. Moving it to `bridge` would drop it out of the ML-platform conversion cohort.
+3. **Compensation is unpublished on all three France-lane rows logged this week** (#27, #28, and the earlier
+   #25-style pattern) — the €80k floor is being applied blind. Ask in the first exchange every time.
+4. Carried over from yesterday: the three-instance Web3 clause conflict (#22/#25/#26), the still-empty
+   outreach lane (`sent/` empty; Workist's named-recipient draft went unused), the 10-for-10 `unknown` funnel,
+   the customer-facing evidence gap, and the MarvelX feedback request that is still unsent.
+
+---
 
 ## Updated 2026-10-06
 
