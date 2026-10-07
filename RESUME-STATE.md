@@ -15,6 +15,76 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
 | Pipeline | **27 issues: 17 open, 10 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #10 Otera, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR). Closed: #3 vivenu, #6 Doctolib, #8 Lity, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all ten `reason:unknown`** |
 
+### HN "Who is hiring? (October 2026)" sweep — 232 top-level posts, in-scope shortlist (2026-10-07)
+
+Thread: https://news.ycombinator.com/item?id=49922569 (341 comments, 232 top-level job posts). `jobradar scan`
+was run to absorb it (2026-10-07).
+
+**⚠️ The queue silently drops this thread's most relevant roles — verified defect, details at the end of this
+section.** The 23 rows the store does hold from the thread are almost all `out`/`review` rows with low
+relevance (VLM Run, Loft Orbital, Chronograph, Odin, Axmed, ML6, ChainSecurity…): the feed parsed 210
+postings, then `min_score: 3` pruned the rest.
+
+**Tier 1 — worth applying or preparing for**
+
+| Company | Role | Where | Verdict |
+|---|---|---|---|
+| **Kraken Tech** (Octopus Energy) | **Senior SWE, AI Foundations** — Ashby `krakentech` | **Paris, Berlin**, London, Manchester · hybrid | **Best in-scope find of the thread.** The team owns *secure cloud development environments for AI-assisted engineering, internal model access and guardrails, agent orchestration with Slack/GitHub/Notion, evals*. That is agentic-AI platform engineering, and it matches the 2026 AI-assist/orchestration PoCs plus the platform evidence. Paris is a listed location → France-compatible. Costs: hybrid (relocation to Paris or Berlin), Python/Django-leaning stack |
+| **Namespace** | Infrastructure Software Engineer | **Switzerland · Germany** · UK · US, remote or hybrid | Control planes for their own fleet — K8s/Terraform/Ansible and bare-metal match. Gate: *"writing the software that runs fleets"* in **Go**, plus datacenter/network depth — both inside the current evidence gaps |
+| **Prior Labs** (now part of **SAP**) | ML Engineer, Infrastructure | Berlin · Freiburg · NYC, on-site (remote exceptional) | The **exact primary-lane role** — multi-cluster GPU infra, Slurm on GCP, cost-per-FLOP ownership, ~€10M+/yr compute. Gates are the excluded ones: 3+ yrs production **GPU fleet** + distributed-training depth, PyTorch internals. Long-shot now; the clearest statement of what the lane demands |
+| **Rentman** | DevOps Engineer | Utrecht (NL), hybrid | IaC migration ownership (Terraform/Pulumi/CDK), unify Fargate + K8s, observability, cost, IAM. First serious **NL-lane** role since the 2026-09-30 admission. Gates: *"personally led"* an AWS IaC migration; AWS-primary estate |
+
+**Tier 2 — flagged, reachable, or track-dependent**
+
+- **Tether** (100% remote worldwide, Web3+AI): *AI Inference Engineer (QVAC)*, *AI Harness Engineer* (JS/TS,
+  agent harness + local inference + P2P), *Technical Lead — GPU Infrastructure*. Verified **`DevOps Engineer
+  (QVAC)` is release/build engineering** (GitHub Actions, CMake, NPM/mobile signing) — not platform/SRE.
+  The rest are engineering/research-track, not SRE.
+- **JUPUS** — Engineering Manager, Applied AI, REMOTE (CET±2), **up to €160k**: best comp/geography match in
+  the thread, but a **management** role (5 reports). A career-track decision, not an evidence question.
+- **Reef Technologies** — Senior Python Backend Engineer, REMOTE EMEA, B2B 45–70 USD/h: GPU-enabled
+  sandboxed container runners, decentralized scheduling. Contract + Python authoring.
+- **EggAI** — IT Operations Lead / platform engineers, REMOTE (EU): boutique enterprise-AI consultancy.
+- **Quobyte** (Berlin, on-site): storage for AI/HPC at exabyte scale — superb craft, but the published bands
+  (**60–100k** SWE, **50–90k** infra) breach the €80k Berlin floor. Same disqualifier class as Lity #8.
+- Also noted: **Open Education Applications / Neon** (Utrecht) is the first NL row to demand **Dutch**;
+  **Charly** (Berlin) 60–100k and **PAGNOS** (remote DE) €75–80k breach the floor; **Anthropic** (CH) and
+  **Google Munich** are Staff+ → §2 seniority fail; **Mattermost** is US/Canada-only; **PostHog**'s SRE roles
+  are Americas-only; **ClickHouse Labs** wants research scientists; **Modash** (remote EU, €75–110k) and
+  **Better Stack** are product-engineering, not platform.
+
+### jobradar defect — the HN feed drops the thread's best infra roles (2026-10-07, verified)
+
+Found while sweeping: the six most in-scope postings scored **≤ 0** and were pruned by `min_score: 3`
+(`store`/`scan` deletes rows with `score < 3 AND status='new' AND decision IN ('low','out')`), so they never
+reach the TUI. Scores below come from the tool's own scorer (`_scorer(cfg).match(job)` on the fetched feed):
+
+| Post | `parts[1]` → title | location → | score | cause |
+|---|---|---|---|---|
+| Namespace | `San Francisco, CA / New York, NY / Zurich, Switzerland / Remote` | `Full-time` | **0** | post leads with locations; no keyword in the title field |
+| QUOBYTE | `Santa Clara, CA and Berlin, Germany` | `Full-time / Remote` | **0** | same |
+| Prior Labs | `Berlin, Freiburg, NYC` | `ONSITE` | **0** | same |
+| Tether | `AI Harness Engineer` | `REMOTE (Worldwide)` | **0** | "AI Harness" matches no `title_rules` entry |
+| Kraken Tech | `Senior Software Engineer - AI Foundations` | `London, Paris, Berlin, Tokyo, New York, Remote` | **0** | "AI Foundations" matches no `title_rules` entry |
+| Rentman | `DevOps Engineer, Senior Frontend Developer` | `Utrecht, NL` | **−3** | a second role in the title hits the **`frontend` hard negative** (−5); NL is a target country and was not the problem |
+
+Two distinct bugs, both in the pipeline rather than in the thread:
+
+1. **`fetch_hn_whoishiring` takes `parts[1]` as the title** (`src/jobradar/sources/feeds.py:187`) on the
+   thread's `Company | Role | Location` convention. Posts that lead with *locations* (a common HN style)
+   yield a location string as the title and `Full-time` as the location — the role is lost entirely.
+2. **`title_rules` has no coverage for agentic-AI platform titles** (`AI Foundations`, `AI Harness`,
+   agent platform, AI enablement) — the fastest-growing category in this thread — and a multi-role title can
+   trip a hard negative meant for a *different* role in the same post.
+
+Cheap fixes, in increasing cost: (a) add `ai foundations|ai harness|agentic|ai enablement|ai tooling` to
+`title_rules`; (b) prefer the *first* pipe part that looks like a role rather than blindly taking index 1, and
+score hard negatives against a single matched role instead of the whole title; (c) exempt the HN feed from
+`min_score` (or lower its floor) so comments are reviewable in the TUI. Not applied — the submodule is
+Vincent's call.
+
+---
+
 ## Updated 2026-10-07
 
 ### Two France-lane applications, both posted the day before
