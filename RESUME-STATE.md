@@ -13,7 +13,7 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | **27 issues: 17 open, 10 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #10 Otera, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR). Closed: #3 vivenu, #6 Doctolib, #8 Lity, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all ten `reason:unknown`** |
+| Pipeline | **28 issues: 18 open, 10 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #10 Otera, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE). Closed: #3 vivenu, #6 Doctolib, #8 Lity, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all ten `reason:unknown`** |
 
 ### HN "Who is hiring? (October 2026)" sweep — 232 top-level posts, in-scope shortlist (2026-10-07)
 
@@ -82,6 +82,41 @@ Cheap fixes, in increasing cost: (a) add `ai foundations|ai harness|agentic|ai e
 score hard negatives against a single matched role instead of the whole title; (c) exempt the HN feed from
 `min_score` (or lower its floor) so comments are reviewable in the TUI. Not applied — the submodule is
 Vincent's call.
+
+### idnow #29 applied — DE-lane bridge, and the first salary target actually specified (2026-10-07)
+
+**AI Platform Engineer (f/m/d)**, Berlin/Munich **or Rennes (FR)**, on-site, posted the same day. `market:de` ·
+`tier:c` · `channel:ats` · `track:bridge` · jobradar uid `07a91d9debeb76db` (score 9, `high`). Board
+`Contacted`; follow-ups 2026-10-14 → 10-16, final 2026-10-21 → 10-27.
+
+- **The title outruns the job.** Department is **Internal IT**: enterprise integration and middleware (GitLab
+  CI/CD, Terraform on AWS, Node/Python middleware, MCP servers). Kubernetes is only "a plus"; no cluster,
+  fleet or ML-lifecycle ownership appears. Tagged bridge on purpose despite the score of 9.
+- **The clean half and the dirty half:** the DevOps side matches (Terraform, CI/CD, IAM/security, Docker/K8s);
+  the job also wants shipped **Node.js/Python middleware**, which is the excluded claim. Not evidenced:
+  GitLab, MCP servers, Node.js, AWS-as-home-cloud.
+- **⚠️ Third AWS-primary row this week** (#11, #27, #29) — now the most repeated gap in the DE/FR lanes.
+
+### Compensation anchors — first target numbers on record (2026-10-07)
+
+Set for idnow (Berlin/Munich), reusable for every DE row:
+
+| Source | Figure |
+|---|---|
+| §2 floor (binding) | Berlin **€80,000** |
+| Workist #11, employer-disclosed, Berlin senior platform | **€80,000–100,000** |
+| Berlin rows seen this week | Charly 60–100k · Quobyte 60–100k (SWE) / 50–90k (infra) · PAGNOS (remote) 75–80k |
+| ERI/SalaryExpert, Germany DevOps, Sept 2026 | entry **€59k** · average **€85k** · senior **€104k** |
+| Levels.fyi Munich SWE median *total* comp | ≈ **$98.7k** — big-tech-weighted, ceiling signal only |
+
+**Rule adopted:** quote a **band whose bottom is above the §2 floor** — Berlin **€85,000–95,000**, Munich
+**€90,000–100,000**; single-number forms get the upper-middle (**€90k Berlin / €95k Munich**). Munich prices
+5–10% above Berlin. Never quote the floor; never quote above ~€100k at a 4-years-evidenced senior bar.
+Equity at PE-owned employers should be discounted, so weight base.
+
+**New trap recorded — Rennes.** The JD offers Rennes, France as a third location. The §2 France-compatible
+floor is also €80k and French regional platform pay sits well below the German bands, so a recruiter steering
+to Rennes *and* French compensation breaches the floor. Rennes is acceptable only at a German-level base.
 
 ---
 
