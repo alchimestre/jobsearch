@@ -118,6 +118,12 @@ Equity at PE-owned employers should be discounted, so weight base.
 floor is also €80k and French regional platform pay sits well below the German bands, so a recruiter steering
 to Rennes *and* French compensation breaches the floor. Rennes is acceptable only at a German-level base.
 
+**First real quote, for calibration (2026-10-07):** idnow #29 → **€95,000 as a single figure, no base/variable
+split**. Within the Munich guidance, at the top of the Berlin band. Calibrate the guidance against the outcome
+when it lands — if idnow screens on level, €95k was too high for a 4-years-evidenced senior bar in Berlin; if
+it proceeds, the band was right. **Note the open ambiguity:** whether that figure is read as base or total
+(if total with a ~10% variable, base ≈€86k).
+
 ---
 
 ## Updated 2026-10-07

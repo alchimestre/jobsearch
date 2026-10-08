@@ -101,6 +101,13 @@ Anchors, in order of strength:
   French one — idnow has both, and the Rennes option must not be used to apply the French market band, which
   would breach the €80k floor.
 
+**Quoted: €95,000, entered as a single figure on 2026-10-07 with no base/variable split** (reported
+2026-10-08). That is exactly the Munich single-number guidance and the top of the Berlin band — defensible
+for Munich, a stretch for Berlin at a 4-years-evidenced senior bar. **The one thing to settle in the first
+exchange: whether €95k means base.** German "Gehaltsvorstellung" is normally read as base, and idnow's
+package may carry a bonus; if €95k is treated as total with a ~10% variable, the base lands near €86k —
+above the §2 floor but below the €90k Berlin target. Say "base" explicitly.
+
 ## The Rennes trap
 
 The JD offers **Rennes, France**. It looks like the cheapest path (domestic move, no visa, no language risk),
@@ -129,6 +136,7 @@ base, otherwise this becomes a Germany-only application.
 ## Outcome record
 
 - Stage reached: Contacted
+- **Salary quoted: €95,000 (single figure, 2026-10-07; base/variable split not specified)**
 - Rejection reason (relevance / readiness / compensation / location / unknown): pending
 - **Watch:** this is the third row this week where **AWS-primary** experience is the stated requirement
   (#11 Workist, #27 360Learning, #29 idnow) — it is now the single most repeated gap in the DE/FR lanes.
