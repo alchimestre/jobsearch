@@ -28,7 +28,19 @@ The single portfolio project that closes the programming and SLO gaps and adds t
 
 ### Search Lanes
 
-Effort split across active search (amended 2026-09-11): **EU-remote / France-compatible 50%**, **Berlin 35%**, **Switzerland 15%**. Switzerland is a relationship-building and selective-application lane only; it is not a job-#1 market. This replaces the original Switzerland-60 / Berlin-40 market split. The Netherlands became an admissible physical market on 2026-09-30 (see Target Countries); no effort share has been assigned to it yet.
+Effort split across active search (amended **2026-10-09**): **France-anchored 70%** — France-based roles and
+France-compatible remote roles (EU-remote that can employ in France, or Web3 roles that are remote-first) —
+**Web3 infrastructure 20%**, **Berlin/Germany 10%**. Switzerland moves to opportunistic only.
+
+The change is a speed decision. Vincent needs income as soon as possible and needs to stay in France: a French
+contract needs no permit, no move, and no relocation funding, so it clears every location filter at once. Web3
+infrastructure is the fastest lane to income because it sits directly on the strongest evidence (Kiln: $8B+
+secured across 40+ networks) and needs no AI-platform proof.
+
+**Web3 is now a priority lane, not a fallback.** It ranks with the ML/MLOps lane for active effort, and it wins
+ties against any role that needs a relocation Vincent has no funding for.
+
+The earlier split (EU-remote/FR 50%, Berlin 35%, Switzerland 15%, amended 2026-09-11) is retired.
 
 ### Destination Hierarchy
 

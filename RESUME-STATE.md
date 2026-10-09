@@ -6,7 +6,6 @@ No outreach, applications, follow-ups, or project work during the pause. Nothing
 that cannot wait until 09-24; this file exists so the next session starts cold with correct state.
 
 ## Where the plan is
-
 | Item | State |
 |---|---|
 | 12-week plan | Week 1 complete; **Week 2 starts 2026-09-24** (whole plan shifted +10 days, 2026-09-14) |
@@ -14,6 +13,30 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
 | Pipeline | **37 issues: 26 open, 11 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE), #30 Atlantic venture (DE, Tier A), #31 Annapurna/unnamed AI+health (DE, Tier B), #32 Runware (EU-remote, Tier A), #33 SpotMe (EU-remote, Tier C, bridge), #34 MLabs/unnamed fintech-connectivity (EU-remote, Tier C, bridge), #35 Lifen (FR-bridge, Tier B), #36 MAIA (DE, long-shot — fails residency + band floor), #37 Redcare Pharmacy (DE, Tier B — probable residency gate, Azure core gap), **#38 Eye Security (NL, Tier B — the one JD asking for shipped LLM work; 6+ yrs and The Hague hybrid)**. Closed: #3 vivenu, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all eleven `reason:unknown`** |
+
+### ⚠️ Priority change — 2026-10-09: France first, Web3 close behind, JD language mandatory
+
+Three binding rules now, recorded in `AGENTS.md` and `CONTEXT.md`:
+
+1. **France-anchored 70% · Web3 infrastructure 20% · Berlin 10%.** Income fast, no move. Switzerland is
+   opportunistic only. A French contract needs no permit, no relocation and no funding, so it clears every
+   location filter at once.
+2. **Web3 is a priority lane, not a fallback** — it sits on the strongest evidence (Kiln, $8B+ across 40+
+   networks) and needs no AI-platform proof.
+3. **The JD must be written in English or French.** Hard filter, tool-enforced (`allowed_languages: [en, fr]`).
+   `unknown` is excluded too, since a short German JD can fail detection. **Cost, measured:** 135 stored rows
+   scored `unknown` language. **After a rescan the rule cleared them: `unknown` rows at `high` went 8 → 0 and
+   at `review` 52 → 12.** The 12 left are stale — their source stopped returning them about 9 days ago, so no
+   rescan can re-evaluate them; they will clear if seen again. `en` rows were unaffected (77 at `review`,
+   5 at `high`).
+4. **Tool bug found and fixed the same day.** The new rule did not reach the existing queue at first: `store.upsert`
+   kept the stored decision unless the new score was *higher*, and scope gates change the decision without
+   changing the score. So a rule change (language, region, target country) never applied to rows already in the
+   store. Fixed in `keep_best`; two tests added (**177 passed**); verified live with the numbers above. This bug
+   affected every previous scope change, not just this one.
+
+A fourth rule follows from three: **location must be France or France-employable** (or relocation-funded).
+Any posting that assumes residence elsewhere without support is a long-shot, not an application.
 
 ### HN "Who is hiring? (October 2026)" sweep — 232 top-level posts, in-scope shortlist (2026-10-07)
 

@@ -37,6 +37,19 @@ polling tool: ~110 employer ATS boards + 7 machine-readable feeds, one ranked SQ
   non-blocking; the return to work targets the earliest achievable start.** Tag each application with a
   `track:` label — `track:ai`, `track:web3`, `track:bridge` — so conversion stays comparable across the
   widened scope. `scripts/log_applied.py` assigns it from the jobradar signals.
+- **Priority (2026-10-09): France first, Web3 close behind.** Allocation is **France-anchored 70% · Web3
+  infrastructure 20% · Berlin 10%**; Switzerland is opportunistic only. Vincent needs income fast and needs to
+  stay in France, so a French contract beats a better-titled role that needs a move. See `CONTEXT.md` →
+  Search Lanes.
+- **Hard filter — JD language (2026-10-09).** The job description **MUST** be written in **English or French**.
+  Read the JD and confirm this before logging an application; a posting in German, or any other language, is
+  out of scope even when the title and stack look perfect (Vesterling, 2026-10-09). This is a hard filter, not
+  a preference. Enforced in the tool as `allowed_languages: [en, fr]`.
+- **Hard filter — location (2026-10-09).** The role **MUST** be one of: based in France; remote and able to
+  employ in France; or on-site with **funded** relocation or a remote start from France. A posting that assumes
+  residence in another country without relocation support fails, and is logged as a deliberate long-shot at
+  most — do not count it as a real application. Ask the location question **in writing before applying** where
+  the posting does not answer it.
 - `jobradar export --since 7d` emits ready-to-paste rows carrying the stable `uid`; quote that uid in the
   opportunity doc so the store and the issue stay reconcilable.
 - Marking a posting `applied` in the TUI (`a`) runs `scripts/log_applied.py`, which logs the application
