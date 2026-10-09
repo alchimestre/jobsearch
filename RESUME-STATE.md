@@ -13,7 +13,7 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | **35 issues: 24 open, 11 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE), #30 Atlantic venture (DE, Tier A), #31 Annapurna/unnamed AI+health (DE, Tier B), #32 Runware (EU-remote, Tier A), #33 SpotMe (EU-remote, Tier C, bridge), #34 MLabs/unnamed fintech-connectivity (EU-remote, Tier C, bridge), #35 Lifen (FR-bridge, Tier B), **#36 MAIA (DE, long-shot — fails residency + band floor)**. Closed: #3 vivenu, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all eleven `reason:unknown`** |
+| Pipeline | **36 issues: 25 open, 11 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE), #30 Atlantic venture (DE, Tier A), #31 Annapurna/unnamed AI+health (DE, Tier B), #32 Runware (EU-remote, Tier A), #33 SpotMe (EU-remote, Tier C, bridge), #34 MLabs/unnamed fintech-connectivity (EU-remote, Tier C, bridge), #35 Lifen (FR-bridge, Tier B), #36 MAIA (DE, long-shot — fails residency + band floor), **#37 Redcare Pharmacy (DE, Tier B — probable residency gate, Azure core gap)**. Closed: #3 vivenu, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all eleven `reason:unknown`** |
 
 ### HN "Who is hiring? (October 2026)" sweep — 232 top-level posts, in-scope shortlist (2026-10-07)
 
@@ -127,6 +127,48 @@ it proceeds, the band was right. **Note the open ambiguity:** whether that figur
 ---
 
 ## Updated 2026-10-09
+
+### Redcare Pharmacy #37 applied — right surface, wrong platform (2026-10-09)
+
+**Platform Engineer** in the platform team **inside the Data & AI department** at **Redcare Pharmacy**
+(Europe's No.1 e-pharmacy, the Shop Apotheke Europe group; **Köln**), building the *"next-generation AI
+Platform"* for Data/AI/MLOps teams. `market:de` · `tier:b` (lower end) · `channel:ats` · `track:ai`. Board
+`Contacted`; follow-ups 2026-10-16 → 10-20, final 2026-10-23 → 10-29.
+
+- **The surface is the primary lane; the platform is wrong.** Azure IaC, **Azure Databricks** operation and the
+  **Azure Kubernetes** platform are the job — and **no Azure or Databricks row exists anywhere in
+  `docs/tooling-inventory.md`**. Cloud depth is GCP plus hybrid/on-prem. This is the least bridgeable gap in
+  the JD and it will decide the screen on its own.
+- **Seniority reads a step down**: *"implementing agreed solutions with support from more experienced engineers
+  when needed"*, *"resolve standard support cases"* — component ownership, not platform ownership. Taking it
+  would trade ownership for surface.
+- **Compensation unpublished** on a mid-level frame — the profile that can price under the €80k floor
+  `[INFERENCE]`.
+- **Probable residency gate — the second today.** The benefit is *"work from home … even for **up to 20 days a
+  year anywhere in the EU**"*, which caps EU time outside Germany rather than offering remote-first, with no
+  relocation support mentioned.
+- **What does match, strongly:** Terraform/Terragrunt, Kubernetes at multi-zone and bare-metal scale, **Flux
+  GitOps** and CD pipelines, the full observability stack, Helm, containers. Two requirements are near-exact:
+  ***"programming/scripting (Python, Go or Shell) for infrastructure automation and platform tooling"*** — the
+  permitted form of the scripting claim, since the boundary excludes production software authorship, not
+  automation tooling — and ***"basic understanding of Data, ML or AI workloads and how infrastructure and
+  platform capabilities support them"***, which is the positioning thesis verbatim plus the in-progress
+  `ml-platform-on-k8s` project. Regulated health-data context also transfers (Docaposte HDS, ISO 27001 lead).
+- **Databricks is handled honestly by the JD** (*"or a strong motivation to develop hands-on expertise"*).
+
+### ⚠️ The German lane is producing residency-gated roles
+
+Two consecutive applications today (#36 MAIA, #37 Redcare) fail or probably fail on **residency in Germany**,
+not on capability — and with #29 idnow and #30 Atlantic (both Berlin on-site, no relocation mentioned), that is
+**four of the last nine rows**. Much German demand assumes residency without funding a move.
+
+**The Berlin allocation (35%) was set on demand density, not convertibility.** Friday-review options:
+1. apply a **relocation-funding filter to the DE lane *before* applying** (ask in the first message, or skip
+  postings that imply German residency with no relocation support); or
+2. shift allocation toward **EU-remote/FR** until relocation funding is secured on an actual offer.
+
+Either is defensible; continuing to apply blind into a residency gate is not, because it produces `unknown`
+closures that teach the funnel nothing (see the eleven-row pile below).
 
 ### Lifen #35 applied — stack, domain and geography finally line up (2026-10-09)
 
@@ -414,7 +456,7 @@ read. Board `Contacted`; **no follow-ups owed**.
   about the candidate, the label must only be applied if the employer says so. A silent no-response stays
   `unknown`, and this is exactly the kind of row that pollutes the `unknown` pile.
 
-### Day summary — 2026-10-09, seven applications
+### Day summary — 2026-10-09, eight applications
 
 | # | Role | Lane | Tier | Track | Channel | Compensation |
 |---|---|---|---|---|---|---|
@@ -425,18 +467,20 @@ read. Board `Contacted`; **no follow-ups owed**.
 | 34 | MLabs / unnamed fintech-connectivity | EU-remote | C | bridge | recruiter | **£90–120k published** |
 | 35 | Lifen — Senior Platform Engineer | FR-bridge | B | ai | ats | not published |
 | 36 | MAIA — Senior DevOps/Platform | DE | B | ai | ats | **€75–85k published** (floor = midpoint) |
+| 37 | Redcare Pharmacy — Platform Engineer | DE | B | ai | ats | not published |
 
-**Seven applications** logged today (#30–#36), plus one closure (#10 Otera). Two patterns are now
+**Eight applications** logged today (#30–#37), plus one closure (#10 Otera). Three patterns are now
 structural rather than anecdotal:
 
-1. **Compensation is the binding filter.** Of seven applications, **five publish no band** and the two that do
+1. **Compensation is the binding filter.** Of eight applications, **six publish no band** and the two that do
    split — one clears the floor outright (MLabs), one puts the floor at the band's midpoint (MAIA). For a
-   search whose single hard constraint is the income cliff, **five of seven applications were made blind on the
+   search whose single hard constraint is the income cliff, **six of eight applications were made blind on the
    one number that decides everything.** The 2026-10-09 rule (ask in writing at application time or first
-   follow-up) should now be treated as mandatory, not advisory.
-2. **Three of seven required AWS, two required Python authorship, and one excluded non-German residents** — the
-   excluded claims and the residency reality are doing more filtering than the CV is. Both remain at the top of
-   the Friday review list.
+   follow-up) is now mandatory, not advisory.
+2. **Two applications today were gated by German residency** (#36 MAIA explicitly, #37 Redcare probably), and
+   that is **four of the last nine rows** with #29 and #30. Three of eight required AWS and a fourth required
+   Azure as the primary cloud; two required Python authorship. **The excluded claims and residency are
+   filtering harder than the CV is** — both stay at the top of the Friday review list.
 3. **Discovery is being corrected by the inbox, not by the tool**: three untracked boards closed today
    (Runware/Workable, SpotMe/Greenhouse, Lifen/Ashby) were all found *because an application was made*, not
    because jobradar surfaced them. The watchlist is now **162 boards**; the question for the review is whether
