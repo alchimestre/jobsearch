@@ -13,7 +13,7 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | **36 issues: 25 open, 11 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE), #30 Atlantic venture (DE, Tier A), #31 Annapurna/unnamed AI+health (DE, Tier B), #32 Runware (EU-remote, Tier A), #33 SpotMe (EU-remote, Tier C, bridge), #34 MLabs/unnamed fintech-connectivity (EU-remote, Tier C, bridge), #35 Lifen (FR-bridge, Tier B), #36 MAIA (DE, long-shot — fails residency + band floor), **#37 Redcare Pharmacy (DE, Tier B — probable residency gate, Azure core gap)**. Closed: #3 vivenu, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all eleven `reason:unknown`** |
+| Pipeline | **37 issues: 26 open, 11 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE), #30 Atlantic venture (DE, Tier A), #31 Annapurna/unnamed AI+health (DE, Tier B), #32 Runware (EU-remote, Tier A), #33 SpotMe (EU-remote, Tier C, bridge), #34 MLabs/unnamed fintech-connectivity (EU-remote, Tier C, bridge), #35 Lifen (FR-bridge, Tier B), #36 MAIA (DE, long-shot — fails residency + band floor), #37 Redcare Pharmacy (DE, Tier B — probable residency gate, Azure core gap), **#38 Eye Security (NL, Tier B — the one JD asking for shipped LLM work; 6+ yrs and The Hague hybrid)**. Closed: #3 vivenu, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all eleven `reason:unknown`** |
 
 ### HN "Who is hiring? (October 2026)" sweep — 232 top-level posts, in-scope shortlist (2026-10-07)
 
@@ -127,6 +127,48 @@ it proceeds, the band was right. **Note the open ambiguity:** whether that figur
 ---
 
 ## Updated 2026-10-09
+
+### Eye Security #38 applied — the one JD that asks for shipped LLM work (2026-10-09)
+
+**Senior Infrastructure Engineer – AI Platform** at **Eye Security** (Dutch cybersecurity + embedded cyber
+insurance; HQ The Hague, 200+ FTEs) — *"your first major area of ownership will be the infrastructure behind
+AI-powered capabilities"*. `market:nl` · `tier:b` · `channel:ats` · `track:ai`. Published 2026-09-25. Board
+`Contacted`; follow-ups 2026-10-16 → 10-20, final 2026-10-23 → 10-29.
+
+- **The requirement this role uniquely rewards:** *"hands-on experience building and shipping a non-trivial
+  agent or LLM-backed workflow, **either in production or as a side project with real users**"* — **the first
+  JD in the entire pipeline where the 2026 AI-orchestration work is a stated requirement rather than a
+  nice-to-have**, and the JD explicitly excludes ML research, fine-tuning and prompt engineering while
+  accepting the side-project route. The gate is the narration, not the claim: tool use, context and state,
+  evaluation, failure handling, autonomy, cost, latency, deployment, and what changed for its users.
+- **Three requirements unmet:** **6+ years** (*"6+ years of hands-on experience"*, with **mentoring mid-level
+  engineers** expected) against ~4 evidenced — the steepest stated bar logged today; **significant AWS**
+  (absent from the inventory; **fourth JD today requiring AWS**); and **production code in Go/Python/TypeScript**
+  (the excluded claim, third today). Also unverified: ***authoring reusable Terraform modules for other teams
+  with versioning and release practices***.
+- **Location conflict, and the third residency-gated application today.** The employer's ATS says **"The Hague
+  – hybrid"**; the JD body says *"remote-friendly culture with quarterly meetups"*. No France eligibility and no
+  relocation support stated. With #36 MAIA (explicitly Germany-only) and #37 Redcare (probably) that is **five
+  of the last ten rows** whose binding constraint is relocation or residency rather than capability.
+- **No compensation published** — not on the posting, and not on any of the 29 roles on their board.
+- **Strong matches:** GitOps (Flux `deployed`), CI/CD, the full observability stack, workload identity and
+  least privilege (Teleport/Vault/SOPS/Kyverno/Cilium + ISO 27001 lead), **cost attribution** (the −25% cost
+  instinct extends to token/agent spend), and **EU data-residency constraints for AI workloads** (HDS, GDPR) as
+  a stated nice-to-have. ⚠️ Verification needed before claiming MCP/tool-gateway or LangGraph-adjacent
+  experience, and **evaluation/regression-testing of non-deterministic systems is a genuine new skill** — the
+  JD asks for practical method, not vocabulary.
+
+### 🔧 jobradar defect found and fixed — Ashby hybrid roles were stored as remote
+
+Adding the Eye Security board exposed a real scoring bug: **Ashby sets `isRemote: true` on postings whose
+location reads "The Hague - hybrid"** (and "Berlin - hybrid"), and `Scorer.mode()` tested `job.remote` *before*
+the hybrid pattern — so the role was stored `mode: remote`, which also lets a hybrid role past the
+physical-role checks.
+
+**Fixed:** `mode()` now tests the **location** for `hybrid` first, and no longer consults the title — a
+"Hybrid Cloud Engineer" is a topic, not a working arrangement. Two regression tests added (`175 passed`), and
+the live row re-scanned: **`mode: hybrid`, still `decision: high`** (NL is a target country, so physical roles
+are admitted). The board now reads correctly for every Ashby hybrid posting, not just this one.
 
 ### Redcare Pharmacy #37 applied — right surface, wrong platform (2026-10-09)
 
@@ -456,7 +498,7 @@ read. Board `Contacted`; **no follow-ups owed**.
   about the candidate, the label must only be applied if the employer says so. A silent no-response stays
   `unknown`, and this is exactly the kind of row that pollutes the `unknown` pile.
 
-### Day summary — 2026-10-09, eight applications
+### Day summary — 2026-10-09, nine applications
 
 | # | Role | Lane | Tier | Track | Channel | Compensation |
 |---|---|---|---|---|---|---|
@@ -468,23 +510,30 @@ read. Board `Contacted`; **no follow-ups owed**.
 | 35 | Lifen — Senior Platform Engineer | FR-bridge | B | ai | ats | not published |
 | 36 | MAIA — Senior DevOps/Platform | DE | B | ai | ats | **€75–85k published** (floor = midpoint) |
 | 37 | Redcare Pharmacy — Platform Engineer | DE | B | ai | ats | not published |
+| 38 | Eye Security — Senior Infra Engineer, AI Platform | NL | B | ai | ats | not published |
 
-**Eight applications** logged today (#30–#37), plus one closure (#10 Otera). Three patterns are now
-structural rather than anecdotal:
+**Nine applications** logged today (#30–#38), plus one closure (#10 Otera). Four patterns are now structural:
 
-1. **Compensation is the binding filter.** Of eight applications, **six publish no band** and the two that do
-   split — one clears the floor outright (MLabs), one puts the floor at the band's midpoint (MAIA). For a
-   search whose single hard constraint is the income cliff, **six of eight applications were made blind on the
-   one number that decides everything.** The 2026-10-09 rule (ask in writing at application time or first
-   follow-up) is now mandatory, not advisory.
-2. **Two applications today were gated by German residency** (#36 MAIA explicitly, #37 Redcare probably), and
-   that is **four of the last nine rows** with #29 and #30. Three of eight required AWS and a fourth required
-   Azure as the primary cloud; two required Python authorship. **The excluded claims and residency are
-   filtering harder than the CV is** — both stay at the top of the Friday review list.
-3. **Discovery is being corrected by the inbox, not by the tool**: three untracked boards closed today
-   (Runware/Workable, SpotMe/Greenhouse, Lifen/Ashby) were all found *because an application was made*, not
-   because jobradar surfaced them. The watchlist is now **162 boards**; the question for the review is whether
-   discovery is pulling in-lane roles at all.
+1. **Compensation is the binding filter.** Of nine applications, **seven publish no band** and the two that do
+   split — one clears the floor outright (MLabs), one puts the floor at the band's midpoint (MAIA). **Seven of
+   nine applications were made blind on the one number that decides everything.** The 2026-10-09 rule (ask in
+   writing at application time or first follow-up) is mandatory, not advisory.
+2. **Relocation/residency is the second filter, and it is growing.** **Three of four applications logged after
+   midday are gated by it** (#36 MAIA explicitly Germany-only, #37 Redcare probably, #38 The Hague hybrid) —
+   **five of the last ten rows** with #29 idnow and #30 Atlantic. Four of nine required AWS as the primary
+   cloud; three of nine required production code authorship (Go/Python/TS). **The excluded claims and
+   residency are filtering harder than the CV is.**
+3. **Two `bridge`/`ai` straddles worth noting:** #33 and #34 went out as `track:bridge` while #30–#32, #35–#38
+   are `ai`. The bridge lane is doing its job of keeping non-AI income options live without polluting the AI
+   conversion cohort.
+4. **Discovery is being corrected by the inbox, not by the tool**: **four** untracked boards closed today
+   (Runware/Workable, SpotMe/Greenhouse, Lifen/Ashby, Eye Security/Ashby) — all found *because an application
+   was made*, not because jobradar surfaced them. The watchlist is now **163 boards**; the question for the
+   review is whether discovery is pulling in-lane roles at all.
+
+**Two tool defects found and fixed today** (both surfaced by board additions, not by review): the Workable
+adapter dropped all geography, and Ashby hybrid roles were scored as remote. Both fixed with tests and verified
+against live rows — see the Runware and Eye Security entries.
 
 ## Updated 2026-10-07
 
