@@ -160,8 +160,8 @@ top 20 pharma companies**. `market:eu-remote` · **`tier:c`** · `channel:ats` �
 
 **Tooling:** SpotMe's board was also untracked — `jobradar discover 'https://job-boards.greenhouse.io/spotme'
 --write` added `greenhouse:spotme` (`market: eu-remote`); scan confirmed the row (`location: Europe (Remote)`,
-`decision: review`, score 4). The greenhouse adapter parses geo correctly, unlike the Workable one (see the
-Runware entry above).
+`decision: review`, score 4). The greenhouse adapter parses geo correctly; the Workable one now does too, after
+the fix recorded in the Runware entry above.
 
 ### Runware #32 applied — the best strategic fit in the pipeline, and a jobradar gap closed (2026-10-09)
 
@@ -198,11 +198,13 @@ added `workable:runware` (`market: eu-remote`) to `companies.yaml`; a scan confi
 (`0bf2e7aac892449a`, `decision: review`). **This is the first Workable board in a 155-board watchlist** — the
 ATS is supported in `sources/ats.py` but no company used it.
 
-**Tooling — defect found, not fixed (reported):** `fetch_workable` reads `item.get("location")`, but the
-Workable widget payload has **no `location` key** — the country lives in `locations[]`. Every Workable posting
-therefore stores `country: unknown` and is tagged **`-geo-unverified`** and mis-scored despite the payload
-stating the country (confirmed on the Runware row, where the API returns six countries). Fix belongs in the
-adapter with a test; it affects every future Workable board.
+**Tooling — defect found and fixed the same day:** `fetch_workable` read `item.get("location")`, which the
+Workable widget payload does not carry — the countries live in `locations[]`. Every Workable posting therefore
+stored `country: unknown` and was tagged **`-geo-unverified`** despite the payload stating the country. Fixed in
+a new `_workable_location()` helper (countries joined from `locations[]`, falling back to the flat
+`city`/`country` pair) with a test covering both payload shapes; **173 tests passed**. Rescan verified the row:
+`location: United Kingdom; France; Germany; Spain; Italy; Sweden`, `country: fr`, `mode: remote`,
+`-geo-unverified` gone.
 
 ### Annapurna #31 applied — the closest stack match in the pipeline, through the recruiter lane (2026-10-09)
 

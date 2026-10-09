@@ -23,7 +23,7 @@ options". A Series A at this funding level should clear the floor — **unverifi
 **Follow-ups:** 1st due **2026-10-16 → 2026-10-20** · final **2026-10-23 → 2026-10-29**
 **jobradar:** **board added 2026-10-09** (`workable:runware` in `companies.yaml`, `market: eu-remote`) after
 this application exposed the gap. Scan verified: row `0bf2e7aac892449a`, `decision: review`, `mode: remote`.
-See "Tooling note" below for the adapter defect found in the process.
+See "Tooling note" below for the adapter defect found and fixed in the process.
 
 ## Hard-filter checklist (§2)
 
@@ -145,12 +145,20 @@ the tool until it surfaced on LinkedIn. Fixed: `jobradar discover 'https://apply
 --write` added `workable:runware` (`market: eu-remote`) to `companies.yaml`; a scan verified the row landed.
 **This was the first Workable board in the watchlist** — 155 boards were tracked, none via Workable.
 
-**Defect found (not fixed this session, reported):** `fetch_workable` in
-`tools/jobradar/src/jobradar/sources/ats.py` reads `item.get("location")`, but the Workable widget payload
+**Defect found and fixed the same session:** `fetch_workable` in
+`tools/jobradar/src/jobradar/sources/ats.py` read `item.get("location")`, but the Workable widget payload
 carries **no `location` key** — the countries live in `locations[]` (`country`, `countryCode`) plus top-level
-`country`/`city`. Consequence: **every Workable posting stores `location: ""` and `country: unknown`**, and is
-tagged **`-geo-unverified`** and mis-scored, even though the payload states the country per location. Confirmed
-on the Runware row: `location =`, `country = unknown`, `reasons = +sre,+reliability,-geo-unverified`, while the
-API returns six countries for that req. Multi-country reqs also arrive as N duplicate entries (one per
-country) carrying the same shortcode. Fix belongs in the adapter (build `location` from `locations[]`), with a
-test; it affects every future Workable board, which is why it is written down rather than quietly patched.
+`country`/`city`. Every Workable posting therefore stored `location: ""` and `country: unknown`, was tagged
+**`-geo-unverified`** and was mis-scored, despite the payload stating the country. Confirmed on the Runware row
+before the fix (`location =`, `country = unknown`, `reasons = +sre,+reliability,-geo-unverified`, while the API
+returns six countries for that req). Multi-country reqs also arrive as either one entry with several
+`locations[]` or several single-country entries.
+
+Fixed in a new `_workable_location()` helper: countries from `locations[]`, joined with `; `, falling back to
+the flat `city`/`country`/`state` pair; `remote` still comes from `telecommuting`. A test
+(`test_workable_joins_countries_from_locations`) covers both payload shapes; the suite is **173 passed**.
+Verified against the live board after a rescan: the row now reads
+`location: United Kingdom; France; Germany; Spain; Italy; Sweden`, `country: fr`, `mode: remote`,
+`reasons: +sre,+reliability` — `-geo-unverified` gone. Joining the list is safe for the gate: `country()`
+matches target countries before the non-target list, and `SCOPE_BLOCKED` does not include UK/ES/IT, so the
+extra countries cannot flip the row to `restricted`.
