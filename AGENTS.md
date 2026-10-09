@@ -56,6 +56,11 @@ polling tool: ~110 employer ATS boards + 7 machine-readable feeds, one ranked SQ
   residence in another country without relocation support fails, and is logged as a deliberate long-shot at
   most — do not count it as a real application. Ask the location question **in writing before applying** where
   the posting does not answer it.
+- **Hard filter — role type (2026-10-09): no software-engineering roles.** Vincent is not a developer. Work
+  that is writing application, backend or product code — Software Engineer, Backend/Fullstack/Frontend
+  Engineer, SDE — is out even at a strong employer, however good the salary is (Alan `Fullstack Software
+  Engineer`, 2026-10-09). The target stays platform, SRE, infrastructure, reliability, and Web3
+  infrastructure work. Enforced in the tool as a `-6 software-role` negative rule.
 - `jobradar export --since 7d` emits ready-to-paste rows carrying the stable `uid`; quote that uid in the
   opportunity doc so the store and the issue stay reconcilable.
 - Marking a posting `applied` in the TUI (`a`) runs `scripts/log_applied.py`, which logs the application
