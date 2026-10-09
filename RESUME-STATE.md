@@ -13,7 +13,7 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | **34 issues: 23 open, 11 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE), #30 Atlantic venture (DE, Tier A), #31 Annapurna/unnamed AI+health (DE, Tier B), #32 Runware (EU-remote, Tier A), #33 SpotMe (EU-remote, Tier C, bridge), #34 MLabs/unnamed fintech-connectivity (EU-remote, Tier C, bridge), **#35 Lifen (FR-bridge, Tier B)**. Closed: #3 vivenu, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all eleven `reason:unknown`** |
+| Pipeline | **35 issues: 24 open, 11 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE), #30 Atlantic venture (DE, Tier A), #31 Annapurna/unnamed AI+health (DE, Tier B), #32 Runware (EU-remote, Tier A), #33 SpotMe (EU-remote, Tier C, bridge), #34 MLabs/unnamed fintech-connectivity (EU-remote, Tier C, bridge), #35 Lifen (FR-bridge, Tier B), **#36 MAIA (DE, long-shot — fails residency + band floor)**. Closed: #3 vivenu, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all eleven `reason:unknown`** |
 
 ### HN "Who is hiring? (October 2026)" sweep — 232 top-level posts, in-scope shortlist (2026-10-07)
 
@@ -382,7 +382,65 @@ screening step. Consequences:
 **Today is the Friday review (2026-10-09).** The item list from 2026-10-06/07 still stands and now has one more
 entry: the 11-for-11 unclassified funnel, and the rule change in (2) above.
 
----
+### MAIA #36 applied — deliberate long-shot: fails residency and the band floor (2026-10-09)
+
+**Senior DevOps / Platform Engineer, AI Infrastructure** at **MAIA** (AI platform for complex enterprise data;
+team meets in Leipzig). `market:de` · `tier:b` (upper end) · `channel:ats` · `track:ai`. **157 applicants** when
+read. Board `Contacted`; **no follow-ups owed**.
+
+- **❌ Fatal filter: residency.** *"This role is open exclusively to candidates currently based in Germany.
+  Applications from outside Germany cannot be considered."* — and *"fully remote work from anywhere within
+  Germany"* bounds remote to German residency. Vincent is in France; the posting offers **neither** a remote
+  start from France **nor** relocation assistance. **The application cannot be considered as written**, which is
+  why no follow-up is owed.
+- **⚠️ Second failure: the published band €75,000–€85,000 puts the €80,000 DE floor exactly at its midpoint**,
+  with the employer saying the figure is *"depending on experience and scope"* — clearing the floor requires
+  the upper half. Better than #8 Lity (floor at the ceiling), still a disclosed breach at the bottom.
+- **Why logged anyway:** the technical fit is unusually strong and Berlin is the preferred first physical move,
+  so the analysis is on record if the residency requirement ever softens. Per `AGENTS.md`, a role that fails a
+  hard filter is kept as a deliberate long-shot so the funnel stays interpretable.
+- **The must-haves read like a transcription of the inventory:** *"experience limited to fully managed
+  hyperscaler services is not sufficient"* is the anti-hyperscaler requirement, and the profile is its opposite
+  (bare-metal Docaposte, Kiln node fleets); **Traefik and Kong** are both named and both `deployed` at Cometh;
+  Terraform; Grafana/Loki/Prometheus; IAM/least privilege/secrets/patching; and **ISO 27001 technical controls
+  with continuously generated audit evidence** — a lead ISO 27001 implementation, listed as helpful rather than
+  required.
+- **Real gaps:** **PostgreSQL backups/restores "personally configured and tested"** plus connection pooling —
+  the K8s-level restore (Velero) is what is evidenced, not Postgres-specific restore testing, and this is a
+  stated gate. Also the **AI foundation** section (RAG in production, LLM-serving trade-offs) against
+  application-layer orchestration work only, though the JD explicitly does not expect GPU/self-hosted-inference
+  expertise.
+- **Predicted rejection reason is `location`** — and precisely because it is predictable and not a judgement
+  about the candidate, the label must only be applied if the employer says so. A silent no-response stays
+  `unknown`, and this is exactly the kind of row that pollutes the `unknown` pile.
+
+### Day summary — 2026-10-09, seven applications
+
+| # | Role | Lane | Tier | Track | Channel | Compensation |
+|---|---|---|---|---|---|---|
+| 30 | Atlantic AI Efficiency Venture | DE | **A** | ai | ats | not published |
+| 31 | Annapurna / unnamed AI+health | DE | B | ai | recruiter | not published |
+| 32 | Runware — Senior SRE | EU-remote | **A** | ai | ats | not published |
+| 33 | SpotMe — Senior SRE | EU-remote | C | bridge | ats | not published |
+| 34 | MLabs / unnamed fintech-connectivity | EU-remote | C | bridge | recruiter | **£90–120k published** |
+| 35 | Lifen — Senior Platform Engineer | FR-bridge | B | ai | ats | not published |
+| 36 | MAIA — Senior DevOps/Platform | DE | B | ai | ats | **€75–85k published** (floor = midpoint) |
+
+**Seven applications** logged today (#30–#36), plus one closure (#10 Otera). Two patterns are now
+structural rather than anecdotal:
+
+1. **Compensation is the binding filter.** Of seven applications, **five publish no band** and the two that do
+   split — one clears the floor outright (MLabs), one puts the floor at the band's midpoint (MAIA). For a
+   search whose single hard constraint is the income cliff, **five of seven applications were made blind on the
+   one number that decides everything.** The 2026-10-09 rule (ask in writing at application time or first
+   follow-up) should now be treated as mandatory, not advisory.
+2. **Three of seven required AWS, two required Python authorship, and one excluded non-German residents** — the
+   excluded claims and the residency reality are doing more filtering than the CV is. Both remain at the top of
+   the Friday review list.
+3. **Discovery is being corrected by the inbox, not by the tool**: three untracked boards closed today
+   (Runware/Workable, SpotMe/Greenhouse, Lifen/Ashby) were all found *because an application was made*, not
+   because jobradar surfaced them. The watchlist is now **162 boards**; the question for the review is whether
+   discovery is pulling in-lane roles at all.
 
 ## Updated 2026-10-07
 

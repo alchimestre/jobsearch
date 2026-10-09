@@ -143,7 +143,7 @@ management, on-call. Recorded here explicitly so the tier assignment is auditabl
 **Gap:** Runware's board was not polled, so a July posting for the pipeline's best-fit role was invisible to
 the tool until it surfaced on LinkedIn. Fixed: `jobradar discover 'https://apply.workable.com/runware/'
 --write` added `workable:runware` (`market: eu-remote`) to `companies.yaml`; a scan verified the row landed.
-**This was the first Workable board in the watchlist** — 155 boards were tracked, none via Workable.
+**This was the first Workable board in the watchlist** — 159 boards were tracked, none via Workable.
 
 **Defect found and fixed the same session:** `fetch_workable` in
 `tools/jobradar/src/jobradar/sources/ats.py` read `item.get("location")`, but the Workable widget payload
