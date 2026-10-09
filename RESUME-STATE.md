@@ -13,7 +13,7 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | **31 issues: 20 open, 11 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE), #30 Atlantic venture (DE, Tier A), #31 Annapurna/unnamed AI+health (DE, Tier B), **#32 Runware (EU-remote, Tier A)**. Closed: #3 vivenu, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all eleven `reason:unknown`** |
+| Pipeline | **32 issues: 21 open, 11 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE), #30 Atlantic venture (DE, Tier A), #31 Annapurna/unnamed AI+health (DE, Tier B), #32 Runware (EU-remote, Tier A), **#33 SpotMe (EU-remote, Tier C, bridge)**. Closed: #3 vivenu, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all eleven `reason:unknown`** |
 
 ### HN "Who is hiring? (October 2026)" sweep — 232 top-level posts, in-scope shortlist (2026-10-07)
 
@@ -127,6 +127,41 @@ it proceeds, the band was right. **Note the open ambiguity:** whether that figur
 ---
 
 ## Updated 2026-10-09
+
+### SpotMe #33 applied — a `bridge` row that is strong on infrastructure and weak on code authorship (2026-10-09)
+
+**Senior Site Reliability Engineer**, **Europe (Remote)**, at **SpotMe** — a 26-year-old enterprise event
+platform (Lausanne, 2000; **Swiss Post-owned since 2023**) whose life-sciences arm **Onomi** serves **15 of the
+top 20 pharma companies**. `market:eu-remote` · **`tier:c`** · `channel:ats` · **`track:bridge`**. Board
+`Contacted`; follow-ups 2026-10-16 → 10-20, final 2026-10-23 → 10-29.
+
+- **Admitted case-by-case under the 2026-09-29 amendment** (ML preferred, not a gate; other platform/SRE roles
+  case by case). **No AI-infrastructure surface at all** — the only AI element is AI-assisted *development
+  tooling*, which is a practice, not platform ownership. Labelled `track:bridge` so conversion stays
+  comparable. First `bridge` row since #22 1GLOBAL.
+- **Three real gaps, stated plainly:** (1) **AWS is absent from the evidence base** while the JD demands
+  *"strong, production-grade experience with AWS"* — and it sits in the 40% infrastructure bucket, not under
+  bonus; cloud depth is GCP plus hybrid/on-prem. (2) **The seniority bar is above the evidence and this time
+  there is no offset**: *"around five or more years in a site reliability role, built on earlier experience as
+  a system administrator or software developer"* against ~4 years and no pre-SRE career. (3) **Python is
+  essential — "you write real code to do it"**, plus a Python Lambda at month three: the excluded claim, and
+  **the second JD today (with Runware #32)** to make Python authorship a requirement.
+- **The differentiator is AI-assisted engineering as a hiring requirement**, not a perk: *"you'll have real
+  latitude to use them"*, with 6- and 12-month objectives to embed the tooling and measure reduced toil.
+  Almost no SRE candidate can show concrete infra-tooling evidence; this one can.
+- **Strong section:** cost efficiency is 40% of the role and the **−25% cloud spend** lands directly; plus
+  Terraform across multi-environment, security hardening and patching (Cilium, Kyverno, Vault/SOPS/Teleport,
+  ISO 27001 lead, HDS), on-call and incident response, and relational **and** document databases.
+- **Compensation unpublished with no equity framing** — the base carries the whole offer. A 26-year-old,
+  Swiss Post-owned employer is the profile most likely to clear the €80k floor, and the fastest-to-income
+  shape per the Earliest-Start Rule. Unverified: ask.
+- **"Europe (Remote)" names no country**, and the company was founded in Lausanne with a Chicago office, so
+  the employing entity is **not** the settled answer Runware gave. Ask; do not assume.
+
+**Tooling:** SpotMe's board was also untracked — `jobradar discover 'https://job-boards.greenhouse.io/spotme'
+--write` added `greenhouse:spotme` (`market: eu-remote`); scan confirmed the row (`location: Europe (Remote)`,
+`decision: review`, score 4). The greenhouse adapter parses geo correctly, unlike the Workable one (see the
+Runware entry above).
 
 ### Runware #32 applied — the best strategic fit in the pipeline, and a jobradar gap closed (2026-10-09)
 
