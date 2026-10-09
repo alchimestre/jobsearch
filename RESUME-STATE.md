@@ -13,7 +13,7 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | **33 issues: 22 open, 11 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE), #30 Atlantic venture (DE, Tier A), #31 Annapurna/unnamed AI+health (DE, Tier B), #32 Runware (EU-remote, Tier A), #33 SpotMe (EU-remote, Tier C, bridge), **#34 MLabs/unnamed fintech-connectivity (EU-remote, Tier C, bridge)**. Closed: #3 vivenu, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all eleven `reason:unknown`** |
+| Pipeline | **34 issues: 23 open, 11 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE), #30 Atlantic venture (DE, Tier A), #31 Annapurna/unnamed AI+health (DE, Tier B), #32 Runware (EU-remote, Tier A), #33 SpotMe (EU-remote, Tier C, bridge), #34 MLabs/unnamed fintech-connectivity (EU-remote, Tier C, bridge), **#35 Lifen (FR-bridge, Tier B)**. Closed: #3 vivenu, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all eleven `reason:unknown`** |
 
 ### HN "Who is hiring? (October 2026)" sweep — 232 top-level posts, in-scope shortlist (2026-10-07)
 
@@ -127,6 +127,39 @@ it proceeds, the band was right. **Note the open ambiguity:** whether that figur
 ---
 
 ## Updated 2026-10-09
+
+### Lifen #35 applied — stack, domain and geography finally line up (2026-10-09)
+
+**Senior Platform Engineer** at **Lifen** (French health-data company, founded 2015; **AI-based** medical-data
+products; 150+ people, 800 hospitals, 150,000 health professionals). `market:fr-bridge` · `tier:b` ·
+`channel:ats` · `track:ai`. **French employer, the whole team works remotely from France** — no relocation, no
+entity question, no remote-start negotiation. Board `Contacted`; follow-ups 2026-10-16 → 10-20, final
+2026-10-23 → 10-29.
+
+- **The JD names nearly every tool in the inventory, on the *target* platform.** **Terraform *and* Terragrunt**
+  (both in `docs/tooling-inventory.md`), **FluxCD** (Flux `deployed` at Kiln — the second JD this week naming
+  it exactly, with #31), **GCP as the deep CSP** (Cometh multi-zone K8s, BigQuery, Pub/Sub), Grafana, EFK,
+  Kubernetes, GitOps, KMS-class secrets. **The AWS→GCP migration means the existing GCP depth is the
+  destination, not the compromise** — the reverse of #32/#33/#34, which all wanted AWS as the primary cloud.
+- **Domain match is the strongest in the pipeline:** Docaposte was **HDS-certified health-data infrastructure**
+  with the CV line *"recovered and stabilized critical Kubernetes clusters in a regulated healthcare
+  environment"*, plus an ISO 27001 lead. Lifen *is* health data.
+- **The role is an Internal Developer Platform for 50+ internal clients**, measured on **adoption** — the
+  architecture-translation differentiator in its natural habitat. Honest boundary: platform tooling and GitOps
+  self-service are evidenced; an owned IDP product is not.
+- **AI-tool use with attention to results** is a stated nice-to-have — the 2026 work is on the list.
+- **One unknown, and it is compensation.** No band published, and a 150-person French health-tech scale-up is
+  exactly the shape that prices a senior platform engineer **below €80k**; `CONTEXT.md` flags French bands as
+  unbenchmarked. **Ask in the prequalification call (Laura, TA), before three more interview stages.**
+- **Process to prepare for:** four steps with 72h feedback, including a **1h30 live incident simulation**
+  (clone a repo, run an app locally, share the screen, explain the diagnostic approach) and a **reference check
+  at the end**. This is where `docs/interview-incident-stories.md` becomes directly billable — the Docaposte
+  cluster-recovery frame, narrated while debugging.
+
+**Tooling:** Lifen was untracked — `jobradar discover 'https://jobs.ashbyhq.com/lifen' --write` added
+`ashby:lifen` (`market: fr`); scan verified row `a34389004106ac08` (`location: France`, `country: fr`,
+`mode: remote`, `lane: fr`). Fourth board gap closed in a week, and the third found *by an application* rather
+than by the tool — the discovery lens is losing that race.
 
 ### MLabs #34 applied — the first published, floor-clearing compensation in the pipeline (2026-10-09)
 
