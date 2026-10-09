@@ -13,7 +13,7 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | **29 issues: 18 open, 11 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE), **#30 Atlantic venture (DE, Tier A)**. Closed: #3 vivenu, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all eleven `reason:unknown`** |
+| Pipeline | **30 issues: 19 open, 11 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE), #30 Atlantic venture (DE, Tier A), **#31 Annapurna/unnamed AI+health (DE, Tier B)**. Closed: #3 vivenu, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all eleven `reason:unknown`** |
 
 ### HN "Who is hiring? (October 2026)" sweep — 232 top-level posts, in-scope shortlist (2026-10-07)
 
@@ -127,6 +127,33 @@ it proceeds, the band was right. **Note the open ambiguity:** whether that figur
 ---
 
 ## Updated 2026-10-09
+
+### Annapurna #31 applied — the closest stack match in the pipeline, through the recruiter lane (2026-10-09)
+
+**Senior DevOps Engineer** for an **unnamed AI + healthcare client** (Berlin, hybrid), posted by **Annapurna
+Recruitment** — a UK agency whose DACH desk carries it. `market:de` · `tier:b` · **`channel:recruiter`** ·
+`track:ai`. LinkedIn job id `4465325023`. No jobradar row. Board `Contacted`; follow-ups 2026-10-16 → 10-20,
+final 2026-10-23 → 10-29.
+
+- **Seven of eight JD bullet groups are direct evidence**, more than any other row logged: production K8s
+  including **bare-metal** (Docaposte: MetalLB, HAProxy, Cilium), **FluxCD** (Flux `deployed` at Kiln — an
+  exact hit), cert-manager TLS automation, Prometheus/Thanos + Grafana + Loki + Jaeger, **SOPS `deployed`**,
+  Vault, External Secrets, Teleport, Kyverno and an ISO 27001 lead, GitHub Actions/Drone CI, and on-call with
+  post-incident reviews.
+- **Real gaps, named:** **CloudFormation and Ansible** appear in the JD and are not in
+  `docs/tooling-inventory.md` (IaC depth is Terraform/Terragrunt); OpenTelemetry and Tempo specifically are
+  not evidenced; physical **appliance fleet lifecycle** is not; and **GPU clusters / training-job
+  orchestration** are GPU-adjacent, not owned — the JD asks only to *"support"* them, which is exactly the
+  honest level.
+- **Hybrid, not full on-site** — the first Berlin row where remote working is listed as a benefit. Better than
+  #29 idnow and #30 Atlantic on geography; still no relocation support stated.
+- **Two binding unknowns:** the unpublished base (stock options cannot count toward the €80k floor) and whether
+  the first 8–12 weeks can run from France.
+- **Client unnamed.** No funding, headcount or runway verifiable before a call; 30 applicants within a day of
+  posting is the shape of a pipeline-building agency post.
+
+**Lane effect:** second-ever `channel:recruiter` row (after #13 Bubblemaps via Yofy) — **2 of 30 labelled
+rows, ≈7% against a 10% allocation**. `channel:outreach` remains at **0** against 60%.
 
 ### Atlantic AI Efficiency Venture (#30) applied — Tier A returns to the pipeline (2026-10-09)
 
