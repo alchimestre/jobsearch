@@ -13,7 +13,7 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | **32 issues: 21 open, 11 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE), #30 Atlantic venture (DE, Tier A), #31 Annapurna/unnamed AI+health (DE, Tier B), #32 Runware (EU-remote, Tier A), **#33 SpotMe (EU-remote, Tier C, bridge)**. Closed: #3 vivenu, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all eleven `reason:unknown`** |
+| Pipeline | **33 issues: 22 open, 11 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE), #30 Atlantic venture (DE, Tier A), #31 Annapurna/unnamed AI+health (DE, Tier B), #32 Runware (EU-remote, Tier A), #33 SpotMe (EU-remote, Tier C, bridge), **#34 MLabs/unnamed fintech-connectivity (EU-remote, Tier C, bridge)**. Closed: #3 vivenu, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all eleven `reason:unknown`** |
 
 ### HN "Who is hiring? (October 2026)" sweep — 232 top-level posts, in-scope shortlist (2026-10-07)
 
@@ -127,6 +127,49 @@ it proceeds, the band was right. **Note the open ambiguity:** whether that figur
 ---
 
 ## Updated 2026-10-09
+
+### MLabs #34 applied — the first published, floor-clearing compensation in the pipeline (2026-10-09)
+
+**Site Reliability Engineer** for an **unnamed fintech-connectivity client** (hosted connectivity to trading
+venues and financial institutions), posted by **MLabs Ltd** — agency, `channel:recruiter`. Remote-first,
+hiring in Europe/UK/NY/Canada. `market:eu-remote` · `tier:c` · **`track:bridge`**. Board `Contacted`;
+follow-ups 2026-10-16 → 10-20, final 2026-10-23 → 10-29.
+
+- **£90,000–£120,000 published** (≈€101k–€142k `[INFERENCE — no FX source consulted]`), plus share options.
+  **The first row in the pipeline whose compensation is published by the employer and verifiably clears the
+  €80k floor** — and therefore the fastest-to-income shape on record against the income cliff.
+- **Network engineering is the differentiator, not a gap**: the role explicitly wants systems **and** network
+  depth, and the Cilium/MetalLB/HAProxy/Traefik/Kong/nginx set plus bare-metal and multi-zone work matches
+  what a connectivity provider actually runs. Physical-DC + cloud mix fits Docaposte and Kiln.
+- **The gap that decides it is procurement.** Vendor negotiation, purchasing hardware and managing service
+  delivery are **essential** and **entirely unevidenced** — no inventory row, no CV bullet. It cannot be
+  inferred from infrastructure work, so do not improvise a claim; ask how much of the week it is.
+- **AWS absent again** — the third JD today requiring it (#32 Runware, #33 SpotMe, #34).
+- **Contractual unknown, not technical:** the band is quoted in **GBP** and the agency is UK-based, so the
+  employing entity is probably UK. A UK contract held from France is not French employment. Ask first, in
+  writing — and whether this is direct employment with the client or an MLabs placement.
+- The ad sets an explicit **4-week silence rule** and states it cannot give individual feedback.
+
+**Repo integrity item:** **Ansible is claimed in `CONTEXT.md` and on the CV but is missing from
+`docs/tooling-inventory.md`** (the Docaposte table lists only MetalLB, Cilium, HAProxy). This JD asks for
+Ansible as an essential, so the inventory row should be added and the depth confirmed — the claim would
+otherwise be vulnerable in interview.
+
+### ⚠️ Pattern across today's three applications: AWS is the systematic gap
+
+Three applications logged today (#32 Runware, #33 SpotMe, #34 MLabs) and **all three require AWS**, which is
+absent from `docs/tooling-inventory.md` — cloud depth is GCP (Cometh, multi-zone), plus hybrid and on-prem.
+**Two of the three also make Python authorship a requirement** (#32 "write software and automation using
+Python, Go or PHP"; #33 "Python is essential" plus a Lambda at month three), which is the other excluded
+claim. Neither gap has moved since 2026-09-11.
+
+Two consequences for the Friday review:
+1. **AWS is now a measurable funnel constraint, not a footnote.** It appears in the infrastructure bucket of
+   the roles actually being applied for, so it will decide a screen before the ML-platform evidence does.
+2. **The two excluded claims are the binding constraints of the whole search**, and both are closer to closure
+   than the ML-lifecycle evidence: a bounded AWS workload (the free tier plus one deployed service) and real
+   Python tooling would clear them faster than week-6 ML-platform work. Raise this explicitly rather than
+   letting a fourth week pass with the same two gaps.
 
 ### SpotMe #33 applied — a `bridge` row that is strong on infrastructure and weak on code authorship (2026-10-09)
 
