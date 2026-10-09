@@ -3,7 +3,9 @@
 **Posting:** https://www.linkedin.com/jobs/view/4468021476/ · Listed as Berlin, **Remote Europe / "work from anywhere"**
 **Org:** Otera (otera.ai) — agentic-AI platform for enterprises (Allianz, Siemens, Bayer, Zurich Insurance); €15M Series A (Red River West, Alpha Intelligence Capital, Hoxton Ventures, Lunar Ventures, Stride VC); ~80 staff
 **Market:** EU-remote · **Tier:** C (AI is the product; the platform surface is not AI) · **Channel:** ATS (LinkedIn)
-**Applied:** ✅ 2026-09-26 (LinkedIn) · **Salary stated: €90,000** · **Follow-up 1 due:** 2026-10-05 · **Follow-up 2 due:** 2026-10-14 (final)
+**Applied:** ✅ 2026-09-26 (LinkedIn) · **Salary stated: €90,000**
+**Stage:** **Closed 2026-10-09** (refused, no reason given, pre-screen)
+**Follow-ups:** **none sent, none owed** — the first was due 2026-10-05 (never sent) and the refusal landed the day before the final window opened (2026-10-14)
 
 ## Why Tier C, not Tier A/B
 
@@ -65,9 +67,32 @@ read as uncalibrated.
 
 ## Outcome record
 
-- Stage reached: Contacted
-- Rejection reason (relevance / readiness / compensation / location / unknown): pending
-- Watch: **141 applicants within one week** — highest-volume posting reviewed to date, on an undisclosed
-  salary at a Series A. Expect either a fast screen or silence.
-- What would have changed the outcome: an ML-serving/inference surface in the responsibilities, or a
-  disclosed band clearing €80k
+- Stage reached: **closed at Contacted, never screened** (applied 2026-09-26 → refusal reported 2026-10-09;
+  **exact refusal date not captured**)
+- Board Stage: **Closed** (set 2026-10-09)
+- Rejection reason: **`unknown`** — no reason given
+- Duration: **~10 business days**, i.e. at the far end of the first follow-up window. Slower than the
+  two-day n8n triage refusals, slower than Langdock (~7 days) and Workist (~7 days)
+- Follow-ups: **none sent, none owed** — the first was due 2026-10-05
+- Outreach: **none for this role** (ATS-only application; no draft exists, so nothing was withheld)
+- Feedback request: **not sent** — §3 gates it on a recruiter screen, which this never reached
+- **What was lost:** the best remote-geography fit in the pipeline — *"Remote Europe / work from anywhere"*,
+  mid-senior band, genuine multi-cloud abstraction design (GCP/Azure/AWS, Terraform, Helm, GKE/AKS/EKS) that
+  matched the architectural-scope criterion. It was admissible only from the last-resort window because **AI
+  exposure failed** (cloud plumbing, no ML surface), so nothing in the primary lane is lost
+- **The two questions that never got asked, and died with it:** (1) **is France eligible** under "Remote
+  Europe" — the single blocking unknown, since Otera is Austrian-hosted with a German posting; (2) the
+  compensation band behind "Competitive Salary Package". The ask was **€90,000**
+- **One unverifiable suspicion, stated as such:** a Series A at ~80 staff with an undisclosed band is where
+  the €90k ask is most likely to have been above range — but with no reason given, recording that as the
+  cause would be a prediction. `[INFERENCE]`, not a finding
+- **The volume signal held:** 141 applicants within a week of posting — the highest-volume posting reviewed
+  to date. Applying on day one did not buy a screen
+- What would have changed the outcome: a disclosed band clearing €80k and confirmed France eligibility
+- Next action: **closed.** No further contact, no re-application
+
+## Funnel delta
+
+Applications sent +1 (2026-09-26, EU-remote lane). **Exits as a pre-screen refusal, `reason:unknown`, with no
+salary conversation and no geography answer.** EU-remote lane remains the largest open cohort (#1, #5, #14,
+#17, #18, #20, #26) but now has **three closed rows, all `unknown`, all pre-screen** (#10, #19, #21).

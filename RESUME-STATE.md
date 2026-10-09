@@ -13,7 +13,7 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | **28 issues: 18 open, 10 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #10 Otera, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE). Closed: #3 vivenu, #6 Doctolib, #8 Lity, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all ten `reason:unknown`** |
+| Pipeline | **28 issues: 17 open, 11 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE). Closed: #3 vivenu, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all eleven `reason:unknown`** |
 
 ### HN "Who is hiring? (October 2026)" sweep — 232 top-level posts, in-scope shortlist (2026-10-07)
 
@@ -123,6 +123,56 @@ split**. Within the Munich guidance, at the top of the Berlin band. Calibrate th
 when it lands — if idnow screens on level, €95k was too high for a 4-years-evidenced senior bar in Berlin; if
 it proceeds, the band was right. **Note the open ambiguity:** whether that figure is read as base or total
 (if total with a ~10% variable, base ≈€86k).
+
+---
+
+## Updated 2026-10-09
+
+### Otera (#10) closed — refused, `reason:unknown`, pre-screen
+
+Applied 2026-09-26, refused ~10 business days later, no reason given. Board Stage → Closed. No follow-ups were
+owed (first was due 2026-10-05; the refusal arrived the day before the final window opened).
+
+- **It was the best remote-geography fit in the pipeline** — *"Remote Europe / work from anywhere"*,
+  mid-senior, real multi-cloud abstraction design (GCP/Azure/AWS, Terraform, Helm, GKE/AKS/EKS) matching the
+  architectural-scope criterion. Tier C and admissible only from the last-resort window, so nothing in the
+  primary lane is lost.
+- **Two qualifying questions died with it, because they were never asked:** (1) **is France eligible** under
+  "Remote Europe" — Otera is Austrian-hosted with a German posting, and "work from anywhere" usually means
+  "anywhere the entity can payroll"; (2) the band behind *"Competitive Salary Package"*. The ask was **€90,000**.
+- **Unverifiable suspicion, labelled as one:** a Series A at ~80 staff with an undisclosed band is where the
+  €90k ask most likely sat above range. With no reason given, that is `[INFERENCE]`, not a finding.
+- **Volume signal held:** 141 applicants within a week — the highest-volume posting reviewed to date. Day-one
+  application did not buy a screen.
+
+### The funnel has now closed eleven rows and classified none
+
+**11 closed · 11 `unknown` · 10 pre-screen.** MarvelX (#21) is still the only row that ever reached a live
+screening step. Consequences:
+
+1. **§7's adaptation rules cannot fire.** Every threshold keys on `reason:*` labels, and there are no
+   classified rejections to count. The pipeline is accumulating volume without learning anything from it.
+2. **The screen never comes — so stop holding the qualifying questions for one.** On this evidence, band and
+   location eligibility must be asked **in writing, at application time or in the first follow-up**, not saved
+   for a recruiter call that mostly does not happen. Otera needed no follow-up at all if that rule had held.
+3. **The follow-up lane is still at zero** — no follow-up has been sent for any closed row and
+   `docs/outreach/sent/` is empty. Combined with (2), the first follow-up email should now carry the two
+   qualifying questions rather than a restatement of interest.
+4. **Only two live levers can still classify a rejection:** the **MarvelX feedback request** (§3 permits
+   exactly one; drafted in `docs/outreach/`, still unsent) and **Bubblemaps #13**, live at `Interview` and
+   awaiting the post-interview return.
+
+### Lane tally
+
+| Lane | Open | Closed (all `unknown`, all pre-screen) |
+|---|---|---|
+| EU-remote | #1, #5, #14, #17, #18, #20, #26 | #10 Otera, #19 Nebius TF, #21 MarvelX (screened) |
+| DE | #4 ablefy, #9 SAP Fioneer, #22 1GLOBAL, #29 idnow | #6 Doctolib, #11 Workist, #16 Synthesia, #23/#24 n8n |
+| FR-bridge | #7 Sinch, #27 360Learning, #28 Filigran | #8 Lity, #12 Langdock |
+| CH | #25 Blockstream | — |
+
+**Today is the Friday review (2026-10-09).** The item list from 2026-10-06/07 still stands and now has one more
+entry: the 11-for-11 unclassified funnel, and the rule change in (2) above.
 
 ---
 
