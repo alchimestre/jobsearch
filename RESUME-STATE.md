@@ -13,7 +13,7 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | **30 issues: 19 open, 11 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE), #30 Atlantic venture (DE, Tier A), **#31 Annapurna/unnamed AI+health (DE, Tier B)**. Closed: #3 vivenu, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all eleven `reason:unknown`** |
+| Pipeline | **31 issues: 20 open, 11 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE), #30 Atlantic venture (DE, Tier A), #31 Annapurna/unnamed AI+health (DE, Tier B), **#32 Runware (EU-remote, Tier A)**. Closed: #3 vivenu, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all eleven `reason:unknown`** |
 
 ### HN "Who is hiring? (October 2026)" sweep — 232 top-level posts, in-scope shortlist (2026-10-07)
 
@@ -127,6 +127,47 @@ it proceeds, the band was right. **Note the open ambiguity:** whether that figur
 ---
 
 ## Updated 2026-10-09
+
+### Runware #32 applied — the best strategic fit in the pipeline, and a jobradar gap closed (2026-10-09)
+
+**Senior Site Reliability Engineer** at **Runware**, the GPU-inference vendor (one API for 400K+ models,
+serverless GPUs, bare-metal capacity on hardware they build themselves). `market:eu-remote` · **`tier:a`** ·
+`channel:ats` · `track:ai`. Applied via LinkedIn (`4442595168`); canonical req
+`apply.workable.com/j/7869EFBE16`, **published 2026-07-20 and still live**. Board `Contacted`; follow-ups
+2026-10-16 → 10-20, final 2026-10-23 → 10-29.
+
+- **Geography passes outright — the first time in the pipeline.** Remote-first (*"work from home anywhere we
+  can employ you"*) and the req **lists France explicitly** among six countries, on the employer's own ATS.
+  No relocation, no 8–12 week remote-start question, no contract-entity risk of the kind that sank #10 Otera
+  and #29 idnow. **Verified, not inferred from a LinkedIn string.**
+- **Tier A with the usual vendor-tier objection absent.** `CONTEXT.md` keeps GPU/vendor roles secondary
+  because they "demand hardware depth (CUDA/NCCL/RDMA/HPC) with no candidate evidence". Here every hardware
+  item — NVIDIA drivers, CUDA, vLLM/TensorRT/Triton — sits under **Bonus**; the requirements are SRE
+  fundamentals. Recorded explicitly so the tier is auditable.
+- **The company's whole thesis is the strongest number on the CV.** Runware exists to make inference cost
+  *"as close to the price of electricity as physically possible"*, at *"half the cost of a neocloud"*, with
+  the co-founder framing it as *"unit economics: margin per user and per session"*. The **−25% cloud spend**
+  work lands on the product's core problem.
+- **Two gaps decide the outcome:** **"write software and automation using Python, Go or PHP" is a must-have
+  and an excluded claim** (operational scripting only) — the single most likely reason this one ends; and
+  **SLO/error-budget ownership is excluded** (incident management, capacity planning and toil reduction are
+  defensible; an owned SLI/SLO programme is not, and is targeted by `ml-platform-on-k8s` at week 6).
+- **Compensation unpublished**; a $50M Series A (Dec 2025, Dawn Capital) makes the €80k floor plausible but
+  unverified. Stock options. Ask.
+- **Informative row if it fails:** geography is already settled favourably, so a rejection here cannot be a
+  location mismatch — the elimination set is small enough to interpret, unlike the eleven `unknown` closures.
+
+**Tooling — board gap closed:** Runware's board was not polled, so a July req for the pipeline's best-fit role
+was invisible until it appeared on LinkedIn. `jobradar discover 'https://apply.workable.com/runware/' --write`
+added `workable:runware` (`market: eu-remote`) to `companies.yaml`; a scan confirmed the row
+(`0bf2e7aac892449a`, `decision: review`). **This is the first Workable board in a 155-board watchlist** — the
+ATS is supported in `sources/ats.py` but no company used it.
+
+**Tooling — defect found, not fixed (reported):** `fetch_workable` reads `item.get("location")`, but the
+Workable widget payload has **no `location` key** — the country lives in `locations[]`. Every Workable posting
+therefore stores `country: unknown` and is tagged **`-geo-unverified`** and mis-scored despite the payload
+stating the country (confirmed on the Runware row, where the API returns six countries). Fix belongs in the
+adapter with a test; it affects every future Workable board.
 
 ### Annapurna #31 applied — the closest stack match in the pipeline, through the recruiter lane (2026-10-09)
 
