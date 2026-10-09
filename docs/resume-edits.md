@@ -59,3 +59,32 @@ Apply path: the CV lives in Figma (`CV 3_white`, 2-column export). Content now e
 - [ ] Needed: institutional client work at Kiln, escalations/onboarding at Cometh, incident bridges with external partners, or external audits (ISO 27001 / HDS). Any of these, with a concrete situation, converts the weakest part of an FDE application into a strength.
 - [ ] Until this is resolved: forward-deployed / FDE applications (`docs/12-week-strategy.md` §2, secondary lane ≤ ~¼ of the EU-remote/FR lane) stay capped, because their central screening question — direct customer work — cannot yet be answered truthfully at strength.
 
+## Applied 2026-10-09 — Platform/SRE retarget, geography, and the 2026 block
+
+Driven by Vincent's instructions on 2026-10-09: the lane is **Platform/SRE**, the geography is **France ·
+EU-remote**, and **2026 is personal projects and self-learning (Music & AI)**.
+
+- [x] **Header title line retargeted.** Was *"Site Reliability Engineer — moving into ML Platform / MLOps"*.
+      Now *"Site Reliability Engineer — Kubernetes, distributed systems, regulated production environments"*.
+      Reason: the pipeline's live lanes are France, EU-remote and Web3 platform/SRE work; an ML-platform
+      headline reads as a mismatch to those screens. ML/MLOps stays admissible, but it is no longer the label.
+- [x] **Geography line corrected.** Was *"Open to EU-remote, Berlin, Switzerland"*. Now *"Open to France-based
+      and EU-remote roles"*. Reason: `CONTEXT.md` Search Lanes now put France first and make Switzerland
+      opportunistic only.
+- [x] **Profile paragraph rewritten** to lead with production SRE ownership (multi-zone and bare-metal
+      Kubernetes, Terraform/Helm, GitOps, observability, secrets and access, cost, incident response). The
+      transition framing is gone from the first line.
+- [x] **Kiln's first five bullets rewritten** for scope and evidence: the platform-stack bullet now names the
+      tools as deployed, and the observability bullet no longer claims an unquantified "reduced MTTR".
+      **Two numbers are still placeholders** — `⟨cluster and node counts⟩`, `⟨environment count⟩`, and the
+      MTTR pair `⟨X%⟩ ⟨before⟩ → ⟨after⟩`. Replace them or cut the claim.
+- [x] **2026 block retitled** *"Personal Projects & Self-Learning (2026 – present)"* and reframed around
+      **Music and AI**, AI assistance/orchestration, and the history/linguistics research.
+- [ ] ⚠️ **Conflict to resolve:** the earlier note *"Music production stays off the CV (LinkedIn Interests
+      only)"* is now superseded by Vincent's 2026-10-09 instruction. Music is on the CV as the explanation of
+      the January-2026 gap. Confirm the wording when the specific project is known.
+- [ ] The 2026 bullets still need one concrete artefact each (what the project produces, and a public link if
+      one exists). Without them the section reads as filler.
+- [ ] **The ATS PDF must be re-exported** after `resume/ats/resume.html` changes, and the Figma sheet needs a
+      new apply run — see `resume/figma-update.md`.
+

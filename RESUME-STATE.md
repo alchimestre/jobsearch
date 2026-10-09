@@ -151,6 +151,28 @@ it proceeds, the band was right. **Note the open ambiguity:** whether that figur
 
 ## Updated 2026-10-09
 
+### Camunda #39 applied — the first clean location pass, and a salary-range lesson (2026-10-09)
+
+**Senior Site Reliability Engineer** at **Camunda** (enterprise agentic-orchestration platform; fully remote and
+global; *"transforming into an AI-first organisation"*). `market:eu-remote` · `tier:b` · `channel:ats` ·
+`track:ai`. Board `Contacted`; follow-ups 2026-10-16 → 10-20, final 2026-10-23 → 10-29.
+
+- **Location passes with no question at all.** France-based staff are hired **through Remote.com, Camunda's
+  employer of record** — French employment, no relocation, no entity doubt, no remote-start negotiation. The
+  first role today whose location filter needed no work.
+- **Contract mechanics:** Remote.com employment means the quoted figure is a normal **gross annual salary** —
+  no contractor premium; Camunda pays the Remote.com markup on top; equity is a separate VSOP.
+- **⚠️ Salary-range lesson.** No French band is published (only US/UK/SG/CA), so the form number is the only
+  anchor. **The submitted range is €80,000–€100,000, and its floor equals the binding floor** — a range that
+  starts at the floor invites an offer at the floor. **Rule for the next role: floor the range ~10% above the
+  binding floor, or quote one number.** (This replaced the €95,000 figure recommended earlier.)
+- **Five must-haves, five matches:** deep production Kubernetes (multi-zone and bare-metal), Terraform IaC,
+  Prometheus/Grafana observability, third-level incident response, automation. **"Responsible use of AI tools"
+  is a must-have**, which the 2026 work answers directly. Nice-to-haves: AWS/EKS (absent — fourth consecutive
+  JD naming AWS), Argo CD/GitOps (Argo `used`, Flux `deployed`), Python/Go scripting (in bounds), SLOs
+  (excluded claim).
+- **If it fails, it will not be location** — the elimination set is relevance (AWS/EKS) or compensation.
+
 ### Eye Security #38 applied — the one JD that asks for shipped LLM work (2026-10-09)
 
 **Senior Infrastructure Engineer – AI Platform** at **Eye Security** (Dutch cybersecurity + embedded cyber
@@ -521,7 +543,7 @@ read. Board `Contacted`; **no follow-ups owed**.
   about the candidate, the label must only be applied if the employer says so. A silent no-response stays
   `unknown`, and this is exactly the kind of row that pollutes the `unknown` pile.
 
-### Day summary — 2026-10-09, nine applications
+### Day summary — 2026-10-09, ten applications
 
 | # | Role | Lane | Tier | Track | Channel | Compensation |
 |---|---|---|---|---|---|---|
@@ -534,29 +556,25 @@ read. Board `Contacted`; **no follow-ups owed**.
 | 36 | MAIA — Senior DevOps/Platform | DE | B | ai | ats | **€75–85k published** (floor = midpoint) |
 | 37 | Redcare Pharmacy — Platform Engineer | DE | B | ai | ats | not published |
 | 38 | Eye Security — Senior Infra Engineer, AI Platform | NL | B | ai | ats | not published |
+| 39 | Camunda — Senior SRE | EU-remote | B | ai | ats | **quoted €80–100k** (floor = floor) |
 
-**Nine applications** logged today (#30–#38), plus one closure (#10 Otera). Four patterns are now structural:
+**Ten applications** logged today (#30–#39), plus one closure (#10 Otera). Four patterns are structural:
 
-1. **Compensation is the binding filter.** Of nine applications, **seven publish no band** and the two that do
-   split — one clears the floor outright (MLabs), one puts the floor at the band's midpoint (MAIA). **Seven of
-   nine applications were made blind on the one number that decides everything.** The 2026-10-09 rule (ask in
-   writing at application time or first follow-up) is mandatory, not advisory.
-2. **Relocation/residency is the second filter, and it is growing.** **Three of four applications logged after
-   midday are gated by it** (#36 MAIA explicitly Germany-only, #37 Redcare probably, #38 The Hague hybrid) —
-   **five of the last ten rows** with #29 idnow and #30 Atlantic. Four of nine required AWS as the primary
-   cloud; three of nine required production code authorship (Go/Python/TS). **The excluded claims and
-   residency are filtering harder than the CV is.**
-3. **Two `bridge`/`ai` straddles worth noting:** #33 and #34 went out as `track:bridge` while #30–#32, #35–#38
-   are `ai`. The bridge lane is doing its job of keeping non-AI income options live without polluting the AI
-   conversion cohort.
-4. **Discovery is being corrected by the inbox, not by the tool**: **four** untracked boards closed today
-   (Runware/Workable, SpotMe/Greenhouse, Lifen/Ashby, Eye Security/Ashby) — all found *because an application
-   was made*, not because jobradar surfaced them. The watchlist is now **163 boards**; the question for the
-   review is whether discovery is pulling in-lane roles at all.
+1. **Compensation is the binding filter.** Of ten applications, **eight publish no band**, and the two that do
+   split — one clears the floor outright (MLabs), one puts the floor at the band's midpoint (MAIA). Camunda
+   published no French band either, and the quoted range **started at the floor**. **Rule from now on: floor the
+   range ~10% above the binding floor, or quote one number.**
+2. **Relocation/residency gates four of the last eleven rows** (#29 idnow, #30 Atlantic, #36 MAIA explicitly
+   Germany-only, #37 Redcare probably, #38 The Hague hybrid). The DE lane carries this risk; the EU-remote lane
+   does not. Camunda (#39) is the proof: France employment through Remote.com needed no location work at all.
+3. **The excluded claims keep repeating:** five of ten required AWS as the primary cloud, three of ten required
+   production code authorship (Go/Python/TS). Both remain the top Friday-review items.
+4. **Discovery is being corrected by the inbox, not by the tool**: four untracked boards closed today
+   (Runware/Workable, SpotMe/Greenhouse, Lifen/Ashby, Eye Security/Ashby). The watchlist is **163 boards**.
 
-**Two tool defects found and fixed today** (both surfaced by board additions, not by review): the Workable
-adapter dropped all geography, and Ashby hybrid roles were scored as remote. Both fixed with tests and verified
-against live rows — see the Runware and Eye Security entries.
+**Five tool or rule changes today**, all verified: the Workable geography defect, the Ashby hybrid-mode defect,
+the scope-gate upsert defect, the mandatory FR/EN JD language, and the software-role penalty (−6). **177 tests
+pass.**
 
 ## Updated 2026-10-07
 

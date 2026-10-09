@@ -1,24 +1,28 @@
 # Vincent Loupmon
 
-**Site Reliability Engineer — moving into ML Platform / MLOps**
+**Site Reliability Engineer — Kubernetes, distributed systems, regulated production environments**
 
-Aix-en-Provence, France · Open to EU-remote, Berlin, Switzerland
+Aix-en-Provence, France · Open to France-based and EU-remote roles
 github.com/alchimestre · vincentloupmon+pro@protonmail.com · +33 6 84 82 86 03
 
 ## Profile
 
-Production SRE with 4 years operating high-availability distributed infrastructure across regulated healthcare, crypto, and multi-protocol systems. Moving into ML platform / MLOps — bringing Kubernetes reliability, observability, and cost-aware platform operations to the platform that builds, ships, and serves models.
+Production SRE with 4 years running high-availability distributed infrastructure across regulated healthcare,
+crypto and multi-protocol systems. Kubernetes platform work at multi-zone and bare-metal scale: Terraform and
+Helm delivery, GitOps, observability, secrets and access hardening, cost control, and production incident
+response. Owns platforms end to end and translates infrastructure constraints into architectural decisions
+with product and engineering teams.
 
 ## Experience
 
 ### Site Reliability Engineer — Kiln
 Jun 2024 – Jan 2026
 
-- Operated high-availability distributed infrastructure securing $8B+ in digital assets across 40+ production networks
-- Integrated 10+ distributed protocols into hybrid-cloud environments with reliability and security guarantees
-- Designed and maintained Terraform IaC and Helm charts across multi-environment Kubernetes clusters
-- Deployed and operated the Kubernetes platform stack — nginx ingress, Flux GitOps delivery, cert-manager TLS, Velero backup/restore — with Teleport access management, SOPS and External Secrets, and Kyverno policy enforcement
-- Maintained observability with Prometheus, Grafana, OpenTelemetry, ELK, Loki, Datadog, Jaeger, and Thanos, reducing MTTR, and ran Redis, Elasticsearch, and PostgreSQL in production
+- Ran high-availability distributed infrastructure securing $8B+ in digital assets across 40+ production networks, on multi-zone Kubernetes in hybrid cloud ⟨add: cluster and node counts⟩
+- Integrated 10+ distributed protocols into hybrid-cloud environments, owning reliability and security guarantees from onboarding through steady-state operation
+- Designed and maintained Terraform IaC and Helm charts across multi-environment Kubernetes clusters, with every infrastructure change versioned and reviewed through Git ⟨add: environment count⟩
+- Built and operated the Kubernetes platform stack — nginx ingress, Flux GitOps delivery, cert-manager TLS automation, Velero backup/restore — with Teleport access management, SOPS and External Secrets encryption, and Kyverno policy enforcement
+- Cut detection and recovery time by ⟨X%⟩ (⟨before⟩ → ⟨after⟩) by standardising observability across Prometheus, Grafana, OpenTelemetry, ELK, Loki, Datadog, Jaeger and Thanos, and ran Redis, Elasticsearch and PostgreSQL in production
 - Ran blockchain node clients (Geth, Nethermind, Lighthouse, Prysm, Teku, Besu) across the 40+ production networks
 - Built and optimized CI/CD pipelines and led production hardening and cross-team alignment on infrastructure constraints
 - Translated infrastructure constraints into scalable architectural decisions with engineering and product teams
@@ -45,9 +49,10 @@ Dec 2021 – Apr 2022
 
 - Containerized and deployed Ethereum services on Kubernetes, improving security and availability of blockchain infrastructure
 
-## Independent Work (2026 – present)
+## Personal Projects & Self-Learning (2026 – present)
 
-- Product-idea proofs of concept in domain-specific AI assistance and orchestration
+- **Music and AI** — personal projects exploring AI-assisted music work ⟨add: the specific project and what it produces⟩
+- **AI assistance and orchestration** — proofs of concept with agent harnesses and tooling ⟨add: what it does, and a public link if one exists⟩
 - Independent research in history and linguistics, largely AI-assisted prosopography
 
 ## Skills & Technologies

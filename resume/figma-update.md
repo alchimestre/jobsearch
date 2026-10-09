@@ -162,3 +162,33 @@ Deliberately excluded: **music production** (it belongs on LinkedIn, not on an S
 ## Note on the export itself
 
 The current PDF is a 2-column Figma export, and its text extraction interleaves columns — extracted bullets from Cometh and Docaposte merge, and values split across table cells (`60%`, `25%`). That is the same reading an ATS parser gets. If applications go to an ATS rather than a human, submit a single-column version (`resume/resume.md` is written for that) rather than the Figma export.
+
+## 10. Applied 2026-10-09 — Platform/SRE retarget (Vincent's instruction)
+
+The lane changed to **Platform/SRE**, the geography to **France · EU-remote**, and 2026 is now described as
+**personal projects and self-learning (Music & AI)**. `resume/resume.md` and `resume/ats/resume.html` already
+carry these changes. Apply the same to the Figma frame (`CV 3_white`).
+
+| # | find | replace |
+|---|---|---|
+| 1 | `Site Reliability Engineer — moving into ML Platform / MLOps` | `Site Reliability Engineer — Kubernetes, distributed systems, regulated production environments` |
+| 2 | `Open to EU-remote, Berlin, Switzerland` | `Open to France-based and EU-remote roles` |
+| 3 | `Production SRE with 4 years operating high-availability distributed infrastructure across regulated healthcare, crypto, and multi-protocol systems. Moving into ML platform / MLOps — bringing Kubernetes reliability, observability, and cost-aware platform operations to the platform that builds, ships, and serves models.` | `Production SRE with 4 years running high-availability distributed infrastructure across regulated healthcare, crypto and multi-protocol systems. Kubernetes platform work at multi-zone and bare-metal scale: Terraform and Helm delivery, GitOps, observability, secrets and access hardening, cost control, and production incident response. Owns platforms end to end and translates infrastructure constraints into architectural decisions with product and engineering teams.` |
+| 4 | `Operated high-availability distributed infrastructure securing $8B+ in digital assets across 40+ production networks` | `Ran high-availability distributed infrastructure securing $8B+ in digital assets across 40+ production networks, on multi-zone Kubernetes in hybrid cloud` |
+| 5 | `Integrated 10+ distributed protocols into hybrid-cloud environments with reliability and security guarantees` | `Integrated 10+ distributed protocols into hybrid-cloud environments, owning reliability and security guarantees from onboarding through steady-state operation` |
+| 6 | `Designed and maintained Terraform IaC and Helm charts across multi-environment Kubernetes clusters` | `Designed and maintained Terraform IaC and Helm charts across multi-environment Kubernetes clusters, with every infrastructure change versioned and reviewed through Git` |
+| 7 | `Deployed and operated the Kubernetes platform stack` | `Built and operated the Kubernetes platform stack` |
+| 8 | `Maintained observability with Prometheus, Grafana, OpenTelemetry, ELK, Loki, Datadog, Jaeger, and Thanos, reducing MTTR, and ran` | `Standardised observability across Prometheus, Grafana, OpenTelemetry, ELK, Loki, Datadog, Jaeger and Thanos, and ran` |
+| 9 | `Improved system observability (Prometheus, Grafana, OpenTelemetry, ELK) and reduced MTTR` | `Improved system observability (Prometheus, Grafana, OpenTelemetry, ELK) and cut detection time` |
+| 10 | `Independent Work` | `Personal Projects & Self-Learning` |
+| 11 | `Product-idea proofs of concept in domain-specific AI assistance and orchestration` | `Music and AI — personal projects exploring AI-assisted music work` / `AI assistance and orchestration — proofs of concept with agent harnesses and tooling` (two lines) |
+
+**Warnings for this run:**
+1. Rules 8 and 9 **remove an unquantified MTTR claim**. Do not add a replacement number until Vincent supplies
+   one; an invented metric is worse than no metric.
+2. The earlier note *"Deliberately excluded: music production"* is **superseded** by Vincent's 2026-10-09
+   instruction. Music is now on the CV as the explanation of the January-2026 gap.
+3. Rules 4, 6 and 9 leave room for real numbers (cluster/node counts, environment count, detection time).
+   Marked `⟨…⟩` in `resume/resume.md` and `resume/ats/resume.html`.
+4. The guards in `figma-apply.js` must be extended for rules 1–3, or the script will report `MISS` on a frame
+   already carrying the new text.
