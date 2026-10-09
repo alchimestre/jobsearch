@@ -13,7 +13,7 @@ that cannot wait until 09-24; this file exists so the next session starts cold w
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | **28 issues: 17 open, 11 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE). Closed: #3 vivenu, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all eleven `reason:unknown`** |
+| Pipeline | **29 issues: 18 open, 11 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE), **#30 Atlantic venture (DE, Tier A)**. Closed: #3 vivenu, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all eleven `reason:unknown`** |
 
 ### HN "Who is hiring? (October 2026)" sweep — 232 top-level posts, in-scope shortlist (2026-10-07)
 
@@ -127,6 +127,33 @@ it proceeds, the band was right. **Note the open ambiguity:** whether that figur
 ---
 
 ## Updated 2026-10-09
+
+### Atlantic AI Efficiency Venture (#30) applied — Tier A returns to the pipeline (2026-10-09)
+
+**Platform Engineer (gn)**, one of the first platform hires at an **unnamed Atlantic portfolio venture at
+pre-seed** (Berlin, on-site five days a week). `market:de` · **`tier:a`** · `channel:ats` · `track:ai`.
+Recruitee offer id **2776762**; no jobradar row. Board `Contacted`; follow-ups 2026-10-16 → 10-20, final
+2026-10-23 → 10-29.
+
+- **Tier A on the strongest reading in the pipeline.** The JD names *"the GPU capacity used to serve
+  open-weight models"*, evals, embeddings and open-weight serving alongside the LLM gateway/router and
+  token-cost accounting — ML-serving surface **with** infrastructure ownership, not adjacent to it.
+- **Best seniority fit logged:** *"typically three to six"* years, so ~4 evidenced sits in the *middle* of the
+  band rather than under it — the first row where that is true.
+- **Two binding unknowns, both answerable in one message:** (1) the **base band** — pre-seed with "meaningful
+  equity" is exactly where the base lands under the €80k floor, and equity is not income on the cliff; (2)
+  **relocation** — five days a week in Berlin, no relocation support mentioned, so a move is self-funded.
+- **The gate is Python authorship.** The entire backend is Python/FastAPI/Pydantic with async, typing and
+  testing; that is the excluded claim. Also not evidenced: production LLMs/evals/serving, GPU-workload
+  operation (adjacent only), Scaleway, LiteLLM, Langfuse, TypeScript.
+- **Genuinely attractive:** the only row where the AI-infrastructure claim *is* the job; **cost optimisation
+  with measured savings** is a first-class responsibility and the CV's cost evidence (cloud spend −25% at
+  Cometh) maps onto the product's own thesis; and **"practical agentic engineering"** is an explicit hiring
+  criterion, which the 2026 harness/orchestration work genuinely answers.
+
+**Pipeline consequence:** with Workist #11 closed on 2026-10-06, **#30 is now the only live Tier A row** — and
+the only application this week whose track label is `ai`. It is also the first application logged with **no
+salary figure stated**, so the follow-up (not the form) carries the compensation question.
 
 ### Otera (#10) closed — refused, `reason:unknown`, pre-screen
 
