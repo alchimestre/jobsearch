@@ -5,6 +5,12 @@
 Any text written in **Vincent's applicant voice** — application answers, recruiter messages, cover
 letters, LinkedIn copy, CV bullets — MUST follow `docs/writing-style.md`.
 
+**Agent replies in this repo MUST use the `plain-english` skill** (ASD-STE100 Simplified Technical English):
+short sentences, one idea per sentence, active voice, common words, acronym defined on first use, exact
+numbers, no jargon. Lead with the answer, then the evidence, then the steps. This rule is set by Vincent on
+2026-10-09 and applies to every chat reply, status report and explanation in this repo, not only to
+applicant-voice text.
+
 Non-negotiable for application answers: ≤ 100 words each, one paragraph, flat lists, no rhetorical
 contrasts, no em-dashes, no narrative openings, every figure verifiable or bracketed as `⟨placeholder⟩`.
 If a draft is over budget, cut whole sentences — do not compress words.
