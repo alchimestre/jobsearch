@@ -958,7 +958,7 @@ Remaining open: **10 issues**. Primary-lane cohort unchanged: #12 Langdock > #11
 
 - SRE / Data Engineer at **Bubblemaps** (bubblemaps.io), **French** Web3 company — onchain forensics/analytics
 - Recruiter call completed 2026-09-29. Quoted **€60–80k**; asked **€70,000 minimum**. **Awaiting CTO decision**
-- **Tier C** — no ML-platform surface, and §2's crypto-continuity rejection fires (Kiln is already crypto)
+- **Tier C** — no ML-platform surface; a Tier C bridge at the €70k floor, not a rejection (Kiln is already crypto)
 - **Tier C bridge at the €70k floor**, admitted now (ruling 2026-10-15). The €80k primary floor is unchanged,
   so the row stays unpooled with the primary lane.
 - Does not count toward ML-platform conversion
