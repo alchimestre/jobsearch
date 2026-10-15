@@ -77,7 +77,7 @@ A **credible secondary option**: a customer-facing technical role at an AI-nativ
 
 ### Bridge Opportunity
 
-A France-based or EU-remote role considered only when it materially strengthens AI-infrastructure positioning or enables later relocation. It is not part of the primary geographic pipeline.
+A France-based or EU-remote role considered only when it materially strengthens AI-infrastructure positioning or enables later relocation. It is not part of the primary geographic pipeline. It carries its own floor: **€70,000**, and it is admitted now, not held for late-cliff (ruled 2026-10-15). Unclassified. The bridge lane is live in the pipeline today.
 
 ### Candidate Positioning Thesis
 
@@ -142,6 +142,7 @@ Minimum total annual compensation below which an opportunity is not pursued (ame
 - Switzerland: CHF 110,000
 - Berlin: €80,000
 - EU-remote / France-compatible: €80,000 (raised from €70,000 — a role that does not relocate must pay for the missing half of the goal)
+- Tier C bridge (France or EU-remote): €70,000, admitted now rather than held for late-cliff (ruled 2026-10-15)
 - Late-cliff flex (from ~Feb 2027): €70,000, only for an offer passing every other filter
 - Last-resort window (from ~Apr 2027): the floor still applies; scope and AI filters are what yield
 

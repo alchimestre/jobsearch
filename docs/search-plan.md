@@ -46,7 +46,7 @@ lose their week anchors. Nothing else changes: the lane allocation, filters, flo
 2. **Tier B:** SRE/platform role supporting ML teams — at an AI-native company, or in an in-house ML platform organisation at a product company with real AI workloads (the Berlin lane).
 3. **Tier B-secondary — forward-deployed infrastructure (added 2026-09-11):** customer-facing deployment/operations roles at AI-native companies (FDE, deployment/solutions infrastructure), admitted at **≤ ~¼ of the EU-remote/France-compatible lane**, and only where the role stays **infrastructure-heavy** — planning, Kubernetes/Helm, private/on-prem deployment, troubleshooting — not pre-sales or support-ticket work. Blocked from scaling up until real customer-facing evidence exists on the CV (`docs/resume-edits.md`).
 4. **Web3 infrastructure track (added 2026-09-29):** production infrastructure roles at blockchain / crypto / digital-asset employers — protocol and node operations, validator and staking infrastructure, RPC/indexing/data infrastructure, exchange and custody platform engineering, on-chain tooling. Admitted in **every** lane, and treated as the **fastest-to-income** track because it sits directly on Vincent's strongest evidence (Kiln: distributed infrastructure securing $8B+ across 40+ protocol networks; Cometh: multi-zone Kubernetes for Web3 delivery tooling). No AI/ML exposure is required for these roles.
-5. **Tier C:** Non-AI, non-Web3 SRE/platform bridge role only when it offers architectural scope, strong compensation, and a credible path to AI exposure or relocation — **and only in the last-resort window from ~Apr 2027** (see §10).
+5. **Tier C:** Non-AI, non-Web3 SRE/platform bridge role only when it offers architectural scope, strong compensation, and a credible path to AI exposure or relocation — **admitted now at the €70k bridge floor** (§7 rule 6); below that floor it waits for the last-resort window from ~Apr 2027 (see §10).
 
 ### ML preference (amended 2026-09-29: preference, not a gate)
 
@@ -62,7 +62,7 @@ Sub-filter within MLOps: prefer the **platform/infrastructure side** (Kubernetes
 - Roles based **outside the EU/EMEA** — US, Canada, LatAm, and APAC-only locations are rejected outright (added 2026-09-29), including "Remote - USA" postings. Australia/New Zealand travels on its own lane (§1) rather than as part of EMEA. A posting that offers both a US and a European location stays admissible.
 - Roles whose **job description is not written in English or French** (added 2026-09-29). German-language JDs are excluded; an English-language JD at a German employer is **not**. Public-sector or SME postings written in German are the bulk of this group.
 - Staff/Principal roles or roles asking 8+ years.
-- Total compensation below **CHF 110k (CH) / €80k (Berlin) / €80k (EU-remote and France-compatible)**. In late-cliff mode (from ~Feb 2027) the floor may flex to €70k, but only for an offer passing every other filter.
+- Total compensation below **CHF 110k (CH) / €80k (Berlin) / €80k (EU-remote and France-compatible) / €70k (Tier C bridge)**. In late-cliff mode (from ~Feb 2027) the floor may flex to €70k, but only for an offer passing every other filter.
 - On-site roles without relocation assistance or an 8–12 week remote start.
 - Roles requiring direct GPU, distributed-training, or serving-engine expertise on day one.
 - Any role whose **start date** would leave an income gap at the cliff: start ≤ 2027-06-01 (target) / 2027-06-15 (absolute).
