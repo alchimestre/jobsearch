@@ -11,7 +11,7 @@ are pursued now, not held for late-cliff (ruling 2026-10-15).
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — the pipeline runs on the cluster and writes a model artifact; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | **42 issues: 28 open, 14 closed.** Open: #1 Cohere (FR), #5 vCluster, #7 Sinch, #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE), #30 Atlantic venture (DE, Tier A), #31 Annapurna/unnamed AI+health (DE, Tier B), #32 Runware (EU-remote, Tier A), #33 SpotMe (EU-remote, Tier C, bridge), #34 MLabs/unnamed fintech-connectivity (EU-remote, Tier C, bridge), #35 Lifen (FR-bridge, Tier B), #37 Redcare Pharmacy (DE, Tier B — probable residency gate, Azure core gap), **#38 Eye Security (NL, Tier B — the one JD asking for shipped LLM work; 6+ yrs and The Hague hybrid)**, #39 Camunda (EU-remote, Tier B, ai), #40 VERBI Software (DE, Tier C, bridge), #41 Yuno (EU-remote, Tier B — Staff title), #42 MOTOR Ai (DE, Tier B, hybrid). Closed: #3 vivenu, #4 ablefy, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX), #36 MAIA, **#43 Voyage Privé** — **all fourteen `reason:unknown`, thirteen of them pre-screen** |
+| Pipeline | **43 issues: 28 open, 15 closed.** Open: #1 Cohere (FR), #5 vCluster, #7 Sinch (`Screening` — ACK 2026-10-15), #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE), #30 Atlantic venture (DE, Tier A), #31 Annapurna/unnamed AI+health (DE, Tier B), #32 Runware (EU-remote, Tier A), #33 SpotMe (EU-remote, Tier C, bridge), #34 MLabs/unnamed fintech-connectivity (EU-remote, Tier C, bridge), #35 Lifen (FR-bridge, Tier B), #37 Redcare Pharmacy (DE, Tier B — probable residency gate, Azure core gap), **#38 Eye Security (NL, Tier B — the one JD asking for shipped LLM work; 6+ yrs and The Hague hybrid)**, #39 Camunda (EU-remote, Tier B, ai), #40 VERBI Software (DE, Tier C, bridge), #41 Yuno (EU-remote, Tier B — Staff title), #42 MOTOR Ai (DE, Tier B, hybrid). Closed: #3 vivenu, #4 ablefy, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX), #36 MAIA, #43 Voyage Privé, **#44 Jimdo** — **all fifteen `reason:unknown`, fourteen of them pre-screen** |
 
 ### ⚠️ Priority change — 2026-10-09: France first, Web3 close behind, JD language mandatory
 
@@ -170,7 +170,7 @@ sent and none was owed — both windows were still open. Doc:
   lane's arithmetic: no French row has reached a screen yet, so France-first is still untested rather than
   disproven.
 
-### ⚠️ Fourteen closed, fourteen `unknown` — the classification pile is still the defect
+### ⚠️ Voyage Privé makes it fourteen closed, fourteen `unknown` — the classification pile is the defect
 
 The counts moved, the diagnosis did not. 14 of 14 closures carry `reason:unknown`, 13 of them closed
 pre-screen; MarvelX #21 is still the only closure that reached a live screening step. §7's rules 2 and 4 —
@@ -187,6 +187,55 @@ Two candidate actions, for Vincent to rule on:
 2. **Stop counting `unknown` closures as funnel evidence.** 14 unclassified refusals are 14 rows of noise in
    the lane arithmetic, and they keep the France lane reading as untested when it has in fact produced one
    application and one refusal.
+
+### Sinch #7 — ACK received, the first row at `Screening` (2026-10-15)
+
+Sinch (**Mailjet** infrastructure — email delivery at scale) replied that the application is under review. Board
+Stage → **Screening** (was Contacted). Both scripted follow-up windows (1st due 2026-10-05, final 2026-10-14)
+are moot: the ACK answers the only question they carried. One line goes out if the review is still silent on
+**2026-10-29** (10 business days), and no chaser after that. Doc:
+`docs/opportunities/sinch-site-reliability-engineer.md`.
+
+- **The first live process since MarvelX #21.** Only the second row in the pipeline to get a human reply, and
+  the first whose next step is a screen. It sits in the **FR-bridge** lane, the lane carrying the 70%
+  allocation, so a screen here is the first test of the France-first bet rather than of the Berlin side-line.
+- **The ACK classifies nothing.** No timeline, no level, no band — compensation, the seniority band and
+  whether the team owns any ML workload all stay unverified, and they are the questions filed in the issue.
+- **Speed:** applied 2026-09-26, ACK 2026-10-15 — 13 business days of silence, well past the 5–7 and 10–14
+  day follow-up windows, so the two follow-ups were owed and never sent. The ACK retroactively makes them
+  moot rather than answered.
+
+### Jimdo #44 closed — refused, `reason:unknown`, logged retroactively (2026-10-15)
+
+**Senior Infrastructure Engineer** at **Jimdo** (website builder, Hamburg-founded 2007, profitable,
+remote-first across 15+ countries). `market:de` · `tier:c` · `channel:ats` · `track:bridge`. Negative answer
+2026-10-15, no reason given. Board Stage → **Closed**; issue closed with `reason:unknown`. Doc:
+`docs/opportunities/jimdo-senior-infrastructure-engineer.md`.
+
+- **The row was opened only when the refusal arrived.** No opportunity doc, issue or jobradar row existed for
+  it, and the application date is not recorded anywhere — so this is the first closure with no
+  reconstructable timeline, and it cannot enter any speed-to-answer arithmetic.
+- **Two caveats were open before applying, and the refusal names neither:** the posting is listed for
+  **Germany** (Jimdo is remote-first and employs in 15+ countries, but no France entity, EOR or
+  France-eligible remote statement appeared), and the JD asks **5+ years** against ~4 evidenced. The role
+  itself passed cleanly — internal platform engineering, AWS/EKS, Terraform, observability, Mid-Senior band.
+- **The location question was never asked in writing.** This is the second German-lane row after MAIA #36
+  where the residency/entity question decides admissibility, and the first where it went unasked.
+- **Pattern:** both open caveats are the same two the pipeline keeps failing on — a German posting whose
+  employment reach is unstated, and a years bar above the evidence. Neither is testable from a bare refusal.
+
+### ⚠️ Fifteen closed, fifteen `unknown` — one live process does not change the diagnosis
+
+15 of 15 closures carry `reason:unknown`; 14 of them closed pre-screen, and MarvelX #21 is still the only
+closure that reached a live screening step. The Sinch ACK moves the open side of the funnel, not the closed
+side, so §7's rules 2 and 4 remain without operating material. The two candidate actions above still stand for
+a ruling.
+
+### Lane tally delta — 2026-10-15
+
+Applying this day's two events to the 2026-10-09 tally: **FR-bridge** gains its first live process (#7 Sinch
+→ `Screening`); **DE** closed column gains **#44 Jimdo** (now #6 Doctolib, #11 Workist, #16 Synthesia,
+#23/#24 n8n, #44 Jimdo). EU-remote and CH are unchanged.
 
 ## Updated 2026-10-09
 

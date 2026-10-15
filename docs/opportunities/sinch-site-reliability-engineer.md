@@ -3,7 +3,8 @@
 **Posting:** https://www.linkedin.com/jobs/view/4472071666/ · France — **fully remote, based in France**
 **Org:** Sinch / **Mailjet** infrastructure (email delivery at scale)
 **Market:** FR-bridge (France-remote / EU-remote compatible) · **Tier:** C (strong non-AI SRE bridge) · **Channel:** ATS
-**Applied:** ✅ 2026-09-26 (LinkedIn) · **Follow-up 1 due:** 2026-10-05 · **Follow-up 2 due:** 2026-10-14 (final)
+**Applied:** ✅ 2026-09-26 (LinkedIn) · **Stage:** **Screening** — ACK received 2026-10-15, application under
+review · **Follow-up:** none owed while under review; one line if silent past 2026-10-29
 
 ## Why this is the strongest bridge candidate in the pipeline
 
@@ -49,11 +50,14 @@ is a non-AI SRE bridge role → **Tier C**, admissible only from the last-resort
 
 ## Outcome record
 
-- Stage reached: **Contacted** (ATS application 2026-09-26)
+- Stage reached: **Screening** — ACK 2026-10-15: Sinch replied that the application is under review. No
+  reason, no next-step date, no screen scheduled. Board Stage set 2026-10-15 (was Contacted)
 - Rejection reason: pending. If refusal with no reason → `unknown`
-- Follow-ups: **1st due 2026-10-05, 2nd (final) due 2026-10-14.** Unlike the ablefy/vivenu cohort (whose first
-  follow-ups were lost to the 2026-09-14 → 09-23 pause), both windows here fall inside active search time
-- What would have changed the outcome: nothing on the candidate side yet known — process status pending
+- Follow-ups: **1st was due 2026-10-05, 2nd (final) 2026-10-14 — both now moot.** The ACK answers the only
+  question they carried. One line goes out if the review is still silent on **2026-10-29** (10 business
+  days from the ACK); no chaser after that
+- Still unverified: compensation (no band published), seniority band, whether the team owns any ML/AI workload
+- What would have changed the outcome: nothing on the candidate side yet known — the review is live
 
 ## Funnel delta
 
