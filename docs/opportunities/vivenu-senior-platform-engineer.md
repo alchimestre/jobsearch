@@ -8,12 +8,11 @@
 ## Why this is outside the current lanes
 
 Frankfurt is not in the destination hierarchy (EU-remote/FR → Berlin → Switzerland) and the role is
-**not** an ML platform / MLOps role — so §2's ML requirement is only satisfied if vivenu's platform
-materially hosts AI workloads. The JD states the team uses LLM tooling ("healthy amount of skepticism
-for LLM generated code") but does not describe an ML-serving surface. Per the strategy, this role is
-admissible at Tier B-secondary at best, and today it fires the "AI workload exposure AND architectural
-scope" hard filter **unchecked**. Applying anyway is a deliberate long-shot; record it as such so the
-funnel data stays interpretable.
+**not** an ML platform / MLOps role. ML/LLM exposure is **preferred, not required** (§2, amended
+2026-09-29), so the ML link is a note rather than a filter. The JD states the team uses LLM tooling
+("healthy amount of skepticism for LLM generated code") but does not describe an ML-serving surface.
+This role is admissible at Tier B-secondary at best, with the architectural-scope check **unchecked**.
+Applying anyway is a deliberate long-shot; record it as such so the funnel data stays interpretable.
 
 Also note the JD asks **5+ years**; the CV shows four years of continuous infra roles (Dec 2021 →
 Jan 2026). Do not inflate; lead with scope, not tenure.
@@ -66,7 +65,7 @@ artifact makes it true (`CONTEXT.md` Evidence Boundaries).
 
 - [x] Not Staff/Principal (senior, but no 8+ yrs demand)
 - [x] Compensation ≥ €80k (asking €90–100k)
-- [ ] AI workload exposure — **unconfirmed**[INFERENCE: JD mentions LLM tooling, no ML-serving surface]
+- [ ] AI workload exposure — **unconfirmed**, and **not a filter**: preferred, not required (§2, amended 2026-09-29)[INFERENCE: JD mentions LLM tooling, no ML-serving surface]
 - [x] No day-one direct GPU / training / serving requirement
 - [ ] On-site allows 8–12 week remote start / relocation assistance — **unasked**; ask at screen
 - [x] Architectural scope (infrastructure design decisions, reusable Terraform modules, platform ownership)
@@ -86,7 +85,7 @@ artifact makes it true (`CONTEXT.md` Evidence Boundaries).
 - Rejection reason: **unknown** — no reason given. The strategy's label set defines `unknown` exactly as "no reason given", so nothing is inferred here.
 - Duration: 14 calendar days, 10 business days — a decision inside the normal ATS window, not a silence-close.
 - Follow-ups: **none sent.** Follow-up 1 (due 2026-09-18) was missed during the 2026-09-14 → 09-23 pause; the refusal arrived before the second window, so neither is now owed.
-- What would have changed the outcome: **not derivable.** The role already fired two hard filters unchecked (AI workload exposure unconfirmed; remote-start/relocation unasked), so either could have been the cause — as could the 5+ years bar against four years of evidenced infra roles, or simply volume. No feedback was offered and none was requested, so **none** of these is recorded as the cause.
+- What would have changed the outcome: **not derivable.** The role already had two checklist items unchecked (AI workload exposure unconfirmed, a preference rather than a filter; remote-start/relocation unasked), so either could have been the cause — as could the 5+ years bar against four years of evidenced infra roles, or simply volume. No feedback was offered and none was requested, so **none** of these is recorded as the cause.
 - Feedback request: **not sent.** §3 prescribes the one feedback request only *after a recruiter-screen rejection*; this opportunity never reached screening, so it is out of scope.
 - Expected value: this was flagged as a deliberate long-shot at application time. Closing it as `unknown` is the recorded cost of the deliberate long-shot, not new information about the filters.
 - Next action: **closed.** No further contact. Removal from the follow-up queue; issue #3 closed with `reason:unknown`.

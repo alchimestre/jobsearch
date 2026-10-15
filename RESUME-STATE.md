@@ -1,7 +1,8 @@
 # Resume state — read this first
 
 **As of 2026-10-15.** Search active; the 2026-09-14 → 2026-09-23 pause is over. Lane allocation since
-2026-10-09: France-anchored 70% · Web3 infrastructure 20% · Berlin 10%.
+2026-10-09: France-anchored 70% · Web3 infrastructure 20% · Berlin 10%. Tier C bridges at the **€70k floor**
+are pursued now, not held for late-cliff (ruling 2026-10-15).
 
 ## Where the plan is
 | Item | State |
@@ -689,9 +690,8 @@ days later; no reason given. Board Stage → Closed.
 
 ### Friday review (2026-10-09) — items accumulated, one ruling each
 
-1. **Web3 clause conflict, three instances** — #22 1GLOBAL, #25 Blockstream, #26 Anagram admitted by the
-   2026-09-29 amendment while §2's reject list still bans crypto-continuity roles. Decide once how Tier C
-   Web3 rows are counted.
+1. **Web3 clause — resolved 2026-09-29.** §2 admits Web3 infrastructure in every lane, so #22 1GLOBAL,
+   #25 Blockstream and #26 Anagram count as Tier C Web3 rows, not rejections.
 2. **Outreach lane still 0 sent against a 60% allocation**, and three of this week's losses (#11, #12, #21)
    had no message reach a human. The Workist draft was the most sendable asset in the repo.
 3. **The funnel is 10-for-10 `unknown`.** MarvelX's §3 feedback request (`docs/outreach/marvelx-feedback-request.md`)
@@ -753,7 +753,7 @@ flagged before sending, because the first application was never logged. **Do not
   flagged as the only rows that can generate signal. #11 has a named recipient (Fabian Brosig, CTO) and a
   sendable draft.
 - **Active process: #13 Bubblemaps (`Interview`, recruiter lane) — the only live technical process.**
-- **#5 vCluster is still the only logged role never applied to.**
+- **#5 vCluster: applied, application date unrecorded.**
 - Everything closed today was lost *before* a human conversation except MarvelX, which was lost *at the first
   written step*.
 
@@ -769,9 +769,8 @@ flagged before sending, because the first application was never logged. **Do not
   remote-start language) — and one **explicit failure**: no AI-workload surface at all. It is blockchain,
   custody and payments infrastructure for banks.
 - **Admitted under the 2026-09-29 amendment** ("Web3 infrastructure is in scope in every lane") as a Tier C
-  Web3 bridge. This is the **same §2 clause conflict** already flagged for 1GLOBAL #22: the reject list still
-  bans crypto-continuity roles that do not strengthen AI-infra positioning. **Both need one ruling at the
-  Friday review** so Tier C Web3 rows are counted consistently.
+  Web3 bridge. This is the same clause flagged for 1GLOBAL #22, resolved 2026-09-29: §2 admits Web3
+  infrastructure in every lane, so the row is a Tier C bridge and not a rejection.
 - **Craft match is unusually direct** for a Swiss-lane role: Kubernetes (incl. on-prem bare metal), Terraform,
   CI/CD, Prometheus/Grafana/ELK, Vault/SOPS secrets, incident response, and **regulated environments**
   (HDS healthcare, ISO 27001, $8B+ crypto assets). **French is a plus** in Lugano/Zurich delivery work.
@@ -795,8 +794,8 @@ follow-ups 2026-10-12 → 10-14 and 2026-10-19 → 10-23.
 - **⚠️ 20 months old** (published 2025-02-04) — almost certainly a standing pipeline rather than an open req.
   Silence would be uninformative.
 - **⚠️ Third instance of the same §2 clause conflict** (#22 1GLOBAL, #25 Blockstream, #26 Anagram). Three
-  Tier C Web3 rows in one week, each admitted by the 2026-09-29 amendment while the §2 reject list still bans
-  crypto-continuity roles. **One ruling at the Friday review, not three separate judgements.**
+  Tier C Web3 rows in one week, all admitted under the 2026-09-29 amendment. The §2 clause they were
+  measured against is gone; each counts as a Tier C bridge in the bridge lane.
 
 ---
 
@@ -876,9 +875,8 @@ technical interview** — the pipeline's first active technical process, and the
 
 - ⚠️ **CTO call outcome not captured:** the SRE-vs-Data-Engineer split, the round format, whether €70k landed,
   remote policy, and which entity pays. All four change the prep.
-- **The floor exception is unchanged.** €70k is still below the €80k floor, still admissible only in late-cliff
-  (~Feb 2027) or last-resort (~Apr 2027), and **neither is active**. Advancing does not move the floor; the
-  exception stays labelled and unpooled with the primary lane.
+- **The floor: €70k bridge tier, admitted now** (ruling 2026-10-15). It sits below the €80k primary floor, so
+  the row stays labelled and unpooled with the primary lane.
 - **Prep is time-boxed** until the split and comp are known. Receipts and the honest gap answers are written
   up in `docs/opportunities/bubblemaps-sre-data-engineer.md` → *Technical interview — prep*.
 - Rankings unchanged: French, Tier C, €70k → below #21 MarvelX and the AI lane.
@@ -961,10 +959,8 @@ Remaining open: **10 issues**. Primary-lane cohort unchanged: #12 Langdock > #11
 - SRE / Data Engineer at **Bubblemaps** (bubblemaps.io), **French** Web3 company — onchain forensics/analytics
 - Recruiter call completed 2026-09-29. Quoted **€60–80k**; asked **€70,000 minimum**. **Awaiting CTO decision**
 - **Tier C** — no ML-platform surface, and §2's crypto-continuity rejection fires (Kiln is already crypto)
-- ⚠️ **FLOOR EXCEPTION.** €70k is below the €80k floor. Late-cliff (~Feb 2027) and last-resort (~Apr 2027)
-  modes are **not active**, so this runs outside the plan on compensation. Recorded as a **conscious labelled
-  exception**: income continuity, live recruiter, low investment. **Do not pool with the primary lane, and do
-  not let the floor read as having moved.**
+- **Tier C bridge at the €70k floor**, admitted now (ruling 2026-10-15). The €80k primary floor is unchanged,
+  so the row stays unpooled with the primary lane.
 - Does not count toward ML-platform conversion
 - Follow-up: ping Yofy **2026-10-06** if no CTO answer
 
@@ -1129,9 +1125,6 @@ band before touching the floor (§7 rule 4 in spirit).
 - **France Travail obligations** — confirm actualité/convocations/offer-acceptance rules so the
   2027-07-15 cliff cannot move. `[INFERENCE]` on the general rules.
 - **Independent Work date range** on the CV — `2026 – present` assumes a Jan-2026 start.
-- **vCluster #5 not yet applied** — it is the Australia-remote example and clears the €80k floor;
-  check the GPU-depth hard filter (currently marked FAILS) before applying. It is now the only
-  open pipeline row with no contact made.
 
 ## What did not change
 

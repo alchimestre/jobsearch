@@ -4,7 +4,7 @@
 **Direct ATS link:** https://jobs.ashbyhq.com/vClusterLabs/19a7f22e-ee7d-419b-bc9e-e2fa61dff2d1
 **Company:** vCluster Labs — Kubernetes tenant-isolation platform for AI clouds; 100k+ GPUs and 1M CPUs across 50+ AI clouds; $28M raised (Khosla Ventures); HQ San Francisco, remote-first, 40+ engineers
 **Market:** EU-remote (locations: Remote / Australia / Germany / United States — remote-first) · **Tier:** b (AI-infrastructure vendor, customer-facing)
-**Channel:** ATS (Ashby) · **Applied:** ⏳ not yet
+**Channel:** ATS (Ashby) · **Applied:** ✅ (date unrecorded)
 
 ## Compensation
 
@@ -28,7 +28,7 @@ that destination (`CONTEXT.md` Destination Hierarchy §4).
 - [x] AI workload exposure — direct: GPU neoclouds, AI factories, inference
 - [x] Architectural scope — deployment architecture, playbook authoring, product feedback loop
 
-## Fit assessment — read this before applying
+## Fit assessment (written before applying)
 
 **Strong matches**
 
@@ -73,15 +73,14 @@ secondary lane was meant to catch.
 
 ## Timeline
 
-- Applied: —
-- Follow-up 1 due: —
-- Follow-up 2 due: —
+- Applied: ✅ (date unrecorded)
+- Follow-up windows: not computable, the application date was not recorded
 - Screen date: —
 - Outcome: —
 
 ## Outcome record
 
-- Stage reached: not applied
+- Stage reached: Contacted (project board #5)
 - Rejection reason: —
 - What would have changed the outcome: —
 

@@ -6,7 +6,7 @@ BNB, Avalanche, Polygon, Base, Arbitrum, HyperEVM, TON, Tron, Monad, Aptos…). 
 Intel Desk (community investigations / "InfoFi"), iframe widget, API.
 **Backers:** Consensys, Polygon, Avalanche, Aptos, Ledger, The Sandbox, Linea, Fuel, Ince, Momentum6, V3ntures
 **Recruiter:** Yofy (agency/external recruiter) — name incomplete, needs capture on next contact
-**Role:** SRE / Data Engineer · **Market:** FR (French company, Web3 — confirmed by Vincent 2026-09-29) · **Tier:** C (crypto-continuity, no ML-platform surface) · **Channel:** recruiter
+**Role:** SRE / Data Engineer · **Market:** FR (French company, Web3 — confirmed by Vincent 2026-09-29) · **Tier:** C (no ML-platform surface) · **Channel:** recruiter
 **Stage:** **Interview** (technical) — recruiter call 2026-09-29, **CTO call 2026-09-30**, advanced to the technical interview · **Comp quoted by recruiter: €60,000–80,000** · **Candidate asked: €70,000 minimum — still unconfirmed**
 
 ## Market note — FR-bridge, and that strengthens the case for holding it
@@ -29,8 +29,7 @@ properties. Geographic fit is good; strategic fit is still the weakest logged.
 - [ ] Compensation ≥ €80k (FR-bridge) — ⚠️ quoted band tops out exactly at the floor. Asked €70,000 minimum, which is **below** the floor but consistent with the late-cliff/last-resort flex (€70k) — this is a **floor exception**, deliberate, and must be recorded as such
 - [ ] On-site / remote — **location still unconfirmed on the call**, but confirmed French company. French employment terms expected (CDI, French payroll); **remote policy not yet established**
 - [x] No day-one direct GPU / training / serving expertise — ✅ none implied
-- [ ] AI workload exposure AND architectural scope — ❌ **no AI/ML surface.** Blockchain forensics and onchain analytics. Data engineering here means chain indexing/ingestion pipelines, not ML lifecycle
-- [ ] Not a "crypto-continuity role that does not strengthen AI-infrastructure positioning" — ⚠️ **§2 fires this rejection test.** Kiln is already crypto infrastructure in the CV; a second crypto role does not advance the ML-platform transition
+- [ ] ML/AI surface AND architectural scope — ❌ **no AI/ML surface.** Blockchain forensics and onchain analytics. Data engineering here means chain indexing/ingestion pipelines, not ML lifecycle. Preferred, not required (§2, amended 2026-09-29), so this is a Tier C note rather than a rejection.
 
 **Tier C — and arguably the weakest strategic fit logged to date.** Two independent problems: the floor is
 breached, and the domain is a lateral move back into crypto rather than toward ML platform.
@@ -91,8 +90,7 @@ makes sense at €550+.
 
 - No ML/AI platform surface anywhere in the company description. "Data" here is onchain analytics, not model
   lifecycle.
-- §2's crypto-continuity rejection exists precisely for this: the CV already has Kiln, and a second crypto
-  role deepens the existing specialisation instead of building the ML-platform evidence.
+- The CV already has Kiln, and a second crypto role deepens the existing specialisation instead of building the ML-platform evidence.
 - The `ml-platform-on-k8s` artifact remains the thing that closes the real gaps; this role competes for the
   same hours without contributing evidence to it.
 

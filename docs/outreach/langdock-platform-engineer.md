@@ -13,7 +13,7 @@ add the specific. If a figure is not verifiable, remove it rather than soften it
 
 ## #12 Langdock — (Senior) Platform Engineer
 
-**Applied:** 2026-09-29 (ATS) · **Tier A** · **Band €90,000–140,000 + equity** · **In-office Berlin**
+**Applied:** 2026-09-26 (ATS) · **Tier A** · **Band €90,000–140,000 + equity** · **In-office Berlin**
 **Target:** hiring manager or senior platform engineer. Role reports into the platform team; squads of 3–4.
 
 **Structured correctly.** The connection note handles the structural risk (in-office, remote-start from

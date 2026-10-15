@@ -9,7 +9,7 @@ contrasts, no invented metrics.
 
 ## #9 SAP Fioneer — AI Platform Engineer (Banking, Generative AI)
 
-**Applied:** 2026-09-29 (ATS) · **Tier A/B** · **Band undisclosed** · **Salary stated on form: €90,000**
+**Applied:** 2026-09-26 (ATS) · **Tier A/B** · **Band undisclosed** · **Salary stated on form: €90,000**
 **Target:** hiring manager or senior platform engineer in the Banking Generative AI initiative.
 
 **Angle is the right one: regulated isolation and governance, not "I want to work in AI."** The JD names

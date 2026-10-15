@@ -17,10 +17,10 @@ requisition (see risks).
 
 ## Tier note — `track:web3`, `tier:c`, second Web3 bridge in two applications
 
-Same §2 clause conflict as 1GLOBAL (#22) and Blockstream (#25):
+Admissibility, against §2 as amended 2026-09-29:
 
-- **§2 reject list:** "Crypto-continuity roles that do not strengthen AI-infrastructure positioning." No ML/AI
-  surface here — no serving, no pipelines, no registry.
+- **No ML/AI surface** — no serving, no pipelines, no registry. ML/LLM exposure is preferred, not required
+  (§2, amended 2026-09-29).
 - **2026-09-29 amendment:** *"Web3 infrastructure is in scope in every lane."* This is genuine Web3
   infrastructure work (blockchain node operations, smart-contract deployment pipelines), so the amendment
   admits it.

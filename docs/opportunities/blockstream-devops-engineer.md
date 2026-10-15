@@ -20,11 +20,10 @@ Lugano and APAC rows). Reconcile by the Ashby id above.
 
 ## Tier note — Layer 1/2 Web3 infrastructure, `track:web3, tier:c`
 
-Two §2 clauses disagree, exactly as recorded for 1GLOBAL (#22):
+Admissibility, against §2 as amended 2026-09-29:
 
-- **§2 reject list:** "Crypto-continuity roles that do not strengthen AI-infrastructure positioning." Kiln is
-  already crypto; this is more crypto, and it has **no ML/AI surface** — no model serving, no pipeline, no
-  registry.
+- **No ML/AI surface** — no model serving, no pipeline, no registry. ML/LLM exposure is preferred, not
+  required (§2, amended 2026-09-29). Kiln is already crypto, so the row adds no new domain either.
 - **2026-09-29 amendment:** *"Web3 infrastructure is in scope in every lane; ML/LLM is preferred but
   non-blocking."* Blockstream is a genuine Web3 **infrastructure** employer, not an application-layer crypto
   product, so the amendment admits it.

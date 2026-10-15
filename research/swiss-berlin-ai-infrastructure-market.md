@@ -1,7 +1,7 @@
 # Switzerland + Berlin AI Infrastructure Engineer Market
 
 Research note for ticket `02-map-target-market` (Wayfinder map: AI Infrastructure job search).
-Scope: employer segments, named companies, role-title aliases, hiring locations, language expectations, recurring requirements — Switzerland 60% / Berlin 40%, under the tiered employer thesis (AI-infra vendors first → model labs selectively → AI product companies only where the role owns substantive AI infrastructure).
+Scope: employer segments, named companies, role-title aliases, hiring locations, language expectations, recurring requirements — researched for the relocation decision, which the lane split does not govern (`CONTEXT.md` → Search Lanes). (AI-infra vendors first → model labs selectively → AI product companies only where the role owns substantive AI infrastructure).
 
 - **Author/date:** SwissBerlinMarket worker agent, 2026-09-09.
 - **Method:** primary-source reads of employer/government pages; one secondary job board (AI Dev Jobs) read directly for live-posting discovery; bounded web search (engine walled mid-session — see Limitations).
@@ -29,7 +29,7 @@ Scope: employer segments, named companies, role-title aliases, hiring locations,
 
 ---
 
-## 3. Switzerland — employer segments and named employers (60% effort)
+## 3. Switzerland — employer segments and named employers
 
 ### 3.1 National AI compute / research-domain engineering (public, ETH-domain)
 
@@ -90,7 +90,7 @@ Synthesized from §3 sources (observed postings + employer pages); attribute per
 
 ---
 
-## 5. Switzerland — decision-relevant summary (60%)
+## 5. Switzerland — decision-relevant summary
 
 | Tier (thesis) | Realistic named targets | Evidence | Fit/effort |
 |---|---|---|---|
@@ -104,7 +104,7 @@ Synthesized from §3 sources (observed postings + employer pages); attribute per
 
 ---
 
-## 6. Berlin — employer segments and named employers (40% effort)
+## 6. Berlin — employer segments and named employers
 
 ### 6.1 Live AI-infrastructure demand (aggregator, Berlin filter, accessed 2026-09-09)
 
@@ -142,7 +142,7 @@ Synthesized from §3 sources (observed postings + employer pages); attribute per
 
 ---
 
-## 7. Berlin — decision-relevant summary (40%)
+## 7. Berlin — decision-relevant summary
 
 | Tier (thesis) | Realistic named targets | Evidence | Fit/effort |
 |---|---|---|---|
@@ -157,7 +157,7 @@ Synthesized from §3 sources (observed postings + employer pages); attribute per
 ## 8. Cross-market facts (both)
 
 - **Work authorization — asymmetry between the markets (do not conflate):** in **Germany**, EU citizens need no visa and no residence permit at all — enter with passport/ID, unrestricted labour-market access, register at the municipality after moving (Make it in Germany, official Federal portal, verified). In **Switzerland**, EU/EFTA nationals have an AFMP *right* to work, but employment beyond 3 months requires a cantonal **residence permit (L or B EU/EFTA)** issued as a formality on proof of employment, and ≤3-month work requires only an employer-side short-term notification (SEM factsheet SP_01/25, verified). Bottom line for the search: neither market has an admission hurdle to clear before interviewing; Switzerland adds post-offer permit paperwork, Germany adds only municipal registration. **[VERIFIED]**
-- **Effort split:** Switzerland 60% / Berlin 40% (standing decision) maps naturally to Zurich-anchored §3 targets vs Berlin-anchored §6 targets.
+- **Destinations, not lanes.** This file covers the two relocation destinations; it does not set the effort split. That is France-anchored today: France 70%, Web3 infrastructure 20%, Berlin 10% (`CONTEXT.md` → Search Lanes).
 
 ---
 

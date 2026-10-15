@@ -14,12 +14,10 @@ the last-resort window from ~Apr 2027. A cross-functional Finance/Ops/BD busines
 the taxonomy entirely. It is therefore not "an admissible role that fails a filter" — it is a role the
 plan does not admit at any tier.
 
-Two §2 rules fire directly:
+Two §2 rules against this role:
 
-- **Reject list:** "Crypto-continuity roles that do not strengthen AI-infrastructure positioning." This
-  is one. Crypto fund, non-engineering function, no infrastructure ownership.
-- **ML requirement:** a role qualifies only when it must "own or materially operate the platform ML/AI
-  workloads run on." The JD requires deep daily fluency with LLMs/agents *as productivity tools* — the
+- **No infrastructure ownership** — crypto fund, non-engineering function, so no architectural scope either.
+- **ML preference, not a gate (§2, amended 2026-09-29):** ML/LLM exposure is preferred. The JD requires deep daily fluency with LLMs/agents *as productivity tools* — the
   application layer that `CONTEXT.md` Evidence Boundaries explicitly excludes ("AI assistance/orchestration
   proofs of concept … application layer — never presented as platform or infrastructure ownership").
   Using Claude Code to draft briefs is not owning the platform models run on.

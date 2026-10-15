@@ -1,7 +1,7 @@
 # AI Infrastructure Engineer — Hiring-Evidence Benchmark vs. Current Resume
 
 - **Ticket:** `03-benchmark-role-evidence.md` (Wayfinder research, `.scratch/ai-infrastructure-job-search`)
-- **Candidate profile:** `~/Documents/resume_v3.pdf` (Vincent L., SRE & Platform Engineer, Aix-en-Provence, France)
+- **Candidate profile:** `resume/resume.md` (SRE & Platform Engineer, Aix-en-Provence, France)
 - **Benchmark date:** 2026-09-09
 - **Scope:** Capability and evidence benchmark only. No training-plan recommendation (ticket 06).
 
@@ -167,9 +167,9 @@ explicit at Anthropic (AWS Bedrock / GCP Vertex), Baseten, Scale.
 
 ## 3. Benchmark matrix vs. the resume
 
-Sources for resume claims: `~/Documents/resume_v3.pdf` (title block, "Profile", three SRE/DevOps
+Sources for resume claims: `resume/resume.md` (title block, "Profile", three SRE/DevOps
 positions at Kiln, Cometh, Docaposte, Bitgen; Skills & Technologies lines; Core Competencies).
-Only claims visibly present in the PDF are treated as candidate evidence. `~` marks judgment calls that
+Only claims visibly present in the resume are treated as candidate evidence. `~` marks judgment calls that
 are marked `[INFERENCE]` where interpretive.
 
 | Capability | Demand seen in sample | Resume evidence (verbatim basis) | Verdict |
@@ -301,7 +301,7 @@ First-party posting URLs (accessed 2026-09-09):
 - `[SY]` Synthesia — ML Platform Engineer (Europe): https://jobs.ashbyhq.com/synthesia/6730e2e5-0d32-4919-a438-625f1673b70c
 
 Supporting references:
-- Candidate resume: `/Users/vincent/Documents/resume_v3.pdf`
+- Candidate resume: `resume/resume.md`
 - Ticket 03: `.scratch/ai-infrastructure-job-search/issues/03-benchmark-role-evidence.md`
 - Board listings that informed sampling (same access date): Nebius/CoreWeave/Scale/Anthropic/xAI
   Greenhouse boards; Mistral/Cohere/BFL/Cerebras/Baseten/Modal/Lambda/Fireworks/OpenAI Ashby boards.

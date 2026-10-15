@@ -16,9 +16,8 @@ negotiates *down* from it, not up to it. Two further points:
 - **This is a disclosed breach, not an inferred one.** vivenu and ablefy both needed a screen to determine
   fit; here the JD states the failure. No screen is worth spending on it.
 
-The role also fires the §2 rejection of **crypto-continuity roles that do not strengthen AI-infrastructure
-positioning**: blockchain data analytics is not an ML platform, and no ML evidence closes. That reinforces
-the Tier C call independently of pay.
+The role is Tier C on its own terms: blockchain data analytics is not an ML platform, so no ML evidence
+closes. That holds independently of pay.
 
 ## Hard-filter checklist (§2)
 
