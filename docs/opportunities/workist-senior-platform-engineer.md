@@ -53,7 +53,7 @@ production experience.
    if you are willing to go deep on Azure."* State it plainly; do not overclaim.
 2. **"Active Python skills: you read and debug a Python codebase and fix the application when the
    application is what is broken."** Python is operational scripting only today; `ml-platform-on-k8s` is
-   closing this but is pre-week-6. It is "read and debug", not "author production services" — a screen
+   closing this but is pre-artifact. It is "read and debug", not "author production services" — a screen
    question, not a hard gate.
 
 ## Role shape

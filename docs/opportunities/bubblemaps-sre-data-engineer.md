@@ -157,7 +157,7 @@ zones, assets secured).
   (pipeline, serving, drift job, tests). Do not upgrade the claim before the artifact exists.
 - **Formal SLO/error-budget methodology:** the artifact is where that becomes evidenced (SLIs, error-budget
   policy, burn-rate alerts, runbook). "Building it now" — not "ran it at scale" (see §7: zero technical
-  interviews by week 6 pauses new ATS applications for a funnel audit, and this interview is where those
+  interviews after six active ATS weeks pauses new ATS applications for a funnel audit, and this interview is where those
   hours go).
 - **Chain-indexing / ETL ownership:** not evidenced. Nearest real experience is protocol integration at Kiln,
   not indexer authorship. Say so.
@@ -183,7 +183,7 @@ zones, assets secured).
   last-resort (~Apr 2027), and **neither is active**.
 - Ask compensation, remote policy and paying entity **before or at the round**, not after.
 - A €70k Tier C role does not outrank the `market:de` / EU-remote AI lane (#9 SAP Fioneer, #11 Workist,
-  #12 Langdock) or the week-6 artifact hours.
+  #12 Langdock) or the artifact hours.
 - The artifact does double duty: SLO and failure-drill material rehearsed here is the same material the
   primary lane screens on. If comp stays at €70k, treat the round as **rehearsal plus income insurance**, not a
   lane shift.

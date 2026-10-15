@@ -15,7 +15,7 @@ continuing growth across the engineering team. Berlin-based, hybrid.
 birthday, Germany Transport Ticket, Urban Sports Club, flexible hours, hybrid. Berlin floor **€80,000** (§2).
 **Follow-ups:** 1st due **2026-10-16 → 2026-10-20** · final **2026-10-23 → 2026-10-29**
 **jobradar:** no store row (agency posting, not an employer ATS board).
-**Policy note:** agency recruiters are **inbound/opportunistic only** (`docs/12-week-strategy.md` §4, wayfinder
+**Policy note:** agency recruiters are **inbound/opportunistic only** (`docs/search-plan.md` §4, wayfinder
 ticket 08) — this is an inbound-posted agency role, logged for funnel completeness, **not** treated as a
 primary channel. Precedent: #13 Bubblemaps via Yofy, also `channel:recruiter`.
 
@@ -82,7 +82,7 @@ band and whether a France-based remote start is acceptable.**
 
 ## Questions to put to the recruiter, in writing, before any call
 
-Per §2 of `docs/12-week-strategy.md` (mandatory before a recruiter screen):
+Per §2 of `docs/search-plan.md` (mandatory before a recruiter screen):
 
 1. **Base salary band** for the role, and what share is stock options?
 2. **Location:** is the first 8–12 weeks remotely from France acceptable, and is there relocation support for

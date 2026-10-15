@@ -63,7 +63,7 @@ management, on-call. Recorded here explicitly so the tier assignment is auditabl
 | Strong experience operating and troubleshooting production systems at scale (SRE / Prod Eng / Platform) | ✅ ~4 years; multi-zone, 40+ networks, $8B+ secured |
 | **Debugging across applications, databases, queues, containers, networking and infrastructure** | ✅✅ **this is the CV**: Postgres, Redis, Elasticsearch, MongoDB, etcd, Pub/Sub; Traefik, Kong, HAProxy, MetalLB, Cilium, nginx; Kubernetes multi-zone and bare-metal |
 | **Observability: metrics, logs and distributed tracing** | ✅✅ Prometheus + Thanos, Grafana, Loki, ELK, **Jaeger tracing**, Datadog, Alertmanager, OpenTelemetry |
-| **"Understand SRE principles including SLIs, SLOs, error budgets, capacity planning, incident management and reducing operational toil"** | ⚠️ **split claim.** Incident response/management, capacity planning and toil reduction are defensible today. **An owned SLI/SLO/error-budget programme is an excluded claim** — targeted by `ml-platform-on-k8s` at week 6. Say "understand, not yet owned" and offer the in-progress work |
+| **"Understand SRE principles including SLIs, SLOs, error budgets, capacity planning, incident management and reducing operational toil"** | ⚠️ **split claim.** Incident response/management, capacity planning and toil reduction are defensible today. **An owned SLI/SLO/error-budget programme is an excluded claim** — targeted by `ml-platform-on-k8s`. Say "understand, not yet owned" and offer the in-progress work |
 | Kubernetes, containers, IaC, automated deployment | ✅✅ Terraform/Terragrunt multi-environment, Ansible, Flux and Argo CD GitOps, Helm, Drone/GitHub Actions |
 | **"Write software and automation using languages such as Python, Go or PHP"** | ⚠️ **the gate.** Automation and scripting: yes. **Production Python/Go authorship: excluded claim.** At a company whose platform is software, this is the requirement most likely to decide the outcome |
 | Ownership, on-call, initial investigation through long-term remediation | ✅✅ production SRE, incident response, RCAs |
@@ -113,7 +113,7 @@ management, on-call. Recorded here explicitly so the tier assignment is auditabl
 4. What does *"write software and automation"* mean in daily practice — SRE-with-code, or backend
    engineering with an on-call hat?
 5. **Is there an SLO/error-budget programme today, or would this role establish it?** (Direct route into the
-   one gap that is actively being closed at week 6.)
+   one gap that is actively being closed.)
 6. Which parts of the stack are on Sonic Pods (own hardware) versus hyperscaler regions, and does this role
    touch the hardware layer?
 7. Why is the req open since July — scope change, or a hard search?

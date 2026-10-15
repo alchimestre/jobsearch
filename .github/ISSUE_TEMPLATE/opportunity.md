@@ -21,7 +21,7 @@ On rejection, apply reason:* label and record it below. -->
 - Channel (outreach / ATS / recruiter): 
 - Evidence version used (pre-project / early Python / completed Python / Go): 
 
-## Hard-filter checklist (from `docs/12-week-strategy.md` §2)
+## Hard-filter checklist (from `docs/search-plan.md` §2)
 
 - [ ] Not a Staff/Principal role (3–6 yrs expected)
 - [ ] Compensation ≥ CHF 110k (CH) / €80k (DE) / €70k (bridge)

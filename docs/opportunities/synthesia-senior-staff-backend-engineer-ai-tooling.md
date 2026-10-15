@@ -93,7 +93,7 @@ defensible as volume; expect a relevance/readiness rejection and record it.
 - Feedback request: **not sent.** §3 prescribes the one feedback request only after a *recruiter-screen*
   rejection; this never reached screening
 - **§7 rules 1–3 not triggered.** Rule 1 covers outreach (not ATS) and needs 3 active weeks; rule 2 requires
-  a screen; rule 3 needs week 6
+  a screen; rule 3 needs six active ATS weeks
 - Recorded cause of the deliberate long-shot (predicted **before** applying, not derived from the refusal):
   **two hard filters fired explicitly in the JD** — `(Senior or Staff)` asking **7+ years as a software
   engineer** (2–3 at senior/staff) against ~4 evidenced, and a **Python implementation exercise** against an

@@ -1,18 +1,16 @@
 # Resume state — read this first
 
-**Paused 2026-09-14 → 2026-09-23 inclusive. Resume 2026-09-24 (Thursday).**
-
-No outreach, applications, follow-ups, or project work during the pause. Nothing is waiting on Vincent
-that cannot wait until 09-24; this file exists so the next session starts cold with correct state.
+**As of 2026-10-15.** Search active; the 2026-09-14 → 2026-09-23 pause is over. Lane allocation since
+2026-10-09: France-anchored 70% · Web3 infrastructure 20% · Berlin 10%.
 
 ## Where the plan is
 | Item | State |
 |---|---|
-| 12-week plan | Week 1 complete; **Week 2 starts 2026-09-24** (whole plan shifted +10 days, 2026-09-14) |
+| Plan | `docs/search-plan.md` — no week-by-week schedule and no project milestones (2026-10-15); the evidence work runs in dependency order, at its own pace |
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
-| Evidence project | `~/projects/ml-platform-on-k8s` — Week 1 exit check passes on the cluster; no remote yet |
+| Evidence project | `~/projects/ml-platform-on-k8s` — the pipeline runs on the cluster and writes a model artifact; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | **37 issues: 26 open, 11 closed.** Open: #1 Cohere (FR), #4 ablefy, #5 vCluster, #7 Sinch, #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE), #30 Atlantic venture (DE, Tier A), #31 Annapurna/unnamed AI+health (DE, Tier B), #32 Runware (EU-remote, Tier A), #33 SpotMe (EU-remote, Tier C, bridge), #34 MLabs/unnamed fintech-connectivity (EU-remote, Tier C, bridge), #35 Lifen (FR-bridge, Tier B), #36 MAIA (DE, long-shot — fails residency + band floor), #37 Redcare Pharmacy (DE, Tier B — probable residency gate, Azure core gap), **#38 Eye Security (NL, Tier B — the one JD asking for shipped LLM work; 6+ yrs and The Hague hybrid)**. Closed: #3 vivenu, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX) — **all eleven `reason:unknown`** |
+| Pipeline | **42 issues: 28 open, 14 closed.** Open: #1 Cohere (FR), #5 vCluster, #7 Sinch, #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE), #30 Atlantic venture (DE, Tier A), #31 Annapurna/unnamed AI+health (DE, Tier B), #32 Runware (EU-remote, Tier A), #33 SpotMe (EU-remote, Tier C, bridge), #34 MLabs/unnamed fintech-connectivity (EU-remote, Tier C, bridge), #35 Lifen (FR-bridge, Tier B), #37 Redcare Pharmacy (DE, Tier B — probable residency gate, Azure core gap), **#38 Eye Security (NL, Tier B — the one JD asking for shipped LLM work; 6+ yrs and The Hague hybrid)**, #39 Camunda (EU-remote, Tier B, ai), #40 VERBI Software (DE, Tier C, bridge), #41 Yuno (EU-remote, Tier B — Staff title), #42 MOTOR Ai (DE, Tier B, hybrid). Closed: #3 vivenu, #4 ablefy, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX), #36 MAIA, **#43 Voyage Privé** — **all fourteen `reason:unknown`, thirteen of them pre-screen** |
 
 ### ⚠️ Priority change — 2026-10-09: France first, Web3 close behind, JD language mandatory
 
@@ -148,6 +146,46 @@ it proceeds, the band was right. **Note the open ambiguity:** whether that figur
 (if total with a ~10% variable, base ≈€86k).
 
 ---
+
+## Updated 2026-10-15
+
+### Voyage Privé #43 closed — refused, `reason:unknown`, 1 business day
+
+Applied 2026-10-13 (LinkedIn ATS; French permanent, full remote or Aix-en-Provence). Negative answer
+2026-10-15, no reason given. Board Stage → **Closed**, label `reason:unknown`, issue closed. No follow-up was
+sent and none was owed — both windows were still open. Doc:
+`docs/opportunities/voyage-prive-senior-devops-sre.md`.
+
+- **The cleanest admissibility pass in the pipeline, refused anyway.** JD in English, full remote from France
+  or Aix-en-Provence, SRE work and not a software role, senior IC with "no minimum tenure is required". No
+  hard filter was even contested, so this refusal cannot be charged to role selection, language or location.
+- **Both candidate causes were on record before applying:** no compensation band published (France floor
+  €80k, and "no minimum tenure" roles tend to anchor lower) and a weak AI link (Tier C — platform reliability
+  with no ML surface). A one-business-day refusal names neither, so the label stays `unknown`. There is no
+  basis for promoting a guess to a classification.
+- **Speed:** 1 business day — a screen-out, second only to Synthesia #16's same-day refusal (Doctolib #6 took
+  two). Every fast refusal in this pipeline has been pre-screen and unclassified.
+- **The first closure of a row applied under the France-first allocation.** It does not disturb the French
+  lane's arithmetic: no French row has reached a screen yet, so France-first is still untested rather than
+  disproven.
+
+### ⚠️ Fourteen closed, fourteen `unknown` — the classification pile is still the defect
+
+The counts moved, the diagnosis did not. 14 of 14 closures carry `reason:unknown`, 13 of them closed
+pre-screen; MarvelX #21 is still the only closure that reached a live screening step. §7's rules 2 and 4 —
+classify the refusal, then test the correction — have had nothing to operate on all pipeline long.
+
+Asking for a reason is only possible where a person replied: #13 Bubblemaps (recruiter lane, technical
+interview done) and #21 MarvelX (ATS, screened) are the only two rows that ever had a human on the other end.
+Voyage Privé was an ATS application and returned a one-line refusal naming nothing. The outreach lane, where
+the rejecting human is identifiable by name, was still at zero as of 2026-10-09.
+
+Two candidate actions, for Vincent to rule on:
+1. **Ask on the next refusal.** One line back to the ATS contact or recruiter — "was there a specific gap?" —
+   no chaser, no second ask. One real reason is worth more than fourteen blanks.
+2. **Stop counting `unknown` closures as funnel evidence.** 14 unclassified refusals are 14 rows of noise in
+   the lane arithmetic, and they keep the France lane reading as untested when it has in fact produced one
+   application and one refusal.
 
 ## Updated 2026-10-09
 
@@ -330,7 +368,7 @@ Two consequences for the Friday review:
    the roles actually being applied for, so it will decide a screen before the ML-platform evidence does.
 2. **The two excluded claims are the binding constraints of the whole search**, and both are closer to closure
    than the ML-lifecycle evidence: a bounded AWS workload (the free tier plus one deployed service) and real
-   Python tooling would clear them faster than week-6 ML-platform work. Raise this explicitly rather than
+   Python tooling would clear them faster than ML-platform work. Raise this explicitly rather than
    letting a fourth week pass with the same two gaps.
 
 ### SpotMe #33 applied — a `bridge` row that is strong on infrastructure and weak on code authorship (2026-10-09)
@@ -391,7 +429,7 @@ serverless GPUs, bare-metal capacity on hardware they build themselves). `market
 - **Two gaps decide the outcome:** **"write software and automation using Python, Go or PHP" is a must-have
   and an excluded claim** (operational scripting only) — the single most likely reason this one ends; and
   **SLO/error-budget ownership is excluded** (incident management, capacity planning and toil reduction are
-  defensible; an owned SLI/SLO programme is not, and is targeted by `ml-platform-on-k8s` at week 6).
+  defensible; an owned SLI/SLO programme is not, and is targeted by `ml-platform-on-k8s`).
 - **Compensation unpublished**; a $50M Series A (Dec 2025, Dawn Capital) makes the €80k floor plausible but
   unverified. Stock options. Ask.
 - **Informative row if it fails:** geography is already settled favourably, so a rejection here cannot be a
@@ -645,7 +683,7 @@ days later; no reason given. Board Stage → Closed.
 - **No open Tier A role.** Primary lane is now **#9 SAP Fioneer (Tier B)** alone; #11 is closed.
 - **Live process: #13 Bubblemaps** — technical interview **2026-10-06**, recruiter lane, Tier C, €70k floor
   exception (labelled). Prep notes added to `docs/opportunities/bubblemaps-sre-data-engineer.md`.
-- **§7 rule 3 (zero technical interviews by week 6) is not at risk** — Bubblemaps reaches a technical round in
+- **§7 rule 3 (zero technical interviews after six active ATS weeks) is not at risk** — Bubblemaps reaches a technical round in
   week 3. Rule 2 needs four active weeks and classified reasons, so it stays inert.
 - **Ten closed rows, ten `unknown`, nine pre-screen** (MarvelX the only one that reached a screening step).
 
@@ -910,7 +948,7 @@ resolved correctly via GraphQL — trust the `node(id)` readback, which `log_app
   Staff title + 8 years demanded against four evidenced, and no ML-platform surface. Logged as a deliberate
   long-shot on 2026-09-26. The refusal is the cost of the long-shot.
 - **§7 rules 1–3 NOT triggered.** Rule 1 covers outreach, not ATS, and needs three active weeks; rule 2
-  requires a screen (never reached); rule 3 needs week 6. No strategy change warranted.
+  requires a screen (never reached); rule 3 needs six active ATS weeks. No strategy change warranted.
 - Follow-ups: none owed (refusal arrived 9 days before the first window).
 - Doctolib SRE/Platform postings: **do not re-apply** for the primary lane — low-yield read now reinforced.
 - **Rejection tally: 2 of 2 closed opportunities are `unknown`** (Doctolib + vivenu). Watch this: if every
@@ -974,7 +1012,7 @@ Applied and refused **the same day** (2026-09-29). No reason given → `unknown`
 engineer** against ~4 evidenced, and a **Python implementation stage** against an evidence boundary that
 excludes production Python claims. Comp (€130k base + RSUs) and remote-from-France both passed.
 
-**§7 rules 1–3 not triggered** (no screen; week 2; ATS not outreach). No strategy change.
+**§7 rules 1–3 not triggered** (no screen; three active ATS weeks not yet reached; ATS not outreach). No strategy change.
 
 ### ⚠️ Three closed, three `unknown` — the funnel is now uninformative
 
@@ -1081,11 +1119,10 @@ band before touching the floor (§7 rule 4 in spirit).
 1. **Send the two remaining final follow-ups** — issues #1 and #4 (see above).
 2. **Publish the evidence repo** — `gh repo create alchimestre/ml-platform-on-k8s --public --source . --push`
    from `~/projects/ml-platform-on-k8s`, then link it from CV header and LinkedIn Featured.
-   Week 2 expects "first meaningful commit public and linked from the assets".
-3. **Start Week 2 build** — `brew install helm` (still missing), then MLflow registry + FastAPI serving
+3. **Start the build** — `brew install helm` (still missing), then MLflow registry + FastAPI serving
    per `~/projects/ml-platform-on-k8s/ROADMAP.md`.
 
-## Open inputs carried into the pause
+## Open inputs
 
 - **Customer-facing evidence** — asked 2026-09-11, still unanswered. Now gates the Solutions Engineer /
   FDE option (`CONTEXT.md`) as well as the capped FDE lane. Highest-value thing to unblock at leisure.
@@ -1098,6 +1135,6 @@ band before touching the floor (§7 rule 4 in spirit).
 
 ## What did not change
 
-Lane split (EU-remote/FR 50 · Berlin 35 · CH 15), compensation floors, the income cliff deadlines
+Compensation floors, the income cliff deadlines
 (employment start ≤ 2027-06-01 target / 2027-06-15 absolute), and every hard filter in §2 of
-`docs/12-week-strategy.md`. The pause costs 10 days of pipeline time, not a change of strategy.
+`docs/search-plan.md`. Lane split since 2026-10-09: France 70 · Web3 20 · Berlin 10.

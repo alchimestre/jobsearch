@@ -70,7 +70,7 @@ floor roughly 10% above the binding floor, or a single number.
 **Nice-to-haves:** major cloud providers (AWS/EKS, GCP/GKE) — ✅ GCP multi-zone, ⚠️ **AWS absent** (managed
 K8s specifically unproven); **Argo CD / GitOps** — ✅ Argo CD `used`, **Flux `deployed`**; **Python, Go or
 similar for scripts and automation** — ✅ operational scripting is in bounds (application authorship is not);
-**SLOs and alerting frameworks** — ⚠️ **excluded claim**, targeted by `ml-platform-on-k8s` at week 6.
+**SLOs and alerting frameworks** — ⚠️ **excluded claim**, targeted by `ml-platform-on-k8s`.
 
 ## Risks
 

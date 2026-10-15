@@ -8,9 +8,9 @@ knowledge, and the systems underneath. Team meets in **Leipzig**. `⚠️ [INFER
 `prodlane-maia` and the JD's framing overlaps the agentic-enterprise-data platform at `maia.ai`, but the two
 were not confirmed as the same entity — **do not repeat company facts from that site as if verified.**
 **Market:** **DE** · **Tier:** **B** (upper end; see note) · **Channel:** ATS (LinkedIn) · **Track:** `ai`
-**Applied:** ✅ **2026-10-09** · **Stage:** Contacted · **Issue:** #36
+**Applied:** ✅ **2026-10-09** · **Closed:** ❌ **2026-10-12** (negative answer, **no reason given**) · **Issue:** #36
 **Compensation:** **€75,000 – €85,000 published** (LinkedIn "MAIA provided pay range"), plus **VSOP**.
-**Follow-ups:** **none owed** — see the verdict below.
+**Follow-ups:** **none owed, none sent** — see the verdict below.
 
 ## Verdict: fails two hard filters → recorded as a deliberate long-shot
 
@@ -105,25 +105,27 @@ of tier B.
 ## Timeline
 
 - Contacted / applied: **2026-10-09** (LinkedIn)
-- **Follow-ups: none owed** — the posting states applications from outside Germany cannot be considered, so a
-  follow-up would only restate the exclusion. If a reply arrives, treat it as upside
-- Screen date: —
-- Interview dates: —
-- Outcome: pending (expected: no response)
+- **Follow-ups: none owed, none sent** — the posting states applications from outside Germany cannot be
+  considered, so a follow-up would only restate the exclusion
+- Screen date: — · Interview dates: —
+- Outcome: **2026-10-12 — negative answer, no reason given** (1 business day after applying)
 
 ## Outcome record
 
-- Stage reached: Contacted
-- Salary: **€75,000–€85,000 published** (floor at the band's midpoint)
-- Rejection reason (relevance / readiness / compensation / location / unknown): **`location` is the predicted
-  one** — but note the label is applied only on an actual rejection, and a silent no-response stays `unknown`
-- **Watch:** this is the first row where the predicted reason is known in advance and is **not** a judgement
-  about the candidate. If it closes, record it as `location` **only if the employer says so** — a silent
-  application that fails a residency gate is exactly the kind of row that pollutes the `unknown` pile
+- Stage reached: **closed at Contacted, never screened** (LinkedIn application 2026-10-09 → negative answer
+  2026-10-12)
+- Board Stage: **Closed** (was Contacted; set 2026-10-12)
+- Rejection reason: **`unknown`** — no reason given. **Predicted:** the location/residency gate (the posting
+  excludes candidates outside Germany), **but per this doc's own rule the label is applied only if the
+  employer says so**, and no reason was stated. Recorded as `unknown`
+- Duration: **1 business day** — a near-instant refusal, consistent with a mechanical residency-screen
+  rejection rather than a human review of the application
+- Follow-ups: **none sent, none owed**
 - What would have changed the outcome: the same role posted as EU-remote, or with relocation support
+- Next action: **closed.** No further contact. Issue #36 closed with `reason:unknown`.
 
 ## Funnel delta
 
 Applications sent +1 (2026-10-09) · **DE lane** · `tier:b` · `track:ai` · **fails the residency filter and the
-bottom of the compensation band** → deliberate long-shot, recorded so the funnel stays interpretable. Fifth
-application logged today.
+bottom of the compensation band** → deliberate long-shot, recorded so the funnel stays interpretable. Closes as
+a pre-screen refusal (`reason:unknown`) 1 business day after applying.

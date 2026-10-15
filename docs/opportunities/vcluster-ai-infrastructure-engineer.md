@@ -51,7 +51,7 @@ that destination (`CONTEXT.md` Destination Hierarchy §4).
 | CSI drivers / persistent volume depth | ❌ none recorded |
 | Distributed storage (Ceph/Rook/Weka/Longhorn) | ⚠️ Ceph used, depth unknown |
 | 5+ years production Kubernetes | ⚠️ 4 years (Dec 2021 – Jan 2026 continuous) |
-| Inference serving, GPU scheduling, LLM deployment | ❌ none (the week-6 artifact targets serving, no GPU) |
+| Inference serving, GPU scheduling, LLM deployment | ❌ none (the artifact targets serving, no GPU) |
 
 **The honest read:** this is a GPU-infrastructure role, and the candidate's GPU evidence is one line on a
 CV. `CONTEXT.md` explicitly excludes GPU fleet operations and the vendor tier from the primary lane for

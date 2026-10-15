@@ -20,7 +20,7 @@ Three things separate it from vivenu (#3, closed) and ablefy (#4):
    dependencies, incident response under load — the exact constraints named in the Kiln and Cometh evidence.
    The stack (GCP, Terraform, Ansible, Prometheus, Grafana, PostgreSQL/Cassandra/Elasticsearch, Kafka,
    Python/Bash scripting) overlaps almost entirely with the tooling inventory. SLO definition and tracking is
-   a stated responsibility, which is the week-6 evidence gap being closed by `ml-platform-on-k8s`.
+   a stated responsibility, which is the evidence gap being closed by `ml-platform-on-k8s`.
 
 ## Why it is still Tier C
 

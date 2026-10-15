@@ -54,7 +54,7 @@ the only hedge worth keeping — it buys a range without sounding uncertain.
 > **Observability:** Prometheus · Grafana · OpenTelemetry · ELK · Loki · Datadog · Jaeger · Thanos
 > **Data & messaging:** PostgreSQL · MongoDB · Elasticsearch · Redis · GCP Pub/Sub
 
-**Do not upgrade Python/Go to production-language claims** until the week-6 `ml-platform-on-k8s`
+**Do not upgrade Python/Go to production-language claims** until the `ml-platform-on-k8s`
 artifact makes it true (`CONTEXT.md` Evidence Boundaries).
 
 ### Optional location line — only if the form asks

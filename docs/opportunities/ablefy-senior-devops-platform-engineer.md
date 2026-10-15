@@ -4,7 +4,8 @@
 **Apply:** https://ablefy.breezy.hr/p/965c88de606d01-senior-devops-platform-engineer-f-m-x/apply
 **Company:** ablefy (ablefy.io) — #1 course/creator platform in DACH, Berlin office, 2015-founded
 **Market:** DE (role open across Germany; hybrid or fully remote **within Germany**) · **Tier:** c (platform/SRE bridge, weak AI link) · **Channel:** ATS (Breezy HR)
-**Applied:** ✅ 2026-09-11 (Breezy HR ATS) · **Follow-up 1 due:** 2026-09-18 · **Follow-up 2 due:** 2026-09-25 (final)
+**Applied:** ✅ 2026-09-11 (Breezy HR ATS) · **Closed:** ❌ **2026-10-12** (negative answer, **no reason given**)
+**Follow-ups:** 1st due 2026-09-18 · 2nd due 2026-09-25 (final) — **neither sent**
 
 ## Hard-filter checklist (§2)
 
@@ -116,19 +117,25 @@ Copy-paste files: `docs/opportunities/ablefy/ablefy-q2.txt` (full) · `docs/oppo
 ## Timeline
 
 - Applied: ✅ 2026-09-11 (Breezy HR ATS)
-- Follow-up 1 due: 2026-09-18 (5 business days)
-- Follow-up 2 due: 2026-09-25 (10 business days, final)
+- Follow-up 1 due: 2026-09-18 — **not sent**
+- Follow-up 2 due: 2026-09-25 — **not sent**
 - Screen date: —
-- Outcome: —
+- Outcome: **2026-10-12 — negative answer, no reason given** (~21 business days after applying)
 
 ## Outcome record
 
-- Stage reached: **applied** (Breezy HR ATS, 2026-09-11)
-- Board Stage: Contacted — move to Screening on recruiter reply
+- Stage reached: **closed at Contacted, never screened** (Breezy HR ATS application 2026-09-11 → negative
+  answer 2026-10-12)
+- Board Stage: **Closed** (was Contacted; set 2026-10-12)
 - Submitted with: 164-word cover letter, prose Q2, salary €90,000/year
-- Rejection reason: —
-- What would have changed the outcome: —
-- Next action: Follow-up 1 on 2026-09-18 if no reply. Ask the five recruiter-screen questions above before any screen, starting with the France-eligibility question.
+- Rejection reason: **`unknown`** — no reason given. **Predicted:** the location gate (the role is open across
+  Germany; France was never confirmed as eligible) and/or **readiness/relevance** (AWS depth was the stated
+  gap). Neither was stated, so the label is `unknown`, not a guess.
+- Duration: **~21 business days** — a slow refusal (silence-close or a late reply), unlike MAIA's 1-day screen
+  rejection
+- Follow-ups: **none sent** — both windows passed during the pause without a message
+- What would have changed the outcome: an answer on France eligibility, and a closer cloud match
+- Next action: **closed.** No further contact. Issue #4 closed with `reason:unknown`.
 
 ## Notes
 

@@ -59,7 +59,7 @@ in scope by amendment — not because the process is expected to convert.
 | Cloud: **AWS preferred**, Azure/GCP a plus | ⚠️ **GCP-first**; AWS adjacent (multi-cloud work); Azure adjacent. Not an AWS-primary CV |
 | CI/CD: Jenkins, GitLab CI, GitHub Actions, ArgoCD | ✅ **GitHub Actions + Drone CI**, GitOps (Flux, Argo CD) |
 | IaC: Terraform, Ansible, Pulumi | ✅ **Terraform** (multi-environment), Helm |
-| Scripting: Python, Bash, Go | ⚠️ Bash strong; **Python/Go remain operational, not production claims** (`CONTEXT.md` Evidence Boundaries, week-6 artifact pending) |
+| Scripting: Python, Bash, Go | ⚠️ Bash strong; **Python/Go remain operational, not production claims** (`CONTEXT.md` Evidence Boundaries, artifact pending) |
 | Docker / Kubernetes / orchestration | ✅ core claim, incl. on-prem bare metal |
 | Security hardening, secrets, encryption, access controls | ✅ **strong match** — Vault, SOPS, External Secrets, Teleport, Kyverno, Cilium |
 | Monitoring/logging/alerting: Prometheus, Grafana, ELK, CloudWatch | ✅ **named-match list** incl. OpenTelemetry, Loki, Jaeger, Thanos |

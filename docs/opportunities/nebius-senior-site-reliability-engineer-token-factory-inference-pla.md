@@ -42,7 +42,7 @@ Nebius **#18 (ML Infrastructure Engineer, `8488b7965d684a86`)** was applied the 
   (2026-10-06 → 2026-10-08) before drawing any conclusion. If #18 closes `unknown` too, the pattern is
   "Nebius triages fast and silently", which is a targeting finding, not a per-role one.
 
-## Hard-filter checklist (from `docs/12-week-strategy.md` §2) — never assessed
+## Hard-filter checklist (from `docs/search-plan.md` §2) — never assessed
 
 - [ ] Not a Staff/Principal role (3–6 yrs expected)
 - [ ] Compensation ≥ CHF 110k (CH) / €80k (DE) / €70k (bridge)

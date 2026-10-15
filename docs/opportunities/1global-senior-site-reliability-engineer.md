@@ -45,7 +45,7 @@ bespoke vacancy IDs), so there is **no jobradar-adoptable ATS board** — unlike
 | Networking fundamentals (routing, LB, BGP, DNS, VXLAN) | ⚠️ partial, as above |
 
 **Nice-to-haves:** telecom/carrier-grade ❌ new domain · chaos engineering ⚠️ fault injection not yet evidenced
-(the week-6 artifact drills are the closest) · capacity planning and traffic engineering ✅ · reliability
+(the artifact drills are the closest) · capacity planning and traffic engineering ✅ · reliability
 dashboards ✅ · **ISO 27001 / NIST SP 800-53 ✅** — Vincent led the ISO 27001 implementation at Cometh.
 
 ## Why it was worth applying despite the verdict

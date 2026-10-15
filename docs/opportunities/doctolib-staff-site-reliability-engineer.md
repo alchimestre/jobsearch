@@ -47,7 +47,7 @@ exactly why applying was a long-shot rather than a targeting error.
 - Follow-ups: **none sent, none now owed.** The refusal arrived 9 days before the first follow-up window (2026-10-05)
 - What would have changed the outcome: **not derivable**, and — more importantly — **not worth deriving.** Both hard-reject filters were explicit in the JD before applying: Staff title + 8+ years against 4 evidenced, and no ML-platform surface. This was logged as a deliberate long-shot at application time, so the refusal is the expected cost of the long-shot, not new information about targeting
 - Feedback request: **not sent.** §3 prescribes the one feedback request only *after a recruiter-screen rejection*; this never reached screening, so it is out of scope
-- **§7 rules 1–3 are not triggered.** Rule 1 covers outreach (not ATS) and needs 3 active weeks; rule 2 requires a screen; rule 3 needs week 6. A 2-day ATS rejection on a known long-shot is noise, not a signal
+- **§7 rules 1–3 are not triggered.** Rule 1 covers outreach (not ATS) and needs 3 active weeks; rule 2 requires a screen; rule 3 needs six active ATS weeks. A 2-day ATS rejection on a known long-shot is noise, not a signal
 - Next action: **closed.** No further contact. Removal from the follow-up queue
 
 ## Funnel delta
