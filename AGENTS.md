@@ -23,6 +23,39 @@ Internal notes and strategy docs are a separate register and may be explanatory.
 human who already has the CV. Write them as prose: outcomes, ownership, the one or two things only
 Vincent can say. Never enumerate tools — `docs/writing-style.md` has the before/after table.
 
+## Personas (binding)
+
+Load the matching persona with `skill://<name>` before the task. They live in `~/.omp/agent/skills/`.
+
+**Search side**
+
+| Task | Persona |
+|---|---|
+| CV edit, ATS keyword pass, gap framing | `agency-resume-tailor` |
+| The recruiter's read of the CV and the screen | `agency-recruitment-specialist` |
+| Outreach message, sequencing, the ask | `agency-sales-outreach` |
+| Funnel conversion, cohort arithmetic (§6, §7) | `agency-pipeline-analyst` |
+
+**Interview side**
+
+| Task | Persona |
+|---|---|
+| SRE round | `agency-sre-site-reliability-engineer` |
+| Platform round | `agency-platform-engineer` |
+| Incident stories (`docs/interview-incident-stories.md`) | `agency-incident-responder` |
+| Cost, capacity, unit economics | `agency-finops-engineer` |
+| LLM serving, pipelines, model operations | `agency-llm-post-training-engineer`, `agency-rag-pipeline-engineer` |
+
+**Destination side**
+
+| Task | Persona |
+|---|---|
+| French contract norms, ESN names, local bands | `agency-french-consulting-market-navigator` |
+| Outcome negotiation, offer terms | `agency-deal-strategist` |
+
+No persona covers the candidate-side application funnel — boards, ATS rejection rates and lane arithmetic
+stay this repo's own (`docs/channel-playbook.md`, plan §6 and §7).
+
 ## Repo conventions
 
 - Read `CONTEXT.md` first (canonical terms, evidence boundaries, compensation floors).
