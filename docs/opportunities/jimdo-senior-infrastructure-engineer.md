@@ -64,7 +64,8 @@ and pursued as a Tier C bridge; the refusal closes it with neither caveat resolv
 
 ## Timeline
 
-- Contacted / applied: **date not recorded** (LinkedIn ATS)
+- Contacted / applied: **date not recorded** (LinkedIn ATS) — the full row is in LinkedIn → My Jobs → Applied if
+  the date ever matters for speed arithmetic
 - Follow-up 1 due (5–7 business days): **never scheduled** — the refusal arrived before it
 - Follow-up 2 due (10–14 business days): **never scheduled**
 - Screen date: — · Interview dates: — · Outcome: **2026-10-15 — negative answer, no reason given**
