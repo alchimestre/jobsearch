@@ -71,8 +71,8 @@ stay this repo's own (`docs/channel-playbook.md`, plan §6 and §7).
 ## Sourcing roles
 
 `docs/channel-playbook.md` is the source stack. `tools/jobradar` is the polling tool, part of this repo:
-167 employer ATS boards across 12 platforms plus 21 multi-employer boards and feeds, one ranked SQLite/TUI
-queue.
+167 employer ATS boards across 12 platforms plus 20 multi-employer feeds — 174 sources polled, the rest
+muted. One ranked SQLite/TUI queue.
 
 - Discovery runs through it: `cd tools/jobradar && uv run jobradar scan`, then `jobradar tui`, or
   `jobradar list --decision high`. It auto-adopts any ATS board it sees in a feed's job URL.

@@ -122,7 +122,7 @@ analysis, and application answers are deliberately left unwritten.
 ```bash
 cd tools/jobradar
 uv sync
-uv run jobradar scan                 # 166 boards + 24 feeds, fetched in parallel (--jobs N)
+uv run jobradar scan                 # 174 sources, fetched in parallel (--jobs N)
 uv run jobradar tui                  # ranked, deduped queue
 uv run jobradar discover "NewCo" --write      # name or any careers URL
 uv run jobradar export --since 7d --decision high

@@ -14,7 +14,7 @@ Private repo for Vincent Loupmon's AI Infrastructure job search and training pla
 | `research/` | Market and hiring-evidence research (Zurich/Berlin employers; 28-JD benchmark). |
 | `.scratch/ai-infrastructure-job-search/` | Wayfinder decision log — `map.md` (status: complete) and decision tickets 01–10. History, not live tracking. |
 | `docs/channel-playbook.md` | How the pipeline gets fed: source stack (ATS + machine-readable feeds), LinkedIn saved-search config, weekly discovery cadence. **Read before sourcing roles.** |
-| `tools/jobradar` | The polling tool, in this repo. Aggregates 167 employer ATS boards across 12 platforms, plus 21 multi-employer boards and feeds, into one ranked SQLite/TUI queue. `jobradar export` feeds this repo's tracker. |
+| `tools/jobradar` | The polling tool, in this repo. Aggregates 167 employer ATS boards across 12 platforms, plus 20 multi-employer feeds — 174 sources polled — into one ranked SQLite/TUI queue. `jobradar export` feeds this repo's tracker. |
 | `CONTEXT.md` | Canonical terms: positioning thesis, differentiators, evidence boundaries, compensation floors. |
 | `.github/ISSUE_TEMPLATE/` | Templates: `opportunity` (per-role), `weekly-review`. |
 
