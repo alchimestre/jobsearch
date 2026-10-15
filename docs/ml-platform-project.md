@@ -5,7 +5,7 @@ Closes the same gaps as the old plan — Python, SLO/error-budget methodology �
 evidence that ML platform / MLOps job descriptions screen on, while reusing the proven strengths
 (Kubernetes, Helm, Terraform-class IaC, Prometheus/Grafana/OTel, CI/CD, cost-aware operations).
 
-**Status:** spec, not yet built. Target: complete by week 6.
+**Status:** spec, not yet built. No target date: built at its own pace, in the dependency order in `docs/search-plan.md` §5.
 
 ---
 
@@ -56,10 +56,10 @@ the README and in interviews.
 | Pipeline | **Argo Workflows** if the k8s-CRD learning is worth it; otherwise a Python orchestrator creating `Job`s | Kubeflow Pipelines is the canonical keyword but is heavy for one node and eats the time budget; Argo is k8s-native and still real orchestration |
 | Registry | **MLflow** (tracking server + registry), artifacts on a PVC or MinIO | Canonical, easy, and the registry/stage concept is exactly what MLOps JDs ask about |
 | Serving | **FastAPI** in a small image, Helm-deployed, `/predict`, `/metrics`, `/healthz` | KServe/TorchServe add operators and moving parts; the reliability work is the point, not the serving framework |
-| Rollout | Kubernetes rolling update + explicit rollback drill; **Argo Rollouts** only if time allows | Canary is a nice keyword, not worth the week it costs here |
+| Rollout | Kubernetes rolling update + explicit rollback drill; **Argo Rollouts** only if time allows | Canary is a nice keyword, not worth the time it costs here |
 | Monitoring | Prometheus + Grafana + Alertmanager (already in the proven stack); drift via PSI/KS as a gauge | No new observability vendor |
 | CD | GitHub Actions build/test → **Argo CD** (or Flux) sync of the Helm chart | Evidences GitOps, which the CV already claims |
-| Model/data | Small public tabular dataset (e.g. a UCI set) + scikit-learn model | CPU-only, fast retrains, no GPU dependency. Optional: swap in a tiny transformer if an LLM-flavoured artifact is wanted — decide at week 5, not before |
+| Model/data | Small public tabular dataset (e.g. a UCI set) + scikit-learn model | CPU-only, fast retrains, no GPU dependency. Optional: swap in a tiny transformer if an LLM-flavoured artifact is wanted — decide later, not now |
 
 ### Optional GPU (honesty support only)
 
@@ -82,9 +82,11 @@ runbook is updated. That policy is the SLO *evidence* — write it down, don't j
 
 ---
 
-## 4. Week plan (mirrors strategy §5)
+## 4. Build order
 
-| Week | Deliverable | Done when |
+No dates, no milestones. The dependency decides the order: each row is complete before the next is needed.
+
+| # | Deliverable | Done when |
 |---|---|---|
 | 1 | Repo, README, architecture, OrbStack cluster, first containerised training step | A training job runs on the cluster and writes a model artifact |
 | 2 | MLflow registry + end-to-end serving | A trained model is registered, served, and answering requests |
@@ -93,8 +95,7 @@ runbook is updated. That policy is the SLO *evidence* — write it down, don't j
 | 5 | Failure drills + runbook | Failed step, bad-version rollback, unhealthy replica each recovered and recorded |
 | 6 | Complete package + README landing page | A reviewer clones and reproduces the whole path from the README alone |
 
-Overrun rule: see strategy §7 rule 5 — slip more than a week and 10% of weekly time moves from search to
-training until recovered. Do not extend the artifact into weeks 7–12; Go and search own that window.
+Go follows row 6, and only while the search is on track with no offer imminent (`docs/search-plan.md` §5).
 
 ---
 
@@ -112,6 +113,6 @@ training until recovered. Do not extend the artifact into weeks 7–12; Go and s
 
 1. The repo is described as a **lab/learning platform**. No "production", no "at scale", no invented users.
 2. Numbers that go on the CV must exist in `docs/evidence.md` with the command or screenshot that produced them.
-3. Until week 6 completes: CV/LinkedIn may say nothing about it, or `currently building` — never more.
+3. Until the artifact is complete: CV/LinkedIn may say nothing about it, or `currently building` — never more.
 4. `GPU exposure` stays as-is unless the optional GPU run happens.
 5. Python and SLO/error-budget claims are switched from `in progress` to plain only when the repo proves them.

@@ -1,4 +1,4 @@
-# Integrated 12-Week AI Infrastructure Job Search Strategy
+# AI Infrastructure Job Search — Operating Plan
 
 **Status:** Approved 2026-09-09 by Vincent. This is the operating plan for execution. Source: branch `prototype/integrated-strategy` at commit `d2fd804` (wayfinder ticket 10). It integrates decision tickets 01–09; it plans execution and does not itself execute applications, outreach, coursework, or profile changes.
 
@@ -6,21 +6,27 @@
 
 **Amendment 2026-09-13:** Australia becomes **remote-only** (no visa-sponsorship or on-site relocation route); `Solutions Engineer` / forward-deployed infrastructure added to the target titles as a credible secondary option, admitted only where engineering and product dogfooding remain the foundation of the work.
 
-**Amendment 2026-09-14 (pause):** Vincent is unavailable 2026-09-14 → 2026-09-23 inclusive. The search is **paused**, not abandoned: no outreach, no applications, no follow-ups, no project work in that window. The whole 12-week plan shifts **+10 days**, so Week 2 begins **2026-09-24** and the week numbering stays aligned to calendar dates (every `Week N` reference in §5 moves 10 days later). The mode timeline in §10 does **not** shift — late-cliff (~Feb 2027) and last-resort (~Apr 2027) are anchored to ARE exhaustion, not to week numbers, so the 12 weeks simply compress slightly against the cliff. Rules 1–3 in §7 count **active** weeks only; the pause does not count toward their denominators. Live follow-ups originally due 2026-09-18 / 2026-09-25 (issues #1, #3, #4) move to the week of 2026-09-24.
-
 **Amendment 2026-09-29 (scope widening):** Vincent's instruction — Web3 companies are in scope, ML/LLM work stays preferred but **non-blocking**, and the return to work should be **as early as possible** rather than as late as the cliff allows. Changes: §2 admits a **Web3 infrastructure track** and deletes the crypto-continuity rejection; the ML requirement becomes a *preference* rather than a gate; §1 gains an earliest-start objective that ranks the fastest-to-income lanes first. No compensation floor, seniority filter, or cliff deadline changes.
+
+**Amendment 2026-10-09 (France first):** Vincent's instruction — France first, Web3 close behind. The lane allocation becomes **France-anchored 70% · Web3 infrastructure 20% · Berlin/Germany 10%**; Switzerland drops to opportunistic only; the job description must be written in English or French; software-engineering roles are excluded outright rather than ranked lower. Changes: §1 lanes, §2 filters, §3 target lists, §6 dashboard, §7 rule 5, §9.
+
+**Amendment 2026-10-15 (no project timeline):** Vincent's instruction — the self-study and project work is
+his own and carries **no timeline**: no week-by-week plan, no project milestones, no slip rules. §5 is replaced
+by an operating cadence with the evidence work ordered by dependence only; §4 loses its phase dates; §7 loses
+the project-milestone rule and counts **active application weeks** instead of calendar weeks; §8, §9 and §10
+lose their week anchors. Nothing else changes: the lane allocation, filters, floors, and cliff deadlines stand.
 
 ## 1. Objective and constraints
 
 **Objective:** Generate qualified interviews for mid-to-senior **ML Platform / MLOps engineering**, **AI platform engineering**, **SRE-on-ML-platform**, and **Web3 infrastructure** roles while producing credible evidence for the largest hiring gaps. **Return to work as early as achievable** — the 2027-06-01 target and the 2027-06-15 absolute are deadlines, not goals; any accepted offer that passes the filters is taken earlier, and where two opportunities are otherwise comparable the faster-to-income one wins.
 
-**Lanes (amended 2026-09-11):** EU-remote / France-compatible **50%** · Berlin **35%** · Switzerland **15%** (relationships and selective applications only). Switzerland is a 12–36 month objective, not a job-#1 market. Job #1 is optimised for income continuity and AI transition; physical relocation happens only on a signed offer, and may be deferred to a second move. See §10.
+**Lanes (amended 2026-10-09):** France-anchored **70%** — France-based roles and France-compatible remote roles (EU-remote able to employ in France, or remote-first Web3 roles) · **Web3 infrastructure 20%** · **Berlin/Germany 10%**. Switzerland is opportunistic only, a 12–36 month objective rather than a job-#1 market. Job #1 is optimised for income continuity and AI transition; physical relocation happens only on a signed offer, and may be deferred to a second move. See §10.
 
 **Destination hierarchy:** EU-remote/France-compatible (income + AI, no move) → Berlin (preferred first physical move; densest AI-funnel, no visa friction) → Switzerland (money + mountains/lakes + proximity to France; medium-term, rail-accessible cities; not Zurich-specific) → **Australia (added 2026-09-11; desired destination, employer-sponsored only — see below)**. A French-border (frontalier) arrangement is opportunistic only, not a lane. No hard anchors: fully mobile within the EU, income-constrained only.
 
 **Australia:** Vincent's stated preference is to move there, but his own assessment is that his profile does not clear the Australian points-based system, so an employer-sponsored role is the only realistic route — no immigration policy was researched this session; treat the visa detail as [INFERENCE] until verified. Australia therefore adds no search-lane allocation now: job #1 remains EU-remote/France-compatible because of the income cliff. The actionable move is to **target remote-first employers whose hiring footprint already includes Australia** (or who will sponsor), rather than to open an Australian lane. First concrete example: vCluster Labs, issue #5.
 
-**Available time:** 35 hours per week baseline, plus two push modes at ~45 h/week — weeks 1–4 (ramp) and the late-cliff window from ~Feb 2027. Sustained 45–50 h for the whole campaign is rejected: burnout over 10 months costs more than the extra hours buy.
+**Available time:** 35 hours per week baseline, plus two push modes at ~45 h/week — the opening ramp and the late-cliff window from ~Feb 2027. Sustained 45–50 h for the whole campaign is rejected: burnout over 10 months costs more than the extra hours buy.
 
 **Positioning (amended 2026-09-11, second amendment):** Production SRE moving into **ML platform / MLOps engineering**. Lead with Kubernetes, production reliability, distributed systems, observability, cost optimization, security-hardened environments, and infrastructure-to-architecture translation. Use `AI infrastructure` as the umbrella keyword and `ML platform` / `MLOps` as the specific lane. Do not claim direct production ownership of ML platforms, GPU fleets, training systems, serving systems, Python/Go software, SLO/error-budget programs, or datacenter fabrics before evidence exists.
 
@@ -75,14 +81,14 @@ Responsibilities override title: admit customer-facing roles only when engineeri
 
 ## 3. Search channels and baseline throughput
 
-Channel percentages apply to active search time. Target lists split by lane: **EU-remote/France-compatible 50%, Berlin 35%, Switzerland 15%** (CH = relationships + selective applications only).
+Channel percentages apply to active search time. Target lists split by lane: **France 70% (France-based and France-compatible remote), Web3 infrastructure 20%, Berlin 10%** (Switzerland = relationships only).
 
 - **60% hiring-manager/founder outreach:** EU-remote and France-compatible LinkedIn-first; Berlin LinkedIn-first; Swiss contacts email-first. Use the validated transition message from the evidence-package prototype.
 - **25% targeted ATS applications:** Only roles passing every hard filter. From late-cliff mode (~Feb 2027) the weekly cap is **removed** — apply to every role that clears the filters, never to roles that fail them.
 - **10% recruiter relationships:** Pre-qualify inbound contacts; proactively cultivate 3–5 in-house AI-infrastructure recruiting or talent contacts across target employers in both markets. External agency recruiters remain inbound/opportunistic only.
 - **5% public evidence and channel follow-up:** Link the project from CV, LinkedIn, and outreach as soon as the first meaningful commit exists.
 
-**Steady-state weekly throughput target from week 3:**
+**Steady-state weekly throughput target once the pipeline is running:**
 
 - 6–10 personalized hiring-manager/founder messages.
 - 2–4 filtered ATS applications.
@@ -113,7 +119,7 @@ No mass job-board applications. Agency recruiters, networking events, and unrela
 
 Build spec: `docs/ml-platform-project.md`.
 
-### Phase 1 evidence — Python (weeks 1–6)
+### Phase 1 evidence — Python
 
 - Training/retraining pipeline running on Kubernetes: Python, containerised steps, scheduled and on-demand runs.
 - Model registry with versions, stage transitions, and reproducible training artifacts (MLflow or equivalent).
@@ -129,153 +135,41 @@ Go stays conditional and is now **lower priority**: MLOps/ML-platform roles are 
 
 ### Positioned-away gaps
 
-Spend approximately four hours each across the 12 weeks on conceptual study only:
+Spend a few hours, once, on conceptual study only:
 
 - Distributed training: data/model parallelism, FSDP, Ray/Slurm basics.
 - GPU/HPC hardware: CUDA, NCCL, InfiniBand/RDMA at a conceptual level.
 
 Do not add these as CV claims or create separate portfolio artifacts. One optional bounded cloud-GPU run (≤ $20) may keep `GPU exposure` honest; it is not required and must not become an ongoing cost.
 
-## 5. Weekly operating plan
+## 5. Operating cadence and evidence work
 
-**Capacity modes (amended 2026-09-11):** 35 h/week baseline; push to ~45 h/week in weeks 1–4 and again from the late-cliff trigger (~Feb 2027) if no offer is signed.
+No week-by-week schedule, no project milestones, no dates on the evidence work. The search runs in repeating
+weekly cycles until an offer; the artifact moves at its own pace, in the order its dependencies set.
 
-**Go is conditional (amended 2026-09-11):** the Python artifact (week 6) is a fixed milestone and the admissibility gate. The Go port is started after week 6 **only if** the search is on track and no offer is imminent; otherwise those hours move to search, outreach, and applications. Go is now **lower priority than before** — the ML platform / MLOps lane is Python-first, and Go's market weight sits in vendor control-plane roles, which are the secondary lane. If paused, it resumes after an offer. Weeks 7–12 below still describe the full path for when the condition holds.
+**Capacity:** ~35 h/week baseline; ~45 h/week at the start and again from the late-cliff trigger (~Feb 2027) if
+no offer is signed. A sustained 45–50 h for months is rejected: burnout costs more than the extra hours buy.
 
-### Week 1 — Make the search legible; establish the project
+**Every cycle, in parallel:** the §3 throughput targets (6–10 outreach messages, 2–4 filtered ATS applications,
+1–2 recruiter relationships, all due follow-ups), the §7 Friday review, and the next piece of evidence work.
 
-**Allocation:** 7h search/assets, 24.5h training, 3.5h pipeline management.
+**Evidence work, in order of dependence — not a schedule:**
 
-- Apply the approved CV restructure: ML-platform transition title, defensible profile, 25% Cometh cost reduction, Helm bullets, and `GPU exposure` rather than `GPU Workloads`.
-- Apply the approved LinkedIn headline and About narrative (ML platform / MLOps; the 2026 independent work is the gap answer). Make **no project claim** until the artifact exists.
-- Create the pipeline tracker and the initial target list on the lane split (EU-remote/FR 50 / Berlin 35 / CH 15).
-- Create the `ml-platform-on-k8s` repository, README, architecture skeleton, and local OrbStack Kubernetes environment; scaffold the Python training pipeline.
-- Define the pipeline → registry → serving contract and the SLIs it will expose.
+1. Pipeline: containerised training step running on the local cluster and writing a model artifact.
+2. Registry and serving: a trained version registered, served, and answering requests locally, with the
+   pipeline → registry → serving contract and the three SLIs defined.
+3. Observability: Prometheus metrics for pipeline and serving, Grafana dashboard, alert rules, drift/quality
+   monitoring on inputs and predictions.
+4. Reliability mechanics: SLI measurement, error-budget burn, failure recovery (failing step, bad-version
+   rollback, unhealthy replica, idempotent retrain), operational runbook.
+5. Evidence package: architecture diagram, reproducible setup, CI/CD and GitOps deployment, and an honest
+   learning-artifact framing that never implies production-scale ownership.
+6. Go port — only while the Python artifact is complete, the search is on track, and no offer is imminent.
+   Otherwise those hours belong to the funnel, and Go waits until after an offer.
 
-**Exit check:** Search assets tell one consistent story; tracker exists; a containerised training step runs on the local cluster and writes a model artifact.
+Search does not wait for the artifact: existing SRE evidence already qualifies, and the assets carry
+`currently building` until the repository proves the claim (§8).
 
-### Week 2 — Start outreach; stand up registry and serving
-
-**Allocation:** 7h search, 24.5h training, 3.5h management.
-
-- Begin outreach on the primary lanes first (EU-remote/FR and Berlin, LinkedIn-first); Swiss contacts email-first at low volume.
-- Submit only high-confidence ATS applications; contact relevant in-house recruiters.
-- Publish the first meaningful project commit and link it from the search assets.
-- Stand up the model registry (MLflow or equivalent) and register a first trained version from the pipeline.
-- Deploy the model-serving path end to end on the local cluster.
-- Define the three SLIs and how each is measured.
-
-**Exit check:** First outreach cohort sent; project link is public; a trained model is registered, served, and answering requests locally.
-
-### Week 3 — Reach steady-state search; prove the local platform path
-
-**Allocation:** 15.75h search, 15.75h training, 3.5h management.
-
-- Reach the steady-state throughput targets while preserving the lane split.
-- Send first due follow-ups.
-- Complete the local end-to-end path: scheduled retrain → registry version → rollout to serving.
-- Export Prometheus metrics for both the pipeline and the serving service.
-
-**Exit check:** The retrain → register → serve path runs end to end on the local cluster; every pipeline entry has source, tier, market, status, next action, and due date.
-
-### Week 4 — Harden serving; establish error-budget mechanics
-
-**Allocation:** 15.75h search, 15.75h training, 3.5h management.
-
-- Continue steady-state outreach, applications, recruiter work, and follow-ups.
-- Add the Grafana dashboard and Prometheus alert rules covering pipeline and serving.
-- Implement SLI measurement and error-budget burn for serving availability and latency.
-- Add drift/quality monitoring on inputs and predictions.
-- Begin distributed-training conceptual study.
-
-**Checkpoint:** Calculate outreach response rate over weeks 2–4. If below 10%, change either targeting or messaging—not both—and label the changed cohort.
-
-### Week 5 — Exercise failure recovery; diagnose qualification
-
-**Allocation:** 15.75h search, 15.75h training, 3.5h management.
-
-- Continue search at steady state with the selected week-4 adjustment, if any.
-- Exercise failure recovery: a failing pipeline step, rollback of a bad model version, an unhealthy serving replica, and an idempotent retrain.
-- Draft the operational runbook and record the evidence honestly as a learning artifact — never implying production-scale platform ownership.
-- Begin GPU/HPC conceptual study.
-
-**Checkpoint:** If screen-to-rejection remains above 75% after four active weeks, classify every rejection as relevance, readiness, compensation, location, or unknown. Narrow the responsible role band or strengthen the relevant pre-qualification question.
-
-### Week 6 — Ship the complete ML-platform evidence package
-
-**Allocation:** 15.75h search, 15.75h training, 3.5h management.
-
-- Complete the artifact: pipeline, registry, serving, metrics, dashboard, alert rules, SLI definitions, error-budget policy, drift monitoring, runbook, architecture diagram, and reproducible setup instructions.
-- Replace `in progress` with completed Python/SLO/ML-platform evidence in search assets only where the repository proves the claim.
-- Use the completed artifact in new outreach and appropriate follow-ups.
-
-**Checkpoint:** If no technical interview has been reached, pause new ATS applications for week 7. Audit the full funnel and compare pre-artifact versus post-artifact cohorts. Do not pause direct conversations already in progress.
-
-**Exit check:** A reviewer can clone the repository, understand the architecture, run the local platform path, and see pipeline, registry, serving, monitoring, and error-budget evidence.
-
-### Week 7 — Go port (conditional); perform the midpoint funnel audit
-
-**Allocation:** 17.5h search, 14h training, 3.5h management.
-
-- If the zero-interview trigger fired, use ATS time for the funnel audit; keep qualified outreach and active conversations moving.
-- Scaffold a Go/controller-runtime component and reproduce the pipeline → registry → serving contract.
-- Review market conversion separately by lane (EU-remote/FR, Berlin, Switzerland); do not pool the results.
-- Finish any remaining distributed-training conceptual study.
-
-**Exit check:** Root qualification cause is named if the trigger fired; the Go component builds and handles a minimal control path.
-
-### Week 8 — Port the core control path
-
-**Allocation:** 17.5h search, 14h training, 3.5h management.
-
-- Resume or continue filtered ATS applications based on the week-7 audit.
-- Port the serving/rollout control path, health-state evaluation, and idempotent reconciliation to Go.
-- Continue full follow-up sequence and recruiter cultivation.
-- Finish any remaining GPU/HPC conceptual study.
-
-**Exit check:** The Go implementation reproduces the serving and rollout control decisions of the Python implementation.
-
-### Week 9 — Run the Go component end to end
-
-**Allocation:** 17.5h search, 14h training, 3.5h management.
-
-- Run the Go component locally end to end with metrics and simulated failure states.
-- Document differences between the Python prototype and the Go implementation.
-- Refresh outreach links to point at the clearest evidence entry point.
-
-**Exit check:** The Go component compiles and runs; architecture documentation explains both phases.
-
-### Week 10 — Deepen Go behavior; increase search emphasis
-
-**Allocation:** 19.25h search, 12.25h training, 3.5h management.
-
-- Increase search emphasis without weakening filters.
-- Port or improve the rollback/recovery path and Prometheus instrumentation.
-- Review compensation mismatches by market. If they exceed 50% of rejections in one market, research that market's band before changing its floor.
-
-**Exit check:** Go recovery behaviour is observable; compensation decisions remain market-specific.
-
-### Week 11 — Revalidate; use mature evidence
-
-**Allocation:** 19.25h search, 12.25h training, 3.5h management.
-
-- If a GPU-inference line is wanted on the CV, conduct a single bounded cloud-GPU validation; otherwise skip it. No ongoing GPU bill either way.
-- Finish the runbook, architecture decisions, and reproducibility instructions.
-- Use mature evidence in new outreach and in active interview conversations.
-- Compare Swiss and Berlin response and screen rates using equal definitions and minimum cohort notes.
-
-**Market checkpoint:** If Switzerland has underperformed Berlin consistently across at least four active weeks, shift 10 percentage points of search effort from Switzerland to Berlin for the remaining period; record the change and review after three weeks if the strategy continues beyond week 12.
-
-### Week 12 — Complete the evidence package; make the next-cycle decision
-
-**Allocation:** 19.25h search, 12.25h training, 3.5h management.
-
-- Complete the Go component if the conditional held, and present one clear repository landing page covering the pipeline, registry, serving, monitoring, SLOs, alerts, and runbook.
-- Complete all due follow-ups; do not begin low-fit processes merely to increase activity.
-- Review the complete 12-week funnel by market, tier, channel, and rejection reason.
-- Decide the next cycle: continue the winning market/channel combination, revise positioning, pursue an admissible bridge role, or deepen a remaining evidence gap.
-
-**Exit check:** Go port complete *if the conditional held*; otherwise search hours were spent and the evidence package stands on Python + real-GPU validation. All claims are evidence-backed; the next-cycle decision follows recorded funnel data rather than intuition.
 
 ## 6. Pipeline tracker
 
@@ -296,40 +190,38 @@ Weekly dashboard:
 - Recruiter screens and screen-to-rejection rate.
 - Technical interviews reached.
 - Compensation mismatches by market.
-- Conversion by Switzerland/Berlin, employer tier, channel, and evidence version.
-- Project milestone status and hours spent.
-
+- Conversion by lane (France / Web3 / Berlin), employer tier, channel, and evidence version.
 Rates use eligible cohorts whose response window has elapsed; unanswered messages younger than seven business days do not count as failures.
 
 ## 7. Friday review and adaptation rules
 
 Reserve one hour every Friday inside pipeline-management time:
 
-1. Update every pipeline record and project milestone.
+1. Update every pipeline record and the evidence repository's current state.
 2. Calculate the weekly dashboard and note cohort sizes.
 3. Apply any triggered rule below.
 4. Change one search variable at a time so the next cohort remains interpretable.
-5. Set exactly three priorities for the next week: one search, one training, one follow-up.
+5. Set exactly three priorities for the next cycle: two search-side, the third either search or the next piece
+   of evidence work.
 
 Rules:
 
 1. Outreach response below 10% after three active weeks: change targeting or messaging, one at a time.
 2. Screen-to-rejection above 75% after four active weeks: identify the dominant qualification filter and adjust pre-qualification or role band.
-3. Zero technical interviews by week 6: pause new ATS applications for week 7 and perform a funnel audit; keep qualified conversations active.
+3. Zero technical interviews after six weeks of active ATS applications: pause new ATS applications for one week and perform a funnel audit; keep qualified conversations active.
 4. Compensation mismatch above 50% of rejections in one market: research that market's band before changing its floor.
-5. Project milestone more than one week late: transfer 10% of total weekly time from search to training until recovered.
-6. Switzerland consistently below Berlin after four comparable active weeks: shift 10 percentage points from Switzerland to Berlin; never abandon Switzerland solely on a small cohort.
-7. An admissible Tier C bridge above €70k with AI exposure and architectural scope: pursue it as a strategic bridge.
-8. **Late-cliff trigger (~Feb 2027, if no offer is signed):** enter late-cliff mode once, as a labelled cohort — comp floor flexes to €70k, the AI requirement widens to AI-adjacent infrastructure (§2), the ATS weekly cap is removed (volume only inside the filters), and weekly capacity pushes to ~45 h. Change nothing else.
-9. **Last-resort window (~Apr 2027, if still no offer):** non-AI platform/SRE roles become admissible when they pass the comp floor and the architectural-scope filter. Income continuity outranks every non-hard filter. This is the final rung; it exists so the cliff is never hit at zero income.
-10. **Relocation fund and trigger:** once employed, set aside a relocation fund (target ≈ €8–10k) and keep a standing CH/Berlin application stream (~2–3 h/week). Relocate when an acceptable on-site offer with support or a remote-start ramp arrives, or when the fund is ready and a suitable role is in reach. Hard review: **2028-01** — decide whether to keep deferring, change destinations, or commit. Review confirmed 2026-09-11.
+5. Any lane consistently below the others after four comparable active weeks: shift 10 percentage points from it to the best-performing lane, one lane at a time, and never on a small cohort.
+6. An admissible Tier C bridge above €70k with AI exposure and architectural scope: pursue it as a strategic bridge.
+7. **Late-cliff trigger (~Feb 2027, if no offer is signed):** enter late-cliff mode once, as a labelled cohort — comp floor flexes to €70k, the AI requirement widens to AI-adjacent infrastructure (§2), the ATS weekly cap is removed (volume only inside the filters), and weekly capacity pushes to ~45 h. Change nothing else.
+8. **Last-resort window (~Apr 2027, if still no offer):** non-AI platform/SRE roles become admissible when they pass the comp floor and the architectural-scope filter. Income continuity outranks every non-hard filter. This is the final rung; it exists so the cliff is never hit at zero income.
+9. **Relocation fund and trigger:** once employed, set aside a relocation fund (target ≈ €8–10k) and keep a standing CH/Berlin application stream (~2–3 h/week). Relocate when an acceptable on-site offer with support or a remote-start ramp arrives, or when the fund is ready and a suitable role is in reach. Hard review: **2028-01** — decide whether to keep deferring, change destinations, or commit. Review confirmed 2026-09-11.
 
 ## 8. Internal consistency and protected trade-offs
 
-- **The search starts before the project is complete.** Existing SRE evidence already qualifies for Band 1; waiting six weeks would waste viable market time.
-- **Claims lag evidence.** `Currently building` is allowed from week 1; completed Python/SLO/ML-platform claims appear only after week 6 proof. `GPU exposure` stays `exposure` unless the optional bounded GPU run happens. Go becomes a completed claim only after week 12 proof.
+- **The search starts before the project is complete.** Existing SRE evidence already qualifies for Band 1; waiting for the artifact would waste viable market time.
+- **Claims lag evidence.** `Currently building` is allowed immediately; completed Python/SLO/ML-platform claims appear only once the repository proves them. `GPU exposure` stays `exposure` unless the optional bounded GPU run happens. Go becomes a completed claim only once the Go component is complete and verified.
 - **One project closes three gaps** (Python, ML-platform lifecycle, SLO methodology). No second portfolio project competes for time.
-- **Go is a deliberate stretch and now conditional and deprioritised.** If the Python milestone slips by more than one week, recover Python first. From week 7, Go proceeds only while the search is on track; under cliff pressure the hours belong to the funnel. Never trade incomplete core evidence for the port.
+- **Go is a deliberate stretch, conditional and deprioritised.** The Python artifact is the gate: finish it first, then start Go, and only while the search is on track. Under cliff pressure the hours belong to the funnel. Never trade incomplete core evidence for the port.
 - **The market decides the identity, not the artifact.** The GPU-fleet framing came from one project choice and outran the market evidence. Any future project that would change the positioning must first clear the market check (ticket 02 class), or the assets stay put.
 - **Market and channel results stay separable.** EU-remote/FR, Berlin, and Switzerland, applications/outreach, and evidence versions are tracked independently.
 - **Compensation and relocation filters are hard constraints.** Funnel pressure does not override them.
@@ -339,15 +231,15 @@ Rules:
 
 Approve only if all are acceptable:
 
-- Approximately 35 hours per week is sustainable for 12 weeks, with ~45 h push modes in weeks 1–4 and the late-cliff window.
-- The week-6 ML-platform (Python) milestone is fixed; the week-12 Go milestone is conditional and deprioritised.
-- Search begins in week 2 rather than waiting for the completed project.
-- Lane allocation is EU-remote/France-compatible 50% / Berlin 35% / Switzerland 15% (amended 2026-09-11, replacing CH 60 / Berlin 40).
+- Approximately 35 hours per week is sustainable for the length of the search, with a ~45 h push at the start and in the late-cliff window.
+- The evidence work carries no dates and no milestones: Python first, Go conditional and deprioritised.
+- Search begins immediately rather than waiting for the completed project.
+- Lane allocation is France-anchored 70% / Web3 infrastructure 20% / Berlin 10% (amended 2026-10-09, replacing the EU-remote/France 50 · Berlin 35 · Switzerland 15 split of 2026-09-11).
 - The income cliff drives the deadlines: start ≤ 2027-06-01 (target), sign ≤ ~2027-04-20 (EU-remote) / ~2027-03-20 (Berlin/CH).
 - Compensation and relocation constraints remain hard filters, with the defined late-cliff and last-resort widenings.
 - The public narrative says `moving into ML platform / MLOps engineering` (umbrella: `AI infrastructure`) and `GPU exposure`, until stronger evidence exists.
 
-## 10. Income cliff, continuum beyond week 12, fallback ladder
+## 10. Income cliff, continuum, fallback ladder
 
 *Added 2026-09-11 from Vincent's actual France Travail figures.*
 
@@ -377,13 +269,16 @@ The start date, not the exhaustion date, is the deadline: salary arrives ~30 day
 
 ### Mode timeline
 
-1. **Normal mode (now → ~Jan 2027):** full filters, personalised outreach, 2–4 filtered ATS/week, Python evidence gate at week 6.
+1. **Normal mode (now → ~Jan 2027):** full filters, personalised outreach, 2–4 filtered ATS/week.
 2. **Late-cliff mode (from ~Feb 2027, if no offer):** one labelled cohort — comp floor → €70k; AI requirement → AI-adjacent; ATS cap removed (volume inside filters only); ~45 h/week.
 3. **Last-resort mode (from ~Apr 2027, if still no offer):** non-AI platform/SRE roles admitted on comp + architectural scope. Income continuity wins.
 
-### Post-week-12 continuum
+### Continuum
 
-After week 12 (≈Dec 2026), run the same machinery in four-week cycles until an offer: steady-state search at the lane split, evidence maintenance (the ML-platform artifact polished, Go only if the condition held), pipeline review each Friday, and the relocation fund started as soon as income resumes. The next-cycle decision at week 12 is only about *which channel/market combination to double down on*, not about whether to keep searching.
+Run the same machinery in four-week cycles until an offer: steady-state search at the lane split, evidence
+maintenance (the ML-platform artifact polished, Go only if the condition held), pipeline review each Friday,
+and the relocation fund started as soon as income resumes. The periodic next-cycle decision is only about
+*which channel/market combination to double down on*, not about whether to keep searching.
 
 ### Open inputs (not decisions)
 

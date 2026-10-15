@@ -22,7 +22,7 @@ Apply path: the CV lives in Figma (`CV 3_white`, 2-column export). Content now e
 
 - [x] Strategy, CONTEXT, CV, Figma sheet, and LinkedIn re-centred on **ML platform / MLOps**; `AI infrastructure` kept as the umbrella keyword; GPU/vendor tier demoted to a secondary lane. Rationale: ticket 02's market map, not the GPU-vendor-sampled benchmark.
 - [x] Evidence project replaced: `ml-platform-on-k8s` (spec: `docs/ml-platform-project.md`), superseding `gpu-fleet-operator`.
-- [ ] Add `Python (in progress)` / ML-lifecycle claims only when the week-6 artifact proves them.
+- [ ] Add `Python (in progress)` / ML-lifecycle claims only when the artifact proves them.
 
 ## Factual corrections (verify against source of truth)
 
@@ -44,10 +44,10 @@ Apply path: the CV lives in Figma (`CV 3_white`, 2-column export). Content now e
 
 ## To add once evidence exists (claims lag evidence)
 
-- [ ] `Python (in progress)` from week 1; drop the qualifier after the ML-platform artifact is complete (~week 6).
-- [ ] `Go (in progress, from week 7)`; drop the qualifier after the Go component is complete (~week 12).
-- [ ] `SLO / Error Budgets` and ML-lifecycle items (pipelines, registry, serving, drift) after week-6 proof from `ml-platform-on-k8s`.
-- [ ] Link `github.com/alchimestre/ml-platform-on-k8s` from the CV header/contact once the first meaningful public commit exists (week 1–2).
+- [ ] `Python (in progress)` while the artifact is incomplete; drop the qualifier once the ML-platform artifact is complete.
+- [ ] `Go (in progress)` once the port starts; drop the qualifier when the Go component is complete.
+- [ ] `SLO / Error Budgets` and ML-lifecycle items (pipelines, registry, serving, drift) once `ml-platform-on-k8s` proves them.
+- [ ] Link `github.com/alchimestre/ml-platform-on-k8s` from the CV header/contact once the first meaningful public commit exists.
 
 ## Channel
 
@@ -57,7 +57,7 @@ Apply path: the CV lives in Figma (`CV 3_white`, 2-column export). Content now e
 
 - [ ] **No customer-facing claim may be added until real examples are supplied.** Nothing on the CV, GitHub, or the research material evidences external customers. Asked twice (2026-09-11), not yet answered.
 - [ ] Needed: institutional client work at Kiln, escalations/onboarding at Cometh, incident bridges with external partners, or external audits (ISO 27001 / HDS). Any of these, with a concrete situation, converts the weakest part of an FDE application into a strength.
-- [ ] Until this is resolved: forward-deployed / FDE applications (`docs/12-week-strategy.md` §2, secondary lane ≤ ~¼ of the EU-remote/FR lane) stay capped, because their central screening question — direct customer work — cannot yet be answered truthfully at strength.
+- [ ] Until this is resolved: forward-deployed / FDE applications (`docs/search-plan.md` §2, secondary lane ≤ ~¼ of the EU-remote/FR lane) stay capped, because their central screening question — direct customer work — cannot yet be answered truthfully at strength.
 
 ## Applied 2026-10-09 — Platform/SRE retarget, geography, and the 2026 block
 

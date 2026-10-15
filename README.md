@@ -1,13 +1,12 @@
 # jobsearch
 
-Private repo for Vincent Loupmon's 12-week AI Infrastructure job search and training strategy (approved 2026-09-09). Live tracking uses GitHub Issues + Projects; the decision history is committed markdown.
+Private repo for Vincent Loupmon's AI Infrastructure job search and training plan (approved 2026-09-09). Live tracking uses GitHub Issues + Projects; the decision history is committed markdown.
 
 ## Layout
 
 | Path | Contents |
 |---|---|
-| `docs/12-week-strategy.md` | **Approved operating plan** (amended 2026-09-11: income cliff, lane allocation, conditional Go, late-cliff/last-resort modes — see §10). Weekly allocations, milestones, funnel signals, adaptation thresholds. Read this first. |
-| `docs/channel-playbook.md` | How the pipeline gets fed: source stack, ATS watchlist, LinkedIn filtering (§4), weekly cadence. |
+| `docs/search-plan.md` | **Approved operating plan** (amended through 2026-10-15: income cliff, lane allocation, scope widening, no project timeline — see §10). Evidence work in dependency order, funnel signals, adaptation thresholds. Read this first. |
 | `docs/linkedin-saved-searches.md` | Operational checklist for the LinkedIn alerts: paste-ready queries, location filters, seniority exclusions, verification list. |
 | `docs/outreach/` | Draft outreach messages for hiring managers, stashed for review before sending. |
 | `docs/evidence-package.md` | CV restructure outline, LinkedIn narrative, GPU-operator README outline, outreach templates. |
@@ -26,7 +25,7 @@ One issue per live opportunity; move it through the board as it progresses.
 - **Board:** [AI Infra Job Search Pipeline](https://github.com/users/alchimestre/projects/1) — Stage columns: `Prospecting → Contacted → Screening → Interview → Offer → Closed`.
 - **Create:** Issues → New → template **Pipeline opportunity**. One issue per role or outreach contact.
 - **Stage:** set via the board's Stage field (one manual UI click needed once: group the board by **Stage**).
-- **Weekly review:** Issues → New → template **Weekly review**, assigned to the matching **Week N** milestone. Milestones W1–W12 exist with due dates (start 2026-09-14).
+- **Weekly review:** Issues → New → template **Weekly review**. No milestone: the plan has no project milestones or week numbers.
 
 ### Labels
 
@@ -57,4 +56,4 @@ One issue per live opportunity; move it through the board as it progresses.
 
 ## Execution starts
 
-Week 1 tasks and allocations are in `docs/12-week-strategy.md` §5; the income-cliff deadlines and mode timeline are in §10. Begin with: apply CV restructure + LinkedIn narrative (from `docs/evidence-package.md`, fix list in `docs/resume-edits.md`), create the pipeline tracker issues, scaffold `ml-platform-on-k8s` (spec: `docs/ml-platform-project.md`).
+The search begins immediately; the evidence work runs in the dependency order in `docs/search-plan.md` §5, with no dates or milestones. The income-cliff deadlines and mode timeline are in §10. Begin with: apply CV restructure + LinkedIn narrative (from `docs/evidence-package.md`, fix list in `docs/resume-edits.md`), create the pipeline tracker issues, scaffold `ml-platform-on-k8s` (spec: `docs/ml-platform-project.md`).

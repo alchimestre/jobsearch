@@ -3,7 +3,7 @@
 **Status: prep scaffolding, not evidence.** This file contains *frameworks and hypotheses*, not events.
 Every `⟨slot⟩` is a fact only Vincent can supply from memory, tickets or dashboards. Nothing here may be
 told as a story until its slots are filled from the real record — that is the same rule the rest of this
-repo runs on (`docs/12-week-strategy.md` §7 "Claims lag evidence"; `docs/evidence-package.md` "No
+repo runs on (`docs/search-plan.md` §8 "Claims lag evidence"; `docs/evidence-package.md` "No
 fabricated claims").
 
 ## 0. Why this file is frames and not scripts

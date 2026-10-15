@@ -12,7 +12,7 @@ Does the integrated 12-week search and self-training strategy form a realistic, 
 
 Approved by Vincent on 2026-09-09.
 
-The nine upstream decisions form a realistic and internally consistent 12-week operating plan. The integrated strategy prototype is captured on branch `prototype/integrated-strategy` at commit `d2fd804`, file `prototype/integrated-12-week-strategy.md`.
+The nine upstream decisions form a realistic and internally consistent 12-week operating plan. The integrated strategy prototype is captured on branch `prototype/integrated-strategy` at commit `d2fd804`, file `prototype/integrated-search-plan.md`.
 
 ### Approved operating model
 

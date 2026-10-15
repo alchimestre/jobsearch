@@ -26,6 +26,12 @@ Vincent can say. Never enumerate tools — `docs/writing-style.md` has the befor
 ## Repo conventions
 
 - Read `CONTEXT.md` first (canonical terms, evidence boundaries, compensation floors).
+- **No timeline on Vincent's own work (2026-10-15).** Self-study and the evidence project carry **no dates, no
+  milestones, no slip rules** — he drives them at his own pace. Never add week numbers, deadlines, milestone
+  rows, or "by week N" gates to plans, docs, issue bodies, or comments. Search-side cadence (weekly review,
+  active-week thresholds) is unaffected. Evidence order: `docs/search-plan.md` §5.
+- **Issues and tickets stay terse.** Obey the `ticket-brevity` rule: title verb-first ≤ 8 words, body ≤ 60 words,
+  acceptance criteria ≤ 5, resolution comment ≤ 150 words. No context, background, or summary sections.
 - One GitHub issue per live opportunity, moved across the `AI Infra Job Search Pipeline` project board.
 - Market/tier/channel labels are defined in `README.md`.
 

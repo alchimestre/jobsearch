@@ -1,6 +1,6 @@
 # Candidate Evidence Package
 
-> **Superseded in part — 2026-09-11 (second amendment).** The target lane is now **ML platform / MLOps**, not GPU-fleet operations (`docs/12-week-strategy.md` §1). Still current: the CV bullet structure (§1 experience sections), LinkedIn structure (§2), and the outreach templates (§4). Superseded: every "GPU fleet operator" reference and the §3 GitHub README outline, which now belong to `docs/ml-platform-project.md`; and the "moving into AI infrastructure" phrasing, now "moving into ML platform / MLOps" with `AI infrastructure` as the umbrella keyword. The ticket-03 benchmark quoted below was sampled entirely from GPU-vendor and lab JDs — treat its GPU weighting as tier-specific, not market-wide.
+> **Superseded in part — 2026-09-11 (second amendment).** The target lane is now **ML platform / MLOps**, not GPU-fleet operations (`docs/search-plan.md` §1). Still current: the CV bullet structure (§1 experience sections), LinkedIn structure (§2), and the outreach templates (§4). Superseded: every "GPU fleet operator" reference and the §3 GitHub README outline, which now belong to `docs/ml-platform-project.md`; and the "moving into AI infrastructure" phrasing, now "moving into ML platform / MLOps" with `AI infrastructure` as the umbrella keyword. The ticket-03 benchmark quoted below was sampled entirely from GPU-vendor and lab JDs — treat its GPU weighting as tier-specific, not market-wide.
 
 **Working asset.** Validated 2026-09-09 by Vincent (wayfinder ticket 07). Source: branch `prototype/evidence-package` at commit `7f1cde4`. Contains the CV restructure outline, LinkedIn narrative, GitHub README outline, and outreach templates used during execution. Not a final formatted CV or completed profile.
 
@@ -87,9 +87,9 @@ Distributed Systems · High Availability · Scalability
 Performance Tuning · Capacity Planning · Cost Optimization
 SecOps · ISO 27001 · HDS · GPU exposure
 
-**Added (after training plan produces evidence, week 6+):**
+**Added (once the artifact proves them):**
 ```
-Python (in progress) · Go (in progress, from week 7)
+Python (in progress) · Go (in progress, once the Python artifact is complete)
 SLO / Error Budgets · GPU Fleet Operations (in progress)
 ```
 
@@ -284,7 +284,7 @@ Vincent
 
 1. **The transition framing ("moving into AI infrastructure")** — does this feel honest and strong, or does it undersell you?
 2. **Cost reduction figure at Cometh** — the PDF extraction showed "2…%" truncated. Was it 25%? The prototype assumes 25%.
-3. **The GitHub project README** — does the scope feel achievable in 6 weeks for the Python phase, or is it too ambitious?
+3. **The GitHub project README** — does the scope feel achievable for the Python phase, or is it too ambitious?
 4. **The outreach message tone** — too direct? Too cautious? Right balance?
 5. **"GPU Workloads" removal from skills** — comfortable dropping this, or does it feel like losing a keyword that was generating responses?
 6. **LinkedIn "About" paragraph 3** — comfortable publicly stating "currently building" a project that hasn't started yet?

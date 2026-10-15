@@ -232,7 +232,7 @@ Auto-logged when the posting was marked applied in the pipeline tool. Outstandin
 - Confirm market and tier — both were assigned mechanically (`{tier_note}`).
 - Write the application-answer / outreach record if one is needed before the screen.
 
-## Hard-filter checklist (from `docs/12-week-strategy.md` §2)
+## Hard-filter checklist (from `docs/search-plan.md` §2)
 
 - [ ] Not a Staff/Principal role (3–6 yrs expected)
 - [ ] Compensation ≥ CHF 110k (CH) / €80k (DE) / €70k (bridge)

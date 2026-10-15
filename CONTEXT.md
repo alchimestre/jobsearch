@@ -16,7 +16,7 @@ Ranking rule: within MLOps-titled roles, prefer the **platform/infrastructure si
 
 ### Search Strategy
 
-A decision-complete 12-week system for generating qualified interviews. It includes target employers and markets, candidate positioning, application assets, outreach channels, pipeline measures, and adaptation rules.
+A decision-complete system for generating qualified interviews. It includes target employers and markets, candidate positioning, application assets, outreach channels, pipeline measures, and adaptation rules.
 
 ### Self-Training Plan
 
@@ -131,8 +131,8 @@ Claims the candidate can defend today:
 Claims excluded from current positioning (evidence gaps to close):
 - GPU fleet operations (experience is GPU-adjacent, not direct ownership)
 - Production programming in Python or Go (operational scripting only)
-- ML lifecycle tooling — pipelines, model registry, serving platforms, drift monitoring (targeted by the week-6 evidence artifact)
-- Explicit SLO/error-budget/canary-rollout methodology (targeted by the week-6 evidence artifact)
+- ML lifecycle tooling — pipelines, model registry, serving platforms, drift monitoring (targeted by the `ml-platform-on-k8s` artifact)
+- Explicit SLO/error-budget/canary-rollout methodology (targeted by the `ml-platform-on-k8s` artifact)
 - Distributed training or model-serving frameworks
 - Datacenter fabric, AI storage, or HPC performance engineering
 

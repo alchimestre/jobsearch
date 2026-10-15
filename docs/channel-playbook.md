@@ -1,12 +1,12 @@
 # Channel Playbook — how the pipeline gets fed
 
-**Status:** written 2026-09-29. Companion to `docs/12-week-strategy.md` §3 (search channels).
+**Status:** written 2026-09-29. Companion to `docs/search-plan.md` §3 (search channels).
 Everything marked **[VERIFIED 2026-09-29]** was fetched or probed live while writing this; **[INFERENCE]**
 means reasoned from documentation or UI conventions, not verified in this session.
 
 ## 1. The problem this fixes
 
-The strategy allocates **60% hiring-manager/founder outreach · 25% filtered ATS · 10% recruiter · 5%
+The plan allocates **60% hiring-manager/founder outreach · 25% filtered ATS · 10% recruiter · 5%
 evidence**. The tracker on 2026-09-29 held 13 issues: **12 `channel:ats`, 1 `channel:recruiter`,
 0 `channel:outreach`**. Both live feeds — LinkedIn job notifications and APEC inbound — are *push*
 channels, so they can only ever fill the 25% lane. That is why the pipeline looked busy and produced
@@ -233,7 +233,7 @@ It is not a channel for volume applications, and it is not a source of first-mov
 ## 5. APEC, France Travail, and the French lane
 
 - **APEC** stays for France-salaried coverage *and* France Travail obligation compliance (actualité,
-  convocations, offer-acceptance rules — see §10 of the strategy). It is not a targeting channel: the
+  convocations, offer-acceptance rules — see §10 of the plan). It is not a targeting channel: the
   French AI-native employers post on Ashby/Greenhouse/Workable, and those are now polled directly.
 - Add **Free-Work** (`free-work.com/fr/tech-it/jobs`) ✅ live and **Welcome to the Jungle** (browser) for
   FR tech; both index French remote roles that APEC misses.
@@ -270,8 +270,8 @@ is the only number that measures the lane carrying most of the plan.
 
 ## 8. Adaptation
 
-- If outreach response rate < 10% over weeks 2–4: change targeting *or* messaging, not both, and label the
-  cohort (strategy §5, week 4 checkpoint).
+- If outreach response rate < 10% after three active weeks: change targeting *or* messaging, not both, and label the
+  cohort (plan §7 rule 1).
 - If the `high` bucket stays empty for two weeks: the ATS watchlist is too narrow, not the filters — add 20
   employers from the lane that is under-represented.
 - If a source produces nothing usable in three consecutive weeks, delete it from `config.yaml`.
