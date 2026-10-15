@@ -1,0 +1,3 @@
+[submodule "tools/jobradar"]
+	path = tools/jobradar
+	url = git@github.com:alchimestre/jobradar.git

@@ -70,16 +70,15 @@ stay this repo's own (`docs/channel-playbook.md`, plan §6 and §7).
 
 ## Sourcing roles
 
-`docs/channel-playbook.md` is the source stack. `tools/jobradar` is the polling tool, part of this repo:
-167 employer ATS boards across 12 platforms plus 20 multi-employer feeds — 174 sources polled, the rest
-muted. One ranked SQLite/TUI queue.
+`docs/channel-playbook.md` is the source stack. `tools/jobradar` (submodule → `alchimestre/jobradar`) is
+the polling tool: 167 employer ATS boards across 12 platforms plus 20 multi-employer feeds — 174 sources
+polled, the rest muted — into one ranked SQLite/TUI queue.
 
 - Discovery runs through it: `cd tools/jobradar && uv run jobradar scan`, then `jobradar tui`, or
   `jobradar list --decision high`. It auto-adopts any ATS board it sees in a feed's job URL.
-- There is **one** checkout of the tool: `tools/jobradar`, in this repo. `~/projects/jobradar` is a symlink
-  to it (2026-09-30) — same code, same `.jobradar/state.db`. Do not copy or clone it elsewhere; a second
-  copy silently means a second store and "my changes didn't apply". It was a separate repository until
-  2026-10-15, when it was merged in with its history intact.
+- There is **one** checkout of the tool: `tools/jobradar` (its own git clone, pinned as a submodule).
+  `~/projects/jobradar` is a symlink to it (2026-09-30) — same code, same `.jobradar/state.db`. Do not
+  re-clone it elsewhere; a second clone silently means a second store and "my changes didn't apply".
 - **Scope (2026-09-29): Web3 infrastructure is in scope in every lane; ML/LLM is preferred but
   non-blocking; the return to work targets the earliest achievable start.** Tag each application with a
   `track:` label — `track:ai`, `track:web3`, `track:bridge` — so conversion stays comparable across the
