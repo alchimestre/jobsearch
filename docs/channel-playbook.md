@@ -24,7 +24,7 @@ pipeline is *fed*.
 
 ## 2. Source stack
 
-`jobradar` (submodule `tools/jobradar`, §6) polls the ATS layer and the machine-readable feeds. Everything
+`jobradar` (`tools/jobradar`, §6) polls the ATS layer and the machine-readable feeds. Everything
 in this table was verified today unless marked otherwise.
 
 ### 2.1 Employer ATS boards — the first place a role appears
@@ -281,13 +281,12 @@ It is not a channel for volume applications, and it is not a source of first-mov
 
 ## 6. The tool
 
-`tools/jobradar` is a **git submodule** of `alchimestre/jobradar` (private), pinned to a commit. The tool
-owns source plumbing and ranking; this repo owns strategy, docs, and the pipeline tracker.
+`tools/jobradar` is **part of this repository**. The tool owns source plumbing and ranking; this repo owns
+strategy, docs, and the pipeline tracker. It was a separate private repository until 2026-10-15, when it
+was merged in with its commit history intact — one repo, one commit per change.
 
 ```bash
-git clone --recurse-submodules git@github.com:alchimestre/jobsearch.git
-git submodule update --init --recursive      # after a plain clone
-git submodule update --remote tools/jobradar # pull newer jobradar commits
+cd tools/jobradar && uv sync
 ```
 
 Contract between the two: `jobradar export` produces markdown rows with a stable `uid`; that uid goes in
