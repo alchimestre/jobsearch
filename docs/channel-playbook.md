@@ -59,9 +59,14 @@ Token case is **not** significant (checked Ashby + Greenhouse), so `discover` ca
 ### 2.3 Browser-only (Cloudflare blocks scripts — keep as bookmarks)
 
 jobs.mlops.community (claims 250+ AI roles), Welcome to the Jungle (FR + remote, AI filter),
-Wellfound, startup.jobs, Himalayas, SEEK (AU), jobs.ch (296 *platform engineer* hits), aijobs.com,
+Wellfound, startup.jobs, SEEK (AU), jobs.ch (296 *platform engineer* hits), aijobs.com,
 aijobs.ai, aidevboard.com, foorilla.com/hiring (where ai-jobs.net now redirects),
 berlinstartupjobs.com (`/skill-areas/ai/`, `/skill-areas/remote/` — 32 IT roles, small board).
+
+Re-checked 2026-10-15: **Himalayas is no longer browser-only** — it has a public JSON API and the tool
+polls it now. Still blocked that day: Welcome to the Jungle (CloudFront 403 even in a real browser), APEC
+(DataDome answers `/cms/webservices/rechercheOffre` with a captcha redirect even from inside the live page),
+Malt and Jooble (Cloudflare). `tools/jobradar/README.md` carries the current list of what is polled.
 
 ### 2.4 Institutional (Switzerland lane)
 
@@ -72,11 +77,14 @@ follow from the homepage). These are relationship targets first, applications se
 
 Scope widened by Vincent's instruction: Web3 infrastructure is an admitted track in every lane, ML/LLM stays preferred but non-blocking, and the return to work should be as early as achievable. Because Web3 sits on the deepest evidence on the CV (Kiln $8B+/40+ protocols), it is the **fastest-to-income** track.
 
-**Employer boards, already polled** — 46 Web3 employers were resolved to public ATS endpoints and merged into the watchlist (157 boards total): Alchemy, Anchorage Digital, BitGo, Bitpanda, Bitvavo, Blockdaemon, Blockstream, Bybit, Circle, Coinbase, Compound Labs, Consensys, Dune, Elliptic, Espresso Systems, Fireblocks, Kraken (`ashby:kraken.com` — note dots are valid slugs, so resolve these from the careers **URL**), Ledger, Matter Labs, Mysten Labs, Nethermind, Nomic Foundation, OKX, OP Labs, OpenZeppelin, Parity Technologies, Polygon Labs, QuickNode, Ripple, SwissBorg, Tenderly, TRM Labs, Turnkey, Uniswap Labs, and others. Re-run the sweep with `jobradar discover --json <name>` / `jobradar import seed.yaml --write`.
+**Employer boards, already polled** — 46 Web3 employers were resolved to public ATS endpoints and merged into the watchlist (167 boards total): Alchemy, Anchorage Digital, BitGo, Bitpanda, Bitvavo, Blockdaemon, Blockstream, Bybit, Circle, Coinbase, Compound Labs, Consensys, Dune, Elliptic, Espresso Systems, Fireblocks, Kraken (`ashby:kraken.com` — note dots are valid slugs, so resolve these from the careers **URL**), Ledger, Matter Labs, Mysten Labs, Nethermind, Nomic Foundation, OKX, OP Labs, OpenZeppelin, Parity Technologies, Polygon Labs, QuickNode, Ripple, SwissBorg, Tenderly, TRM Labs, Turnkey, Uniswap Labs, and others. Re-run the sweep with `jobradar discover --json <name>` / `jobradar import seed.yaml --write`.
 
-**Aggregators** (live, verified 2026-09-29; no RSS except CryptoJobsList, so they are browser sweeps): `web3.career` (incl. `/remote-jobs`), `cryptocurrencyjobs.co`, `remote3.co`, `crypto.jobs`, `web3jobs.io`, `cryptojobs.com`. `cryptojobslist.com` is bot-blocked but its `/rss` endpoint is not — that feed is polled by the tool.
+**Aggregators** (re-checked 2026-10-15): `cryptocurrencyjobs.co` is now polled from its own feed, and
+`web3.career` has an API that takes a free token. Still browser sweeps: `remote3.co`, `crypto.jobs`,
+`web3jobs.io`, `cryptojobs.com`. `cryptojobslist.com` is bot-blocked but its `/rss` endpoint is not —
+that feed is polled by the tool.
 
-**Coverage gap, stated plainly:** the largest Web3 infra employers — Chainlink Labs, Lido, Kiln, Chorus One, DFINITY, StarkWare, Figment, P2P.org, Everstake — are **not** on the seven public ATS endpoints the tool can poll (checked by name sweep and explicit token probing). For those, the aggregators above plus the employer's own careers page are the only route. Kiln and Cometh matter twice here: prior employment means a warm route, which is the single highest-conversion channel available.
+**Coverage gap, stated plainly:** the largest Web3 infra employers — Chainlink Labs, Lido, Kiln, Chorus One, DFINITY, StarkWare, Figment, P2P.org, Everstake — are **not** on the twelve public ATS endpoints the tool can poll (checked by name sweep and explicit token probing). For those, the aggregators above plus the employer's own careers page are the only route. Kiln and Cometh matter twice here: prior employment means a warm route, which is the single highest-conversion channel available.
 
 **Forums and communities** (relationship and visibility, not an application channel): EthResearch (`ethresear.ch`), Ethereum Magicians (`ethereum-magicians.org`), EthStaker and Ethereum R&D Discords, Flashbots forum, Lido Research forum, Optimism and Arbitrum governance forums, Developer DAO, BuidlGuidl. Practical use: answer one technical question a week in the infrastructure channels; that is the same 60%-outreach lane with a public evidence surface.
 
@@ -114,20 +122,52 @@ analysis, and application answers are deliberately left unwritten.
 ```bash
 cd tools/jobradar
 uv sync
-uv run jobradar scan                 # ~75s for 164 sources
+uv run jobradar scan                 # 166 boards + 24 feeds, fetched in parallel (--jobs N)
 uv run jobradar tui                  # ranked, deduped queue
 uv run jobradar discover "NewCo" --write      # name or any careers URL
 uv run jobradar export --since 7d --decision high
 ```
 
-- The watchlist currently holds **157 boards** (target research + AI-infra sweep + 46 Web3 employers).
-  Re-validate a new list with `jobradar import seed.yaml --write`; batch-discover with
+- The watchlist holds **167 boards** across 12 ATS platforms (target research + AI-infra sweep + 46 Web3
+  employers + four French/German employers added 2026-10-15). Re-validate a new list with
+  `jobradar import seed.yaml --write`; batch-discover with
   `jobradar discover --json <name>` piped from `xargs -P 12`.
+- **Multi-employer sources are now polled too** (2026-10-15), so the watchlist is no longer the only way a
+  role reaches the queue: LesJeudis, free-work, Jobicy, Himalayas, Working Nomads, Landing.jobs,
+  jobdataapi, DevITjobs, The Muse, web3.career and Lobsters are configured in `config.yaml`. Only
+  `WEB3CAREER_KEY` (web3.career) needs a key, held in `.env` beside `config.yaml` — untracked, with
+  `.env.example` committed. A source whose key is unset is skipped
+  and named in the scan summary. **Adzuna is dropped**: its free tier does not cover the volume, and its
+  paid plan was declined. **France Travail is dropped (2026-10-15), dead end.** Three findings from its own
+  documentation and the live portal: the registered application carries no API subscription (`Ajouter ma
+  première API`); the account's "Ajouter une API" list does not offer «Offres d'emploi v2»; and
+  `invalid_client` is FT's wording for an unknown *client*, while a scope the application lacks is reported
+  as `invalid_scope` instead. Every credential variant — wrong secret, unknown id, empty secret, bogus
+  scope, no scope — returned that same `invalid_client`, so the gateway rejects the client before it looks
+  at the scope. The adapter, its tests and its credentials were removed rather than kept as a source that
+  cannot run. The French lane is LesJeudis, free-work, AXA and Wavestone.
+- New ATS platforms poll directly: Workday, iCIMS/Jibe, SuccessFactors, softgarden and Join.com. Workday
+  and softgarden boards are adopted automatically from a job URL; the other three need their career-site
+  host written by hand.
+- **Scan is parallel** (2026-10-15): `scan_workers` sources fetch at once (default 8) and each source's
+  detail calls six at a time. Measured on 5 boards + 22 feeds: 232s before, 131s after, with identical
+  rows either way. The remainder is per-source list payloads and Workday's 100-page sequential paging.
 - **Auto-learning is on by default**: any job URL from a feed that points at a known ATS pattern adds that
   board permanently (`auto: true`) and polls it from the next scan. Feeding the tool a single HN link is
   enough to adopt a company.
-- **Mute instead of deleting.** `enabled: false` on a row stops polling *and* stops auto-learning from
-  re-adding it; the entry remains as a record of the find.
+- **Mute instead of deleting.** `enabled: false` on a watchlist row or on a `config.yaml` feed stops polling
+  *and* stops auto-learning from re-adding it; the entry remains as a record of the find. Two feeds are
+  muted as of 2026-10-15: `germantechjobs` (28 rows fetched, 0 in scope — every JD is German) and
+  `devitjobs-uk` (UK postings fall outside the region gate). Rows a muted source left in the store are
+  cleared with `uv run jobradar rescore --prune`.
+- **Ten watchlist rows are muted** (2026-10-15), found by reading a full scan's error table. Seven answered
+  HTTP 404: `workable:j` (a bogus token our own URL pattern manufactured from `apply.workable.com/j/<id>` —
+  fixed), `personio:Kaiko`, `personio:Scroll`, `personio:neura-robotics` (no such tenant on either personio
+  host) and the dead duplicate of an employer that is live on another platform: `ashby:parloa`
+  (working on greenhouse), `greenhouse:wayve` (working on ashby), `personio:langdock` (working on ashby).
+  Three more answered HTTP 200 with an empty `jobs` list — `ashby:confluent`, `ashby:Gelato`,
+  `greenhouse:traderepublic`: the boards exist but publish nothing. Muted, not deleted, so each stays as a
+  record and one `enabled: true` brings it back.
 - Auto-learning can adopt a **group or subsidiary** board — a Hetzner feed item pointed at
   `xneelo.recruitee.com`, and Personio's public Recruitee board is a demo board ("API Job - Berlin -
   Musterstr"). Learned boards are labelled by their slug when the posting's employer name does not match
@@ -235,8 +275,8 @@ It is not a channel for volume applications, and it is not a source of first-mov
 - **APEC** stays for France-salaried coverage *and* France Travail obligation compliance (actualité,
   convocations, offer-acceptance rules — see §10 of the plan). It is not a targeting channel: the
   French AI-native employers post on Ashby/Greenhouse/Workable, and those are now polled directly.
-- Add **Free-Work** (`free-work.com/fr/tech-it/jobs`) ✅ live and **Welcome to the Jungle** (browser) for
-  FR tech; both index French remote roles that APEC misses.
+- **Free-Work** is now polled by the tool (`type: free_work`, French tech missions with the day rate in
+  `extra`). **Welcome to the Jungle** stays a browser bookmark: CloudFront refused a real Chrome session.
 - Agency recruiters remain inbound/opportunistic only, per ticket 08.
 
 ## 6. The tool
