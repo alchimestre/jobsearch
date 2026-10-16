@@ -10,11 +10,11 @@ of a broader cloud role at a non-AI-native employer) · **Channel:** ATS (Ashby)
 **Location:** ⚠️ **"The Hague – hybrid"**, from the employer's own ATS. The JD body also says *"remote-friendly
 culture with quarterly meetups and annual company retreats"* — **the two conflict**, and the ATS string is the
 more specific one. **Nothing about France eligibility, and no relocation support mentioned.**
-**Applied:** ✅ **2026-10-09** · **Stage:** Contacted · **Issue:** #38
+**Applied:** ✅ **2026-10-09** · **Stage:** **Closed — refused 2026-10-16** · **Issue:** #38
 **Compensation:** **not published** — no range on the posting and none in the Ashby board payload for any of
 their 29 roles. NL floor is not defined in this repo (`market:nl` has no allocation yet); the DE/EU-remote
 floor of **€80,000** is the only nearby reference `[INFERENCE]`.
-**Follow-ups:** 1st due **2026-10-16 → 2026-10-20** · final **2026-10-23 → 2026-10-29**
+**Follow-ups:** **none sent** — the refusal arrived **2026-10-16**, the day follow-up 1 opened
 **jobradar:** board **added 2026-10-09** (`ashby:eye-security`, `market: other` — their board spans NL, DE, AT
 and the Nordics, so no single market label is honest).
 
@@ -95,7 +95,7 @@ latency, how it was deployed and operated, and what changed for its users. Same 
 - Cybersecurity with embedded insurance is a regulated, high-stakes domain where reliability and least
   privilege matter — the same shape as the environments already worked in.
 
-## Questions to put in writing (first follow-up)
+## Questions to put in writing (first follow-up — never sent)
 
 1. **Which countries can employ for this role** — is France possible, or is The Hague hybrid absolute? Is
    relocation supported?
@@ -108,25 +108,40 @@ latency, how it was deployed and operated, and what changed for its users. Same 
 ## Timeline
 
 - Contacted / applied: **2026-10-09** (Ashby, via LinkedIn)
-- Follow-up 1 due (5–7 business days): **2026-10-16 → 2026-10-20**
-- Follow-up 2 due (10–14 business days): **2026-10-23 → 2026-10-29** (final)
+- **Refused: 2026-10-16** — before follow-up 1 was sent (it opened that day, Fri)
+- Follow-up 1 due (5–7 business days): **2026-10-16 → 2026-10-20** — not sent
+- Follow-up 2 due (10–14 business days): **2026-10-23 → 2026-10-29** (final) — not sent
 - Screen date: —
 - Interview dates: —
-- Outcome: pending
+- Outcome: **negative**
 
 ## Outcome record
 
-- Stage reached: Contacted
+- Stage reached: **closed at Contacted, never screened** (Ashby application 2026-10-09 → negative answer
+  2026-10-16)
+- Board Stage: **Closed** (was Contacted; set 2026-10-16)
 - Salary: not stated in the application
-- Rejection reason (relevance / readiness / compensation / location / unknown): pending
-- **Watch:** the predictable causes are **`readiness`** (6+ years, AWS, production code) and **`location`**
-  (The Hague hybrid). This is another row whose unknowns were answerable **before** applying — the same lesson
-  as #36 and #37.
-- What would have changed the outcome: a published band; France eligibility or relocation support; a senior
-  (not 6-year-plus) variant
+- Rejection reason: **`unknown`** — no reason given. The pre-application prediction was **readiness** (6+
+  years, significant AWS, production code authorship) or **location** (The Hague hybrid, no France
+  eligibility, no relocation support). A five-business-day refusal names neither, so the label stays
+  `unknown` rather than a guess.
+- Duration: **5 business days / 7 calendar days** — a screen-out, not a silence-close. Third-fastest refusal
+  after Synthesia #16 (same day) and Voyage Privé #43 (1 business day).
+- Follow-ups: **none sent** — the refusal arrived on the day the first window opened.
+- What would have changed the outcome: a written answer on France eligibility or relocation support **before
+  applying** (question 1 of the unsent list), and a published band. Both were unverified at application time
+  and neither is testable from a bare refusal.
+- **Watch:** as predicted. The three unmet requirements plus the unresolved location made this the weakest
+  hard-filter row logged on 2026-10-09, and it closed without a screen. The agent/LLM-workflow match, the
+  strongest in the pipeline, never got read.
+- Next action: **closed.** No further contact. Issue closed with `reason:unknown`.
 
 ## Funnel delta
 
 Applications sent +1 (2026-10-09) · **NL lane** · `tier:b` · `track:ai` · board gap closed (Eye Security was
 untracked; their board carries Berlin-hybrid roles worth watching later). **Ninth application logged today**,
 and the third consecutive one whose binding constraint is relocation or residency.
+
+Closed 2026-10-16 at Contacted, never screened, `reason:unknown` — the **16th closed row**, and the count of
+unclassified closures is now **16 of 16, with 15 of them pre-screen** (MarvelX #21 remains the only closure
+that reached a live screening step). It adds nothing to the classified-rejection count.
