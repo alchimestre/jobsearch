@@ -6,8 +6,8 @@
 NeoCloud providers", a training-Data-Lake, and names **GPUaaS** — an ML-training-adjacent infrastructure shop.
 **Market:** **DE (Berlin)** · **Tier:** **B** (DevOps at an AI-native company; the platform carries ML training
 data and GPUaaS) · **Channel:** ATS (LinkedIn) · **Track:** `ai`
-**Applied:** ✅ **2026-10-13** (LinkedIn) · **Stage:** Contacted
-**Follow-ups:** 1st due **2026-10-20 → 2026-10-22** · final **2026-10-27 → 2026-11-02**
+**Applied:** ✅ **2026-10-13** (LinkedIn) · **Stage:** **Closed — refused 2026-10-21** · **Issue:** #42
+**Follow-ups:** **none sent** — the refusal arrived 2026-10-21, before follow-up 1 closed (2026-10-22)
 **Posting age:** ~22 hours at application — fresh.
 
 ## Hard-filter checklist (§2 + lane filters)
@@ -48,7 +48,7 @@ funnel interpretable.
 4. **Training-data / Data-Lake** responsibilities are ML-adjacent and not evidenced.
 5. **No compensation band**; Berlin €80k floor unverified.
 
-## Questions to put in writing (first follow-up)
+## Questions to put in writing (first follow-up — never sent)
 
 1. Is any France-based or remote start possible, or is Berlin presence required from day one? Does MOTOR Ai
    fund relocation?
@@ -59,18 +59,31 @@ funnel interpretable.
 ## Timeline
 
 - Contacted / applied: **2026-10-13** (LinkedIn ATS)
-- Follow-up 1 due (5–7 business days): **2026-10-20 → 2026-10-22**
-- Follow-up 2 due (10–14 business days): **2026-10-27 → 2026-11-02** (final)
-- Screen date: — · Interview dates: — · Outcome: pending
+- **Refused: 2026-10-21** — before follow-up 1 was sent (its window ran to 2026-10-22)
+- Follow-up 1 due (5–7 business days): **2026-10-20 → 2026-10-22** — not sent
+- Follow-up 2 due (10–14 business days): **2026-10-27 → 2026-11-02** (final) — not sent
+- Screen date: — · Interview dates: — · Outcome: **negative**
 
 ## Outcome record
 
-- Stage reached: Contacted
-- Rejection reason (relevance / readiness / compensation / location / unknown): pending
-- **Watch:** location is the leading elimination risk (on-site, no relocation), and the 6-year bar is second.
+- Stage reached: **closed at Contacted, never screened** (LinkedIn application 2026-10-13 → refusal
+  2026-10-21)
+- Board Stage: **Closed** (was Contacted; set 2026-10-21)
+- Rejection reason: **`relevance`** — the only criterion named is that "other applications match the core
+  requirements of the role even more closely", which is a stock relevance line, not a named gap. The two
+  caveats on record before applying were the **6-year minimum** (~4 years evidenced) and **EKS /
+  Keycloak-AD** absence; location was expected to be the first elimination and cannot be excluded as the
+  silent cause.
+- Duration: **6 business days / 8 calendar days** — a screen-out, not a silence-close.
+- Follow-ups: **none sent** — the refusal arrived one day before the first window closed.
+- **Watch:** location remains the leading elimination risk (on-site, no relocation), and the 6-year bar is second.
 - What would have changed the outcome: a hybrid/remote-from-France option or relocation support
 
 ## Funnel delta
 
-Applications sent +1 (2026-10-13) · **DE (Berlin) lane** · `tier:b` · `track:ai`. Deliberate long-shot
-(location filter failed at application time; 6-year bar).
+Applications sent +1 (2026-10-13) · **DE lane (Berlin)** · `tier:b` · `track:ai` · **fails the location filter
+and the 6-year bar** → deliberate long-shot, recorded so the funnel stays interpretable. Closes as a
+pre-screen refusal (`reason:relevance`) 6 business days after applying.
+
+Closed 2026-10-21 at Contacted, never screened, `reason:relevance` — the second DE-lane row to close on the
+location constraint without a screen, after MAIA (1 business day, `reason:unknown`).
