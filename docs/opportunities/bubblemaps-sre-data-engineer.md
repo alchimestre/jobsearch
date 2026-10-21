@@ -7,7 +7,7 @@ Intel Desk (community investigations / "InfoFi"), iframe widget, API.
 **Backers:** Consensys, Polygon, Avalanche, Aptos, Ledger, The Sandbox, Linea, Fuel, Ince, Momentum6, V3ntures
 **Recruiter:** Yofy (agency/external recruiter) — name incomplete, needs capture on next contact
 **Role:** SRE / Data Engineer · **Market:** FR (French company, Web3 — confirmed by Vincent 2026-09-29) · **Tier:** C (no ML-platform surface) · **Channel:** recruiter
-**Stage:** **Interview** (technical) — recruiter call 2026-09-29, **CTO call 2026-09-30**, advanced to the technical interview · **Comp quoted by recruiter: €60,000–80,000** · **Candidate asked: €70,000 minimum — still unconfirmed**
+**Stage:** **Interview** — technical round **passed** (reported 2026-10-18); **final round with the CTO on 2026-10-20** · **Comp quoted by recruiter: €60,000–80,000** · **Candidate asked: €70,000 minimum — still unconfirmed** · **Paying entity and remote policy still unknown**
 
 ## Market note — FR-bridge, and that strengthens the case for holding it
 
@@ -288,6 +288,135 @@ is a separate fact. Other chains need their own event identities.
 - [ReplacingMergeTree](https://clickhouse.com/docs/reference/engines/table-engines/mergetree-family/replacingmergetree)
 - [ClickHouse views and source-change limitations](https://clickhouse.com/docs/reference/statements/create/view)
 - [Canonical block references and balance reads](https://eips.ethereum.org/EIPS/eip-1898)
+
+## Final round — CTO (2026-10-20)
+
+Personas loaded for this round: `agency-deal-strategist` (economic buyer, terms, qualification gaps),
+`agency-french-consulting-market-navigator` (CDI vs freelance, Yofy margin, TJM), `agency-sre-site-reliability-engineer`
+(technical frame). Platform and security personas are not relevant — no IDP or audit scope in this role.
+
+**The round decides two things:** whether Vincent can own reliability of a 15+ chain indexing pipeline without
+a team around him, and the terms. Everything technical is secondary to those two.
+
+### Stories to rehearse (90 seconds each, seven beats from `docs/interview-incident-stories.md` §3)
+
+1. **Frame D — Kiln fleet degradation.** 40+ production networks, $8B+ secured, multi-protocol integration.
+   Strongest domain overlap: same problem class as their indexer fleet.
+2. **Frame E — Cost runaway, −25%.** Cometh. Ties directly to cost-per-chain and capacity questions.
+3. **Frame A — Bare-metal HDS cluster recovery.** Docaposte. Proves recovery under a control plane you cannot lean on.
+
+Each needs the false lead and the permanent change. A story without those two reads as a summary.
+
+### Honest limits, stated before they are probed
+
+- Indexer authorship: none. Operated the infrastructure and integrated protocols; did not write the indexer.
+- Production Kafka/ClickHouse depth: design reasoning only; the working reference above is proposed design.
+- Owned SLO/error-budget programme: building it in the `ml-platform-on-k8s` artifact, not run at scale.
+- Production Python/Go: operational scripting only.
+
+### Answer shapes
+
+| Likely CTO question | Shape |
+|---|---|
+| How would you make indexing reliable across 15 chains? | Per-chain freshness target, contiguous checkpoint (height + hash), reorg correction path, backpressure and lag alerts, cost per chain |
+| On-call with a small team | Tiered alerting, noise budget, runbooks per failure class, page only on user-visible impact |
+| Build or buy the data stack | Managed Kafka/ClickHouse first; self-host only where cost or query shape demands it |
+| First 90 days | Measure current lag and gaps per chain, inventory the adapters, set freshness targets, cut the worst noise |
+| Why leave AI-platform direction for this | Kiln receipts are the same work; state the Web3 lane plainly, no apologising |
+
+### Questions to ask (five, in this order)
+
+1. Who owns the indexer today, and what is the on-call rotation?
+2. Which stack: Kafka, ClickHouse, which RPC providers, how many chain adapters?
+3. Where does reliability hurt most now — reorgs, lag, or cost?
+4. Is the contract a direct French CDI, or through Yofy? Remote or hybrid?
+5. What is the confirmed band, and when is the review?
+
+### Terms
+
+- **€70k ask stands.** It is a labelled exception, already below the €80k floor. Do not move it down under pressure.
+- **Freelance fallback:** €550/day opening, €500/day floor (cost parity with €70k CDI at 200 billable days).
+  Confirm whether Bubblemaps contracts directly or via Yofy — agency margin compresses the rate.
+- **Do not name a number first** if the CTO raises comp; make them state the band.
+- A €70k French CDI that starts quickly outranks a better-titled role that needs a move. That is the earliest-start rule.
+
+## Product and infrastructure map (sourced 2026-10-18)
+
+All facts below come from `bubblemaps.io`, `docs.bubblemaps.io` (API v0.3.2) and `wiki.bubblemaps.io`.
+
+### What the product is
+
+- **Bubblemaps V2** (v2.bubblemaps.io): a token map of the **top 250 holders**, bubbles sized by holdings,
+  links between bubbles where a transfer happened (any token, sometimes cross-chain). Clusters of linked
+  holders are the core insight. The map is guaranteed refreshed **within the last 6 hours**.
+- **Magic Nodes**: adds non-holder intermediaries (addresses that forwarded everything and now hold 0), which
+  exposes clusters the default map misses. Shiba Inu example: seven added addresses turn a 3% cluster into a
+  large one.
+- **Time Nodes**: splits a CEX/DEX into time windows, so wallets funded in the same window link to each other.
+  Newly shipped: clusters started listing their time nodes in the API on **2026-10-16**.
+- **Time Travel**: historical state of a map at a chosen timestamp.
+- **Intel Desk** (intel.bubblemaps.io): community investigations. Cases are pages; BMT votes set a multiplier
+  (80% of votes → 8x); investigators earn points for featured threads; anyone can fund a bounty.
+- **B2B**: iframe widget and the Data API, sold on credits. The wiki says most revenue comes from B2B iframe
+  integrations and onchain investigation services. $3M equity raised in 2023; BMT emissions start in 2026.
+
+### Data model, documented
+
+- A token key is `(chain, address)`; `native` covers the chain coin.
+- Transfers are grouped by `(from_address, to_address, token_ref)` and returned as `GROUPED_TRANSFER`.
+- Only **indexed tokens** create clusters, to avoid dust-attack false positives. A token's own map always
+  includes its transfers.
+- Nodes carry `holder` / `magic` / `time` / `manually added` roles, wallet types (EOA, contract, CEX, DEX) and
+  tags (fresh, supernode, transfer count). Supernodes (>200k transfers) are hidden and excluded from links
+  between two supernodes.
+- Metrics: supply share held by CEXs, DEXs, contracts, fresh wallets (<10 days); `top_10_adjusted`;
+  `bundles` (largest 10 clusters); score 0–100; Gini; Herfindahl-Hirschman; Nakamoto coefficient.
+
+### Infrastructure, documented versus inferred
+
+Documented: map computation with caching (TTL depends on token age, `X-Dt-Update` header, `refresh=true`),
+history queries by timestamp, server-side clustering with magic and time nodes, per-chain chain ids, a
+credit-metered API, and a cache-hit path measured in milliseconds against up to a minute for outliers.
+
+[INFERENCE] the internals, since no public architecture exists: per-chain RPC/WS ingestion and block
+checkpointing, a transfer store, a clustering worker, a map cache, and the API in front. Their own docs hint at
+the shape: cache TTL by token age implies a refresh scheduler; history mode implies stored per-block state;
+supernode suppression implies precomputed transfer counts.
+
+```text
+RPC / WS per chain → adapters → transfer + holder store → clustering (links, magic, time) → map cache → API
+                                                                                         ├→ V2 app
+                                                                                         ├→ iFrame widget
+                                                                                         └→ B2B API
+Intel Desk (cases, votes, bounties) sits beside the data layer and feeds investigations.
+```
+
+### Non-SRE experience to surface
+
+1. **Governance and compliance**: led the ISO 27001 implementation at Cometh. Auditors, controls, evidence.
+2. **Cost ownership**: 25% cloud-cost reduction at Cometh. Unit economics matter for a data product.
+3. **Architecture translation**: Kiln bullet, infrastructure constraints turned into product and engineering
+   decisions across teams.
+4. **Regulated operations**: HDS-certified healthcare at Docaposte. Correctness under audit and recovery.
+5. **Developer-facing documentation**: written at Bitgen. Relevant to a company that sells an API.
+
+Do not claim customer-facing sales or data science. The nearest real shape is cross-team and audit work.
+
+### Web3 culture, shown not announced
+
+- Kiln (40+ networks), Bitgen (Ethereum on Kubernetes), Cometh (blockchain tooling) are real crypto receipts.
+- Use the domain vocabulary correctly: finality, reorg, RPC provider, indexer, CEX/DEX flows, wallet
+  clustering, sybil, sniping, airdrop farming.
+- Be able to walk one map out loud: a token, its clusters, and what the cluster means.
+- The CTO will test judgement, not vocabulary. Say what a reorg does to a pipeline, and what you would do about it.
+
+### Questions for the CTO
+
+1. How many RPC providers per chain, and what happens on a provider outage?
+2. Is clustering computed on write or on read, and how long does a new chain take to onboard?
+3. Which storage holds transfers and history today?
+4. What breaks first when a new chain is added?
+5. Team size, on-call, and who owns the indexer today?
 
 ## Recruiter-screen answers
 
