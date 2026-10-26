@@ -11,7 +11,7 @@ Gilead), plus Deloitte/EY/KPMG, Workday, Mercedes-Benz, L'Oréal and BNP Paribas
 **Market:** **EU-remote** ("Europe (Remote)") · **Tier:** **C** (bridge — no AI-infrastructure surface)
 · **Channel:** ATS (Greenhouse) · **Track:** **`bridge`**
 **Team:** reports to the Infrastructure Lead; works with engineering and product.
-**Applied:** ✅ **2026-10-09** · **Stage:** Contacted · **Issue:** #33
+**Applied:** ✅ **2026-10-09** · **Stage:** **Closed** — refusal 2026-10-26, never screened · **Issue:** #33
 **Compensation:** **not published.** EU-remote floor **€80,000** (§2). Established, Swiss Post-owned employer —
 the floor is plausible but **unverified**. No equity framing in the ad.
 **Follow-ups:** 1st due **2026-10-16 → 2026-10-20** · final **2026-10-23 → 2026-10-29**
@@ -119,16 +119,26 @@ reliability, cost and security; weak on the code-authoring half of the JD.**
 - Follow-up 2 due (10–14 business days): **2026-10-23 → 2026-10-29** (final)
 - Screen date: —
 - Interview dates: —
-- Outcome: pending
+- Outcome: **refused 2026-10-26** (Greenhouse application 2026-10-09 → refusal after 11 business days, no screen)
 
 ## Outcome record
 
-- Stage reached: Contacted
+- Stage reached: **closed at Contacted, never screened**
+- Board Stage: **Closed** (set 2026-10-26)
 - Salary: not stated in the application
-- Rejection reason (relevance / readiness / compensation / location / unknown): pending
-- **Watch:** if this one ends, the cause should be readable — **relevance** (AWS, Python authorship, 5+ years)
-  or **compensation**, not location. Second `bridge` row in the DE/EU-remote set alongside #22 1GLOBAL.
-- What would have changed the outcome: —
+- Rejection reason: **`unknown`** — a boilerplate refusal ("won't be moving it forward at this time"), no
+  reason given. Three causes were on record before it: the 5+ years SRE band with no pre-SRE career, the
+  absent production AWS, and Python authorship. The email distinguishes none of them, so the label stays
+  `unknown` rather than promoting the likeliest one to a fact.
+- Follow-ups: **none recorded** — the two windows (2026-10-16 → 10-20, 2026-10-23 → 10-29) passed without a
+  logged message, and the refusal landed on the last day of the final window.
+- **Watch:** the cause should still be readable — **relevance** (AWS, Python authorship, 5+ years) or
+  **compensation**, not location. Second `bridge` row in the DE/EU-remote set alongside #22 1GLOBAL. If the
+  next `bridge` refusal also arrives with no reason, the lane's conversion is unreadable and the
+  hard-filter checklist needs a written location/entity question sent with the application.
+- What would have changed the outcome: a published salary band, and a CV variant that led with the
+  Terraform/cost/HA work rather than the GCP depth that has no AWS equivalent. Neither is provable from a
+  boilerplate refusal.
 
 ## Funnel delta
 

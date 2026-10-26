@@ -11,7 +11,7 @@ are pursued now, not held for late-cliff (ruling 2026-10-15).
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — the pipeline runs on the cluster and writes a model artifact; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | **43 issues: 28 open, 15 closed.** Open: #1 Cohere (FR), #5 vCluster, #7 Sinch (`Screening` — ACK 2026-10-15), #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE), #30 Atlantic venture (DE, Tier A), #31 Annapurna/unnamed AI+health (DE, Tier B), #32 Runware (EU-remote, Tier A), #33 SpotMe (EU-remote, Tier C, bridge), #34 MLabs/unnamed fintech-connectivity (EU-remote, Tier C, bridge), #35 Lifen (FR-bridge, Tier B), #37 Redcare Pharmacy (DE, Tier B — probable residency gate, Azure core gap), **#38 Eye Security (NL, Tier B — the one JD asking for shipped LLM work; 6+ yrs and The Hague hybrid)**, #39 Camunda (EU-remote, Tier B, ai), #40 VERBI Software (DE, Tier C, bridge), #41 Yuno (EU-remote, Tier B — Staff title), #42 MOTOR Ai (DE, Tier B, hybrid). Closed: #3 vivenu, #4 ablefy, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX), #36 MAIA, #43 Voyage Privé, **#44 Jimdo** — **all fifteen `reason:unknown`, fourteen of them pre-screen** |
+| Pipeline | **46 issues: 28 open, 18 closed.** Open: #1 Cohere (FR), #5 vCluster, #7 Sinch (`Screening` — ACK 2026-10-15), #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE), #30 Atlantic venture (DE, Tier A), #31 Annapurna/unnamed AI+health (DE, Tier B), #32 Runware (EU-remote, Tier A), #34 MLabs/unnamed fintech-connectivity (EU-remote, Tier C, bridge), #35 Lifen (FR-bridge, Tier B), #37 Redcare Pharmacy (DE, Tier B — probable residency gate, Azure core gap), #39 Camunda (EU-remote, Tier B, ai), #40 VERBI Software (DE, Tier C, bridge), #41 Yuno (EU-remote, Tier B — Staff title), #45 ai-coustics (DE, Platform Engineer AWS), #46 WeScale (FR, Ops Engineer AI Augmented), #47 Mayday (FR, Senior DevOps). Closed: #3 vivenu, #4 ablefy, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX), #33 SpotMe, #36 MAIA, #38 Eye Security, #42 MOTOR Ai, #43 Voyage Privé, #44 Jimdo — **seventeen `reason:unknown` plus one `reason:relevance` (#42 MOTOR Ai), seventeen of them pre-screen** |
 
 ### ⚠️ Priority change — 2026-10-09: France first, Web3 close behind, JD language mandatory
 
@@ -147,6 +147,36 @@ it proceeds, the band was right. **Note the open ambiguity:** whether that figur
 (if total with a ~10% variable, base ≈€86k).
 
 ---
+
+## Updated 2026-10-26
+
+### SpotMe #33 closed — refused, `reason:unknown`, 11 business days, never screened
+
+**Senior Site Reliability Engineer**, **Europe (Remote)**, at **SpotMe** (Swiss Post-owned enterprise event
+platform). `market:eu-remote` · `tier:c` · `channel:ats` · `track:bridge`. Greenhouse application 2026-10-09,
+boilerplate refusal 2026-10-26 ("won't be moving it forward at this time"), no reason given. Board Stage →
+**Closed**, label `reason:unknown`, issue closed. Doc:
+`docs/opportunities/spotme-senior-site-reliability-engineer.md`.
+
+- **Three candidate causes were on record before applying, and the email names none:** the JD's "around five
+  or more years in a site reliability role, built on earlier sysadmin or developer experience" against ~4
+  years and no pre-SRE career; no production **AWS** anywhere in the evidence, in the 40% infrastructure
+  bucket; and **Python authorship** as an essential requirement, plus a Python Lambda shipped by month three.
+  A bare refusal promotes none of them, so the label stays `unknown`.
+- **Follow-ups: none recorded.** The two windows (2026-10-16 → 10-20, 2026-10-23 → 10-29) passed without a
+  logged message, and the refusal landed on the last day of the final window. No chaser is owed now.
+- **Speed:** 11 business days to a pre-screen refusal — second-slowest after ablefy #4 (~21), and one of only
+  two refusals to run past the second follow-up window. Every other recorded refusal landed in 1–7 business
+  days.
+- **Third `bridge` closure, third `unknown`** — #43 Voyage Privé and #44 Jimdo went the same way. Three
+  `bridge` rows closed without a single classification, so the lane's conversion rate cannot be read yet.
+
+### ⚠️ Eighteen closed, seventeen `unknown`, one ever screened
+
+#42 MOTOR Ai (`reason:relevance`) is the only classified closure; the other seventeen carry `unknown`, and
+#21 MarvelX remains the only closure that reached a screening step. The two candidate actions from
+2026-10-15 still stand unruled: ask one line for a reason on the next refusal, and stop counting
+unclassified closures as funnel evidence.
 
 ## Updated 2026-10-15
 
