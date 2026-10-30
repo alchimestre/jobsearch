@@ -7,7 +7,14 @@ Intel Desk (community investigations / "InfoFi"), iframe widget, API.
 **Backers:** Consensys, Polygon, Avalanche, Aptos, Ledger, The Sandbox, Linea, Fuel, Ince, Momentum6, V3ntures
 **Recruiter:** Yofy (agency/external recruiter) — name incomplete, needs capture on next contact
 **Role:** SRE / Data Engineer · **Market:** FR (French company, Web3 — confirmed by Vincent 2026-09-29) · **Tier:** C (no ML-platform surface) · **Channel:** recruiter
-**Stage:** **Interview** — technical round **passed** (reported 2026-10-18); **final round with the CTO on 2026-10-20** · **Comp quoted by recruiter: €60,000–80,000** · **Candidate asked: €70,000 minimum — still unconfirmed** · **Paying entity and remote policy still unknown**
+**Stage:** **Closed** — rejection reported 2026-10-30; reason not reported (`reason:unknown`). Technical round passed (reported 2026-10-18); final CTO round scheduled for 2026-10-20. Comp quoted: €60,000–80,000; candidate asked €70,000 minimum, acceptance unconfirmed. Paying entity and remote policy unconfirmed.
+
+## Outcome
+
+- Rejection reported 2026-10-30; decision date and employer feedback not supplied.
+- Stage reached: Interview. Technical round passed; final CTO round completion not confirmed.
+- Rejection reason: unknown. No reason given, confirmed 2026-10-30. No cause inferred from compensation or preparation notes.
+- Application follow-ups cancelled. No feedback request recorded.
 
 ## Market note — FR-bridge, and that strengthens the case for holding it
 
@@ -190,9 +197,8 @@ zones, assets secured).
 ## Technical interview — working reference (2026-10-05)
 
 Interview: **2026-10-06 morning, with a data engineer.**
-**Status: ✅ took place 2026-10-06. Outcome and interviewer feedback not yet reported** — Vincent will
-debrief later. Do not record a result, a stage change, or a follow-up date until that debrief; the next step
-(second round, take-home, or silence) is unknown.
+**Status: took place 2026-10-06; passed, reported 2026-10-18.** Rejection reported 2026-10-30;
+employer feedback not supplied.
 Preparation is ongoing, not evidence of production
 Kafka/ClickHouse expertise. Vincent identified source-to-storage lag and replay from committed offsets;
 reorg recovery and database correctness still need practice.

@@ -4,6 +4,7 @@
 **Market:** FR (Paris) · **Tier:** B — owns the platform of an AI-augmented SaaS product, AI team in-house
 · **Channel:** ATS (Station F board) · **Track:** `track:ai` · **Evidence version:** pre-project
 **Applied:** ✅ 2026-10-21 · **Follow-ups:** 2026-10-28 (first), 2026-11-04 (final)
+**Stage:** Contacted. Application reconfirmed 2026-10-30 against the same posting; original application date and follow-up dates retained.
 
 ## What the role is
 

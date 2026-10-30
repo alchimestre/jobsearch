@@ -11,7 +11,25 @@ are pursued now, not held for late-cliff (ruling 2026-10-15).
 | Mode | Normal — late-cliff (~Feb 2027) and last-resort (~Apr 2027) did **not** shift; they are cliff-anchored |
 | Evidence project | `~/projects/ml-platform-on-k8s` — the pipeline runs on the cluster and writes a model artifact; no remote yet |
 | CV / LinkedIn | Applied and committed (2026-09-13). Story is consistent |
-| Pipeline | **46 issues: 28 open, 18 closed.** Open: #1 Cohere (FR), #5 vCluster, #7 Sinch (`Screening` — ACK 2026-10-15), #9 SAP Fioneer, #13 Bubblemaps (`Interview`), #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR), #28 Filigran (FR), #29 idnow (DE), #30 Atlantic venture (DE, Tier A), #31 Annapurna/unnamed AI+health (DE, Tier B), #32 Runware (EU-remote, Tier A), #34 MLabs/unnamed fintech-connectivity (EU-remote, Tier C, bridge), #35 Lifen (FR-bridge, Tier B), #37 Redcare Pharmacy (DE, Tier B — probable residency gate, Azure core gap), #39 Camunda (EU-remote, Tier B, ai), #40 VERBI Software (DE, Tier C, bridge), #41 Yuno (EU-remote, Tier B — Staff title), #45 ai-coustics (DE, Platform Engineer AWS), #46 WeScale (FR, Ops Engineer AI Augmented), #47 Mayday (FR, Senior DevOps). Closed: #3 vivenu, #4 ablefy, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX), #33 SpotMe, #36 MAIA, #38 Eye Security, #42 MOTOR Ai, #43 Voyage Privé, #44 Jimdo — **seventeen `reason:unknown` plus one `reason:relevance` (#42 MOTOR Ai), seventeen of them pre-screen** |
+| Pipeline | **51 issues: 31 open, 20 closed.** Open: #1 Cohere (FR), #5 vCluster, #7 Sinch (`Screening` — ACK 2026-10-15), #9 SAP Fioneer, #14 Cohere (EU), #15 Dialectic, #17 ClickHouse, #18 Nebius ML Infra, #20 Peak3, #22 1GLOBAL (DE), #25 Blockstream (CH), #26 Anagram, #27 360Learning (FR, DevSecOps), #28 Filigran (FR), #29 idnow (DE), #30 Atlantic venture (DE, Tier A), #31 Annapurna/unnamed AI+health (DE, Tier B), #32 Runware (EU-remote, Tier A), #34 MLabs/unnamed fintech-connectivity (EU-remote, Tier C, bridge), #35 Lifen (FR-bridge, Tier B), #37 Redcare Pharmacy (DE, Tier B — probable residency gate, Azure core gap), #39 Camunda (EU-remote, Tier B, ai), #40 VERBI Software (DE, Tier C, bridge), #41 Yuno (EU-remote, Tier B — Staff title), #45 ai-coustics (DE, Platform Engineer AWS), #46 WeScale (FR, Ops Engineer AI Augmented), #47 Mayday (FR, Senior DevOps), #49, #50, #51 360Learning (FR, DevOps), #52 Zefir (FR, talent acquisition; career-change long shot, excluded from infrastructure totals). Closed: #3 vivenu, #4 ablefy, #6 Doctolib, #8 Lity, #10 Otera, #11 Workist, #12 Langdock, #13 Bubblemaps, #16 Synthesia, #19 Nebius Token Factory, #21 MarvelX, #23 n8n (Agentic), #24 n8n (DevX), #33 SpotMe, #36 MAIA, #38 Eye Security, #42 MOTOR Ai, #43 Voyage Privé, #44 Jimdo, #48. |
+
+### Applications reported 2026-10-30
+
+Mayday reconfirmed against the existing posting; original application date 2026-10-21 retained.
+360Learning DevOps is a separate application from Senior DevSecOps. France remote and role filters pass;
+compensation is unverified. Zefir talent acquisition is a deliberate career-change long shot outside the
+infrastructure totals; English and Paris pass, role scope fails. Advertised salary is €64,000–€71,000;
+the linked Ashby application returns 404. Both new applications are Contacted.
+First follow-ups: 2026-11-06 → 2026-11-10; final: 2026-11-16 → 2026-11-20, excluding 11 November.
+Records: `docs/opportunities/360learning-devops-engineer.md` and
+`docs/opportunities/zefir-talent-acquisition-manager-tech-product.md`.
+
+### Bubblemaps closed — reported 2026-10-30
+
+Rejection after the technical round passed; final CTO round was scheduled for 2026-10-20.
+Final-round completion, decision date and employer feedback are not reported. Reason stays `unknown`.
+Application follow-ups cancelled. No feedback request recorded.
+Record: `docs/opportunities/bubblemaps-sre-data-engineer.md`.
 
 ### ⚠️ Priority change — 2026-10-09: France first, Web3 close behind, JD language mandatory
 
