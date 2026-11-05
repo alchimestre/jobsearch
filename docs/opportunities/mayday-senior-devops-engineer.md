@@ -4,7 +4,7 @@
 **Market:** FR (Paris) · **Tier:** B — owns the platform of an AI-augmented SaaS product, AI team in-house
 · **Channel:** ATS (Station F board) · **Track:** `track:ai` · **Evidence version:** pre-project
 **Applied:** ✅ 2026-10-21 · **Follow-ups:** 2026-10-28 (first), 2026-11-04 (final)
-**Stage:** Contacted. Application reconfirmed 2026-10-30 against the same posting; original application date and follow-up dates retained.
+**Stage:** Closed 2026-11-05. Applications: 2026-10-21 and 2026-10-30 to the same posting; original follow-up dates retained.
 
 ## What the role is
 
@@ -76,4 +76,12 @@ The cloud gate is the one the screen will actually test.
 - Follow-up 1 due: 2026-10-28
 - Follow-up 2 due: 2026-11-04
 - Screen date: —
-- Outcome: pending
+- Outcome: rejected 2026-11-05
+
+## Outcome record
+
+- Stage reached: Contacted; no screen reported in the emails
+- Rejection reason: **unknown** — the messages say other candidates will continue; no specific reason was given
+- Mail sent 2026-11-05; received/reported in this audit 2026-11-05. Two separate submissions to this same posting are evidenced by receipts UID 6007 (2026-10-21) and UID 6182 (2026-10-30), each matched by sender ID to a distinct rejection (UID 6312 and UID 6311 respectively). They remain one live role opportunity, recorded once.
+- The employer asks to keep the CV for two years. No reply required unless Vincent refuses
+- What would have changed the outcome: —

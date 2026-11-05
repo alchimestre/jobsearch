@@ -10,7 +10,7 @@ retailers, PSPs.
 bespoke vacancy IDs), so there is **no jobradar-adoptable ATS board** — unlike Greenhouse/Workable employers.
 **Market:** **DE (Berlin)** · **Tier:** **C** (non-AI, non-Web3 platform SRE — see verdict) · **Channel:** ATS ·
 **Track:** `bridge`
-**Applied:** ✅ **2026-09-30** · **Stage:** Contacted
+**Applied:** ✅ **2026-09-30** · **Stage:** **Closed** (refused 2026-10-05; no screen reported)
 **Follow-ups:** 1st due **2026-10-07 → 2026-10-09** · final **2026-10-14 → 2026-10-20**
 **Compensation:** **undisclosed** ("competitive compensation packages… performance-driven bonuses") →
 **Berlin floor €80,000 must be confirmed at first contact.**
@@ -86,12 +86,14 @@ estate) · **BGP/VXLAN** at the carrier-networking layer · **service mesh** bey
 - Follow-up 2 due (10–14 business days): **2026-10-14 → 2026-10-20** (final)
 - Screen date: —
 - Interview dates: —
-- Outcome: pending
+- Outcome: **refused 2026-10-05** (email; received/reported in this audit 2026-11-05)
 
 ## Outcome record
 
-- Stage reached: Contacted
-- Rejection reason (relevance / readiness / compensation / location / unknown): pending
+- Stage reached: **closed at Contacted; no screen reported** (applied 2026-09-30 → refusal email 2026-10-05)
+- Board Stage: **Closed** (set 2026-11-05)
+- Rejection reason: **`unknown`** — email says the team will not proceed and offers no individual feedback.
+- Follow-ups cancelled.
 - **Long-shot flag:** Tier C bridge ahead of the last-resort window, ~4 years against a 5+ years ask, and a
   Python/Go proficiency line the evidence boundaries forbid claiming. Logged so the funnel stays
   interpretable — **do not pool with the AI/ML primary lane** (#9 SAP Fioneer, #11 Workist, #12 Langdock).

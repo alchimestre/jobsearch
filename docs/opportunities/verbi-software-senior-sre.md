@@ -7,7 +7,7 @@ product). New cloud/AI product: **MAXQDA Tailwind**. Platform is **AWS-centric (
 small on-prem bare-metal setup.
 **Market:** **DE (Berlin)** · **Tier:** **C** (non-AI platform role at a legacy software vendor; AI-product
 adjacency only, no ML-platform ownership in the JD) · **Channel:** ATS (LinkedIn) · **Track:** `bridge`
-**Applied:** ✅ **2026-10-11** (LinkedIn) · **Stage:** Contacted
+**Applied:** ✅ **2026-10-11** (LinkedIn) · **Stage:** **Closed 2026-11-05**
 **Follow-ups:** 1st due **2026-10-16 → 2026-10-20** · final **2026-10-23 → 2026-10-29**
 
 ## Hard-filter checklist (§2 + lane filters)
@@ -64,12 +64,13 @@ long-shot to keep the funnel interpretable, per `AGENTS.md`.
 - Contacted / applied: **2026-10-11** (LinkedIn ATS)
 - Follow-up 1 due (5–7 business days): **2026-10-16 → 2026-10-20**
 - Follow-up 2 due (10–14 business days): **2026-10-23 → 2026-10-29** (final)
-- Screen date: — · Interview dates: — · Outcome: pending
+- Screen date: — · Interview dates: — · Outcome: **rejected 2026-11-05; reason unknown**
 
 ## Outcome record
 
 - Stage reached: Contacted
-- Rejection reason (relevance / readiness / compensation / location / unknown): pending
+- Rejection reason (relevance / readiness / compensation / location / unknown): **unknown** — rejected 2026-11-05 by VERBI Software GmbH with a template response that cites the number of qualified applicants and offers no feedback
+- The unchecked location filter (hybrid Berlin, no funded relocation or French remote start stated) remains the most likely elimination. The employer did not confirm it, so relevance and compensation stay possible
 - **Watch:** if VERBI does not fund relocation and does not allow a French remote start, the location filter
   is the elimination cause and a rejection is expected. Otherwise the elimination set is relevance (AWS) or
   compensation.

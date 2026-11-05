@@ -75,13 +75,14 @@ Single integer where the form demands it: **90000**.
 - Follow-up 2 due (10–14 business days): **2026-10-14** (final)
 - Screen date: —
 - Interview dates: —
-- Outcome: pending
+- Outcome: **refused 2026-11-04** (email; received/reported in this audit 2026-11-05)
 
 ## Outcome record
 
-- Stage reached: Contacted
-- Rejection reason (relevance / readiness / compensation / location / unknown): pending
-- What would have changed the outcome: — pending
+- Stage reached: **closed at Contacted; no screen reported** (applied 2026-09-26 → refusal email 2026-11-04)
+- Board Stage: **Closed** (set 2026-11-05)
+- Rejection reason: **`unknown`** — no specific reason was given.
+- Follow-ups cancelled.
 - Watch: **25 applicants within 4 days** on a 2–3 year band suggests they may screen for a cheaper
   candidate. The €90k ask filters that pool out early — correct behaviour, not a loss.
 

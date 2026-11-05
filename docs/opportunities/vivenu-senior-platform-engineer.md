@@ -80,16 +80,16 @@ artifact makes it true (`CONTEXT.md` Evidence Boundaries).
 
 ## Outcome
 
-- Stage reached: **closed at Contacted, never screened** (ATS application, 2026-09-11 → refusal 2026-09-25)
-- Board Stage: **Closed** (was Contacted; set 2026-09-25)
-- Rejection reason: **unknown** — no reason given. The strategy's label set defines `unknown` exactly as "no reason given", so nothing is inferred here.
-- Duration: 14 calendar days, 10 business days — a decision inside the normal ATS window, not a silence-close.
-- Follow-ups: **none sent.** Follow-up 1 (due 2026-09-18) was missed during the 2026-09-14 → 09-23 pause; the refusal arrived before the second window, so neither is now owed.
-- What would have changed the outcome: **not derivable.** The role already had two checklist items unchecked (AI workload exposure unconfirmed, a preference rather than a filter; remote-start/relocation unasked), so either could have been the cause — as could the 5+ years bar against four years of evidenced infra roles, or simply volume. No feedback was offered and none was requested, so **none** of these is recorded as the cause.
-- Feedback request: **not sent.** §3 prescribes the one feedback request only *after a recruiter-screen rejection*; this opportunity never reached screening, so it is out of scope.
-- Expected value: this was flagged as a deliberate long-shot at application time. Closing it as `unknown` is the recorded cost of the deliberate long-shot, not new information about the filters.
-- Next action: **closed.** No further contact. Removal from the follow-up queue; issue #3 closed with `reason:unknown`.
+- Stage reached: **closed at Contacted; no screen reported** (ATS application 2026-09-11 → refusal email 2026-09-12)
+- Board Stage: **Closed** (reported and closed in the tracker on 2026-09-25)
+- Rejection reason: **`location`** — the email says only candidates with a valid German work permit who can start short-term without relocation sponsorship were considered.
+- Mail sent: **2026-09-12** · refusal received/reported: **2026-09-25**.
+- Duration: 1 calendar day from application to refusal email; 14 days from application to tracker report/closure.
+- Follow-ups: **none sent.** Follow-up 1 (due 2026-09-18) was missed during the 2026-09-14 → 09-23 pause; refusal mail had arrived before follow-up 2 due 2026-09-25.
+- What would have changed the outcome: valid German work authorization and short-term availability without relocation sponsorship.
+- Feedback request: **not sent.** §3 prescribes it only *after a recruiter-screen rejection*; no screen is reported.
+- Next action: **closed.** No further contact. Removal from the follow-up queue; issue #3 closed with `reason:location`.
 
 ## Funnel delta
 
-Rows this changes in §6's dashboard: applications sent (unchanged, 2026-09-11), application-to-screen (this application closes as a screen miss), screen-to-rejection (unchanged — never screened), rejection-reason tally (`unknown` +1).
+Rows this changes in §6's dashboard: applications sent (unchanged, 2026-09-11), application-to-screen (this application closes with no screen reported), screen-to-rejection (unchanged), rejection-reason tally (`location` +1).

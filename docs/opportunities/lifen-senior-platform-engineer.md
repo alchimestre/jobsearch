@@ -11,7 +11,7 @@ their applications securely and autonomously, in a **multi-cloud environment wit
 AWS to GCP**.
 **Market:** **fr-bridge** (French employer, **entire team works remotely from France** — *"L'équipe travaille
 entièrement à distance depuis la France"*) · **Tier:** **B** · **Channel:** ATS (Ashby) · **Track:** `ai`
-**Applied:** ✅ **2026-10-09** · **Stage:** Contacted · **Issue:** #35
+**Applied:** ✅ **2026-10-09** · **Stage:** Closed · **Issue:** #35
 **Compensation:** **not published.** France-compatible floor **€80,000** (§2). ⚠️ `CONTEXT.md` flags
 **French bands as `[INFERENCE]` estimates** — no primary-source benchmarking was done. **This is the binding
 unknown.**
@@ -112,15 +112,14 @@ and the geography all line up at once. One unknown, and it is compensation.**
 - Follow-up 2 due (10–14 business days): **2026-10-23 → 2026-10-29** (final)
 - Prequalification (Laura, TA): —
 - Hiring manager: — · Technical case: — · Cultural alignment: —
-- Outcome: pending
+- Outcome: rejected by email on 2026-10-21; reconciled in the tracker on 2026-11-05. Follow-ups cancelled.
 
 ## Outcome record
 
-- Stage reached: Contacted
+- Stage reached: Contacted; no screen established by the email
 - Salary: not stated in the application
-- Rejection reason (relevance / readiness / compensation / location / unknown): pending
-- **Watch:** geography is settled in the right direction, so a rejection would be **compensation** or
-  **relevance** (IDP ownership, AWS legacy) — the elimination set is small and interpretable, like #32 Runware.
+- Rejection reason: **unknown**. The email does not identify a specific cause.
+- Evidence: ProtonMail All Mail, UID validity 1, UID 6019; subject “Merci pour ta candidature Vincent”; dated 2026-10-21.
 - What would have changed the outcome: —
 
 ## Funnel delta

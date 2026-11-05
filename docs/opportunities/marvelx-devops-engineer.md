@@ -111,7 +111,7 @@ budget, no stated remote start.
 - Follow-up 2 due (10–14 business days): **2026-10-16** (final)
 - Screen date: —
 - Interview dates: —
-- Outcome: pending — awaiting review of the questionnaire
+- Outcome: refused 2026-10-05; no reason given
 
 ## Outcome record
 

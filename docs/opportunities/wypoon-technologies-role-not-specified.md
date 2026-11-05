@@ -6,6 +6,8 @@
 **Market, tier, channel and track:** Not established.
 **Application date:** Not supplied.
 **Rejection reported:** 2026-11-02. The message's send date was not supplied.
+**Stage:** Closed.
+
 **Outcome:** Rejected after résumé review.
 **Reason:** Unknown. No specific skill, experience, location or compensation issue identified.
 **Follow-ups:** Cancelled. No reply or feedback request needed for this résumé-review rejection.
@@ -26,3 +28,10 @@ No hard-filter failure or deliberate long-shot classification is inferred.
 ## Funnel treatment
 
 Record one rejected application with an unknown application date and unknown rejection reason. Do not assign it to an application-date cohort. No recruiter screen or interview is reported. Keep market, tier, channel and track unclassified until supporting evidence is available.
+
+## Mail evidence
+
+The receipt dated 2026-10-30 (All Mail UID 6191) names AI Platform Engineer – Azure & AI Infrastructure (Relocation Provided).
+The rejection dated 2026-11-02 (UID 6223) does not name a role.
+The receipt identifies an application, but the evidence does not establish whether the rejection concerns that submission.
+Keep the rejection reason unknown and the role association unverified.

@@ -80,7 +80,7 @@ scope, cross-stakeholder communication) better than any other role logged today.
 - Follow-up 2 due (10–14 business days): **2026-10-14** (final)
 - Screen date: —
 - Interview dates: —
-- Outcome: pending
+- Outcome: refused; no reason given (pre-screen), reported 2026-10-06
 
 ## Outcome record
 

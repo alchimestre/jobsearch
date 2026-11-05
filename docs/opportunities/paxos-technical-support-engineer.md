@@ -4,10 +4,12 @@
 **Location:** Singapore (telecommute; applicant location requirement is Singapore).
 **Compensation:** Not disclosed; salary-floor fit unconfirmed.
 **Market:** Non-target (Singapore; no matching market label) · **Tier:** C (non-infrastructure long-shot) · **Channel:** ATS · **Track:** Web3
-**Applied:** 2026-11-02 · **Stage:** Contacted
+**Applied:** 2026-11-02 · **Stage:** Closed
 **Follow-ups:** first 2026-11-10 · final 2026-11-19
 **Evidence version used:** not supplied
 **Jobradar UID:** none found
+
+**Outcome:** Refused by email 2026-11-03; received/reported in this audit 2026-11-05. Closed at Contacted; no screen reported. Rejection reason: `unknown`; no specific reason was given. Board Stage set to Closed on 2026-11-05. Follow-ups cancelled.
 
 ## Hard-filter verdict
 

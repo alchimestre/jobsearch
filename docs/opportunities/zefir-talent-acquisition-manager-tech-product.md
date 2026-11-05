@@ -3,7 +3,7 @@
 **Posting:** https://www.welcometothejungle.com/fr/companies/zefir/jobs/talent-acquisition-manager-business_paris
 **Market:** FR-bridge · **Tier:** C · **Channel:** ATS · **Track:** `track:bridge`
 **Classification:** deliberate career-change long shot, outside the infrastructure search. Labels provide tracker compatibility, not admission to the infrastructure bridge cohort.
-**Stage:** Contacted · **Applied:** reported 2026-10-30; date used for follow-up calculation.
+**Stage:** Closed · **Applied:** reported 2026-10-30; date used for follow-up calculation.
 **Evidence version:** not reported. **jobradar:** no matching company row on 2026-10-30.
 
 ## Hard-filter checklist
@@ -35,4 +35,4 @@ The page title and heading say Tech & Product; the URL says business. The body m
 
 First follow-up: **2026-11-06 → 2026-11-10** (5–7 French business days).
 Final follow-up: **2026-11-16 → 2026-11-20** (10–14 French business days; 11 November excluded).
-No follow-up, screen or outcome reported. Confirm that the vacancy is active, its hiring scope, base salary and office requirement.
+No follow-up or screen reported. Rejection email sent 2026-11-04; received/reported in this audit 2026-11-05. Closed at Contacted; no specific reason given (`unknown`). Board Stage set to Closed on 2026-11-05.

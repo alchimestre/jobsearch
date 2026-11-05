@@ -109,19 +109,16 @@ should shift toward EU-remote/FR until relocation funding is secured.
 - Follow-up 2 due (10–14 business days): **2026-10-23 → 2026-10-29** (final)
 - Screen date: —
 - Interview dates: —
-- Outcome: pending
+- Outcome: **refused 2026-10-13** (email; received/reported in this audit 2026-11-05)
 
 ## Outcome record
 
-- Stage reached: Contacted
+- Stage reached: **closed at Contacted, never screened** (application 2026-10-09 → refusal email 2026-10-13)
+- Board Stage: **Closed** (set 2026-11-05)
 - Salary: not stated in the application
-- Rejection reason (relevance / readiness / compensation / location / unknown): pending
-- **Watch:** with no band published and a probable residency gate, this is a row where **silence carries no
-  information** — it joins the `unknown` pile. The lesson is upstream: both unknowns were answerable **before
-  applying** (ask for the band; ask whether France is eligible), which is exactly what the 2026-10-09 rule now
-  requires.
-- What would have changed the outcome: a published band clearing €80k; a France-eligible contract; a
-  senior-scoped variant
+- Rejection reason: **`unknown`** — the email says other applicants' backgrounds and skills aligned better, but names no specific gap.
+- **Watch:** location, compensation and seniority were unresolved before applying; the rejection identifies none as the cause.
+- What would have changed the outcome: **not derivable** from the refusal email.
 
 ## Funnel delta
 

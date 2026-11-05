@@ -3,7 +3,7 @@
 **Posting:** https://de.linkedin.com/jobs/view/senior-or-staff-backend-engineer-ai-tooling-at-synthesia-4472733469 (applied via LinkedIn job-alert link)
 **Company:** Synthesia — AI video platform for business; London HQ, $4B valuation, Series E $200M (total >$530M); investors incl. Accel, NVentures (NVIDIA), Kleiner Perkins, GV.
 **Market:** Berlin (DE) · **Tier:** B (nearest bucket — see caveat) · **Channel:** ATS (LinkedIn → Synthesia)
-**Applied:** ✅ 2026-09-29 (LinkedIn, submitted) · **Stage:** Contacted
+**Applied:** ✅ 2026-09-29 (LinkedIn, submitted) · **Stage:** Closed (refused 2026-09-30; no screen reported)
 **Follow-ups:** 1st due 2026-10-06 → 2026-10-08 · final 2026-10-13 → 2026-10-19
 **Evidence version used:** pre-project
 
@@ -78,22 +78,19 @@ defensible as volume; expect a relevance/readiness rejection and record it.
 - Follow-up 2 due (10–14 business days): 2026-10-13 → 2026-10-19
 - Screen date: —
 - Interview dates: —
-- Outcome: pending
+- Outcome: refused by email 2026-09-30; received/reported in the tracker 2026-09-30
 
 ## Outcome record
 
-- Stage reached: **closed at Contacted, never screened** (ATS application 2026-09-29 → refusal same day)
-- Board Stage: **Closed** (set 2026-09-29)
+- Stage reached: **Contacted; no screen reported** (applied 2026-09-29; refusal email 2026-09-30)
+- Board Stage: **Closed** (tracker comment recorded 2026-09-30 07:13 UTC / 09:13 +0200)
 - Rejection reason: **`unknown`** — no reason given. The note *predicted* relevance/readiness; no reason was
   offered, so nothing is inferred and nothing is recorded as the cause. Recording the prediction instead of
   the fact would corrupt the funnel
-- Duration: **refused same day as application** — a resume-screen-out. Faster even than Doctolib (2 business
-  days), consistent with the pattern for roles failing explicit seniority bars
+- Duration: one calendar day from application to refusal email. The issue's received/report comment followed the email by about eight minutes (2026-09-30 09:05 → 09:13 +0200).
 - Follow-ups: **none sent, none owed** (refusal arrived before the first window, 2026-10-06)
-- Feedback request: **not sent.** §3 prescribes the one feedback request only after a *recruiter-screen*
-  rejection; this never reached screening
-- **§7 rules 1–3 not triggered.** Rule 1 covers outreach (not ATS) and needs 3 active weeks; rule 2 requires
-  a screen; rule 3 needs six active ATS weeks
+- Feedback request: **not sent.** §3 prescribes it only after a recruiter-screen rejection; no screen is reported.
+- **§7 rules 1–3 not triggered.** Rule 1 covers outreach (not ATS) and needs 3 active weeks; rule 2 requires a screen; rule 3 needs six active ATS weeks.
 - Recorded cause of the deliberate long-shot (predicted **before** applying, not derived from the refusal):
   **two hard filters fired explicitly in the JD** — `(Senior or Staff)` asking **7+ years as a software
   engineer** (2–3 at senior/staff) against ~4 evidenced, and a **Python implementation exercise** against an
@@ -106,15 +103,15 @@ defensible as volume; expect a relevance/readiness rejection and record it.
 ## Funnel delta
 
 - Applications sent: unchanged (2026-09-29), already counted
-- Application-to-screen: closes as a **screen miss**
+- Application-to-screen: **no screen reported**
 - Rejection-reason tally: **`unknown` +1 → 3 of 3 closed opportunities are `unknown`** (vivenu #3, Doctolib
   #6, Synthesia #16)
 
 ### ⚠️ The `unknown` rate is now a real measurement problem
 
-Three rejections, three silences, all pre-screen. §7's diagnostic rules 2 and 4 (screen-to-rejection,
+Three rejections, three silences, with no screens reported. §7's diagnostic rules 2 and 4 (screen-to-rejection,
 compensation mismatch) both depend on classified rejection reasons, and §3's single feedback request is
-available only *after a recruiter screen*. **No pre-screen refusal can ever be classified.**
+available only *after a recruiter screen*. The messages do not establish a recruiter screen.
 
 Consequence: the funnel can currently distinguish *nothing* about why applications fail. Every closed row is
 uninformative. Two structural implications worth raising at the Friday review:

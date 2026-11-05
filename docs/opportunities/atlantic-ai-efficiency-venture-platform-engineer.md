@@ -125,7 +125,9 @@ Python, the first filter is a code screen.
 
 - Stage reached: Contacted
 - Salary: **not stated in the application** (no figure was submitted — unlike idnow #29 and Otera #10)
-- Rejection reason (relevance / readiness / compensation / location / unknown): pending
+- Rejection reason (relevance / readiness / compensation / location / unknown): **unknown** — rejected 2026-11-05 by the Atlantic/FoodLabs Talent & Venture Development team, which states it cannot give individual feedback
+- Rejection named the role "Agentic Platform Engineer (gn) @ AI Venture, Berlin". Mapped to this record on portfolio, city and the `(gn)` marker; the tracked title reads "Platform Engineer (gn) @ AI Efficiency Venture" [INFERENCE: same venture, retitled in the application form]
+- The on-site Berlin requirement with no relocation support was the known unchecked filter. The template gives no cause, so the rejection does not confirm location as decisive
 - **Watch:** the two binding unknowns (base, relocation) are both answerable by the employer in one message.
   Per the new rule recorded 2026-10-09, they go in the **first follow-up**, not into a recruiter call that may
   never happen.
