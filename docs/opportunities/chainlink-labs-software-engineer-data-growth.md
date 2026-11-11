@@ -4,8 +4,8 @@
 **Location:** Remote-first, but employment requires residence in an approved hiring jurisdiction; the posting does not list approved jurisdictions. France eligibility is unconfirmed. Work outside the primary country of legal residence is limited to 90 days per calendar year; working hours must overlap with Eastern Time unless stated otherwise.
 **Compensation:** No salary range stated.
 **Market:** Unconfirmed; remote-first does not establish EU or France eligibility · **Tier:** C as a filing fallback only, not a qualifying infrastructure bridge · **Channel:** ATS · **Track:** Web3 (blockchain employer; no AI-platform role)
-**Applied:** 2026-11-02 (reported submitted) · **Stage:** Contacted
-**Follow-up 1:** 2026-11-10 · **Final follow-up:** 2026-11-19
+**Applied:** 2026-11-02 (reported submitted) · **Stage:** Closed
+**Follow-ups:** Cancelled.
 **Evidence version used:** Not supplied.
 **Jobradar:** No matching posting ID or title. Employer-only results were unrelated Chainlink Labs SRE roles; no UID is assigned to this application.
 
@@ -29,3 +29,10 @@
 - Re-architect provisioning, data-sourcing and customer-enablement workflows; improve cycle times, remove bottlenecks and reduce friction.
 - Apply AI technologies to products and operational workflows, collaborating across technical and business teams.
 - Requires TypeScript software-product experience. Preferred experience includes Go, onboarding systems, workflow automation, data integration and cloud-native architectures.
+
+## Outcome
+
+Rejection email dated 2026-11-06; received at 15:01:11 +0100.
+The message names Software Engineer, Data Growth and declines the application after review.
+Rejection reason: unknown. General wording about closer matches does not establish a specific cause.
+No screen reported. The software-development role fails the role-type filter; it remains a deliberate long-shot.

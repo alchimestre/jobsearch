@@ -1,8 +1,8 @@
-# Vinted — Role not stated
+# Vinted — Senior Platform Engineer, ML Platform
 
-Stage: Contacted. Acknowledgments received: 2026-10-30.
-Exact submission date and number of distinct applications: unverified.
-Channel: ATS (Greenhouse). Market, tier, track and posting URL: unverified.
+Stage: Closed for the named role. Rejected by email on 2026-11-06.
+Acknowledgments received: 2026-10-30. Exact submission date: unverified.
+Channel: ATS (Greenhouse). Track: AI infrastructure. Market, tier and posting URL: unverified.
 
 ## Mail evidence
 
@@ -11,13 +11,18 @@ Source: ProtonMail All Mail, UID validity 1, UIDs 6187 and 6188; subject “Vint
 The body text matches. Separate message IDs do not establish separate applications.
 Vinted says it aims to respond within ten working days.
 
+The rejection dated 2026-11-06 names Senior Platform Engineer, ML Platform.
+Source: ProtonMail All Mail, UID validity 1, UID 6331; subject “Important information about your application to Vinted”.
+No specific reason was given. No screen is established by this message.
+The rejection does not identify which acknowledgment it concerns.
+No second distinct application or active role is established; the other acknowledgment remains unassigned.
+
 ## Hard-filter verdict
 
 Unverified. Job-description language, role type, France employment eligibility and compensation are unknown.
-Exclude from qualified-application counts. Keep one unresolved employer record until the role and submission count are established.
+Exclude from qualified-application counts until the job description establishes eligibility.
 
-## Follow-up
+## Outcome
 
-Receipt-based weekday windows: first 2026-11-06 to 2026-11-10; final 2026-11-13 to 2026-11-19.
-These provisional windows do not exclude public holidays.
-No outcome or screen is established by these messages.
+Rejection reason: unknown. Follow-ups for Senior Platform Engineer, ML Platform are cancelled.
+Do not assign the rejection to another role or count the two acknowledgments as two applications.

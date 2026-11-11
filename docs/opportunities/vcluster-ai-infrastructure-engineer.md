@@ -4,7 +4,7 @@
 **Direct ATS link:** https://jobs.ashbyhq.com/vClusterLabs/19a7f22e-ee7d-419b-bc9e-e2fa61dff2d1
 **Company:** vCluster Labs — Kubernetes tenant-isolation platform for AI clouds; 100k+ GPUs and 1M CPUs across 50+ AI clouds; $28M raised (Khosla Ventures); HQ San Francisco, remote-first, 40+ engineers
 **Market:** EU-remote (locations: Remote / Australia / Germany / United States — remote-first) · **Tier:** b (AI-infrastructure vendor, customer-facing)
-**Channel:** ATS (Ashby) · **Applied:** ✅ (date unrecorded)
+**Channel:** ATS (Ashby) · **Applied:** 2026-09-29 (issue comment; jobradar UID `b024943262aa0f8f`)
 
 ## Compensation
 
@@ -73,16 +73,17 @@ secondary lane was meant to catch.
 
 ## Timeline
 
-- Applied: ✅ (date unrecorded)
-- Follow-up windows: not computable, the application date was not recorded
+- Applied: 2026-09-29 (issue comment; jobradar UID `b024943262aa0f8f`)
+- Rejection: 2026-11-10; application not advanced.
+- Follow-up windows: cancelled after rejection.
 - Screen date: —
-- Outcome: —
+- Outcome: rejected.
 
 ## Outcome record
 
-- Stage reached: Contacted (project board #5)
-- Rejection reason: —
-- What would have changed the outcome: —
+- Stage reached: Contacted (project board #5); closed after rejection.
+- Rejection reason: unknown; the email gives no specific reason.
+- What would have changed the outcome: unknown.
 
 ## Notes
 

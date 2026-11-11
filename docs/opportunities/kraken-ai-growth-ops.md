@@ -4,8 +4,8 @@
 **Location:** United Kingdom (remote); France is not listed among the posting’s locations.
 **Compensation:** Not disclosed; salary-floor fit unconfirmed.
 **Market:** EU-remote (France eligibility unconfirmed) · **Tier:** C (non-infrastructure long-shot) · **Channel:** ATS · **Track:** Web3
-**Applied:** 2026-11-02 · **Stage:** Contacted
-**Follow-ups:** first 2026-11-10 · final 2026-11-19
+**Applied:** 2026-11-02 · **Stage:** Closed
+**Follow-ups:** first 2026-11-10 · final 2026-11-19; both cancelled after refusal on 2026-11-05
 **Evidence version used:** not supplied
 **Jobradar UID:** none found
 
@@ -21,3 +21,7 @@
 ## Duties
 
 Test releases, rules, regressions, and edge cases; document and verify bugs; monitor platform and agent activity; clear approval queues; maintain test plans, checklists, runbooks, and release notes.
+
+## Outcome
+
+Payward Recruiting rejected the AI Growth Ops application on **2026-11-05** (All Mail UID 6318). The message names Payward, not Kraken or the role. The official [Payward About page](https://www.payward.com/about) identifies Kraken as its flagship platform, confirming the corporate relationship. The current ledger contains this single Kraken/Payward AI Growth Ops opportunity. Reason: **unknown**; no screen is reported. Board Stage: **Closed**.

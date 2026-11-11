@@ -1,7 +1,7 @@
 # Ledgy — Senior DevOps Engineer
 
 Posting: https://www.linkedin.com/jobs/view/4487059312/
-Applied: 2026-11-04. Stage: Contacted.
+Applied: 2026-11-04. Rejected: 2026-11-10. Stage: Closed.
 Market: Germany remote lane. Tier: B [INFERENCE: Series B European scale-up]. Channel: ATS. Track: bridge.
 
 ## Hard-filter verdict
@@ -17,7 +17,10 @@ Process note: live coding interview without AI assistance.
 
 ## Follow-up
 
-First: 2026-11-11 to 2026-11-13. Final: 2026-11-18 to 2026-11-24. Weekdays only; public holidays are not excluded.
-Ask in writing whether a France-based contract is possible before investing in the interview process.
+Cancelled after rejection on 2026-11-10.
+
+## Outcome
+
+The 2026-11-10 email says Ledgy chose other candidates it considered a better match. It gives no individual feedback. Rejection reason: unknown.
 
 Source identifier: LinkedIn `4487059312`. No jobradar uid verified. Application reported directly; evidence version used is unknown.

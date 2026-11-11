@@ -11,10 +11,11 @@ Gilead), plus Deloitte/EY/KPMG, Workday, Mercedes-Benz, L'Oréal and BNP Paribas
 **Market:** **EU-remote** ("Europe (Remote)") · **Tier:** **C** (bridge — no AI-infrastructure surface)
 · **Channel:** ATS (Greenhouse) · **Track:** **`bridge`**
 **Team:** reports to the Infrastructure Lead; works with engineering and product.
-**Applications:** ✅ **2026-10-09** and **2026-10-30** · **Stage:** **Contacted** for the second submission · first submission refused 2026-10-26 · **Issue:** #33
+**Applications:** ✅ **2026-10-09** (refused 2026-10-26) and **2026-10-30** (refused 2026-11-06) · **Stage:** **Closed** · **Issue:** #33
 **Compensation:** **not published.** EU-remote floor **€80,000** (§2). Established, Swiss Post-owned employer —
 the floor is plausible but **unverified**. No equity framing in the ad.
-**Follow-ups:** 1st due **2026-10-16 → 2026-10-20** · final **2026-10-23 → 2026-10-29**
+**Follow-ups:** first submission 1st due **2026-10-16 → 2026-10-20** · final **2026-10-23 → 2026-10-29**;
+second submission follow-ups cancelled after refusal on **2026-11-06**
 **jobradar:** board **added 2026-10-09** (`greenhouse:spotme`, `market: eu-remote`); scan verified row
 `Senior Site Reliability Engineer (SRE)`, `location: Europe (Remote)`, `decision: review`, score 4.
 
@@ -120,14 +121,16 @@ reliability, cost and security; weak on the code-authoring half of the JD.**
 - Screen date: —
 - Interview dates: —
 - First submission outcome: **refused 2026-10-26** (2026-10-09 Greenhouse application → refusal email after 11 business days).
+- Second submission outcome: **refused 2026-11-06** (2026-10-30 Greenhouse application; explicit Senior Site Reliability Engineer rejection, All Mail UID 6335).
 
 ## Outcome record
 
 - First submission stage: **closed at Contacted; no screen reported**
 - First submission rejection reason: **`unknown`** — boilerplate refusal; no reason given. The email distinguishes none of the identified qualifications.
-- Second submission: **applied 2026-10-30** to the same posting; stage **Contacted**. No outcome for this submission is recorded.
-- Board Stage: **Contacted** for the latest submission (set 2026-11-05).
-- First submission follow-ups: none recorded; its refusal arrived on the last day of the final window.
+- Second submission stage: **closed at Contacted; no screen reported**
+- Second submission rejection reason: **`unknown`** — refusal email gives no reason.
+- Board Stage: **Closed** for both submissions.
+- First submission follow-ups: none recorded; its refusal arrived on the last day of the final window. Second submission follow-ups cancelled after the **2026-11-06** refusal.
 - **Watch:** the cause should still be readable — **relevance** (AWS, Python authorship, 5+ years) or
   **compensation**, not location. Second `bridge` row in the DE/EU-remote set alongside #22 1GLOBAL. If the
   next `bridge` refusal also arrives with no reason, the lane's conversion is unreadable and the
@@ -139,7 +142,6 @@ reliability, cost and security; weak on the code-authoring half of the JD.**
 ## Funnel delta
 
 Applications sent +1 (2026-10-09) · **EU-remote lane** · `tier:c` · **`track:bridge`** · board gap closed
-(SpotMe was not tracked by jobradar before this application). Third application logged today, and the first
-in the `bridge` track since #22 1GLOBAL.
+(SpotMe was not tracked by jobradar before this application). First `bridge`-track row since #22 1GLOBAL.
 
-Application sent +1 (2026-10-30; second submission to the same posting). The first submission remains a rejection; the second is active at Contacted.
+Application sent +1 (2026-10-30; second submission to the same posting). Both submissions are rejected; latest outcome recorded 2026-11-06.
